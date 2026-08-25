@@ -238,8 +238,6 @@ dictionary from the published PDFs.
 
 ## Data source
 
-## Data source
-
 The questionnaire codebooks are published by the Danish National Birth Cohort at
 [dnbc.dk](https://www.dnbc.dk/). This repository contains text extracted from those public
 codebooks, reorganised into a searchable dictionary. The underlying content belongs to the
