@@ -473,7 +473,7 @@ HTML_CSS = """
 :root{
   --paper:#FCFCFA; --surface:#FFFFFF; --ink:#101820; --muted:#6B7785;
   --rule:#E4E8EC; --hair:#F0F3F5; --accent:#2B4C7E; --accent-wash:#EEF3FA;
-  --flag:#C2410C; --flag-wash:#FDF1EA; --rail:#C7D2E0;
+  --flag:#C2410C; --flag-wash:#FDF1EA; --rail:#C7D2E0; --brand:#C8102E;
   --display:system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
   --body:Georgia,"Times New Roman",Times,serif;
   --data:ui-monospace,"SF Mono",Menlo,Consolas,"Cascadia Mono","Liberation Mono",monospace;
@@ -485,7 +485,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
 .wrap{max-width:1160px;margin:0 auto;padding:0 32px 100px}
 header.top{padding:64px 0 0}
 .kicker{font-family:var(--data);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--accent);margin:0 0 18px}
+  color:var(--brand);margin:0 0 18px}
 h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1;
   letter-spacing:-.03em;margin:0}
 .sub{font-size:18px;color:var(--muted);margin:14px 0 0;max-width:56ch}
@@ -554,6 +554,16 @@ td.type-cell{width:118px}
 .wavenote{font-size:13.5px;color:var(--muted);margin:12px 0 0;padding-left:14px;
   border-left:2px solid var(--rule);max-width:70ch}
 .codehead{display:flex;align-items:baseline;gap:14px;margin:56px 0 18px}
+details.recode{margin-top:56px}
+summary.codehead{cursor:pointer;list-style:none;-webkit-user-select:none;user-select:none;margin:0}
+details.recode[open] > summary.codehead{margin-bottom:18px}
+summary.codehead::-webkit-details-marker{display:none}
+summary.codehead::before{content:"";flex:none;align-self:center;width:8px;height:8px;
+  position:relative;top:-2px;border-right:2px solid var(--ink);
+  border-bottom:2px solid var(--ink);transform:rotate(-45deg);transition:transform .18s ease}
+details.recode[open] > summary.codehead::before{transform:rotate(45deg);top:-4px}
+summary.codehead:hover h2{opacity:.6}
+@media print{details.recode > .codeblock{display:block!important}}
 .codehead h2{font-family:var(--display);font-weight:600;font-size:21px;margin:0}
 .codehead span{font-family:var(--data);font-size:11px;color:var(--muted)}
 
@@ -747,8 +757,9 @@ HTML_DOC = """<!doctype html>
   </div>
 </header>
 %(body)s
-<div class="codehead"><h2>Recode</h2><span>paste into your preprocessing script</span></div>
+<details class="recode"><summary class="codehead"><h2>Recode</h2><span>paste into your preprocessing script</span></summary>
 <div class="codeblock">%(code)s</div>
+</details>
 <script>
 (function(){
   var box=document.querySelector('.codeblock'); if(!box) return;
