@@ -20,11 +20,23 @@ FONTS = ("/Users/jkv465/Library/Application Support/Claude/local-agent-mode-sess
 
 SS = 4
 W, H = 1200, 1386
-PAPER = (252, 252, 250, 255)
 INK = (18, 26, 34, 255)
 RED = (200, 16, 46, 255)
-FIELD = (176, 186, 196, 255)      # the unexamined codebook
 GLASS = (34, 44, 54, 255)         # what the lens resolves
+
+# paper, field marks, lens interior. The lens reads a shade lighter than the
+# ground around it, so the glass lifts off the page.
+PALETTES = {
+    "sand":  ((243, 238, 229), (158, 174, 189), (252, 250, 246)),
+    "mist":  ((234, 239, 244), (139, 158, 176), (250, 252, 253)),
+    "linen": ((240, 236, 230), (166, 166, 170), (251, 249, 246)),
+    "slate": ((228, 233, 237), (128, 147, 165), (248, 251, 252)),
+}
+NAME = os.environ.get("HEXPAL", "sand")
+_pa, _fi, _le = PALETTES[NAME]
+PAPER = _pa + (255,)
+FIELD = _fi + (255,)
+LENSBG = _le + (255,)
 
 MAG = 2.4
 
@@ -106,7 +118,7 @@ def build():
     # --- the glass ---------------------------------------------------------
     lens = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     ld = ImageDraw.Draw(lens)
-    ld.ellipse([lx - lr, ly - lr, lx + lr, ly + lr], fill=PAPER)
+    ld.ellipse([lx - lr, ly - lr, lx + lr, ly + lr], fill=LENSBG)
 
     # the same lattice, enlarged about the lens centre
     inner = lr / MAG + s
@@ -136,7 +148,7 @@ def build():
            width=int(9 * SS), joint="curve")
 
     out = img.resize((W, H), Image.LANCZOS)
-    p = os.path.join(HERE, "lookdnbc-hex.png")
+    p = os.path.join(HERE, os.environ.get("HEXOUT", "lookdnbc-hex.png"))
     out.save(p)
     print("wrote %s  (%d marks in the field, lens at %.1fx)" % (p, len(pts), MAG))
 
