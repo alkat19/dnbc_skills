@@ -1,8 +1,6 @@
-<img src="design/lookdnbc-hex.png" alt="" align="right" width="170">
+# lookdnbc <img src="design/lookdnbc-hex.png" alt="lookdnbc logo" align="right" height="139" />
 
-# lookdnbc — find DNBC variables by topic
-
-A skill for [Claude Code](https://claude.com/claude-code) that searches the **Danish
+**Find DNBC variables by topic.** A skill for [Claude Code](https://claude.com/claude-code) that searches the **Danish
 National Birth Cohort** questionnaire codebooks. Ask a question in plain English and get
 back the matching variables, grouped by wave, each with its **variable code**, the
 **question as it was actually asked**, and **every answer label**.
