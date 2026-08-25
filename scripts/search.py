@@ -474,9 +474,9 @@ HTML_CSS = """
   --paper:#FCFCFA; --surface:#FFFFFF; --ink:#101820; --muted:#6B7785;
   --rule:#E4E8EC; --hair:#F0F3F5; --accent:#2B4C7E; --accent-wash:#EEF3FA;
   --flag:#C2410C; --flag-wash:#FDF1EA; --rail:#C7D2E0;
-  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
-  --body:"Newsreader",Georgia,serif;
-  --data:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --display:system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --body:Georgia,"Times New Roman",Times,serif;
+  --data:ui-monospace,"SF Mono",Menlo,Consolas,"Cascadia Mono","Liberation Mono",monospace;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -719,9 +719,6 @@ HTML_DOC = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%(q)s &mdash; DNBC variables</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
 <style>%(css)s</style></head>
 <body><div class="wrap">
 <header class="top">
