@@ -910,6 +910,61 @@ def build_matchers(terms, exact):
     return out
 
 
+def wave_short(wave_label):
+    """Wave name for prose: the parenthetical is dropped unless it disambiguates.
+
+    "Interview 1 (prenatal, ~12 wk gestation)" is Interview 1 in a sentence, but the two
+    11-year books differ only inside the brackets, so those keep theirs.
+    """
+    label, _, detail = wave_label.partition(" (")
+    detail = detail.rstrip(")")
+    if detail[:5].lower() in ("child", "adult"):
+        return "%s (%s)" % (label, detail)
+    return label
+
+
+def prose_list(items):
+    """a, b and c -- for naming the waves a report covers."""
+    items = list(items)
+    if len(items) < 3:
+        return " and ".join(items)
+    return "%s and %s" % (", ".join(items[:-1]), items[-1])
+
+
+def report_headings(args, waves):
+    """Title and subtitle for the HTML report.
+
+    The report is a deliverable, so the heading has to read as a subject, never as the
+    query that happened to find it. --title/--subtitle win outright. Otherwise a topic or
+    a short term list is polished into one, and a --var regex is never used at all: a code
+    pattern names a search, not a concept, and pasting one into an <h1> is what made this
+    function necessary. The default subtitle states the waves the matches actually fall
+    in, which is informative and cannot drift from the table below it.
+    """
+    waves = [wave_short(w) for w in waves]
+
+    if args.title.strip():
+        title = args.title.strip()
+    elif args.topic.strip():
+        title = args.topic.strip().replace("_", " ").capitalize()
+    elif args.terms:
+        head = ", ".join(args.terms[:3])
+        title = head[:1].upper() + head[1:]
+    else:
+        title = "Selected variables"
+        sys.stderr.write(
+            "note: no --title given and the search was by code pattern, so the report is "
+            'headed "Selected variables". Pass --title "Psychotic experiences" to name it.\n')
+
+    if args.subtitle.strip():
+        subtitle = args.subtitle.strip()
+    elif waves:
+        subtitle = "Variables, answer coding and skip logic from %s." % prose_list(waves)
+    else:
+        subtitle = "No matching variables."
+    return title, subtitle
+
+
 def main():
     ap = argparse.ArgumentParser(add_help=True)
     ap.add_argument("terms", nargs="*", help="search stems/synonyms (regex, case-insensitive)")
@@ -930,6 +985,10 @@ def main():
     ap.add_argument("--list-topics", action="store_true", help="show curated topics and exit")
     ap.add_argument("--html", metavar="PATH", nargs="?", const="dnbc_report.html",
                     help="write a polished, light-theme HTML report of the matches")
+    ap.add_argument("--title", default="",
+                    help="heading for the --html report (default: the topic or terms)")
+    ap.add_argument("--subtitle", default="",
+                    help="sub-heading for the --html report (default: the waves covered)")
     ap.add_argument("--recode", nargs="?", const="r", choices=["r", "stata", "sas"],
                     metavar="LANG",
                     help="emit paste-ready recode code: r (default), stata, or sas")
@@ -1023,21 +1082,8 @@ def main():
         return len(WAVE_ORDER)
 
     if args.html:
-        if args.topic:
-            title = args.topic.strip().replace("_", " ").capitalize()
-        elif args.terms:
-            title = " / ".join(args.terms[:4])
-        else:
-            title = "Variables matching %s" % args.var
-        if args.topic:
-            asked = args.topic.strip().replace("_", " ")
-        elif args.terms:
-            t = args.terms
-            asked = (t[0] if len(t) == 1
-                     else "%s or %s" % (", ".join(t[:-1]), t[-1]))
-        else:
-            asked = "the code pattern %s" % args.var
-        subtitle = "You asked for variables related to %s. Here are the results." % asked
+        title, subtitle = report_headings(
+            args, sorted(by_wave, key=wave_sort_key))
         emit_html(shown, gates, title, subtitle, args.recode or "r", args.html)
         return
 

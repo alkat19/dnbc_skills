@@ -95,7 +95,8 @@ python3 scripts/search.py --list-topics
   limit only when the user explicitly asks for a short list; never trim a search they
   intend to use for variable selection.
 - `--html PATH` writes a polished, light-theme HTML report of the matches (see
-  **Offer the HTML report**).
+  **Offer the HTML report**). `--title` sets its heading and `--subtitle` the line under
+  it; the default subtitle names the waves covered.
 - `--recode [r|stata|sas]` emits paste-ready recode code (R/dplyr by default). Ask which
   they use if it is not obvious; `--html` embeds whichever language was chosen: every column is mapped onto its
   own answer labels and every missing code sent to NA, so whether an item is coded
@@ -191,9 +192,18 @@ complete-case model on one silently conditions on its gate.
 If they say yes:
 
 ```bash
-python3 scripts/search.py --topic smoking --wave i1,i2 --html dnbc_smoking.html
-python3 scripts/search.py --topic smoking --recode stata --html dnbc_smoking.html
+python3 scripts/search.py --topic smoking --wave i1,i2 --title "Smoking in pregnancy" --html dnbc_smoking.html
+python3 scripts/search.py --topic smoking --recode stata --title "Smoking in pregnancy" --html dnbc_smoking.html
 ```
+
+**Always pass `--title`, naming the concept the user asked about** — the report is a
+document they will send on, and its heading should read as a subject ("Psychotic
+experiences"), not as the query that found it. Without it the heading falls back to the
+topic or the term list, and a `--var` search — where the query is a code regex that must
+never reach the page — is headed only "Selected variables". The default subtitle names the
+waves covered, which is usually what you want; pass `--subtitle` when a sentence of
+framing helps ("Child self-report at 11 and 18, with maternal history from the prenatal
+waves").
 
 It writes a standalone light-theme page (no dark mode, by design) holding the same rows,
 the same cautions and the same recode block as the terminal output — built from the
