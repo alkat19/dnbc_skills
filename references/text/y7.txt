@@ -1,0 +1,2010 @@
+      The Danish National Birth Cohort
+
+
+Parent: «Parent name»
+
+Child: «Christian name» «Surname»
+
+
+
+
+                     Children's health
+   - a follow-up survey of "The Danish National Birth Cohort"
+
+
+
+
+                Questionnaire
+
+Danish Epidemiology Science Center
+Statens Serum Institut
+Artillerivej 5
+2300 Copenhagen S
+
+bsmb@ssi.dk
+www..dk
+
+
+
+
+1 0 0 5 7 1 1 1 1
+Version 1.5
+This code book reflects the 7-year data collection in the DNBC. The code
+book documents both the paper-based and the net-based (Inquisite) data col-
+lection as well as both versions (v. 1.4 and 1.5) of the 7-year data collection.
+All data sets have been recoded into a single data set. The current codebook
+revision is from September 2012.
+
+
+
+An overview of variable codes:
+
+In a "choose-many"-question, e.g.. Z004_1-Z004_9 Was/Is your child cared for in any of the
+following institutions of child care? (Tick appropriate boxes) the values are 0=no, 1= yes,
+9=undefined, 10=not applicable
+
+The values 9 or 99 mark that the question was left unanswered (undefined).
+The values 10 or 100 mark that the question was not answered due to logic skips in the
+questionnaire (not applicable).
+
+Variable names starting with "raw":
+For the variables that are either recoded from v. 1.4 to v. 1.5 or have been validated and changed
+because of scanning errors the original variable value is kept under the original label with the prefix
+"raw". Please consult the document DNBC_7year_supp_doc for further description.
+    • The following variables have been recoded from v. 1.4 to v. 1.5:
+        rawZ009A-rawZ009J, rawZ081tmdu, rawZ081tman
+    • The following variables have been validated (dates and measurements): rawudfyldto,
+        rawZ019AD1-rawZ019AD7, rawZ068HDTO, rawZ068VDTO, rawZ069TDTO, rawZ068H,
+        rawZ068V, rawZ069T, rawZ081ADU-rawZ081CAND, rawZ082ADU-rawZ082AAND
+
+Variable names starting with "cor":
+If a "cor" variable has the value 1 the variable value has been corrected.
+Variables: cor_udfyldto, cor_Z019AD1-7, cor_Z068HDTO, cor_Z068VDTO, cor_Z069TDTO,
+cor_Z068H, cor_Z068V, cor_Z069T, cor_Z081ADU-cor_Z081CAND, cor_Z082ADU, cor_Z082AAND
+
+Variable names starting with "del_":
+If a "del" variable has the value 1 the variable value has been deleted.
+     • Variables: del_udfyldto, del_Z019AD1-7, del_Z068HDTO, del_Z068VDTO, del_Z069TDTO,
+          del_Z068H, del_Z068V, del_Z069T, del_Z081ADU-del_Z081CAND, del_Z082ADU,
+          del_Z082AAND
+
+Lbgravff: Child unique identifier in the DNBC.
+               The key is composed by 9 numbers and is divided into 4 parts: lbnr | gravnr | flerfold |
+               flernr
+               Lbnr (ciffer 1-6): Mother ID
+               gravnr (ciffer 7): Pregnancy ID within DNBC (mothers can participate with several
+               pregnancies)
+               flerfold (ciffer 8): The number of children in the pregnancy (singleton birth=1, twins =2,
+               triplets =3).
+               flernr (ciffer 9): The last chiffre identifies the child in twin or multiple births.
+ZVERSION: v1_3 paper             Version 1.3 paper (like version 1.4)
+              v1_3 paper_T       Version 1.3 paper, twins (like version 1.4)
+              v1_4 paper         Version 1.4 paper
+              v1_4 paper_T       Version 1.4 paper, twins
+              v1_4 web           Version 1.4 web version
+              v1_5 paper         Version 1.5 paper
+              v1_5 paper_T       Version 1.5 paper, twins
+              v1_5 web           Version 1.5 web version
+
+Tvil_nr:  At your son/daughter's birth was he/she born
+Depends on: zversion (v1_3 paper _T, v1_4 paper _T and v1_5 paper _T only)
+          1. the first twin/triplet
+          2. the second twin/triplet
+          3. the third triplet
+
+Fleretvil:   One or more replies by one pregnancy (e.g. twins)
+             1.  Only one reply (singleton, twin or triplet)
+             2.  More than one reply (twin or triplet)
+Page 5
+
+
+
+Children's health
+- a follow-up survey of "The Danish National Birth Cohort"
+
+
+Dear «Parent name»,
+
+Thank you for contributing to the follow-up survey of "The Danish National Birth Cohort" by filling in
+this questionnaire about your son/daughter. The questionnaire is about children's diseases, vac-
+cinations, medicine, diet and exercise, height and weight - and there are a few questions for the
+parents.
+
+Your answers will be scanned electronically, so please observe the following:
+Please answer the questions by ticking the box you think is correct. Use a black or blue ball pen.
+Please make sure to tick inside the box, and not outside. If you have ticked the wrong box, just
+shade it in and then tick the right one. Use a black or blue ball pen.
+
+Most of the questions can be answered with a "yes", "no" or "don't know". Tick one box only.
+You can tick more boxes in some of the questions. These questions will be clearly marked.
+
+In some of the questions, we ask you to write your own answer or comments. Please write as
+clearly as possible and only on the lines provided. Your comments will not be registered if you write
+outside the lines.
+
+In this questionnaire we will sometimes ask you to fill in an age in a table like the one below.
+Please tick both year and months. For example - if your son started in day care when he was 9
+months old - tick 0 years and 9 months.
+
+                                                                                               Don't
+                  0     1     2     3     4     5     6     7     8     9    10    11          know
+
+     Year
+
+     Months
+
+
+
+Please use the allocated boxes for numbers. If there is room for two digits and you only need to
+write one - use the box to the right.
+
+     Example: How old was your daughter when she started school?         l   l 7 l years
+
+Some of the questions will most probably make you guess, but please do your best to remember.
+
+Some of the questions will require that you have specific information at hand. It is therefore a good
+idea to have the following ready:
+
+   • the vitamin pills and any dietary supplements you daughter takes
+   • the type of medicine your daughter has been taking over a longer period (for example asth-
+     ma or epilepsy)
+   • any vaccinations apart from the normal course of children's vaccinations
+Page 6
+
+   • your daughter's height, weight, waist measurements and dates for when she was measured
+     and weighed
+   • yours and the other biological parent's height, weight and waist measurement
+   • yours and the other biological parent's birth weight
+
+Please return the completed questionnaire in the stamped addressed envelope provided.
+
+Thank you very much!
+         Page 7
+
+
+         This questionnaire is about: «Child's_Christian name»
+         Please insert the date when you filled out this questionnaire. Please use the space provided.
+
+         UDFYLDTO
+         Date of completion:                             l   l     l   l   l2l0l   l   l
+                                                                   (dd/mm/yyyy)
+
+Z001     Are you the child's biological mother?
+
+               1.       Yes → Z002
+               2.       No
+               9.       Undefined
+
+               If no:
+
+Z001A This questionnaire has not been completed by the child's biological mother, but by:
+Depends on: Z001
+               1.       The child's biological father
+               2.  Another person, whom? ____________________________ Z001AA _____________
+               9.  Undefined
+               10. Not applicable
+
+
+         About your daughter's home and family
+         The first part of the questionnaire deals with your daughter's home and family. If she has more than
+         one home, answer the following questions about her home and family in relation to where she has
+         lived most of her life.
+
+Z002     Has your daughter lived with her mother and father since birth?
+               1.       Yes → Z003
+               2.       No
+               9.       Undefined
+
+               If no:
+Z002A Where has she lived most of her life?
+         (Tick one box only)
+Depends on: Z002
+               1.       With her mother
+               2.       With her father
+               3.       With her mother and mother's new partner
+               4.       With her father and father's new partner
+               5.       Equally with both parents
+               6.       With appointed guardian/foster parents
+               7.   Other, whom?: __ Z002AA _________________________________________
+               99. Undefined
+               100. Not applicable
+
+Z003     Does your daughter live with you at present?
+           Page 8
+
+                 1.        Yes → Z004_1
+                 2.        No
+                 9.        Undefined
+
+                 If no:
+Z003A Where does she live now? _____________________________________________________
+Depends on: Z003
+
+Was/Is your child cared for in any of the following institutions of child care?
+(Tick appropriate boxes)
+
+Z004_1           1.        Crêche
+Z004_2           1.        Child minder in child minder's home
+Z004_3           1.        Child minder at home
+Z004_4           1.        Mixed institution
+Z004_5           1.        Kindergarten
+Z004_6           1.        Leisure centre
+Z004_7           1.        School leisure centre
+Z004_8           1.        Other: _________ Z004A __________________________________________
+Z004_9           1.        Has never been cared for by others        (skip to motor questions)
+
+
+How old was your daughter when she was cared for by others?
+(Tick one year and one month)
+Depends on: Z004_9
+                                                                                                          Un-     Not
+                                                                                                 Don't
+                                 0     1    2   3   4   5    6   7    8     9     10    11                de-    appli-
+                                                                                                 know
+                                                                                                         fined   cable
+
+Z005AAR           Year          0. 1. 2. 3. 4. 5. 6. 7. 8. 9.                                    12.     99.     100.
+
+Z005MND           Months        0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.                            12.     99.     100.
+Page 9
+
+
+About your son's motor skills
+
+Most of the questions in this questionnaire are about motor skills, i.e. the movements your son can
+perform with his hands or his body. As your son matures, the coordination of his movements will
+continue to improve. When answering the questions below, it is important that you compare him
+with other children of the same age.
+
+
+Do you find the following statements true of your son, when you compare him with other children of
+the same age?
+
+
+The questions concerning motor skills Z110_01 through to Z110_15 have
+been moved to keep the Z-values in numeric order.
+       Page 10
+
+
+       Your daughter's development
+       The following questions deal with your daughter's development. Any comments or other infor-
+       mation you may have may be added at the end of the questionnaire.
+
+Z006   How has your daughter's speech developed?
+       (Tick one box only)
+
+             1.     Later than other children of the same age
+             2.     More or less like other children of the same age
+             3.     Earlier than other children of the same age
+             4.     Don't know
+             9.     Undefined
+
+Z007   Has your daughter ever stuttered?
+       (Tick one box only)
+
+             1.     Yes, a lot
+             2.     Yes, a little
+             3.     No
+             4.     Don't know
+             9.     Undefined
+
+Z008   Has your daughter started school?
+
+             1.     Yes
+             2.     No → Z111A
+             9.     Undefined → Z111A
+
+             If yes:
+
+             Depends on: Z008
+             (Version v1_3 papir, v1_3 papir_T, v1_4 papir, v1_4 papir_T og v1_4 web)
+                                                                                                      Did not
+                                                                                                       go to
+                                        2002    2003   2004       2005   2006   2007   2008   2009   preschool
+Z008BH        She started preschool
+                                          1.     2.      3.        4.     5.     6.     7.     8.       9.
+              in
+              She started primary
+Z0081KL                                   1.     2.      3.        4.     5.     6.     7.     8.       9.
+              school in
+
+       The table covering Z008BH and Z0081kl was changed into the below table, because a problem oc-
+       curred in the web version, where respondents were not able to proceed unless they ticked one of
+       the options in Z0081KL.
+       The option "Not yet started" was added as children born during the spring usually have not started
+                                            th
+       primary school at the time of their 7 birthday.
+       The option Z008BH = 9," Did not go to preschool" was changed to Z008BH = 11, "Skipped pre-
+       school". All answers in Z008BH = 9 in version 1.4 have been recoded to Z008BH = 11 to match the
+       values in version 1.5.
+
+       The reason for the Z008BH = 9,"did not go to preschool" in the first place was to give parents the
+       possibility to mark that their child started primary school directly.
+       Preschool - børnehaveklasse - was optional in Denmark until August 2009, but the majority of chil-
+       dren took the preschool year.
+      Page 11
+
+
+          (Version v1_5 papir, v1_5papir_T og v1_5web)*
+                                                                                Skip-                    Not
+                                                                                ped   Not yet Undefi-   appli-
+                                   2004 2005 2006 2007 2008 2009          2010 pre- started ned         cable
+Z008BH                                                                         school
+           She started pre-                                                                             100
+                                    3.     4.    5.    6.     7.    8.     9.    11.    12.     99.
+           school in                                                                                     .
+           She started primary                                                                          100
+Z0081KL                             3.     4.    5.    6.     7.    8.     9.           12.     99.
+           school in                                                                                     .
+
+      * Z008BH and Z0081kl were corrected when version 1.5 was already in use. All web answers in v.
+      1.5 completed before 8 February 2007 have completed the table from v. 1.4 (approx. 1,500
+      answers). Together with the approx. 6000 web answers from v. 1.4 these answers may be inaccu-
+      rate as the participants were forced to tick an option in order to move on, whereas in the paper ver-
+      sion the question could simply be left unanswered.
+       Page 12
+
+
+
+       About your daughter's dietary habits
+       Which of the following statements best describe your daughter's dietary habits during the past
+       month?
+
+       Dietary questions were changed from version 1.4 to 1.5 and new dietary var-
+       iables (Z111A - Z111N) were created to replace the original variables (Z009A
+       - Z009J). The values from the original variables have been recoded and the
+       original values are contained in the rawZ009A - rawZ009J variables.
+       The questions concerning dietary habits Z111A - N have been moved to
+       keep the Z-values in numeric order.
+
+       How often does she consume the foods below?
+       (Tick one box on each line)
+       Depends on: zversion (v1_3 paper, v1_3 paper_T, v1_4 paper, v1_4 paper_T and v1_4 web on-
+       ly)
+
+                                                    6 or                            About
+                                                    more    4-5 times   2-3 times   once a   Rarely or
+                                                  times a    a week      a week      week     never
+                                                    week
+
+             She drinks sugary soft drinks
+rawZ009
+             (fruit juice, orange juice, lemon-     1.         2.          3.        4.         5.
+   A
+             ade)
+             She eats "fast-food"
+rawZ009
+             (burgers, pizza, hamburgers,           1.         2.          3.        4.         5.
+   B
+             etc.)
+rawZ009
+             She drinks milk                        1.         2.          3.        4.         5.
+   C
+rawZ009      She eats sweets/chocolate/ice
+                                                    1.         2.          3.        4.         5.
+   D         cream
+rawZ009
+             She eats breakfast                     1.         2.          3.        4.         5.
+   E
+rawZ009      She eats snacks between
+                                                    1.         2.          3.        4.         5.
+   F         meals
+rawZ009
+             She eats lunch                         1.         2.          3.        4.         5.
+   G
+rawZ009
+             She eats dinner                        1.         2.          3.        4.         5.
+   H
+rawZ009I     She eats fruit                         1.         2.          3.        4.         5.
+
+rawZ009J She eats vegetables                        1.         2.          3.        4.         5.
+
+
+
+Z010   Has a doctor said that your daughter is allergic to certain types of food?
+
+            1.      Yes
+            2.      No → Z011
+            3.      Don't know → Z011
+            9.      Undefined → Z011
+       Page 13
+
+           If yes:
+           Which types of food? (Tick appropriate boxes)
+           Depends on: Z010
+
+           1.         Z010A_01 Milk                        1.     Z010A_02Tomat o
+
+           1.         Z010A_03 Egg                         1.     Z010A_04 Shellfish
+
+           1.         Z010A_05 Fish                        1.     Z010A_06 Rye
+
+           1.         Z010A_07 Citrus fruits               1.     Z010A_08 Wheat
+
+           1.         Z010A_09 Nuts                        1.     Z010A_10 Soya
+
+Z010A_11   1.         Other: _____ Z010AA______________________________________________
+
+Z011   Has she taken vitamin pills during the past year?
+       (Tick one box only)
+           1.     Yes, always/nearly always
+           2.     Yes, but only in winter
+           3.     Yes, occasionally
+           4.     No, not at all or very rarely → Z012
+           9.     Undefined → Z012
+
+           If yes:
+           Which pill does she take? (Tick the appropriate box)
+           Depends on: Z011
+
+Z011A_1    1.     Childrens BiOrtomin
+Z011A_2    1.     Livol MultiTotal for children
+Z011A_3    1.     Matas vitamins for children
+Z011A_4    1.     Matas vitamins for children with calcium and magnesium
+Z011A_5    1.     Multi-tabs
+Z011A_6    1.     Nycoplus Extra-Multi for children
+Z011A_7    1.     Nycoplus Multi for children
+Z011A_8 1.     Omnimini
+Z011A_9 1.     Other : ___ Z011AA _________________________________________________
+Z012 Has she taken any dietary supplements during the past year?
+           1.     Yes
+           2.     No → Z013
+           3.     Don't know → Z013
+           9.     Undefined → Z013
+
+           If yes:
+           Which dietary supplement does she take?
+           (Tick the appropriate boxes)
+           Depends on: Z012
+       Page 14
+
+
+Z012A_01 1.       Multitabs Calcium
+
+Z012A_02 1.       Unikalk Kids
+
+Z012A_03 1.       Other: _____________ Z012AA ______________________________________
+
+Z013   Does the family have dinner together at least 4 times a week?
+
+           1.     Yes
+           2.     No
+           3.     Don't know
+           9.     Undefined
+            Page 15
+
+            Physical activity
+            The following questions deal with your daughter's activity or inactivity. We ask you now to assess how
+            active your daughter is in kindergarten, school or at the leisure centre on a normal weekday after school or
+            school leisure centre and during a normal day at the weekend. We are aware of differences between summer
+            and winter activities. Your answer should reflect how active your child is at this moment in time. We will adjust
+            for seasonal variation on the basis of your answer.
+
+            ACTIVE              - activity that involves movement, eg. running, hopping, climbing, cycling, doing sports etc.
+            RELAXED             - activity that does not involve movement, eg. reading, watching TV, playing computer games,
+                                in class, resting, sleeping during the day etc.
+
+Z014        How many hours is your daughter physically active in kindergarten, school or at the leisure
+            centre/school leisure centre?
+            You may find it difficult to answer this question, as you are not there yourself. Please try to estimate: A couple of hours
+            gymnastics, free play in the playground during breaks, football, skipping, roller skating and riding a scooter or bicycle ...
+            (Tick one box only)
+
+                  1.      Never or very rarely
+                  2.      Less than 1 hour a week
+                  3.      1-2 hours a week
+                  4.      3-4 hours a week
+                  5.      5-6 hours a week
+                  6.      6 hours or more
+                  9.      Undefined
+
+How many hours is your daughter physically active on a normal weekday after kindergarten, school or the
+leisure centre/school leisure centre compared to a normal day during the weekend? Children spend a lot of time
+moving around, crawling around on the floor playing with Lego and the like. It can be difficult to judge how active or inactive they are.
+Please try and estimate the hours, where your child is either active or relaxed.
+(Tick one box in each column)                                            Z015hver                              Z015week
+
+                    Activity time                                        Normal weekday                      Day at the weekend
+
+                    Never or very rarely                                          1.                                    1.
+                    Less than ½ hour daily                                        2.                                    2.
+                    ½ - 1 hour a day                                              3.                                    3.
+                    1 - 2 hours a day                                             4.                                    4.
+                    2 - 3 hours a day                                             5.                                    5.
+                    3 - 4 hours a day                                             6.                                    6.
+                    4 hours or more                                               7.                                    7.
+                    Undefined                                                     99.                                   99.
+
+How many hours does your daughter relax after school or school leisure centre/leisure centre?
+(Tick one box in each column)                         Z016hver                    Z016week
+
+                    Activity time                                        Normal weekday                      Day at the weekend
+
+                    Never or very rarely                                          1.                                    1.
+                    Less than ½ hour daily                                        2.                                    2.
+                    ½ - 1 hour a day                                              3.                                    3.
+                    1 - 2 hours a day                                             4.                                    4.
+                    2 - 3 hours a day                                             5.                                    5.
+Page 16
+
+    3 - 4 hours a day   6.    6.
+    4 hours or more     7.    7.
+    Undefined           99.   99.
+            Page 17
+
+            About your daughter's health
+            The following questions deal with your daughter's health. Any comments or other information you
+            may have may be added at the end of the questionnaire.
+
+Z017        How is your daughter's health compared with other girls her age?
+            (Tick one box only)
+
+                  1.      Better → Z018
+                  2.      Same as other girls her age → Z018
+                  3.      Worse
+                  9.      Undefined → Z018
+
+                  If worse:
+                  What is the reason for her bad health?
+                  Depends on: Z017
+
+Z017A             1.        Frequent colds and fever
+Z017A1                      1. Recurring bouts of pneumonia
+Z017A2            1.        Stomach and headaches
+Z017A3            1.        Other: _______________________________ Z017AA _______________________
+
+Z018       Is she getting her regular jabs under the children's vaccination programme?
+
+                  1.      Yes
+                  2.      No
+                  3.      Don't know
+                  9.      Undefined
+
+Z019        Has she had other vaccinations apart from the usual ones (e.g. in order to travel or due to
+            outbreak of disease?
+                  1.      Yes
+                  2.      No
+                  3.      Don't know
+                  9.      Undefined
+
+                  If yes:
+                  Which vaccinations?
+
+Z019A_1           1. Infectious hepatitis, Hepatitis A - Havrix        date: l ll l l l l l l Z019AD1
+Z019A_2           1. Infectious hepatitis, Hepatitis A - Gammaglobulin date: l ll l l l l l l Z019AD2
+Z019A_3           1.    Infectious hepatitis, Hepatitis B - Engerix   date: l l l l l l l l l Z019AD3
+Z019A_4           1.    Infectious hepatitis, Hepatitis A+B - Twinrix date: l l l l l l l l l Z019AD4
+Z019A_5           1.    Meningitis                                    date: l l l l l l l l l Z019AD5
+Z019A_6           1.    Yellow fever                                  date: l l l l l l l l l Z019AD6
+Z019A_7           1.    Other, ______________ Z019AA ___________ date: l l l l l l l l l Z019AD7
+                                    (type of vaccination)
+Has your daughter had the following childrens' diseases?
+(Tick each childrens' disease)
+
+
+                                                            Yes      No            Don't know      Undefined
+           Page 18
+
+
+Z020_1                 Whooping cough                          1.               2.             3.              9.
+Z020_2                 German measles                          1.               2.             3.              9.
+Z020_3                 Mumps                                   1.               2.             3.              9.
+Z020_4                 Chicken pox                             1.               2.             3.              9.
+Z020_5                 Measles                                 1.               2.             3.              9.
+Z020_6                 Three day fever                         1.               2.             3.              9.
+
+Z021       Has your daughter had inflammation of the inner ear since birth?
+           (Tick one box only)
+
+                 1.      Yes, 1-3 times
+                 2.      Yes, more than 3 times
+                 3.      No
+                 4.      Don't know
+                 9.      Undefined
+
+Z022       Has your daughter ever had her ears drained?
+
+                 1.      Yes
+                 2.      No
+                 3.      Don't know
+                 9.      Undefined
+
+Z023       Has your daughter ever had febrile seizures in infancy?
+
+                 1.      Yes              (go to the next question)
+
+                 2.      No               (skip to question Z027)
+
+                 3.      Don't know       (skip to question Z027)
+
+                 9.      Undefined
+
+Z024       How many times has she had febrile seizures altogether?
+           (Tick one box only)
+Depends on: Z023
+
+                 1.      1
+                 2.      2-5
+                 3.      6 or more
+                 4.      Don't know
+                 9.      Undefined
+                 10.
+                   Not applicable
+How old was your daughter when she had her first fit of febrile seizure??
+(Tick one year and one month)
+Depends on: Z023
+                                                                                                                    Not
+                                                                                                    Don't   Unde-
+                                 0    1   2    3     4     5        6   7   8        9   10   11    know            appli-
+                                                                                                            fined
+                                                                                                                    cable
+
+Z025AAR           Year           0. 1. 2. 3. 4. 5. 6. 7. 8. 9.                                      12.     99.     100.
+           Page 19
+
+
+Z025MND           Months         0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.                     12.     99.     100.
+
+Z026       How long did the longest febrile seizure last (minutes)?
+           (Tick one box only)
+Depends on: Z023
+
+                 1.      Less than 5 min.
+                 2.      Between 5-15 min.
+                 3.      More than 15 min.
+                 4.      Don't know
+                 9.      Undefined
+                 10. Not applicable
+
+Z027       Has a doctor ever said that your daughter suffered from epilepsy?
+
+                 1.      Yes             (go to next question)
+
+                 2.      No              (skip to question Z031)
+
+                 3.      Don't know
+                 9.      Undefined
+
+How old was your daughter when she had her first epileptic fit (not febrile seizures)?
+(Tick one year and one month)
+Depends on: Z027
+                                                                                                            Not
+                                                                                           Don't   Unde-
+                                 0   1   2    3     4     5      6   7   8   9   10   11   know            appli-
+                                                                                                   fined
+                                                                                                           cable
+
+Z028AAR           Year           0. 1. 2. 3. 4. 5. 6. 7. 8. 9.                             12.     99.     100.
+
+Z028MND           Months         0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.                     12.     99.     100.
+
+How old was your daughter when she had her latest epileptic fit?
+(Tick one year and one month)
+Depends on: Z027
+                                                                                                            Not
+                                                                                           Don't   Unde-
+                                 0   1   2    3     4     5      6   7   8   9   10   11   know            appli-
+                                                                                                   fined
+                                                                                                           cable
+
+Z029AAR           Year           0. 1. 2. 3. 4. 5. 6. 7. 8. 9.                             12.     99.     100.
+
+Z029MND           Months         0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.                     12.     99.     100.
+
+Z030   Does your daughter take (or has she ever taken) medicine for epilepsy?
+Depends on: Z027
+
+                 1.      Yes
+                 2.      No → Z031
+                 3.  Don't know → Z031
+                 9.  Undefined → Z031
+                 10. Not applicable → Z031
+     Page 20
+
+           If yes:
+           Which medicine?
+           (Tick appropriate boxes)
+           Depends on: Z027, Z030
+
+                       Medicine's registered trade name                    Chemical
+
+Z030A_01       1.      Carbamazepine "Dak", Tegretol® ,Trimonil® Retard    Carbamazepine
+
+Z030A_02       1.      Frisium®                                            Clobazam
+
+Z030A_03       1.      Rivotril®                                           Clonazepam
+
+Z030A_04       1.      Zarondan®                                           Ethosuximide
+
+Z030A_05       1.      Gabapentine                                         Gabapentine
+
+Z030A_06       1.      Labileno "Orifarm", Lamictal®                       Lamotrigine
+
+Z030A_07       1.      Keppra®                                             Levetiracetam
+
+Z030A_08       1.      Apodorm®, Mogadon®, Nitrazepam, Pacisyn®            Nitrazepam
+
+Z030A_09       1.      Apydan®, Trileptal®                                 Oxcarbazepine
+
+Z030A_10       1.      Fenemal "Dak"                                       Phenobarbital
+
+Z030A_11       1.      Phenytoin "Dak"                                     Phenytoin
+
+Z030A_12       1.      Primidone "Era"                                     Primidone
+
+Z030A_13       1.      Gabitril®                                           Tiagabin
+
+Z030A_14       1.      Epitomax, Topamac, Topimax®, Topiramat              Topiramat
+
+Z030A_15       1.      Delepsine® , Deprakine®, Orfiril®                   Valproat
+
+Z030A_16       1.      Sabrilex®                                           Vigabatrin
+
+Z030A_17       1.      Other medicine: ______________________________________
+       Page 21
+
+
+Z031   Has your daughter taken any other medicine (apart from epilepsy medicine) for 3 or more months
+       at a time?
+
+             1.     Yes
+             2.     No → Z032
+             3.     Don't know → Z032
+             9.     Undefined → Z032
+
+
+             If yes:
+          Which type of medicine and for which disease?
+          Depends on: Z031
+Z031Med1 ________________________________ _______________________________
+Z031Syg1
+                             (medicine)                           (disease)
+
+
+Z031Med2 _______________________________             ________________________________
+Z031Syg2
+                             (medicine)                           (disease)
+
+
+Z031Med3 _______________________________             ________________________________
+Z031Syg3
+                             (medicine)                           (disease)
+
+
+Z031Med4 ________________________________              _______________________________
+Z031Syg4
+                             (medicine)                           (disease)
+
+Z032   Has your daughter ever been concussed?
+       (Tick one box only)
+
+             1.     Never
+             2.     Once
+             3.     2 or more times
+             4.     Don't know
+             9.     Undefined
+
+Z033   Has your daughter ever fractured a bone (e.g. broken arm, leg or finger)?
+       (Tick one box only)
+
+             1.     Never
+             2.     Once
+             3.     2 or more times
+             4.     Don't know
+             9.     Undefined
+
+Z034   Has a doctor ever said that your daughter had eczema, also known as allergic rash?
+
+             1.     Yes
+             2.     No
+             9.     Undefined
+         Page 22
+
+
+Z035     Has your child ever had an itchy rash which was coming and going for at least 6 months?
+
+              1.    Yes    (go to next question)
+
+              2.    No     (skip to question Z041))
+
+              9.    Undefined
+
+Z036   Has your daughter had this itchy rash at any time in the last 12 months?
+Depends on: Z035
+
+              1.    Yes    (go to next question)
+
+              2.    No     (skip to question Z041))
+
+              9.    Undefined
+              10. Not applicable
+
+Z037   Has this itchy rash at any time affected any of the following places: the folds of the elbows, behind
+       the knees, in front of the ankles, under the buttocks, or around the neck, ears or eyes?
+Depends on: Z035, Z036
+
+              1.    Yes
+              2.    No
+              9.    Undefined
+              10. Not applicable
+
+Z038   At what age did this itchy rash first occur?
+Depends on: Z035, Z036
+
+              1.    Under 2 years
+              2.    Age 2-4
+              3.    Age 5 or more
+              9.    Undefined
+              10.   Not applicable
+
+Z039   Has this rash cleared completely at any time during the last 12 months?
+Depends on: Z035, Z036
+
+              1.    Yes
+              2.    No
+              9.  Undefined
+              10. Not applicable
+
+Z040   In the last 12 months, how often, on average, has your child been kept awake at night by this itchy
+       rash?
+Depends on: Z035, Z036
+
+              1.    Never in the last 12 months
+              2.    Less than 1 night per week
+              3.    1 or more nights per week
+              9.    Undefined
+              10.   Not applicable
+         Page 23
+
+Z041     Has your daughter ever had eczema, also known as allergic rash?
+
+             1.     Yes
+             2.     No
+             9.     Undefined
+
+Z042     Does your daughter have dry skin?
+
+             1.     Yes
+             2.     No
+             9.     Undefined
+
+Z043     Has your child ever had wheezing or whistling in the chest at any time in the past?
+
+             1.     Yes    (go to next question)
+
+             2.     No     (skip to question Z048)
+
+             9.     Undefined
+
+Z044   Has your child had wheezing or whistling in the chest in the last 12 months?
+Depends on: Z043
+
+             1.     Yes    (go to next question)
+
+             2.     No     (skip to question 48)
+
+             9.     Undefined
+             10.    Not applicable
+
+Z045   How many attacks of wheezing has your child had in the last 12 months?
+Depends on: Z043, Z044
+
+             1.     None
+             2.     1 to 3 times
+             3.     4 to 12 times
+             4.     13 or more times
+             9.  Undefined
+             10. Not applicable
+
+Z046   In the last 12 months how often, on average, has your child's sleep been disturbed due to
+       wheezing?
+Depends on: Z043, Z044
+
+             1.     Never woken with wheezing
+             2.     Less than 1 night per week
+             3.     1 or more nights per week
+             9.  Undefined
+             10. Not applicable
+
+Z047   In the last 12 months has wheezing ever been severe enough to limit your child's speech to only
+       one or two words at a time between breaths?
+Depends on: Z043, Z044
+
+             1.     Yes
+        Page 24
+
+             2.     No
+             9.     Undefined
+             10. Not applicable
+
+Z048    Has your child ever had asthma?
+
+             1.     Yes
+             2.     No
+             9.     Undefined
+
+Z049    Has your child had wheezing or whistling in the chest during or after physical efforts in the past 12
+        months?
+
+             1.     Yes
+             2.     No
+             9.     Undefined
+
+Z050    Apart from coughing because of a cold or other chest infection, has your daughter had a dry cough
+        during the night during the past 12 months?
+
+             1.     Yes
+             2.     No
+             9.     Undefined
+
+Z051     Has a doctor ever said that your daughter had asthma?
+
+             1.     Yes     (go to next question)
+
+             2.     No      (skip to question 53)
+
+           9.    Undefined
+Z052   Has your daughter taken asthma medicine during the past 12 months?
+Depends on: Z051
+
+             1.     Yes
+             2.     No
+             3.     Don't know
+             9.     Undefined
+             10. Not applicable
+
+             If yes:
+             Which type of medicine?
+             (Tick appropriate boxes)
+             Depends on: Z051, Z052
+
+Z052A_1      1.     Bricanyl
+Z052A_2      1.     Salbuvent
+Z052A_3      1.     Spirocort
+Z052A_4      1.     Ventoline
+Z052A_5      1.     Pulmicort
+Z052A_6      1.     Flixotide
+        Page 25
+
+Z052A_7      1.       Terbasmin
+Z052A_8      1.       Other asthma medicine: ___ Z052AA _____________________________________
+
+Z053    Has a doctor ever said that your daughter suffers from hay fever?
+             1.       Yes
+             2.       No
+             9.       Undefined
+
+Z054     Does your daughter have normal vision in both eyes?
+            1.        Yes               (skip to question ZO58)
+
+            2.        No
+           3.         Don't know
+             9.       Undefined
+
+             If no:
+             Which eye has impaired vision?
+             (Tick one box only)
+             Depends on: Z054
+Z054A        1.       Left
+             2.       Right
+             3.       Both
+             9.       Undefined
+             10. Not applicable
+
+Z055   Do you know why her vision is impaired?
+Depends on: Z054
+
+             1.       Yes
+             2.       No
+             9.       Undefined
+             10.      Not applicable
+
+             If yes:
+             What is the reason for her impaired vision?
+             (Tick one box only)
+             Depends on: Z054, Z055
+Z055A_1      1.       Premature birth
+Z055A_2      1.       Birth trauma (lack of oxygen, brain haemorrhage)
+Z055A_3      1.       Hereditary cataract
+Z055A_4      1.       Shortsightedness
+Z055A_5      1.       Longsightedness
+Z055A_6      1.       Other, please describe: ___ Z055AA _______________________________
+
+Z056   Does she wear glasses/contact lenses?
+Depends on: Z054
+
+             1.       Yes
+             2.       No                  (skip to question 58)
+           Page 26
+
+                 9.  Undefined
+                 10. Not applicable
+                 If yes:
+Z056A Does she have normal vision when she wears glasses/contact lenses?
+Depends on: Z054, Z056
+                 1.      Yes
+                 2.      No
+                 3.      Don't know (v1_5 web only)
+                 9.      Undefined
+                 10. Not applicable
+How old was your daughter when she started wearing glasses/contact lenses?
+(Tick one year and one month)
+Depends on: Z054, Z056
+                                                                                                               Not
+                                                                                              Don't   Unde-
+                                0    1    2     3     4     5     6     7   8   9   10   11   know            appli-
+                                                                                                      fined
+                                                                                                              cable
+
+Z057AAR           Year          0. 1. 2. 3. 4. 5. 6. 7. 8. 9.                                 12.     99.     100.
+
+Z057MND           Months        0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.                         12.     99.     100.
+
+Z058       Has your daughter ever had a squint?
+
+                 1.      Yes                  (go to next question)
+
+                 2.      No                   (skip to question Z061)
+
+                 3.      Don't know           (skip to question Z061)
+
+                 9.      Undefined
+
+Z059   Has she been treated for the squint?
+Depends on: Z058
+
+                 1.      Yes
+                 2.      No
+                 3.      Don't know
+                 9.      Undefined
+                 10.     Not applicable
+
+What age was she when the squint was discovered?
+(Tick one year and one month)
+Depends on: Z058
+                                                                                                               Not
+                                                                                              Don't   Unde-
+                                0    1    2     3     4     5     6     7   8   9   10   11   know            appli-
+                                                                                                      fined
+                                                                                                              cable
+
+Z060AAR           Year          0. 1. 2. 3. 4. 5. 6. 7. 8. 9.                                 12.     99.     100.
+
+Z060MND           Months        0. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11.                         12.     99.     100.
+
+Z061       Is your daughter's hearing permanently impaired?
+         Page 27
+
+              1.     Yes                 (go to next question)
+
+              2.     No                  (skip to question Z063)
+
+              3.     Don't know          (skip to question Z063)
+
+              9.     Undefined
+
+Has her hearing impairment been treated?
+Depends on: Z061
+
+Z062_1        1. Yes, with a hearing aid
+Z062_2        2. Yes, with : ________ Z062A ____________________________________
+Z062_3        3. No
+
+Z063     Is your daughter right or left handed? (Tick one box only)
+
+              1.     Right handed
+              2.     Left handed
+              3.     Uses both
+              4.     Don't know
+              9.     Undefined
+
+Z064     Has your daughter been constipated and treated with a laxative?
+
+              1.     Yes
+              2.     No
+              3.     Don't know
+              9.     Undefined
+
+Z065     Do you think that your daughter has had more infections than other girls her age?
+
+              1.     Yes
+              2.     No
+              3.     Don't know
+              9.     Undefined
+
+Z066     Does your daughter get migraines?
+
+              1.     Yes
+              2.     No
+              3.     Don't know
+              9.     Undefined
+
+Z067     Does your daughter have a handicap or chronic illness?
+
+              1.     Yes
+              2.     No → Z068H
+              3.     Don't know → Z068H
+              4.     Don't wish to answer → Z068H
+              9.     Undefined → Z068H
+         Page 28
+
+
+
+              If yes:
+              (Tick appropriate boxes)
+              Depends on: Z067
+
+Z067A_1       1.       Cleft lip and palate
+Z067A_2       1.       Hypospadia
+Z067A_3       1.       Heart disease
+Z067A_4       1.       Asthma
+Z067A_5       1.       Allergy
+Z067A_6       1        Other: ___ Z067AA ____________________________________________
+
+(Version v1_3 paper, v1_3 paper _T, v1_4 paper, v1_4 paper_T and v1_4 web)
+Insert your daughter's present height.
+Z068H         Height:     l l l l cm            Date for measurement:    l l   l l l l l l l Z068HDTO
+                                                                                 (dd/mm/yyyy)
+
+
+
+(Version v1_5 paper, v1_5paper_T and v1_5web)
+Insert your daughter's present height. (if needed use ex. 127,5 cm)
+Z068H         Height:     l l l    ,     l cm   Date for measurement:    l l   l l l l l l l Z068HDTO
+                                                                         (dd/mm/yyyy)
+Z068HP        Who measured your son's height?
+              (Tick one box)
+              Depends on: Z068H, zversion (v1_5 papir, v1_5papir_T and v1_5web only)
+              1.       Health visitor / school doctor / own GP
+              2.       Other person
+              9.       Undefined
+
+
+
+(Version v1_3 paper, v1_3 paper _T, v1_4 paper, v1_4 paper_T and v1_4 web)
+Insert your daughter's present weight.
+Z068V          Weight: l l l l kg       Date for measurement:         l l      l l l l l l l    Z068VDTO
+                                                                                 (dd/mm/yyyy)
+
+
+(Version v1_5 paper, v1_5paper_T and v1_5web)
+
+                                   ,
+Insert your daughter's present weight. (if needed use ex. 26,5 kg)
+Z068V          Weight: l l l      l kg       Date for measurement:       l l   l l l l l l l
+                                                                                 (dd/mm/yyyy)
+                                                                                                Z068VDTO
+
+
+Z068VP        Who measured your son's weight?
+              (Tick one box)
+              Depends on: Z068V, zversion (v1_5 papir, v1_5papir_T and v1_5web only)
+              1.       Health visitor / school doctor / own GP
+              2.       Other person
+              9.       Undefined
+
+Insert your daughter's waist measurement (where she is most slender)?
+Z069T         Waist:      l l l l cm             Date for measurement:   l l   l l l l l l l    Z069TDTO
+                                                                                 (dd/mm/yyyy)
+           Page 29
+
+           Questions about your daughter's strengths and weaknesses
+Please consider whether the below statements are Not true, Partly true or Very true of your daughter. Please
+answer all the questions, even if you are in doubt or feel that they are not meaningful in relation to your
+daughter's age. Your answers should relate to your daughter's behaviour within the past 6 months. NB!
+Questions on the following pages have been recoded to march the SDQ classification (© Goodman, 1999)
+(Tick one box on each line)
+
+                                                                                                       Un-
+                                                                               Not    Partly   Very
+                                                                                                       de-
+                                                                               true    true    true
+                                                                                                      fined
+
+Z070_01            Considerate of other people's feelings                      1.      2.       3.     9.
+
+Z070_02            Restless, overactive, cannot stay still for long            1.      2.       3.     9.
+                   Often complains of headaches, stomach-aches or sick-
+Z070_03                                                                        1.      2.       3.     9.
+                   ness
+                   Shares readily with other children (treats, toys, pencils
+Z070_04                                                                        1.      2.       3.     9.
+                   etc.)
+
+Z070_05            Often has temper tantrums or hot tempers                    1.      2.       3.     9.
+
+Z070_06            Rather solitary, tends to play alone                        1.      2.       3.     9.
+
+Z070_07            Generally obedient, usually does what adults request        1.      2.       3.     9.
+
+Z070_08            Many worries, often seems worried                           1.      2.       3.     9.
+
+Z070_09            Helpful if someone is hurt, upset or feeling ill            1.      2.       3.     9.
+
+Z070_10            Constantly fidgeting or squirming                           1.      2.       3.     9.
+
+Z070_11            Has at least one good friend                                1.      2.       3.     9.
+
+Z070_12            Often fights with other children or bullies them            1.      2.       3.     9.
+
+Z070_13            Often unhappy ,down-hearted or tearful                      1.      2.       3.     9.
+
+Z070_14            Generally liked by other children                           1.      2.       3.     9.
+
+Z070_15            Easily distracted, concentration wanders                    1.      2.       3.     9.
+                   Nervous or clingy in new situations, easily loses confi-
+Z070_16                                                                        1.      2.       3.     9.
+                   dence
+
+Z070_17            Kind to younger children                                    1.      2.       3.     9.
+
+Z070_18            Often lies and cheats                                       1.      2.       3.     9.
+      Page 30
+
+      ...continued
+
+                                                                                            Un-
+                                                                    Not    Partly   Very
+                                                                                            de-
+                                                                    true    true    true
+                                                                                           fined
+
+Z070_19    Picked on and bullied by other children                  1.      2.       3.     9.
+           Often volunteers to help others
+Z070_20                                                             1.      2.       3.     9.
+           (parents, teachers, other children)
+
+Z070_21    Thinks things out before acting                          1.      2.       3.     9.
+
+Z070_22    Steals from home, day-care centre, school or elsewhere   1.      2.       3.     9.
+
+Z070_23    Gets on better with adults than with other children      1.      2.       3.     9.
+
+Z070_24    Many fears, easily scared                                1.      2.       3.     9.
+
+Z070_25    See tasks through to the end, good attention span        1.      2.       3.     9.
+     Page 31
+
+     Questions about your daughter's strengths and weaknesses,
+     recoded
+     The questions Z070_01 - Z070_25 have been recoded to march the SDQ classification (©
+     Goodman, 1999). The below variable values may be used if you wish to use Goodman's scoring
+     algorithms.
+
+                                                                               Not    Partly   Very
+                                                                               true    true    true
+
+Z070_01_sd
+             Considerate of other people's feelings                            0.      1.       2.
+q
+Z070_02_sd
+             Restless, overactive, cannot stay still for long                  0.      1.       2.
+q
+Z070_03_sd
+             Often complains of headaches, stomach-aches or sickness           0.      1.       2.
+q
+Z070_04_sd
+             Shares readily with other children (treats, toys, pencils etc.)   0.      1.       2.
+q
+Z070_05_sd
+             Often has temper tantrums or hot tempers                          0.      1.       2.
+q
+Z070_06_sd
+             Rather solitary, tends to play alone                              0.      1.       2.
+q
+Z070_07_sd
+             Generally obedient, usually does what adults request              2.      1.       0.
+q
+Z070_08_sd
+             Many worries, often seems worried                                 0.      1.       2.
+q
+Z070_09_sd
+             Helpful if someone is hurt, upset or feeling ill                  0.      1.       2.
+q
+Z070_10_sd
+             Constantly fidgeting or squirming                                 0.      1.       2.
+q
+Z070_11_sd
+             Has at least one good friend                                      2.      1.       0.
+q
+Z070_12_sd
+             Often fights with other children or bullies them                  0.      1.       2.
+q
+Z070_13_sd
+             Often unhappy ,down-hearted or tearful                            0.      1.       2.
+q
+Z070_14_sd
+             Generally liked by other children                                 2.      1.       0.
+q
+Z070_15_sd
+             Easily distracted, concentration wanders                          0.      1.       2.
+q
+Z070_16_sd
+             Nervous or clingy in new situations, easily loses confidence      0.      1.       2.
+q
+Z070_17_sd
+             Kind to younger children                                          0.      1.       2.
+q
+Z070_18_sd
+             Often lies and cheats                                             0.      1.       2.
+q
+       Page 32
+
+       ...continued
+
+
+                                                                                   Not      Partly     Very
+                                                                                   true      true      true
+
+Z070_19_sd
+                   Picked on and bullied by other children                          0.        1.        2.
+q
+Z070_20_sd         Often volunteers to help others
+                                                                                    0.        1.        2.
+q                  (parents, teachers, other children)
+Z070_21_sd
+                   Thinks things out before acting                                  2.        1.        0.
+q
+Z070_22_sd
+                   Steals from home, day-care centre, school or elsewhere           0.        1.        2.
+q
+Z070_23_sd
+                   Gets on better with adults than with other children              0.        1.        2.
+q
+Z070_24_sd
+                   Many fears, easily scared                                        0.        1.        2.
+q
+Z070_25_sd
+                   See tasks through to the end, good attention span                2.        1.        0.
+q
+Z071   Overall, do you think that your child has difficulties in one or more of the following areas: emotions,
+       concentration, behaviour or being able to get on with other people??
+       (Tick one box only)
+             1.     No                                   (skip to question ZO76)
+
+             2.     Yes, minor difficulties              (go to next question)
+
+             3.     Yes, definite difficulties           (go to next question)
+
+             4.     Yes, severe difficulties             (go to next question)
+
+             9.     Undefined
+
+Z072   How low has these difficulties been present?
+       (Tick one box only)
+Depends on: Z071
+
+             1.     Less than a month
+             2.     1-5 months
+             3.     6-12 months
+             4.     Over a year
+             9.     Undefined
+             10. Not applicable
+
+Z073   Do the difficulties upset or distress your child?
+       (Tick one box only)
+Depends on: Z071
+
+             1.     Not at all
+             2.     Only a little
+             3.     Quite a lot
+             4.     A great deal
+             9.     Undefined
+             10.    Not applicable
+           Page 33
+
+Do the difficulties interfere with your child's everyday life in the following areas??
+(Tick one box on each line)
+Depends on: Z071
+                                                                                               A                Not
+                                                                 Not at    Only      Quite            Unde-
+                                                                                             great             appli-
+                                                                  all     a little   a lot           defined
+                                                                                             deal              cable
+
+                   Z074_1         Home life?                       1.       2.        3.      4.       9.      10.
+
+                   Z074_2         Friendships                      1.       2.        3.      4.       9.      10.
+
+                   Z074_3         Classroom learning               1.       2.        3.      4.       9.      10.
+
+                   Z074_4         Leisure activities               1.       2.        3.      4.       9.      10.
+
+Z075       Do the difficulties put a burden on you or the family as a whole??
+           (Tick one box)
+Depends on: Z071
+
+                 1.      Not at all
+                 2.      Only a little
+                 3.      Quite a lot
+                 4.  A great deal
+                 9.  Undefined
+                 10. Not applicable
+           Page 34
+
+           About your own childhood
+Which of the following statements best suits your own childhood?
+(Tick one box on each line)
+
+
+                                                                        Not        Partly    Very     Unde-
+                                                                        true        true     true     fined
+
+                    Was restless, "hyperactive", had problems keeping
+Z076_1                                                                   1.         2.           3.     9.
+                    quiet long
+
+Z076_2              Frequent headaches, tummy aches or nausea            1.         2.           3.     9.
+
+Z076_3              Lost temper easily                                   1.         2.           3.     9.
+
+Z076_4              Was a loner, played alone                            1.         2.           3.     9.
+
+Z076_5              Was often worried                                    1.         2.           3.     9.
+
+Z076_6              Had good friends                                     1.         2.           3.     9.
+
+
+
+           About your own and the other biological parent's habits
+Do you or other biological parent smoke?
+(Tick one box on each line)
+
+                                                          Z077DU                      Z077AND
+                                                             You               The other biological parent
+                   1-9 cigarettes/day                         1.                            1.
+                   10-19 cigarettes/day                       2.                            2.
+                   20 or more cigarettes/day                  3.                            3.
+                   Don't know                                 4.                            4.
+                   Non-smoker                                 5.                            5.
+                   Undefined                                  9.                            9.
+
+Have you or the other biological parent smoked since the birth of your daughter?
+(Tick one box on each line)
+                                                          Z078DU                      Z078AND
+                                                             You               The other biological parent
+                   Yes                                        1.                            1.
+                   No                                         2.                            2.
+                   Don't konw                                 3.                            3.
+                   Undefined                                  9.                            9.
+
+Z079       Is your daughter exposed to tobacco smoke in the home?
+           (Tick one box only)
+
+                 1.      Never
+                 2.      Rarely
+                 3.      Often
+                 4.      Daily
+         Page 35
+
+              5.    Don't know
+              9.    Undefined
+
+How many units do you/the other biological parent drink during a normal week?
+(Tick one box on each line)
+                                                        Z080DU                         Z080AND
+                                                           You                  The other biological parent
+               None                                         1.                              1.
+               1-14 units/week                              2.                              2.
+               15-21 units/week                             3.                              3.
+               22-29 units/week                             4.                              4.
+               30 or more units/week                        5.                              5.
+               Don't know                                   6.                              6.
+               Undefined                                    9.                              9.
+
+Insert your/the other biological parent's height and weight and waist measurement?
+                                                                                            The other biolog-
+                                                          You            The other bio-
+                                       You                                                     ical parent
+                                                       Don't know        logical parent
+                                                                                              Don't know
+               Height
+                                   Z081ADU          Z081ADU1 1.          Z081AAND           Z081AAN1 1.
+
+               Weight
+                                   Z081BDU          Z081BDU1 1.          Z081BAND           Z081BAN1 1.
+               Waist meas-         Z081CDU          Z081CDU1 1.          Z081CAND           Z081CAN1 1.
+               urement*
+
+Z081GRAV        *Is the biological mother visibly pregnant again?
+Depends on: zversion (v1_4web, v1_5 papir, v1_5papir_T and v1_5web only)
+              1.    Yes
+              2.  No
+              9.  Undefined
+              10. Not applicable
+
+
+rawZ081tmdu     Due date, if any, you,                              date: l l   l l l l l l l
+Depends on: Z081BDU, Z081BAND, zversion (v1_4web only)
+
+rawZ081tman     Due date, if any, other biological parent           date: l l   l l l l l l l
+Depends on: Z081BDU, Z081BAND, zversion (v1_4web only)
+
+Z081tm          Validated due date
+Depends on: Z081BDU, Z081BAND, rawZ081tmdu, rawZ081tman, zversion (v1_4 web only)
+           Page 36
+
+Z112 (life-style health conditions) and Z113 (year of diagnosis) have been moved to
+keep the Z-values un numeric order.
+
+
+
+
+Insert your/the other biological parent's birth weight
+
+                                                            You                 The other biological parent
+                   Birth weight                           Z082ADU                     Z082AAND
+                   Don't know                            Z082BDU 1.                 Z082BAND 1.
+
+If you are/the other biological parent is aware of your birth weight, where did you get this information from?
+(Tick one box on each line)
+
+                                                          Z083DU                        Z083AND
+                                                            You                 The other biological parent
+                   From birth certificate                    1.                              1.
+                   From mother                               2.                              2.
+                   From other source                         3.                              3.
+                   Don't know                                4.                              4.
+                   Undefined                                 9.                              9.
+
+Were you/the other biological parent born prematurely?
+(Tick one box on each line)
+
+                                                          Z085DU                        Z085AND
+                                                            You                 The other biological parent
+                   Yes                                       1.                              1.
+                   No                                        2.                              2.
+                   Don't know                                3.                              3.
+                   Undefined                                 9.                              9.
+         Page 37
+
+         About the parents' situation
+Are you/the other biological parent employed?
+(Tick one box in each column)
+                                                           Z085DU                      Z085AND
+                                                               You              The other biological parent
+                37 hours/week or more                           1.                          1.
+                30-36 hours/week                                2.                          2.
+                15-29 hours/week                                3.                          3.
+                Less than 15 hours/week                         4.                          4.
+                Full time student                               5.                          5.
+                Unemployed                                      6.                          6.
+                Don't know                                      7.                          7.
+                Undefined                                      99.                         99.
+
+Z086     Do you know the Christian names of your closest neighbours?
+         (Tick one box only)
+
+               1.     Yes, 1-4 of them
+               2.     Yes, 5-9 of them
+              3.      Yes, 10 or more of them
+              4.      No
+              9.      Undefined
+
+Z087     Do you take part in local social activities?
+         (Tick one box only)
+
+               1.     Yes, often
+               2.     Yes, sometimes
+               3.     Rarely or never
+               9.     Undefined
+
+Z088     Do you take part in organisational work?
+         (Tick one box only)
+
+               1.     Yes, a lot
+               2.     Yes, a little
+               3.     Rarely or never
+               9.     Undefined
+
+Z089     Have you had a psychiatric illness or bad nerves since birth?
+               1.     Yes                               (go to next question)
+
+               2.     No                                (go to question Z093)
+
+               3.     Don't know                        (go to question Z093)
+
+               4.     Prefer not to answer              (go to question Z093)
+
+               9.     Undefined
+           Page 38
+
+Z090   Have you been in contact with a doctor or psychologist because of this?
+Depends on: Z089
+                 1.        Yes
+                 2.        No
+                 3.        Don't know
+                 4.        Prefer not to answer
+                 9.  Undefined
+                 10. Not applicable
+
+Z091   Have you ever been hospitalised because of this illness?
+Depends on: Z089
+                 1.        Yes
+                 2.        No
+                 3.        Don't know
+                 4.        Prefer not to answer
+                 9.  Undefined
+                 10. Not applicable
+Which type of illness were you suffering from?
+(Tick appropriate boxes)
+Depends on: Z089
+Z092_01          1.        Alcohol misuse
+Z092_02          1.        Anxiety
+Z092_03          1.        Depression
+Z092_04          1.        Family problems
+Z092_05          1.        Postnatal depression
+Z092_06          1.        Crisis after death/stillbirth
+Z092_07          1.        Life crisis
+Z092_08          1.        Manic depression
+Z092_09          1.        Neurosis
+Z092_10          1.        Childhood/Child Psychiatric Disorder
+Z092_11          1.        Psychosis (schizophrenia, delusions)
+Z092_12          1.        Suicide attempt
+Z092_13          1.        Eating disorder (anorexia, bulimia)
+Z092_14          1.        Substance misuse
+Z092_15          1.        Other: _____________ Z092A __________________________________________
+Z092_16          1.        Don't know
+Z092_17          1.        Prefer not to answer
+         Page 39
+
+         About mobile phones
+         (to be answered only by child's biological mother - otherwise skip to Z100)
+
+
+Z093     When did you start using a mobile phone?
+         (Tick one box only)
+
+              1.      I have never been using a mobile phone        (go to question 100)
+
+              2.      Less than 5 years ago                         (go to question 100)
+
+              3.      5-9 years ago                                 (go to next question)
+
+              4.      More than 10 years ago                        (go to next question)
+
+               9.     Undefined
+
+Z094     Did you use a mobile phone when you were pregnant with your daughter?
+         (Tick one box only)
+Depends on: Z093
+
+               1.     Yes                  (go to next question)
+               2.     No                   (go to question 100)
+
+               3.     Don't know           (go to question 100)
+
+               9.     Undefined
+               10. Not applicable
+
+Z095     When did you use the mobile phone?
+         (Tick appropriate boxes)
+Depends on: Z093, Z094
+
+Z095_1        1.      Don't know
+                        st     rd
+Z095_2        1.      1 - 3 month
+                        th     th
+Z095_3        1.      4 - 6 month
+                        th
+Z095_4        1.      7 month - delivery
+
+Z096     How many times a day on average did you speak on the phone while pregnant?
+         (Messages do not count)
+         (Tick one box only)
+Depends on: Z093, Z094
+
+              1.      0-1 times
+              2.      2-3 times
+              3.      4-6 times
+              4.      7 or more times a day
+              5.      Don't know
+              9.      Undefined
+               10. Not applicable
+Z097     Where did you carry your mobile while pregnant?
+         (Tick one box only)
+Depends on: Z093, Z094
+
+              1.      In trouser pocket
+              2.      In pocket of dress
+              3.      In my bag
+           Page 40
+
+                 4.        Other: ____________________ Z097A_____________________________________
+                 9.        Undefined
+                 10. Not applicable
+
+Z098       Was the mobile on while you had it on you?
+           (Tick one box only)
+Depends on: Z093, Z094
+
+                 1.        Yes, all the time
+                 2.        Yes, 50 - 99% of the time
+                 3.        Yes, but less than 50% of the time
+                 4.  No, never or almost never
+                 9.  Undefined
+                 10. Not applicable
+
+Z099   Did you have an earpiece for your mobile?
+       (Tick one box only)
+Depends on: Z093, Z094
+
+                 1.        Yes, but I rarely used it
+                 2.        Yes, I used it often
+                 3.        No
+                 9.  Undefined
+                 10. Not applicable
+
+Z100       Does your daughter use a mobile phone? (Messages do not count)
+           (Tick one box only)
+
+                 1.        No, never
+                 2.        Yes, but less than 1 hour/week
+                 3.        Yes, more than 1 hour/week
+                 9.        Undefined
+
+Is your home telephone...
+(Tick appropriate boxes)
+
+Z101_1           1.        mobile telephone                      (skip to next page)
+Z101_2           1.        an ordinary telephone with a cable    (skip to next page)
+Z101_3           1.        a wireless telephone                  (go to next question)
+
+
+Z102   Does your daughter use the wireless telephone more than 1 hour/day?
+       (Tick one box only)
+Depends on: Z101_3
+
+                 1.        Yes
+                 2.        No
+                 3.        Don't know
+                 9.        Undefined
+      Page 41
+
+      The below motor questions were added in v. 1.5 of the questionnaire and were inserted between
+      Z005 (age at first day-care) og Z006 (language development)
+
+
+      About your son's motor skills
+      Most of the questions in this questionnaire are about motor skills, i.e. the movements your son can
+      perform with his hands or his body. As your son matures, the coordination of his movements will
+      continue to improve. When answering the questions below, it is important that you compare him
+      with other children of the same age.
+
+      Do you find the following statements true of your son, when you compare him with other children of
+      the same age?
+      Depends on: Zversion (v1_5 paper, v1_5paper_T and v1_5web only)
+
+                                                                  Not                Fairly            Very
+                                                                          A little
+                                                                  true                true    True     true
+                                                                           true
+
+           Your child throws a ball in the same controlled
+Z110_01    and accurate fashion as other children the same        1.        2.        3.       4.           5.
+           age.
+           Your child catches a small ball (e.g., tennis ball
+Z110_02    size) just as well as other children when it is        1.        2.        3.       4.           5.
+           thrown from a distance of 6 to 8 feet.
+           Your child hits an approaching ball or birdie with a
+Z110_03    bat or racquet as accurately as other children the     1.        2.        3.       4.           5.
+           same age.
+           Your child jumps as easily over obstacles found
+Z110_04    in garden or play environment as other children        1.        2.        3.       4.           5.
+           the same age.
+
+           Your child runs as fast and in a similar way to
+Z110_05                                                           1.        2.        3.       4.           5.
+           other children of the same sex and age
+
+           Your child can control his movements just as well
+           as other children of the same age, and accom-
+           plish what he sets out to do. For example, when
+Z110_06                                                           1.        2.        3.       4.           5.
+           he wants to build a hideout (with cardboard boxes
+           or cushions etc.), a tower of blocks or other toys
+           or when he moves around playground equipment.
+
+           Your child can draw and write just as quickly as
+Z110_07                                                           1.        2.        3.       4.           5.
+           the other children in the class.
+           Your child's printing or writing letters, numbers
+           and words is legible, precise and accurate or, if
+Z110_08    your child is not yet printing, colors and draws in    1.        2.        3.       4.           5.
+           a coordinated way, and draws things that you can
+           recognize.
+           Your child uses appropriate effort or tension when
+           drawing, printing or writing (no excessive pres-
+Z110_09                                                           1.        2.        3.       4.           5.
+           sure or tightness of grasp, writing not too heavy
+           or dark, or too light).
+
+           Your child cuts out pictures and shapes as accu-
+Z110_10                                                           1.        2.        3.       4.           5.
+           rately and easily as other children the same age.
+
+            © B.N. Wilson, 2005
+      Page 42
+
+
+      ...continued
+
+      Do you find the following statements true of your son, when you compare him with other children of
+      the same age?
+
+
+                                                                 Not                Fairly            Very
+                                                                         A little
+                                                                 true                true    True     true
+                                                                          true
+
+           Your child learns new motor tasks (e.g., swim-
+           ming, rollerblading) easily and does not require
+Z110_11                                                          1.        2.        3.       4.       5.
+           more practice or time than others to achieve the
+           same level of skill
+           Your child can easily move around without bump-
+Z110_12    ing in to and upsetting/breaking things. He is not    1.        2.        3.       4.       5.
+           clumsier than other children his age.
+           Your child is as quick and good at tidying up, put-
+Z110_13    ting on shoes, tying shoes, dressing, etc. as other   1.        2.        3.       4.       5.
+           children the same age.
+           Your child is interested in and likes participating
+Z110_14    in sports or active games requiring good motor        1.        2.        3.       4.       5.
+           skills.
+
+           Your child can sit for as long periods of time as
+Z110_15    other children the same age, without getting tired,   1.        2.        3.       4.       5.
+           slouching or "falling" off the chair.
+
+          © B.N. Wilson, 2005
+           Page 43
+
+           I version 1.5 the dietary table from v. 1.4 was replaced by the below table.
+           In the questionnaire this table is found between the Z008 (starting school) and the Z010 (allergies
+           diagnosed by doctor). The original variable values have been recoded to match the new table.
+
+
+           About your daughter's dietary habits
+           Which of the following statements best describe your daughter's dietary habits during the past
+           year?
+
+How often has she eaten the following meals and foods during the past year?
+(Tick one box on each line)
+
+                                    4 or                                                           6 or      Less
+                                                   6-7                               Less
+                                    sev-   2-3            4-5    2-3           2-3                more       than          Not
+                                                  times                Onc           than
+                                    eral times           time   time         times                times    once a          ap-
+                                                    a                  ea            once   Ne-                    Unde-
+                                   times a day            sa     sa             a                    a     week or         pli-
+                                                  week                 wee             a    ver                    fined
+                                   a day (v. 1.5         wee    wee          mont                 week      never          cabl
+                                                 (v. 1.5                k            mont
+                                  (v. 1.5 only)            k      k             h                 (v.1.4    (v.1.4          e
+                                                  only)                                h
+                                   only)                                                           only)     only)
+
+ Z111A          Breakfast                          3.    4.      5.    6.     7.      8.    9.              11.    99.
+
+ Z111B          Lunch                              3.    4.      5.    6.     7.      8.    9.              11.    99.
+
+ Z111C          Dinner                             3.    4.      5.    6.     7.      8.    9.              11.    99.
+
+ Z111D          Snacks              1.     2.      3.    4.      5.    6.     7.      8.    9.    10.       11.    99.
+                Cold meats
+ Z111E          for lunch                          3.    4.      5.    6.     7.      8.    9.                     99. 100.
+                (v. 1.5 only)
+                Meat at dinner
+ Z111F          time                               3.    4.      5.    6.     7.      8.    9.                     99. 100.
+                (v. 1.5 only)
+                Fish for lunch
+ Z111G          (v. 1.5 only)                      3.    4.      5.    6.     7.      8.    9.                     99. 100.
+                Fish for dinner
+ Z111H          (v. 1.5 only)                      3.    4.      5.    6.     7.      8.    9.                     99. 100.
+
+ Z111I          Milk                1.     2.      3.    4.      5.    6.     7.      8.    9.    10.       11.    99.
+                Lemonade or
+ Z111J          sugary soft         1.     2.      3.    4.      5.    6.     7.      8.    9.    10.       11.    99.
+                drink
+                Light lemon-
+                ade or non
+ Z111K          sugary soft         1.     2.      3.    4.      5.    6.     7.      8.    9.                     99. 100.
+                drink
+                (v. 1.5 only)
+
+ Z111L          Fruit               1.     2.      3.    4.      5.    6.     7.      8.    9.    10.       11.    99.
+                Vegetables
+                (raw, baked,
+ Z111M          boiled, fried,      1.     2.      3.    4.      5.    6.     7.      8.    9.    10.       11.    99.
+                in casseroles)
+                Ice cream,
+ Z111N          sweets, choc-       1.     2.      3.    4.      5.    6.     7.      8.    9.    10.       11.    99.
+                olate or cake
+                He eats "fast
+ Z111O          food"                                    4.      5.    6.                         10.       11.    99. 100.
+                (v.1.4 only)
+         Page 44
+
+         These questions were added in v. 1.5 and were inserted between Z081 (parents' height, weight
+         and waist circumference) and Z082 (parents' birthweight)
+
+Has your doctor diagnosed you or the other biological parent with the following:
+Depends on: zversion (v1_5 papir, v1_5papir_T and v1_5web only)
+
+                                                           You                The other biological parent
+               High blood pressure                   Z112ADU 1.                     Z112AAND       1.
+               High cholesterol                      Z112BDU 1.                     Z112BAND       1.
+               Type 2 diabetes                       Z112CDU 1.                     Z112CAND       1.
+               None of them                          Z112DDU 1.                     Z112DAND       1.
+               Don't know                            Z112EDU 1.                     Z112EAND       1.
+
+If yes, please state the year you were first diagnosed?
+Depends on: Z112, zversion (v1_5 papir, v1_5papir_T and v1_5web only)
+
+                                                                             The other      The other bio-
+                                                              You,
+                                            You                            biological pa-   logical parent,
+                                                           don't know
+                                                                                   rent       don't know
+               High blood pressure      Z113ADU         Z113ADU1 1. Z113AAND Z113AAN1 1.
+               High cholesterol         Z113BDU         Z113BDU1 1. Z113BAND Z113BAN1 1.
+               Type 2 diabetes          Z113CDU         Z113CDU1 1. Z113CAND Z113CAN1 1.
+       Page 45
+
+       You have now finished this questionnaire.
+
+       We hope that we may contact you again when your daughter is older. This contact may be by
+       email. If you consent to this, please state your email address below (your mail address is of course
+       strictly confidential).
+
+       I can be contacted at the following address (write clearly):
+
+EMAIL _______________________@______________________________
+
+
+       Comments and supplementary information
+
+KOMMTAR
+            ___________________________________________________________________________
+
+       _______________________________________________________________________________
+
+       _______________________________________________________________________________
+
+       _______________________________________________________________________________
+
+       _______________________________________________________________________________
+
+       _______________________________________________________________________________
+
+       _______________________________________________________________________________
+
+       Thank you very much!
+
+
+
+       Remember to return the questionnaire in the stamped addressed envelope provided.
+
+
+
+       Yours sincerely
+
+
+
+
+       Joern Olsen, Project manager
+
+
+       "The Danish National Birth Cohort" - Follow-up survey
+       Danish Epidemiology Science Center
+       Statens Serum Institut
+       Artillerivej 5
+       2300 Copenhagen S
+       bsmb@ssi.dk
+       www.bsmb.dk
+       Tph. 3268 8121
+
+       Read more about The Danish National Birth Cohort at www.bsmb.dk
+

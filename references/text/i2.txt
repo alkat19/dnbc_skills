@@ -1,0 +1,3868 @@
+Code book for the 2nd interview (30th week of gestation)
+
+Revised of:
+Anne Marie Nybo Andersen, professor
+Pernille Stemann Larsen, post-doc
+Line Stenmann Kantsø, student assistant
+
+Section of Epidemiology, Institute of Public Health, University of Copenhagen
+
+Date of revision: 27.08.2018
+
+Documentation and guidance
+All variables start with an B and contain three chiffers (e.g. B000). The answer categories are listed starting with
+1.
+
+In most questions, the "undefined" variable has been given code 9, and the "irrelevant" variables has been given
+the code 10. 11 code for "irrelevant in this version, as the question was not asked". However, in questions with
+10 or more answer categories these variables have been given code 99, 100 and 101. In continuing variables,
+which can include the value 99, the codes 999 and 1000 are used. In date variables code 99999999 and
+100000000 are used.
+
+If BSTADGRA = 2 or 3, the values for irrelevant are given in all the following questions.
+
+If a question is dependent on a previous answer a note is written in Concolas (e.g. B001, Dependent on
+B000) above the question. Likewise it is specified which question the respondent jumps to if the following
+questions depend on the answer of the question concerned (e.g. → B002).
+
+Variable names ending with a letter (e.g. B002A) is a sub question of the previous question where it does not
+make sense to assign the question a new name.
+
+
+
+
+ 30 weekrs interview           Navn: SK30l.DOC                  Skemaansv. AMN                       Side 1
+ Master list with gestation weeks coded as follows:
+ Bxxx     In which week(s) of gestation have you ........?
+
+ Master list with gestation weeks
+ Bxxx_1 week 1                    0. no 1. yes
+ Bxxx_2 week 2                    0. no 1. yes
+ Bxxx_3 week 3                    0. no 1. yes
+ Bxxx_4 week 4                    0. no 1. yes
+ Bxxx_5 week 5                    0. no 1. yes
+ Bxxx_6 week 6                    0. no 1. yes
+ Bxxx_7 week 7                    0. no 1. yes
+ Bxxx_8 week 8                    0. no 1. yes
+ Bxxx_9 week 9                    0. no 1. yes
+ Bxxx_10 week 10                  0. no 1. yes
+ Bxxx_11 week 11                  0. no 1. yes
+ Bxxx_12 week 12                  0. no 1. yes
+ Bxxx_13 week 13                  0. no 1. yes
+ Bxxx_14 week 14                  0. no 1. yes
+ Bxxx_15 week 15                  0. no 1. yes
+ Bxxx_16 week 16                  0. no 1. yes
+ Bxxx_17 week 17                  0. no 1. yes
+ Bxxx_18 week 18                  0. no 1. yes
+ Bxxx_19 week 19                  0. no 1. yes
+ Bxxx_20 week 20                  0. no 1. yes
+ Bxxx_21 week 21                  0. no 1. yes
+ Bxxx_22 week 22                  0. no 1. yes
+ Bxxx_23 week 23                  0. no 1. yes
+ Bxxx_24 week 24                  0. no 1. yes
+ Bxxx_25 week 25                  0. no 1. yes
+ Bxxx_26 week 26                  0. no 1. yes
+ Bxxx_27 week 27                  0. no 1. yes
+ Bxxx_28 week 28                  0. no 1. yes
+ Bxxx_29 week 29                  0. no 1. yes
+ Bxxx_30 week 30                  0. no 1. yes
+ Bxxx_31 week 31                  0. no 1. yes
+ Bxxx_32 week 32                  0. no 1. yes
+ Bxxx_33 week 33                  0. no 1. yes
+ Bxxx_34 week 34                  0. no 1. yes
+ Bxxx_35 week 35                  0. no 1. yes
+ Bxxx_36 week 36                  0. no 1. yes
+ Bxxx_37 week 37                  0. no 1. yes
+ Bxxx_38 week 38                  0. no 1. yes
+ Bxxx_39 week 39                  0. no 1. yes
+ Bxxx_40 week 40                  0. no 1. yes
+ Bxxx_41 do not know              0. no 1. yes
+ Bxxx_42 do not wish to answer 0. no 1. yes
+
+The master list above is used in questions referring to time (see example underneath):
+
+
+
+
+ 30 weekrs interview       Navn: SK30l.DOC              Skemaansv. AMN                   Side 2
+BINTROA:       Interviewer ID
+
+BINTDATO: Date of interview
+
+BVERSION: Version 1-6
+
+GRAVNR:        Woman's pregnancy ID in the investigation
+
+LBNR:          Serial number (the woman's ID in the investigation
+
+LOBGRAV: Identification number of the pregnancy
+
+
+
+
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN   Side 3
+INTRODUCTION
+
+Hello, my name is
+Could I please speak to                                          ?
+
+Hello my name is                                  , I am calling from the investigation #Better
+Health for Mother and Child"
+
+Thank you for wanting to participate in this investigation. Would it be convenient for you to
+be interviewed now?
+                                 If NO, please agree on another time for the interview
+
+
+BSTADGRA
+First of all, are you still pregnant?       1. Yes
+                                            2. No → BIKKEGRA
+                                            3. Do not want to answer → slut
+
+Well, fine.
+I would like to begin by telling you a little about this interview.
+It will last approximately 10 to 15 minutes.
+Participation is voluntary.
+I have professional secrecy and your answers will be treated with confidence.
+It is important that your answers be as briefly and precisely as possible.
+
+
+
+
+30 weekrs interview       Navn: SK30l.DOC             Skemaansv. AMN                 Side 4
+BIKKEGRA Why are you no longer pregnant?
+                      1. Did you have an induced abortion?
+                                Please excuse me for having troubled you. I shall see to it
+                                that you are not contacted anymore by this investigation.
+                                Goodbye.
+
+                            2. Mola, mola hydatidosa, "cancer in embryo"
+                                     This investigation is not suitable for you. Please excuse
+                                     me for having troubled you. I shall see to it that you are
+                                     not contacted anymore by this investigation. Goodbye.
+
+                            3. Gave birth in week 34 or later
+                                    Unfortunately we did not manage to contact you while
+                                    you were still pergnant. We hope that we may still contact
+                                    you when your child is 6 months old. We will send you a
+                                    postcard with appointment for a new interview when we
+                                    get so far. Please excuse me for having troubled you.
+                                    Goodbye.
+
+                            4. Induced abortion due to disease in child → BIKKEGR4
+                            5. Spontaneous abortion → BIKKEGR4
+                            6. Pregnancy outside uterus → BIKKEGR4
+                            7. Have given birth →BIKKEGR4
+                            8. Have given birth before 30th week of gestation → BIKKEGR4
+                            9. Other, description... → BIKKEGR4
+                            10. Do not want to answer → BIKKEGR4
+
+BIKKEGR2 Other, text
+
+BIKKEGR4 Still, I would like to ask you if you would participate in this interview, in spite of what
+          has happened. Your answers will be used for scientific purposes about why pregnan-
+          cies do not always go as planned and this knowledge will be of benefit to others.
+          What will happen then is that an interviewer that is aware of the fact that you are
+          longer pregnant will call you up in the nearest future. Would you be interested in that?
+                           1. yes
+                           Fine, we will call you within the next month. Sorry that I have
+                                   disturbed you now.
+
+                           2. do not know
+                           Well, then I will send you a letter explaining the purpose of this
+                           investigation. Then you can decide. If you do not want to
+                           participate, please indicate so by putting a cross on the letter.
+                           Goodbye.
+
+                            3. no
+                            Then please apologise for the inconvenience. I shall see to it that
+                            you will not be contacted again by the investigation #Better Health
+                            for Mother and Child".
+                            Goodbye.
+
+               Please fill in a green form!
+
+
+
+
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                   Side 5
+B001           When is the birth due to take place?
+                            1. date: dd/mm/yyyy
+                            2. do not know
+                            3. do not wish to answer
+                            9. Undefined
+
+B001A      Date (day month year)
+Dependent on: B001
+
+B001B          So, according to my calculations you are now in week .
+               (Not in version2 and version3)
+                            1. Woman agrees
+                            2. Woman disagrees. She thinks she is in gestation week → B001C
+                            3. do not know
+                            4. do not wish to answer
+                            9. undefined
+                            10. irrelevant
+                            11. Not asked
+
+B001C          The gestation week that the woman herself believes to be in (2-39, 99 = undefined, 100
+               = irrelevant and 101 = Not asked)
+               (Not in version2 and version3)
+               Dependent on: B001B
+
+I will begin the interview by asking you about different medical examinations during
+pregnancy
+
+B002           Have you ben scanned by ultra sound during the pergnancy?
+                           1. yes
+                           2. no →B005
+                           3. do not know →B005
+                           4. do not wish to answer →B005
+                           9. Undefined
+
+B003           How many times have you had an ultra sound scanning during the pregnancy?
+               Dependent on: B002
+                          1.     Times → B003A
+                          2. do not know
+                          3. do not wish to answer
+                          9. Undefined
+                          10. Irrelevant
+
+B003A          Total number of ultra sound scanning(1-99)
+               Dependent on: B003
+
+B004           Have you been scanned within the last month?
+               Dependent on: B002
+                           1. yes
+                           2. no
+                           3. do not know
+                           4. do not wish to answer
+                           9. Undefined
+                           10. Irrelevant
+
+B005           Have you had an amniocentesis?
+                           1. yes
+                           2. no →B008
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                  Side 10
+                            3. do not know →B008
+                            4. do not wish to answer →B008
+                            9. undefined
+                            10. irrelevant
+
+B006           Did the test show normal conditions?
+               Dependent on: B005
+                          1. yes→B008, B011 in version2 and version3
+                          2. no
+                          3. do not know →B008, B011 in version2 and version3
+                          4. do not wish to answer →B008, B011 in version2 and version3
+                          9. undefined
+                          10. irrelevant
+
+B007           What did the test show?
+               Dependent on: B005, B006
+                          1. chromosome deviation, not specified
+                          2. trisomi 13
+                          3. trisomi 18
+                          4. Down syndrom
+                          5. Turners syndrom
+                          6. Klinefelder syndrom
+                          7. tripel x syndrom
+                          8. fragilt x
+                          9. other chromosone disease → B007A
+                          10. cystisc fibrosis
+                          11. muscular dystrophy
+                          12. other disease → B007B
+                          13. do not know
+                          14. do not wish to answer
+                          99. udefined
+                          100 irrelevant
+
+B007A          Name of other chromosome disease, txt
+               Dependent on: B007
+
+B007B          name of other heriditary disease, txt
+               Dependent on: B007
+
+B008           Did you have a biopsy taken from the placenta?
+               (Not in version2 and version3)
+                            1. yes
+                            2. no →B011
+                            3. do not know →B011
+                            4. do not wish to answer →B011
+                            9. undefined
+                            10 irrelevant
+                            11 Not asked
+
+B009           Did the biopsy show normal conditions?
+               (Not in the version2 and version3)
+               Dependent on: B008
+                          1. yes →B011
+                          2. no
+                          3. do not know →B011
+                          4. do not wish to answer →B011
+30 weekrs interview         Navn: SK30l.DOC             Skemaansv. AMN             Side 11
+                            5. Undefined
+                            6. Irrelevant
+                            7. Not asked
+
+B010           What did the biopsy show?
+               (not in version2 and version3)
+               Dependent on: B008, B009
+                          1. Chromosome deviation, unspecified
+                          2. trisomi 13
+                          3. trisomi 18
+                          4. Down syndrom
+                          5. Turners syndrom
+                          6. Klinefelder syndrom
+                          7. tripel x syndrom
+                          8. fragilt x
+                          9. other chromosome disease →B010A
+                          10. cystic fibrosis
+                          11. muscular dystrophy
+                          12. other disease → B010B
+                          13. do not know
+                          14. do not wish to answer
+                          99. undefined
+                          100 irrelevant
+                          101 not asked
+
+B010A          Name of other chromosome disease, txt
+               Dependent on: B010
+
+B010B          Name of other heriditary disease, txt
+               Dependent on: B010
+
+B011           Have you been x-rayed during pregnancy?
+                           1. yes
+                           2. no →B015
+                           3. do not know →B015
+                           4. do not wish to answer →B015
+                           9. undefined
+
+B012           How many times have you been x-rayed during pregnancy?
+               Dependent on: B011
+                          1.      times → B012A
+                          2. do not know
+                          3. do not wish to answer
+                          9. Undefined
+                          10 Irrelevant
+
+B012A          Total number of x-rays (1-99, 999 = undefined, 1000=irrelevant)
+               Dependent on: B012
+
+B013           Where have you had the x-ray?
+               Dependent on: B011
+                           B013_1 head, cranium
+                           B013_2 teeth
+                           B013_3 lungs
+                           B013_4 stomach
+                           B013_5 arms
+30 weekrs interview         Navn: SK30l.DOC             Skemaansv. AMN           Side 12
+                            B013_6 legs
+                            B013_7 breasts, mammograhy
+                            B013_8 other → B013A
+                            B013_9 do not know
+                            B013_10 do not wish to answer
+
+B013A          Other, txt
+               Dependent on: B013
+
+B014           In which gestion week(s) did you have the x-ray?
+               Dependent on: B011
+                          B014_1-B014_42 (see master list)
+
+B015           Did you have any internal examination, i.e. the doctor/midwife maual inspection of the
+               collum of uterus, during pregnancy?
+                             1. yes
+                             2. no →B017
+                             3. do not know →B017
+                             4. do not wish to answer →B017
+                             5. undefined
+
+B016           How many times?
+               Dependent on: B015
+                          1. 1 time
+                          2. 2 times
+                          3. 3 times
+                          4. 4 times
+                          5. more than 4 times
+                          6. do not know
+                          7. do not wish to answer
+                          9. udefined
+                          10 irrelevant
+
+The next two questions are about worrying
+
+B017           Do you worry about the coming birth? You can answer: not at all, a little, very much.
+                           1. not at all
+                           2. a little
+                           3. very much
+                           4. do not know
+                           5. do not wish to answer
+                           9. undefined
+
+B018           Do you worry about your unborn child's health? You can answer: not at all, a little,
+               very much.
+                           1. not at all
+                           2. a little
+                           3. very much
+                           4. do not know
+                           5. do not wish to answer
+                           9. Undefined
+
+And now for questions about other events in relation to your pregnancy.
+
+B019           How many kilos have you gained during pregnancy by now?
+                           1.       Kilos →B019A
+                           2. lost        kilos → B019B
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                    Side 13
+                            3. same weight as before pregnancy
+                            4. do not know
+                            5. do not wish to answer
+                            9. Undefined
+                            10 Irrelevant
+
+B019A          total kilos gain (1-99, 99 = undefined, 1000= irrelevant)
+               Dependent on: B019
+
+B019B          total kilos loss (1-99, 99=undefined, 1000=irirelevant)
+               Dependent on: B019
+
+B020           Have you had bleedings from vagina at any time during pregnancy?
+                           1. yes
+                           2. no →B025
+                           3. do not know →B025
+                           4. do not wish to answer →B025
+                           9. undefined
+                           10 Irrelevant
+
+B021           For how many days have you had bleedings from vagina?
+               Dependent on: B020
+                          1.       Days → B021A
+                          2. 1 day
+                          3. 2-4 days
+                          4. more than 4 days
+                          5. do not know
+                          6. do not wish to answer
+                          9. Undefined
+                          10. Irrelevant
+
+B021A          Total number of days, bleeding (1-30)
+               Dependent on: B021
+
+B022           In which gestation week(s) did you bleed?
+               Dependent on: B020
+                            B022_1-B022_42 (see master list)
+
+B023           How much did you bleed when the bleeding was at its most? Was it spots or more?
+               Dependent on: B020
+                          1. spots
+                          2. more than spots
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 Irrelevant
+
+B024           Do you know the reason why you were bleeding?
+               Dependent on: B020
+                          1. do not know the reason
+                          2. risk of spontaneous abortion
+                          3. placenta praevia
+                          4. abruptio/ablatio placentae
+                          5. preterm labour
+                          6. Wound in cervix uteri, mucosa hemorrage
+                          7. coitus
+                          8. other causes         → B024A
+30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN             Side 14
+                            9. do not know
+                            10. do not wish to answer
+                            11. undefined
+                            12. irrelevant
+
+B024A          Other reason, txt
+               Dependent on: B024
+
+B025           Have you had any painful Braxton Hicks contractions during pregnancy?
+                           1. yes
+                           2. no →B027
+                           3. do not know →B027
+                           4. do not wish to answer →B027
+                           9. undefined
+
+B026           In which week(s) of gestation?
+               Dependent on: B025
+                          B026_1-B026_42 (see master list)
+
+B027           Have you been in risk of giving preterm birth?
+                           1. yes
+                           2. no →B031
+                           3. do not know →B031
+                           4. do not wish to answer→B031
+                           5. undefined
+
+B028           Did you lose amniotic fluid?
+               Dependent on: B027
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B029           Did you any contractions?
+               Dependent on: B027
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B030           Any signs that your cervix is beginning to open up?
+               Dependent on: B027
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B031           Have you had nauseas during pregnancy?
+                           1. yes
+                           2. no →B033
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                Side 15
+                            3. do not know →B033
+                            4. do not wish to answer →B033
+                            9. undefined
+
+B032           In which week(s) of gestation?
+               Dependent on: B031
+                          B032_1-B032_42 (see master list)
+
+B033           Have you been troubled by vomiting during pregnancy?
+                          1. yes
+                          2. no →B035
+                          3. do not know →B035
+                          4. do not wish to answer →B035
+                          9. undefined
+
+B034           In which week(s) of gestation?
+               Dependent on: B033
+                          B034_1-B034_42 (see master list)
+
+B035           Have you lost weight at any time during pregnancy?
+                           1. yes
+                           2. no →B037
+                           3. do not know →B037
+                           4. do not wish to answer →B037
+                           9. undefined
+
+B036           In what periods during the pregnancy did you loose weight?
+               Dependent on: B035
+                            B036_1-B036_42 (see master list)
+
+B037           Do you expect more than one child?
+                           1. yes
+                           2. no →B040
+                           3. do not know →B040
+                           4. do not wish to answer →B040
+                           9. undefined
+
+
+
+
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN       Side 16
+B037A          Expect
+               Dependent on: B037
+                          1. Twins
+                          2. Triplet
+                          3. Quadruplet
+                          4. Quintuplet or more
+                          9. Undefined
+                          10. Irrelevant
+
+CAVE: Different in former versions.
+
+B038: This question does not exist
+
+B039: This question does not exist
+
+
+Now I will continue with some work-related questions
+
+B040           Have you at any time during pregnancy had a job?
+                           1. Yes(all kinds of work, incl. apprenticeship)
+                           2. no →B051
+                           3. do not know →B051
+                           4. do not wish to answer →B051
+                           5. Undefined
+
+B041           Are your conditions of employment the same as when we had the first interview?
+               Dependent on: B040
+                          1. yes →B047
+                          2. yes, but now I am absent due to illness →B048
+                          3. yes, but I am parttiem absent due to illness →B048
+                          4. no, I am in the same job, but my tasks are different →B043
+                          5. no, I quit my job →B042
+                          6. no, I was fired →B042
+                          7. no, I am now in a new job →B042
+                          8. no, at the time of the last interview I did not have a job, now I have
+                           →B043
+                          9. do not know →B048
+                          10. do not wish to answer →B048
+                          99. Undefined
+                          100 Irrelevant
+
+B042           Are you gainfully employed right now?
+               Dependent on: B040, B041
+                          1. yes
+                          2. no →B046
+                          3. do not know →B047
+                          4. do not wish to answer →B047
+                          9. Undefined
+                          10 Irrelevant
+
+B043           What is your job title?
+               Dependent on: B040 B041 B042
+                          1. Chemist's assistant
+                          2. Bank clerk
+                          3. Bookkeeper
+                          4. Book printer
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                   Side 17
+                           5. Bus driver
+                           6. Shop assistant
+                           7. Shop manager
+                           8. Child-inder
+                           9. Buisness manager
+                           10. EDP assistant
+                           11. Occupational therapist
+                           12. Vocational teacher
+                           13. Lower secondary school teacher
+                           14. Hairdresser
+                           15. Physiotherapist
+                           16. Gardener's assistant
+                           17. Upper secondary school teacher
+                           18. Domestic help
+                           19. Dentist's assistant
+                           20. Office clerk
+                           21. Office head
+                           22. Office worker
+                           23. Kitchen assistant
+                           24. Laboratory technician
+                           25. Warehouse worker
+                           26. Farmer's assistant
+                           27. Doctor
+                           28. Painter
+                           29. Care assistant
+                           30. Post office employee
+                           31. Postman
+                           32. Educationalist
+                           33. Educationalist's assistant
+                           34. Dry cleaner
+                           35. Accountat
+                           36. Sales assistant
+                           37. Secretary
+                           38. Waitress
+                           39. Butcher
+                           40. Slaughthouse worker
+                           41. Social worker
+                           42. Auxilairy nurse
+                           43. Nurse
+                           44. Taxi driver
+                           45. other: job code      → B043A
+                           46. do not know
+                           47. do not wish to answer
+                           99. undefined
+                           100 irrelevant
+
+B043A          4-figured job code (0-9999, 99999 = undefined, 100000=irrelevant)
+               Dependent on: B043, Bversion (only version4, version5 and version6)
+
+B043txt        Other job description, txt
+               Dependent on: B043, B version (only version2 and version3)
+
+B044           What kind of insitution or company do you for? →B047
+               Dependent on: B040 B041 B042
+                            1. Chemist, perfumery, druggist
+                            2. Auto repair
+                            3. Data processing
+                            4. Retail (-5 & 6)
+30 weekrs interview        Navn: SK30l.DOC            Skemaansv. AMN        Side 18
+                           5. Retail (clothes and shoes
+                           6. Retail (furniture)
+                           7. Schools
+                           8. Defense, police, justice
+                           9. Freight
+                           10. Administration (tax)
+                           11. Freight, ports, etc. (NO TRANSPORTATION)
+                           12. Upper secondary school, vocational training
+                           13. Trade with cars, motorbikes, etc
+                           14. Hospitals
+                           15. Hotels, etc.
+                           16. Railways and coaches
+                           17. Air freight
+                           18. Doctors, dentists, veterinary
+                           19. Public administration, counties and state
+                           20. Fiancial institutions
+                           21. Mail service
+                           22. Mortage credit institutions
+                           23. Shipping, freight
+                           24. Shipping, ferries and passengers
+                           25. Advertising and marekting
+                           26. Cleaning
+                           27. Restaurants, etc.
+                           28. Accountancy and bookkeeping
+                           29. Consulting engineers, architects, etc.
+                           30. Gas stations
+                           31. Social institutions, kids and youth
+                           32. Social institutions, adults
+                           33. Specialised food shops
+                           34. Supermarkets, etc.
+                           35. Taxi and trucks
+                           36. Tele communication
+                           37. Department stores
+                           38. Higher education
+                           39. Adult education, etc.
+                           40. Other → B044A
+                           41. do not know
+                           42. do not wish to answer
+                           99. undefined
+                           100 irrelevant
+
+B044A          Other trade, txt
+               Dependent on: B044
+
+B045: This question does not exist
+
+B046           In what week of gestation did you stop working? →B051
+               Dependent on: B040 B041 B042
+                           Master list gestation weeks
+
+B047           Have you at any point during pregnancy been absent due to illness for more than
+               three days?
+               Dependent on: B040 B041 B046
+                          1. yes
+                          2. yes, I am part time absent owing to illness
+                          3. no →B051
+                          4. do not know →B051
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                 Side 19
+                           5. do not wish to answer →B051
+                           9. undefined
+                           10 irrelevant
+
+B048           How many times have you been absent from work for more than tree days?
+               Dependent on: B040 B047
+                          1.       times → B048A
+                          2. do not know →B051
+                          3. do not wish to answer →B051
+                          9. undefined
+                          10 irrelevant
+
+B048A          Number of times on sick leave from work (1-10, 99 = undefined, 100 = irrelevant)
+               Dependent on: B048
+
+B049           State the reasons of absence for the 1st, 2nd, 3rd, .... time?
+               Dependent on: B040 B047 B048
+               (B049xxyy, where xx refers to 1st, 2nd..... episode of illness from B048 and yy refers
+               to the answer category in B049. Variable value 0=no, 1=yes, 9 = undefined, 10 =
+               irrelevant)
+               (Ex. B0490302 refers to the work environment in the third episode of absence
+
+                           B0490101-B0491001 complications in pregnancy
+                           B0490102-B0491002 work environment
+                           B0490103-B0491003 illness, no relation to pregnancy
+                           B0490104-B0491004 other
+                           B0490105-B0491005 do not know
+                           B0490106-B0491006 do not wish to answer
+
+B049A_1-10 Other reasons for absence, txt
+           Dependent on: B049
+
+B049B_1-10 What were the complications in relation to pregnancy?
+           Dependent on B049
+                       1. complication → B049C
+                       2. do not know
+                       3. do not wish to answer
+                       9. undefined
+                       10 irrelevant
+
+B049C_1-10 Complication in relation to the pregnancy, txt
+           Dependent on: B049B
+
+B049D_1-10 What were the factors of work environment?
+           Dependent on: B049
+                       1. Factors → B049E
+                       2. do not know
+                       3. do not wish to answer
+                       9. undefined
+                       10 irrelevant
+
+B049E_1-10 work environment factors, txt
+           Dependent on: B049D
+B050       In which weeks of gestation were you absent due to illness?
+           Dependent on: B040 B046 B047 B048
+                       B050_1-B050_42 (see master list)
+
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                  Side 20
+Thank you. Now follows a couple of questions about diet and vitamins
+
+B051           Have you taken any vitamins during pregnancy?
+                           1. yes
+                           2. no →B055
+                           3. do not know →B055
+                           4. do not wish to answer →B055
+                           9. undefined
+
+B052           The name of the vitamins?
+               Dependent on: B051
+                          B052_1 ABCDE Multi Vitamin
+                          B052_2 ABCDE+Mineral
+                          B052_3 ABCDE+Selen+Chrom
+                          B052_4 Apovit Multivitamin mineral
+                          B052_5 Baby-me-now
+                          B052_6 Bio Vinci
+                          B052_7 Bio Vinci m.jern
+                          B052_8 Bio Vinci m. jern u. betacaroten
+                          B052_9 Bio Vinci u. betacaroten
+                          B052_10 Bioforce
+                          B052_11 Duroferon
+                          B052_12 Gerimax
+                          B052_13 Gerivital
+                          B052_14 Gravitamin
+                          B052_15 Livol ABCDE Vitaminer
+                          B052_16 Livol Multi
+                          B052_17 Longo Vital
+                          B052_18 Matas Vitamin
+                          B052_19 Matas vitamin meneral super
+                          B052_20 Multi-tabs
+                          B052_21 Multivitamin
+                          B052_22 Omnimin
+                          B052_23 Pregna-Care
+                          B052_24 Stærk B
+                          B052_25 Stærk C
+                          B052_26 Vimax ABCD
+                          B052_27 Vimax super
+                          B052_28 Vitamax
+                          B052_29 Vitaminpille
+                          B052_30 Other → B052A
+                          B052_31 do not know
+                          B052_32 do not wish to answer
+
+B052A          Other name, vitamin, txt
+               Dependent on: B052
+
+B053           In which part of the pregnancy did you take the vitamins (answer in B052)?
+               Dependent on:B051 Bversion (only in version4, version5 and version6)
+               (B053xxyy, where xx refers to the vitamin, in B052 and yy indicates gestational week
+               (see master list). Variable value 0=no, 1=yes, 9 =undefined, 100 = irrelevant)
+
+                            B0530101-B0530142
+                            B0530201-B0530242
+                                   .                                            .
+                                   .
+                                   .
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                  Side 21
+                            B0533001-B0533042
+
+B054_1-30 How often do you remember to take the vitamins?
+          Dependent on: B051, B052 Bversion
+                      1. less than once per week
+                      2.            times per week → B054A
+                      3. every day
+                      4. do not know
+                      5. do not wish to answer
+                      9. undefined
+                      10 irrelevant
+                      11 Not asked
+
+B054A          Number of times per week (1-21)
+               Dependent on: B054 Bversion (only in version2 and version3)
+
+B054A_1-30 Number of times per week (1-21)
+           Dependent on B054 Bversion (only in version4, version5 and verison6)
+
+B055           Have you been taking iron pills during pregnancy?
+                          1. yes
+                          2. no →B057
+                          3. do not know →B057
+                          4. do not wish to answer →B057
+                          9. undefined
+                          10. irrelevant
+
+B056            In what part of the pregnancy did you take iron?
+                Dependent on: B055
+                          B056_1-B056_42 (see master list)
+
+B057           Have you taken folic acid?
+                           1. yes
+                           2. no →B060
+                           3. do not know →B060
+                           4. do not wish to answer →B060
+                           9. undefined
+B058           When was that?
+               Dependent on: B057
+                           B061_1-B061_42 (see master list)
+
+B059           How many pills of folic acid did you take a day?
+                          1.      pills a day → B059A
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B059A          Number of pills per day (1-99)
+               Dependent on: B059
+
+B060           Have you take any liquid fish oil or fish oil tablets during pregnancy?
+                           1. yes
+                           2. no →B064
+                           3. do not know →B064
+                           4. do not wish to answer →B064
+                           9. undefined
+30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN                 Side 22
+B061           In what part of the pregnancy did you take fish oil products?
+               Dependent on: B060
+                          B061_1-B061_42 (see master list)
+
+B062           How much fish oil did you take a day?
+               Dependent on: B060
+                          1.      tablets → B062A
+                          2.     table spoons → B062B
+                          3.     Ml → B062C
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B062A          Number of tablets per day (1-10)
+               Dependent on: B062
+
+B062B          Number of table spoons per day (1-10)
+               Dependent on: B062
+
+B062C          Total ml. per day (1-99)
+               Dependent on: B062
+
+B063           Do you remember the name of the fish oil product?
+               Dependent on: B060
+                          1. yes,           → B063A
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B063A          Name of fish oil product, txt
+               Dependent on : B063
+
+From B064 to B067D runs in a loop of max.10. That means that when you reach B067D, you will
+have to start all over from B064 once again until the answer is no longer yes, or until the loop has
+run 10 times. The variables are named with the loop number at the end (ex. B064_3 means the 3rd
+time the question B046 is being asked)
+
+B064_1-10 Have you taken other dietary supplements during pregnancy?
+                       1. yes
+                       2. no →B068
+                       3. do not know →B068
+                       4. do not wish to answer →B068
+                       9. undefined
+
+B065_1-10 What was the name of the dietary supplement?
+             Dependent on: B064
+                         1. name → B065A
+                         2. do not know
+                         3. do not wish to answer
+                         9. undefined
+                         10 irrelevant
+
+
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                 Side 23
+B065A_1-10 Name of dietary supplement, txt
+           Dependent on: B065
+
+B066           In which periods of the pregnancy did you take the dietary supplement.?
+               Dependent on: B064
+               (B066xxyy, where xx refers to the loop number and yy indicates the gestional week
+               (see master list). Variable value: 0=no, 1=yes, 9 = undefined, 10 = irrelevant)
+
+                            B0660101-B0660142
+                            B0660201-B0660242
+                                   .
+                                   .
+                                   .
+                            B0660901-B0660942
+                            B0661001-B0661042
+
+B067_1-10 How much did you take per day?
+          Dependent on: B064
+                     1.     pills per day →B067A
+                     2.     drops per day → B067B
+                     3.     table spoons → B067C
+                     4. andet:              → B067D
+                     5. do not know
+                     6. do not wish to answer
+                     9. undefined
+                     10 irrelevant
+
+B067A.1-10 Number of pills per day (1-10)
+           Dependent on: B067
+
+B067B_1-10 Number of drops per day (1-10)
+           Dependent on: B067
+
+B067C_1-10 Number of table spoons per day (1-99)
+           Dependent on: B067
+
+B067D_1-10 Other quantity of dietary supplement, txt
+           Dependent on: B067
+
+B068           Are you a vegetarian?
+                           1. yes
+                           2. no →B070
+                           3. do not know →B070
+                           4. do not wish to answer →B070
+                           9. undefined
+
+B069           What kind of vegetarian?
+               Dependent on: B068
+                          1. vegetarian, + fish and poultyr
+                          2. vegetarian, + milk, eggs, lacto-ovo-veg
+                          3. only diet from plants (vegan)
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                   Side 24
+B070           How often do you eat ecological food? Your answer can be: as often as possible from
+               time to time, almost never, or never.
+                             1. as often as possible
+                             2. from time to time
+                             3. almost never
+                             4. never
+                             5. do not know
+                             6. do not wish to answer
+                             9. undefined
+                             10 irrelevant
+
+If 2 or 3 in B069, please skip B071-B073B.
+
+B071           How often do you eat fish as a hot meal?
+               Dependent on: B069
+                           1.     times per week →B071A
+                           2.     times per month → B071B
+                           3. less than once per month
+                           4. never
+                           5. do not know
+                           6. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+B071A          Number of times per week fish (1-7)
+               Dependent on: B071
+B071B          Number of times per months fish (1-31)
+               Dependent on: B071
+
+B072           How often do you eat fish on bread/ fish sandwich?
+               Dependent on: B069
+                           1.     times per week →B072A
+                           2.     times per month → B072B
+                           3. less than once per month
+                           4. never
+                           5. do not know
+                           6. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+B072A          Number of times per week (1-7)
+               Dependent on: B072
+
+B072B          Number of times per month (1-31)
+               Dependent on: B072
+
+B073           How often do you eat fish in pasta salads or green salads?
+               Dependent on: B069
+                           1.     times per week →B073A
+                           2.     times per month → B073B
+                           3. less than once per month
+                           4. never
+                           5. do not know
+                           6. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                 Side 25
+B073A          Number of times per week (1-7)
+               Dependent on: B073
+
+B073B          Number of times per month (1-31)
+               Dependent on: B073
+
+Now, we have a series of questions about your smoking and drinking habits during
+pregnancy
+
+B074           Have you smoked since the last interview?
+                          1. yes
+                          2. no →B080
+                          3. do not know →B080
+                          4. do not wish to answer →B080
+                          9. undefined
+
+B075           Do you smoke now?
+               Dependent on: B074
+                          1. yes, every day
+                          2. yes, less than every day
+                          3. no
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B076           Have you had any periods of at least 1 week since the last interview where you did
+               not smoke?
+               Dependent on: B074
+                          1. yes
+                          2. no →B078
+                          3. do not know →B078
+                          4. do not wish to answer →B078
+                          9. undefined
+                          10 irrelevant
+
+B077           In what weeks of gestation did you not smoke?
+               Dependent on: B074 B076
+                          B077_1-B077_42 (see master list)
+
+B078           Which is the brand you smoke the most?
+adssdsds       Dependent on: B074
+                            1. Cecil Rød, Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 9 mg
+                            2. Cecil grøn,Tar 10 mg, Nicotine 0,8 mg Carbon monoxide 7 mg
+                            3. Kings hvid Tar 10 mg, Nicotine 0,7 mg Carbon monoxide 7 mg,
+                            4. Kings gul, Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg
+                            5. Look grøn, Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg
+                            6. Look light, Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 8 mg,
+                            7. Look rød Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg,
+                            8. Look Ultra Light Tar 6 mg, Nicotine 0,6 mg Carbon monoxide 6 mg,
+                            9. Lucky strike, Tar 12 mg, Nicotine 0,9 mg
+                            10. Prince Light, Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 8 mg
+                            11. Prince Light 100 Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 7 mg,
+                            12. Prince Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg,
+                            13. Prince 100, Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg
+                            14. Prince grøn,Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 8 mg,
+
+30 weekrs interview         Navn: SK30l.DOC                Skemaansv. AMN                     Side 26
+                              15. Prince ultralight, Tar 6 mg, Nicotine 0,5 mg Carbon monoxide 7 mg
+                              16. Queens, Tar 10 mg, Nicotine 0,7 mg Carbon monoxide 7 mg
+                              17. Rocky Mountain, Tar 10 mg, Nicotine 0,8 mg Carbon monoxide 10 mg
+                              18. Rulletobak
+                              19. Savoy, Tar 5 mg, Nicotine 0,5 mg Carbon monoxide 6 mg
+                              20. Savoy Light Tar 3mg, Nicotine 0,3 mg Carbon monoxide 6 mg
+                              21. Savoy Ultra Light Tar 1 mg, Nicotine 0,1 mg Carbon monoxide 2 mg
+                              22. Other → B078A
+                              23. do not know
+                              99. do not want to answer
+                              100 undefined irrelevant
+
+Source: Nicotine, Tar og Carbon monoxide House of Price' home page. For Lucky Strike magasin M!' home page, test
+
+
+
+B078A          Other cigarette brand, txt
+               Dependent on: B078
+
+B079           How much did you smoke on average?
+               Dependent on: B074
+                          B079_1 cigarettes per day
+                          B079_2 cigarettes per week
+                          B079_3 pipes per day
+                          B079_4 cheroots per day
+                          B079_5 cigars per day
+                          B079_6 do not know
+                          B079_7 do not wish to answer
+
+B079A          Number of cigarettes per day (1-99)
+               Dependent on: B079
+
+B079B          Number of cigarettes per week (1-99)
+               Dependent on: B079
+
+B079C          Number of pipes per day (1-99)
+               Dependent on: B079
+
+B079D          Number of cheroots per day (1-99)
+               Dependent on: B079
+
+B079E          Number of cigars per day (1-99)
+               Dependent on: B079
+
+B080           Have you been using nicotine gum, patches or inhalator since the last interview?
+                          1. yes
+                          2. no →B582
+                          3. do not know →B582
+                          4. do not wish to answer →B582
+                          9. undefined
+                          11 irrelevant
+
+B081           What did you use?
+               Dependent on: B080
+                          B081_1 nicotine patches
+                          B081_2 nicotine gum
+                          B081_3 inhalator
+                          B081_4 do not know
+30 weekrs interview           Navn: SK30l.DOC                  Skemaansv. AMN                        Side 27
+                            B081_5 do not wish to answer
+
+B082           In what gestation week(s) did you use (answer in B081)?
+               Dependent on: B080
+               (B082xxyy, where xx refers to the answer in B081 and yy indicates the gestation
+               week (see master list). Variable value 0=no, 1=yes, 9 = undefined, 10 = irrelevant,
+               11 = not asked)
+
+                            B0820101-B0820142
+                            B0820201-B0820242
+                            B0820301-B0820342
+
+B582           How many hours per day do you spent in rooms where you can smell tobacco
+               smoke?
+                         1.
+                         2. do not know →B083
+                         3. do not wish to answer →B083
+                         9. undefined
+
+B582A          Dependent on: B582
+                          1. no time
+                          2. less than 30 minutes
+                          3. ½ hour - < 2 hours
+                          4. 2 hours - < 4 hours
+                          5. 4 hours - < 6 hours
+                          6. 6 hours - < 8 hours
+                          7. 8 hours - < 10 hours
+                          8. 10 hours - < 12 hours
+                          9. 12 hours - < 14 hours
+                          10. 14 hours - < 16 hours
+                          11. 16 hours - < 18 hours
+                          12. 18 hours - < 20 hours
+                          13. 20 hours - < 22 hours
+                          14. 22 hours - < 24 hours
+                          15. 24 hours
+                          99. Undefined
+                          100 Irrelevant
+
+And now for questions about your present consumption of different kinds of beverage.
+
+B083           How many cups of coffee do you drink per day?
+               (1 mug = 2 cups 1 pot = 8 cups = 1 litre)
+                           1.     Cups → B083A
+                           2. < 1 cup per day
+                           3. never drink coffee
+                           4. do not know
+                           5. do not wish to answer
+                           9. undefined
+
+B083A          Number of coffee per day (1-99)
+               Dependent on: B083
+
+B084           How many cups of tea do you drink per day?
+               (1 mug = 2 cups 1 pot = 8 cups = 1 litre) (
+                           1.     cups → B084A
+                           2. < 1 per day
+                           3. do not drink tea
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                   Side 28
+                            4. do not know
+                            5. do not wish to answer
+                            9. undefined
+
+B084A          Number of cups per day (1-99)
+               Dependent on: B084
+
+B085           How many regular beers do you drink per week?
+               (1 light beer = 1/2 regular beer 1 strong beer = 2 regular beers)
+                             1.     beers → B085A
+                             2. < 1 per week
+                             3. no beers
+                             4. do not know
+                             5. do not wish to answer
+                             9. undefined
+
+B085A          Number of beers per week (1-99)
+               Dependent on: B085
+
+B086           How many glasses of wine do you drink per week?
+                          1.     glasses of wine → B086A
+                          2. < 1 per week
+                          3. I never have wine →B088
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+
+B086A          Number of glasses of wine per week (1-99)
+               Dependent on: B086
+
+B087           What do you drink the most, red wine or white wine?
+               Dependent on: B086
+                           1. red wine
+                           2. white wine
+                           3. half red half white
+                           4. do not know
+                           5. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+B088           How many glasses of spirits do you drink per week?
+                          1.     glasses of spirits → B088A
+                          2. < 1 per week
+                          3. no spirits
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B088A          number of glasses of spirits per week (1-99)
+               Dependent on: B088
+
+B089           During all your time as pregnant - also in the very beginning - how many times do
+               you think that you have had 5 drinks or more in one evening or in one event?
+                            1. never →B091
+                            2.     times
+                            3. do not know →B091
+                            4. do not wish to answer →B091
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                  Side 29
+                           9. undefined
+
+B089A          Number of episodes with 5 or more drinks (0-30)
+               Dependent on: B089
+
+B090_1-30 What gestation week for the 1st, 2nd, 3rd, etc.... time?
+          Dependent on: B089 B089A
+                       Master list with gestation weeks
+
+B091           How much cola do you drink per week ?
+                          1. Never drink cola
+                          2. less than 1 litre per week
+                          3. 1 liter or more per week
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+
+B092           Have you been smoking hashish during pregnancy?
+                          1. yes
+                          2. no →B095
+                          3. do not know →B095
+                          4. do not wish to answer →B095
+                          9. undefined
+
+B093           How often have you been smoking hashish during pregnancy?
+               Dependent on: B092
+                          1. every day
+                          2.    times per week → B093A
+                          3.    times per month → B093B
+                          4. less than once per month
+                          5. do not know
+                          6. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B093A          Number of times per week (1-30)
+               Dependent on B093
+
+B093B          Number of times per week (1-30)
+               Dependent on B093
+
+B094           In what weeks of gestation did you smoke hashish?
+               Dependent on B092
+                           B094_1-B094_42 (se master list)
+
+From B095 to B098 runs in aloop of max 5. That means that when you reach to B098, please
+repeat from B095 until the answer is no longer yes, or until the loop has run 5 times. The variables
+are named with the loop number at the end (ex. B095_3 means that it is hte 3rd time B095 is being
+asked)
+
+B095_1-5       Did you take other narcotic drugs during pregnancy?
+                            1. yes
+                            2. no →B099
+                            3. do not know →B099
+                            4. do not wish to answer →B099
+                            9. undefined
+
+30 weekrs interview        Navn: SK30l.DOC                Skemaansv. AMN                Side 30
+B096_1-5       What kind of narcotic drugs?
+               Dependent on B095
+                            1. name of the drug → B096A
+                            2. do not know
+                            3. do not wish to answer
+                            9. undefined
+                            10 irrelevant
+
+B096A_1-5 name of drug, text
+          Dependent on B096
+
+B097_1-5       How often did you take (answer in B096A) while pregnant?
+                           1. every day
+                           2.     times per week → B097A
+                           3.     times per month → B097B
+                           4. less than once per month
+                           5. do not know
+                           6. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+B097A_1-5 Number of times per week (1-30)
+          Dependent on B097
+
+B097B_1-5 Number of times per month(1-30)
+          Dependent on B095
+B098      In what gestation weeks did you use the drug?
+          Dependent on B095
+          (B098xxyy, where xx refers to the loop number yy indicates the week of gestation
+          (see master list). Variable value 0=no, 1=yes)
+
+                             B0980101-B0980142
+                             B0980201-B0980242
+                             B0980301-B0980342
+                             B0980401-B0980442
+                             B0980501-B0980542
+
+
+Now for questions about worries and strains during pregnancy
+
+Have you felt worried or burdened during pregnancy by any of the things I am going to ask now?
+You may answer: no, a little or a lot?
+
+B099A          Have you been burdened by financial troubles?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+B099B          Have you been burdened by your housing situation?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+B099C          Have you been burdened by your work situation
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+B099D          Have you been burdened by the relations to your partner
+               1. no 2. a little 3. a lot 4. no partner 5. do not know 6. do not wish to answer
+
+B099E          Have you been burdened by relations to family and friends
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+30 weekrs interview         Navn: SK30l.DOC                Skemaansv. AMN                    Side 31
+B099F          Have you been burdened by the pregnancy itself
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+B099G          Have you been burdened by disease yourself
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+B099H          Have you been burdened by disease in family or close friends
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+B099I          Have you been burdened by other things
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer
+
+Now for questions about how you have been feeling during pregnancy. You may answer no,
+        a little or a lot.
+
+B100           Have you felt freightened and anxious without reason?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+B101           Have you felt that the future looked hopeless?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B102           Have you felt under a constant pressure?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B103           Have you felt nervous or at unease?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B104           Have you felt sad and blue?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B105           Have you been more touchy and quick-tempered than usually?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B106           Have you felt that everything was a big effort?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B107           Have you felt tense and exhausted?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B108           Have you felt that the demands made on you were too big?
+               1. no 2. a little 3. a lot 4. do not know 5. do not wish to answer 9. undefined
+
+B109           On average, how do you feel that you have been during pregnancy?
+               You may answer: very well, well, fair, bad, and very bad.
+                           1. very well
+                           2. well
+                           3. fair
+                           4. bad
+                           5. very bad
+                           6. do not know
+                           7. do not wish to answer
+                           9. undefined
+
+The next part of this interview is about disease that you may have had during pregnancy
+and the medicine you may have taken
+
+B110           Have you had fever while pregnant?
+                          1. Yes
+                          2. yes, but not since the last interview →B116
+30 weekrs interview         Navn: SK30l.DOC                Skemaansv. AMN                    Side 32
+                           3. no →B116
+                           4. do not know →B116
+                           5. do not wish to answer →B116
+                           9. Undefined
+
+B111           How many times have you had episodes of fever during pregnancy?
+               Dependent on: B110
+                          1.     Times → B111A
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B111A          Number of fever episodes (1-10)
+               Dependent on: B111
+
+B112           In what gestation weeks did you have the fever?
+               Dependent on: B110 B111
+               (B112xxyy, where xx refers to fever episode no 1, 2, 3... from B111 and yy indicates
+               the gestation week (see master list). Variable value 0=no, 1=yes, 9=undefined,
+               10=irrelevant)
+                             B1120101-B1120142
+                             B1120201-B1120242
+                                     .
+                                     .
+                                     .
+                             B1121001-B1121042
+
+B113_1-10 For how many days did the fever last?
+           Dependent on: B110 B111
+                      1.     days → B113A
+                      2. do not know
+                      3. do not wish to answer
+                      9. Undefined
+                      10 Irrelevant
+
+B113A_1-10 Number of days with fever (1-99)
+           Dependent on: B113
+
+B114_1-10 The highest temperature?
+           Dependent on: B110 B111
+                        1. ,_oC → B114A
+                        2. did not take the temperature
+                        3. do not know
+                        4. do not wish to answer
+                        9. undefined
+                        10 irrelevant
+
+B114A_1-10 Temperature (30,5 - 45,5, 99=undefined, 100= irrelevant)
+B115       What other symptoms did you have with the fever?
+           For instance, did you have a headache, pain in the stomach, muscles or joints.
+           (B115xxyy, where xx refers to the fever episode from B111 and yy refers to the
+           answer category in B115. Variable value 0=no, 1=yes, 9 =undefined,
+           10=irrelevnt)
+           (Ex. B1150309 refers to stomach pains in the 3rd fever episode)
+           Dependent on: B100 B111
+
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                 Side 33
+                            B1150101-B1151001 bladder
+                            B1150102-B1151002 abseses
+                            B1150103-B1151003 diarrhoea
+                            B1150104-B1151004 cold
+                            B1150105-B1151005 cough
+                            B1150106-B1151006 headache
+                            B1150107-B1151007 pain in joints
+                            B1150108-B1151008 pain in muscles
+                            B1150109-B1151009 pain in stomach
+                            B1150110-B1151010 pain behind the eyes
+                            B1150111-B1151011 sore throat
+                            B1150112-B1151012 vomiting
+                            B1150113-B1151013 tiredness
+                            B1150114-B1151014 eczema
+                            B1150115-B1151015 urinary tract symptoms
+                            B1150116-B1151016 pain in ears
+                            B1150117-B1151017 other →B115A
+                            B1150118-B1151018 ingen
+                            B1150119-B1151019 do not know
+                            B1150120-B1151020 do not wish to answer
+
+B115A_1-10 Other symptomsr, txt
+           Dependent on: B115
+
+
+B116           Have you had diarrhoea during pregnancy (more than three evacuations in 24 hours)
+                          1. yes
+                          2. yes, but not since the last interview →B120
+                          3. no →B120
+                          4. do not know →B120
+                          5. do not wish to answer →B120
+                          9. undefined
+                          10 irrelevant
+
+B117           How many times during pregnancy have you had diarhoea?
+               Dependent on: B116
+                          1.     times →B117A
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B117A          Number of episodes with diarrhoea during pregnancy (1-10)
+               Dependent on: B117
+
+B118_1-10 In what gestation weeks did you have your 1st, 2nd, 3rd..... diarrhoea episode?
+            Dependent on: B116 B117
+                         1.     week → B118A
+                         2. do not know
+                         3. do not wish to answer
+                         9. undefined
+                         10 irrelevant
+
+B118A_1-10 Gestation week (1-40, 99=undefined, 100=irrelevant )
+           Dependent on: B118
+
+B119_1-10 For how many days did you have diarrhoea?
+30 weekrs interview        Navn: SK30l.DOC            Skemaansv. AMN                 Side 34
+               Dependent on: B116 B117
+                          1.     days → B119A
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B119A_1-10 Number of days with diarrhoea (1-99)
+           Dependent on: B119
+
+B120           Have you had any childhood diseases or diseases with skin rash during the
+               pregnancy?
+                          1. yes
+                          2. no →B123
+                          3. do not know →B123
+                          4. do not wish to answer →B123
+                          9. undefined
+
+B121           What childhood disease?
+               Dependent on: B120
+                          B121_1 rubella
+                          B121_2 measles
+                          B121_3 chicken pox
+                          B121_4 mumps
+                          B121_ Parvovirus B19
+                          B121_6 other → B121A
+                          B121_7 do not know
+                          B121_8 do not wish to answer
+
+B121A          Other childhood disease, txt
+               Dependent on: B121
+
+B122           How far into the pregnancy did you have (answer in B121)?
+               (B122xxyy, where xx refers to the answer in B121 and yy indicates the gestation
+               week (see master list). Variable value 0=no, 1=yes, 9=undefined, 10 = irrelevant)
+               Dependent on: B120 B121
+
+                           B1220101-B1220142
+                           B1220201-B1220242
+                                    .
+                                    .
+                                    .
+                           B1220601-B1220642
+B123           Have you had a cold sore/herpes in the lip during pregnancy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+
+B124           Have you had a cold sore or herpes in the genitals during pregnancy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer¨
+                          9. undefined
+
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                   Side 35
+B125           Have you had veneral warts/ condylomata during pregnancy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+
+B126           Have you had cystitis during pregnancy?
+                          1. yes
+                          2. no →B128
+                          3. do not know →B128
+                          4. do not wish to answer →B128
+                          9. undefined
+
+B127           How far into the pregnancy did you have the disease?
+               Dependent on: B126
+                          B127_1-B127_42 (see master list)
+
+B128           Have you had inflammation of the pelvis or kidney during pregnancy?
+                          1. no →B130
+                          2. do not know →B130
+                          3. do not wish to answer →B130
+                          9. undefined
+
+B129           In what gestation weeks did you have the disease?
+                            B129_1-B129_42 (see master list)
+
+B130           Have you had kidney stones during pregnancy?
+                          1. yes
+                          2. no ->B132
+                          3. do not know ->B132
+                          4. do not wish to answer->B132
+
+B131           In what gestation weeks did you have the disease?
+               Dependent on: B130
+                          B131_1-B131_42 (see master list)
+
+B132           Have you had fungal infection in vagina during pregnancy?
+                          1. Yes
+                          2. yes, but not since the last interview →B136
+                          3. no →B136
+                          4. do not know →B136
+                          5. do not wish to answer →B136
+                          9. undefined
+
+B133           Have you been treated for fungal infection in vagina during pregnancy?
+               Dependent on: B132
+                          1. yes
+                          2. no →B135
+                          3. do not know →B135
+                          4. do not wish to answer →B135
+                          9. Undefined
+                          10 Irrelevant
+
+B134           What was the treatment?
+               Dependent on: B132 B133
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                  Side 36
+                           B134_1 suppository →B135
+                           B134_2 tablets →B135
+                           B134_3 cream →B135
+                           B134_4 yoghurt →B135
+                           B134_5 other
+                           B134_6 do not know →B135
+                           B134_7 do not wish to answer →B135
+
+B134A          What other treatment?
+               Dependent on: B134
+                          1. other kinds of treatment → B134A
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B134B          treatment, txt
+               Dependent on: B134A
+
+B135           How far into the pregnancy did you have the disease?
+               Dependent on: B132 B133
+                          B135_1-B135_42 (see master list)
+
+B136           During the pregnancy, did you ever have coughs that lasted for more than 1 week?
+                            1. yes
+                            2. no →B138
+                            3. do not know →B138
+                            4. do not wish to answer →B138
+                            9. undefined
+                            10 irrelevant
+
+B137           In what gestation weeks did you have a long-lasting cough?
+                            B137_1-B137_42 (ses master list)
+
+From B138 to B139 runs in a loop of max.10. That means that when you reach to B139, you must
+start all over again asking B138 until the answer is no longer yes, or until the loop has run 10
+times. The variables are named with the loop number at the end (ex. B138_3 means that it is the
+third time B138 is being asked)
+
+B138_1-10 Have you had inflammations or infections during pregnancy?
+                       1. yes
+                       2. no →B140
+                       3. do not know →B140
+                       4. do not wish to answer →B140
+                       9. undefined
+
+B138A_1-10 What was the name of the inflammation/infection?
+           Dependent on: B138
+                      1. navn → B138B
+                      2. do not know
+                      3. do not wish to answer
+                      9. undefined
+                      10 irrelevant
+
+B138B_1-10 Name of inflammation/infection, txt
+          Dependent on: B138A
+
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                 Side 37
+B139           In what week of gestation did you have the inflammation/infection?
+               (B139xxyy, where xx refers to the loop number and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, 9 =undefined, 10
+               =irrelevant)
+               Dependent on: B138
+
+                            B1390101-B1390142
+                            B1390201-B1390242
+                                   .
+                                   .
+                                   .
+                            B1391001-B1391042
+
+B140            Have you had any vaccinations while pregnant?
+                           1. Yes
+                           2. yes, but not since the last interview→B144
+                           3. no →B144
+                           4. do not know →B144
+                           5. do not wish to answer →B144
+                           9. undefined
+                           10 irrelevant
+
+B141           What was the vaccination for?
+               Dependent on: B140
+                          B141_1. difteritis
+                          B141_2. mumps, parotitis
+                          B141_3. yellow fever
+                          B141_4. hepatitis A food
+                          B141_5. hepatitis B, blood
+                          B141_6. hepatitis, type unknown
+                          B141_7. HiB, hæmophilus B, sort of meningitis
+                          B141_8. influenza
+                          B141_9. encephalitis
+                          B141_10. wooping cough
+                          B141_11. colera
+                          B141_12. meningitis,
+                          B141_13. measles
+                          B141_14. measles, mumps, rubella (MMR)
+                          B141_15. polio, injection
+                          B141_16. polio, drops, sugar
+                          B141_17. phneumococcus
+                          B141_18. rubella
+                          B141_19. chicken pox
+                          B141_20. tetanus
+                          B141_21. thyphoid fever
+                          B141_22. gammaglobulinium, general against infections
+                          B141_23. Other → B141A
+                          B141_24. do not know
+                          B141_25. do not want to answer
+
+B141A          Name of other vaccination, txt
+               Dependent on: B141
+
+B142           (only in version2 and version3)
+
+B142_1-23 Was the vaccination (answer in B141) due to a trip abroad
+           Dependent on: B140 B141
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                  Side 38
+                (only in version4, version5 and version6)
+                             1. yes
+                             2. no
+                             3. do not know
+                             4. do not wish to answer
+                             9. undefined
+                             10 irrelevant
+
+B143_1-23 When was the vaccination (answer B141) given?
+           Dependent on: B140 B141
+                      1. find answer
+                      2. do not know → B144
+                      3. do not wish to answer → B144
+                      9. undefined
+                      10 irrelevant
+
+B143A_1-23 In what month?
+           Dependent on: B140 B143
+                       1. Janauary
+                       2. February
+                       3. March
+                       4. April
+                       5. May
+                       6. June
+                       7. July
+                       8. August
+                       9. September
+                       10. October
+                       11. November
+                       12. December
+                       13. do not know
+                       14. do not wish to answer
+                       99. undefined
+                       100irrelevant
+
+B143B_1-23 In what year?
+           Dependent on: B140 B143
+                        1 .1996
+                        2. 1997
+                        3. 1998
+                        4. 1999
+                        5. 2000
+                        6. 2001
+                        7. 2002
+                        8. do not know
+                        9. do not wish to answer
+                        99 undefined
+                        100 irrelevant
+
+B144           Have you husband or your kids had influenza during your pregnancy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+
+B145           Did you husband or your kids have long-lasting coughs during your pregnancy?
+                           1. yes
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                Side 39
+                           2. no
+                           3. do not know
+                           4. do not wish to answer
+                           9. undefined
+
+B146           Have your husband or kids had diseases with fever and skin rash during your
+               pregnancy?
+                           1. yes
+                           2. no
+                           3. do not know
+                           4. do not wish to answer
+                           9. undefined
+
+B147           Have you ever have hypertension during pregnancy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+
+B148           Did you take medicine against hypertension?
+                            1. Yes
+                            2. no                         (yes B147 →B151, no/do not know/do not
+                                                          want to answer B147 → B154)
+                            3. Do not know                (yes B147 →B151, no/do not know/do not
+                                                          want to answer B147 → B154)
+                            4. Do not want to answer      (yes B147 →B151, no/do not know/do not
+                                                          want to answer B147 → B154)
+                            9. Undefined                  (yes B147 →B151, no/do not know/do not
+                                                          want to answer B147 → B154)
+
+
+
+
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                  Side 40
+B149       What was the name of the medicine against hypertension that you took during
+           pregnancy?
+           Dependent on: B147 B148
+                         B149_1 aldomet
+                         B149_2 dopamet
+                         B149_3 geangin
+                         B149_4 hexaoptin
+                         B149_5 hexapindol
+                         B149_6 isoptin
+                         B149_7 lomir
+                         B149_8 mepolol
+                         B149_9 mepronet
+                         B149_10 metyldopa
+                         B149_11 nepresol
+                         B149_12 pindolol
+                         B149_13 selo-zok
+                         B149_14 seloken
+                         B149_15 trandate
+                         B149_16 veraloc
+                         B149_17 verapimil
+                         B149_18 visken
+                         B149_19 other → B149A
+                         B149_20 do not know
+                         B149_21 do not wish to answer
+
+ B149A          Other medicine, txt
+                Dependent on: B149
+
+ B150           In what weeks of gestation did you take the medicine (answer in B149)?
+                (B150xxyy, where xx refers to answer in B149 and yy indicates the week of gestation
+                (se master list). Variable value 0=no, 1=yes, 9 =undefined, 10=irrelevant)
+                Dependent on: B147 B148
+
+                              B1500101-B1500142
+                              B1500201-B1500242
+                                     .
+                                     .
+                                     .
+                              B1501901-B1501942
+
+ B151           Is your blood pressure still high?
+                Dependent on: B147 B148
+                                1. yes
+                                2. no
+                                3. do not know
+                                4. do not wish to answer
+                                9. undefined
+                                10 irrelevant
+
+ B152           During pregnancy, have you had any pregnancy toxication with increased blood
+                pressure and protein in the urine?
+                Dependent on: B147 B148
+                           1. yes
+                           2. no →B154
+                           3. do not know →B154
+ 30 weekrs interview         Navn: SK30l.DOC            Skemaansv. AMN                   Side 41
+                            4. do not wish to answer →B154
+                            9. undefined
+                            10 irrelevant
+
+B153           In which week of gestation was that diagnosed?
+               Dependent on: B147 B148 B152
+                          1.     week
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B153A          Gestation week (1-40)
+               Dependent on: B153
+
+B154           Have you had diabetes during pregnancy?
+                          1. yes
+                          2. no →B160
+                          3. do not know →B160
+                          4. do not wish to answer →B160
+                          9. undefined
+
+B155           What is the type of diabetes?
+               Dependent on: B154
+                          1. insulin demanding diabetes
+                          2. non-insulin demanding diabetes
+                          3. pregnancy diabetes
+                          4. do not know
+                          5. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B156           Have you taken any medicine to treat diabetes during pregnancy?
+               Dependent on: B154
+                          1. yes
+                          2. no →B160
+                          3. do not know →B160
+                          4. do not wish to answer →B160
+                          9. undefined
+                          10 irrelevant
+
+B157           What medicine did you take?
+               Dependent on: B154 B156
+                          B157_1 Amaryl
+                          B157_2 Arcosal
+                          B157_3 Daonil
+                          B157_4 Diamicron
+                          B157_5 Euglucon
+                          B157_6 Glibenese
+                          B157_7 Glucobay
+                          B157_8 Glucophage
+                          B157_9 Hexaglucon
+                          B157_10 Insulin uspecifik
+                          B157_11 Actrapid
+                          B157_12 Humalog
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN            Side 42
+                            B157_13 Humulin
+                            B157_14 Velosulin
+                            B157_15 Insulatard
+                            B157_16 Monotard
+                            B157_17 Mixtard 10/90
+                            B157_18 Mixtard 20/80
+                            B157_19 Mixtard 30/70
+                            B157_20 Mixtard 40/60
+                            B157_21 Mixtard 50/50
+                            B157_22 Mindiab
+                            B157_23 Orabet
+                            B157_24 Tolbutamid
+                            B157_25 Other →B157A
+                            B157_26 do not know
+                            B157_27 do not wish to answer
+
+B157A          Other medicine for diabetes, txt
+
+               Dependent on: B157
+
+B158           When did you take (answer in B157)?
+               (B158xxyy, where xx refers to the answer in B157 and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, 9 = undefined, 10 = irrelevant)
+               Dependent on: B154 B156 B157
+
+                             B1580101-B1580142
+                             B1580201-B1580242
+                                    .
+                                    .
+                                    .
+                             B1582501-B1582542
+
+B159           How well has your diabetes been regulated during pregnancy?
+               Dependent on: B154 B156
+                          1. well
+                          2. ok
+                          3. bad
+                          4. do not know
+                          5. do not wish to answers
+                          6. undefined
+                          7. irrelevant
+
+B160           Have you had any metabolic diseases during pregnancy?
+                          1. yes
+                          2. no →B166
+                          3. do not know →B166
+                          4. do not wish to answer → B166
+                          9. undefined
+                          10 irrelevant
+
+B161           What is the name of the metabolic disease?
+               Dependent on: B160
+                          1. thepeotoxicose
+                          2. Basedow, Grave's disease
+                          3. toxic adenoma
+                          4. reduced metabolic disorder
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                   Side 43
+                            5. Hashimoto struma
+                            6. iatrogen (after medical treatment e.g. strumectomi or 131I)
+                            7. other → B161A
+                            8. do not know
+                            9. do not want to answer
+                            99 undefined
+                            100 irrelevant
+
+B161A          other metabolic disorder, txt
+               Dependent on: B161
+
+B162           Do you still have the disease?
+               Dependent on: B160
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B163           Did you take any medicine against the disease during the pregnancy?
+               Dependent on: B160
+                          1. yes
+                          2. no →B166
+                          3. do not know →B166
+                          4. do not wish to answer →B166
+                          9. undefined
+                          10 irrelevant
+
+B164           What is the name of the medicine?
+               Dependent on: B160 B163
+                          B164_1 Eltroxin
+                          B164_2 Neo-Mercazole
+                          B164_3 Propyltiouracil
+                          B164_4 Thycapsol
+                          B164_5 Frekven
+                          B164_6 Inderal
+                          B164_7 Propal
+                          B164_8 Propranet
+                          B164_9 Propranolol
+                          B164_10 other → B164A
+                          B164_11 do not know
+                          B164_12 do not wish to answer
+
+B164A          Other medicine against metabolic disorders, txt
+               Dependent on: B160
+
+
+B165           In what week(s) of gestation di you take the medicine (answer in B164)?
+               (B165xxyy, where xx refers to the answer in B164 and yy indicates the week of
+               gestation. Variable value 0=no, 1=yes, 9 =undefined, 10 = irrelevant)
+               Dependent on: B160 B163
+
+                             B1650101-B1650142
+                             B1650201-B1650242
+30 weekrs interview         Navn: SK30l.DOC             Skemaansv. AMN                 Side 44
+                                  .
+                                  .
+                                  .
+                            B1651001-B1651042
+
+B166           Have you had asthma during pregnancy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B167           Did you take medicine against asthma during pregnancy?
+                            1. yes
+                            2. no ->B181
+                            3. do not know →B181
+                            4. do not wish to answer →B181
+                            9. undefined
+
+B168           Was the medicine for inhalatation?
+               Dependent on: B167
+                          1. yes
+                          2. no →B172
+                          3. do not know →B172
+                          4. do not wish to answer →B172
+                          9. undefined
+                          10 irrelevant
+
+B169           What was the name of the medical treatment?
+               Dependent on: B176 B168
+                          B169_1 Adrenalin
+                          B169_2 Aldecin
+                          B169_3 Andion
+                          B169_4 Atrovent
+                          B169_5 Bambec
+                          B169_6 Becloforte
+                          B169_7 Becocent
+                          B169_8 Becotide
+                          B169_9 Berodual
+                          B169_10 Berotec
+                          B169_11 Bricanyl
+                          B169_12 Bumol
+                          B169_13 Escutamol
+                          B169_14 Lomudal
+                          B169_15 Lomuforte
+                          B169_16 Oxivent
+                          B169_17 Pulmadil
+                          B169_18 Respirol
+                          B169_19 Salbulin
+                          B169_20 Salbutamol
+                          B169_21 Salbuvent
+                          B169_22 Serevent
+                          B169_23 Spirocort
+                          B169_24 Tilade
+                          B169_25 Ventoline
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN   Side 45
+                            B169_26 Volmax
+                            B169_27 other kind of inhalation →B169A
+                            B169_28 do not know
+                            B169_29 do not wish to answer
+
+B169A          Other, txt
+               Dependent on: B169
+
+B170           In what week(s) of gestatiion did you use (answer in B169)?
+               (B170xxyy, where xx refers to the anser in B169 and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+               Dependent on: B167 B168
+
+                            B1700101-B1700142
+                            B1700201-B1700242
+                                   .
+                                   .
+                                   .
+                            B1702701-B1702742
+
+B171_1-27 How often did you use (answer B169)?
+           Dependent on: B167 B168 B169
+                        1. every day
+                        2. at least once a week
+                        3. less than once a week
+                        4. do not know
+                        5. do not wish to answer
+                        9. undefined
+                        10 irrelevant
+
+B172           Did you take any tablets against asthma?
+               Dependent on: B167
+                          1. yes
+                          2. no →B176
+                          3. do not know →B176
+                          4. do not wish to answer →B176
+                          9. undefined
+                          10 irrelevant
+
+B173           What was the name of the tablets?
+               Dependent on: B167 B172
+                          B173_1 Bambec
+                          B173_2 Berotec
+                          B173_3 Bricanyl
+                          B173_4 celeston
+                          B173_5 chophyllin
+                          B173_6 decadron
+                          B173_7 delcortin
+                          B173_8 euphyllin
+                          B173_9 hydrocortison
+                          B173_10 Ledercort
+                          B173_11 medrol
+                          B173_12 neophyllin
+                          B173_13 nuelin
+                          B173_14 prednisolon
+                          B173_15 prednison
+30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN                 Side 46
+                            B173_16 pulmo-timelets
+                            B173_17 Respirol
+                            B173_18 Salbuvent
+                            B173_19 Somephyllin
+                            B173_20 teofyllin
+                            B173_21 theo-dur
+                            B173_22 theophyllamin
+                            B173_23 unixan
+                            B173_24 uno-lin
+                            B173_25 Ventoline
+                            B173_26 Volmax
+                            B173_27 Other →B173A
+                            B173_28 do not know
+                            B173_29 do not wish to answer
+
+B173A          Other, txt
+               Dependent on: B173
+
+B174_1-10 Gestations weeks, use (answer inB173)?
+           (B174xxyy, where xx refers to the answer in B173 and yy indicates the week of
+           gestation (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+               Dependent on: B176 B172
+
+                            B1740101-B1740142
+                            B1740201-B1740242
+                                   .
+                                   .
+                                   .
+                            B1742741-B1742742
+
+B175_1-27 How often did you use (answer in B173)?
+           Dependent on: B167 B172 B173
+                        1. every day
+                        2. at least once a week
+                        3. less than once a week
+                        4. do not know
+                        5. do not wish to answer
+                        9. undefined
+                        10 irrelevant
+
+From B176 to B180 runs in a loop of max 5. That means that when you reach B180, you must start
+all over again asking B176 until the answer is no longer yes, or until the loop has run 5 times. The
+variables are named with the loop number at the end (ex. B176_3 means the 3rd time B176 is
+being asked)
+B176_1-5 Have you taken other medicine for asthma that is not counting tablets or medicine for
+              inhalation?
+              Dependent on: B167
+                          1. no →B181
+                          2. do not know →B181
+                          3. do not wish to answer →B181
+                          9. undefined
+                          10 irrelevant
+
+B177_1-5       The name of the medicine?
+               Dependent on: B167 B176
+                           1. name → B177A
+30 weekrs interview         Navn: SK30l.DOC            Skemaansv. AMN                   Side 47
+                             2. do not know
+                             3. do not wish to answer
+                             9. undefined
+                             10 irrelevant
+
+ B177A_1-5 Name of medicine, txt
+           Dependent on: B177
+
+B178_1-5        How did you take (answer in B177A)
+
+                Dependent on: B167 B176 B177
+                           1. mixture
+                           2. suppositories
+                           3. injections
+                           4. other → B178A
+                           5. do not know
+                           6. do not wish to answer
+                           9. undefined
+                           10. irrelevant
+
+ B178A_1-5 Other, txt
+           Dependent on: B178
+
+ B179           I n what week(s) of gestation did you use (answer in B177A)?
+                (B179xxyy, where xx refers to the answer in B177A and yy indicatesthe week of
+                gestation(see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+                Dependent on: B167 B176
+
+                             B1790101-B1790142
+                             B1790201-B1790242
+                             B1790301-B1790342
+                             B1790401-B1790442
+                             B1790501-B1790542
+
+ B180_1-5       How often did you use (asnwer in B177A)??
+                Dependent on: B167 B176 B177
+                            1. every day
+                            2. at least once a week
+                            3. less than once a week
+                            4. do not know
+                            5. do not wish to answer
+                            9. undefined
+                            10 irrelevant
+
+ B181           Have you had any kinds of allergy during pregnancy?
+                           1. Yes
+                           2. no
+                           3. do not know
+                           4. do not wish to answer
+                           9. undefined
+
+ B182           Did you take any medicine against allergy?
+                             1. yes
+                             2. no
+                                (yes 181 →B183; no/do not know/do not want to answer B181 →B186)
+                             3. do not know
+                                (yes 181 →B183; no/do not know/do not want to answer B181 →B186)
+ 30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                   Side 48
+                            4. do not wish to answer
+                               (yes 181→B183; no/do not know/do not want to answer B181 →B186)
+                            9. Undefined
+
+B183           How did the allergy manifest itself?
+               Dependent on: 181 B182
+                          B183_1 hay fever
+                          B183_2 nettle fever
+                          B183_3 allergic cold/running nose
+                          B183_4 skin rash, eczema
+                          B183_5 diarrhoea, stomach pain (gastrointestinal symptoms)
+                          B183_6 trouble to breathe
+                          B183_7 other →B183A
+                          B183_8 do not know
+                          B183_9 do not wish to answer
+
+B183A          Other symptoms of allergy, txt
+               Dependent on: B183
+
+If yes in B182 please answer B184 and B185
+
+B184_1-7       What medicine did you take for (answer in B183)?
+               Dependent on: B182 B183
+
+                            1. name → B184A
+                            2. ingen                 → B186
+                            3. do not know           →B186
+                            4. do not wish to answer → B186
+                            9. undefined
+                            10 irrelevant
+
+B184A_1-7 Name of medicine against allergy, txt
+          Dependent on: B184
+
+B185           In what gestation week(s) did you take (answer in B184A)?
+               (B185xxyy, xx refers to the answer in B184A and yy indicates the week of gestation
+               (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+               Dependent on: B182 B184
+
+                             B1850101-B1850142
+                             B1850201-B1850242
+                                    .
+                                    .
+                                    .
+                             B1850701-B1850742
+
+B186           Have you had any skin disease during pregnancy (not allergy) ?
+                          1. yes
+                          2. no     (If Bversion v2, v3 or v4 →B191)
+                          3. do not know (If Bversion v2, v3 or v4 →B191)
+                          4. do not wish to answer (If Bversion v2, v3 or v4 →B191)
+                          9. undefined
+
+B187           Did you take medicine against the skin disease?
+                            1. yes
+                            2. no
+30 weekrs interview         Navn: SK30l.DOC            Skemaansv. AMN                  Side 49
+                               (yes B186 →B188; no/do not know/do not want to answer B186
+                               →B191)
+                            3. do not know
+                               (yes B186 →B188; no/do not know/want to answer B186 →B191)
+                            4. do not wish to answer
+                               (yes B186 →B188; no/do not know/do not want to answer B186
+                               →B191)
+                            5. undefined
+
+B188           What is the name of the skin disease?
+               Dependent on: B186 B187
+
+                            B188_1       returing absesse, Rosen, inflammation
+                            B188_2       child eczema, prurigo besnier
+                            B188_3       contact eczema
+                            B188_4       psoriasis
+                            B188_5       acne
+                            B188_6       cancer, melanoma
+                            B188_7       other → B188A
+                            B188_8       do not know
+                            B188_9       do not wish to answer
+
+B188A          Other skin disease, txt
+               Dependent on: B188
+
+If yes in B186 please answer B189 and B190
+
+B189_1-7       What medicine did you take for (answer in B188)?
+               Dependent on: B186
+                           1. name → B189A
+                           2. no medicine → B191
+                           3. do not know → B191
+                           4. do not wish to answer → B191
+                           9. undefined
+                           10 irrelevant
+
+B189A_1-7 Name of medicine for skin disease, txt
+           Dependent on: B186
+
+B190           In what week(s) of gestation did you take (answer in B188A)?
+               (B190xxyy, where xx refers to the answer in B189A and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, undefined, 10 =irrelevant)
+               Dependent on: B186
+
+                             B1900101-B1900142
+                             B1900201-B1900242
+                                   .
+                                   .
+                                   .
+                             B1900701-B1900742
+
+B191           Have you had epilepsy during pregnancy?
+                          1. yes
+                          2. no →B195
+                          3. do not know →B195
+                          4. do not wish to answer →B195
+30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN                  Side 50
+                            9. undefined
+                            10 irrelevant
+
+From B192 to B194 runs in a loop of max 10. That means that when you reach B192, you must
+start all over again asking B194 until the answer is no longer yes, or until the loop has run 10
+times. The variables are named with the loop number at the end (ex. B192_3 means the 3rd time
+B192is being asked)
+
+B192_1-10 Have you taken medicine (more) for epilepsy?
+           Dependent on: B191
+
+                            1. yes
+                            2. no →B195
+                            3. do not know →B195
+                            4. do not wish to answer →B195
+                            9. undefined
+                            10 irrelevant
+
+B193_1-10 The name of the medicine?
+           Dependent on: B192
+                       1. name →B193A
+                       2. do not know →B194
+                       3. do not wish to answer→B194
+                       9. undefined
+                       10 irrelevant
+
+B193A_1-10 name of medicine against epilepsy, txt
+           Dependent on: B193
+
+B194           In what week(s) of gestation did you take (answer in B1193A)?
+               (B194xxyy, where xx refers to the loop number and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, 9=undefined 10=irrelevant)
+               Dependent on: B192 B193
+
+                           B1940101-B1940142
+                           B1940201-B1940242
+                                    .
+                                    .
+                                    .
+                            B1941001-B1941042
+B195           Have you suffered from diseases in muscles or joints during pregnancy ?
+                           1. yes
+                           2. no →B201
+                           3. do not know →B201
+                           4. do not wish to answer →B201
+                           9. undefined
+
+B196           What diseases?
+               Dependent on: B195
+                          B196_1 "bad back"
+                          B196_2 disc prolapse
+                          B196_3 arthritis in joints
+                          B196_4 fibromyalgia
+                          B196_5 ostearthritis
+                          B196_6 pain in neck
+                          B196_7 symptoms in arms or legs
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                   Side 51
+                             B196_8 pelvic pain
+                             B196_9 other →B196A
+                             B196_10 do not know
+                             B196_11 do not wish to answer
+
+ B196A          other disease in muscles and joints, txt
+                Dependent on: B196
+
+ B197_1-9       In what week of gestation did you get (answer ini B196)?
+                Dependent on: B195
+                            1.     week → B197A
+                            2. had the disease before pregnancy
+                            3. do not know
+                            4. do not wish to answer
+                            9. undefined
+                            10 irrelevant
+
+ B197A_1-9 Week of gestation (1-40)
+            Dependent on: B197
+
+B198_1-9        Did you take any medicine for (answer in B196)?
+                Dependent on: B195 B196
+                             1. yes
+                             2. no →B201
+                             3. do not know →B201
+                             4. do not wish to answer →B201
+                             9. undefined
+                             10 irrelevant
+
+ B199_1-9       Name of the medicine?
+                Dependent on: B195 B196 B198
+                            1. name →B199A
+                            2. do not know →B200
+                            3. do not wish to answer→B200
+                            9. undefined
+                            10 irrelevant
+
+ B199A_1-9 Name of the medicine, txt
+            Dependent on: B196 B198 B199
+
+ B200           In what weeks of gestation did you take (answer in B199A)?
+                (B200xxyy, where xx refers to the answer in B196 and yy indicates week of gestation
+                (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+                Dependent on: B195 B196 B198
+
+                              B2000101-B2000142
+                              B2000201-B2000242
+                                    .
+                                    .
+                                    .
+                              B2000901-B2000942
+
+ B201           Have you had any mental disorders or "bad nerves" during pregnancy ?
+                           1. Yes
+                           2. no →B206
+                           3. do not know →B206
+ 30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN               Side 52
+                            4. do not wish to answer →B206
+                            9. Undefined
+
+B202           What was it?
+               Dependent on: B201
+
+               B202_1        depression
+               B202_2        bipolar disorder
+               B202_3        neurosis
+               B202_4        anxiety
+               B202_5        related to spirits abuse
+               B202_6        related to medicine or drug abuse
+               B202_7        attempted suicide
+               B202_8        psychosisi (schizofrenia, delusions)
+               B202_9        eating disorder (anorexia, bulimia)
+               B202_10        related to growning up, child psychiatric disorder
+               B202_11       family trouble (as young or grown-up)
+               B202_12        other → B202A
+               B202_13        do not know
+               B202_14        do not wish to answer
+
+B202A          Other, txt
+Dependent on: B202
+
+
+From B203 to B205 runs in a loop of max 10. That means that when you reach B205, you must
+start all over again asking B203 until the answer is no longer yes, or until the loop has run 10
+times. The variables are named with the loop number at the end (ex. B203_3 means the 3rd time
+B192is being asked)
+
+B203_1-10 Did you take medicine (more medicine) during pregnancy for that?
+           Dependent on: B201
+                        1. yes
+                        2. no →B206
+                        3. do not know →B206
+                        4. do not wish to answer →B206
+                        9. undefined
+                        10 irrelevant
+
+B204_1-10 Name of medicine for mental disorder?
+           Dependent on: B201 B203
+                      1. Name → B204A
+                      2. do not know →B205
+                      3. do not wish to answer →B205
+                      9. undefined
+                      10 irrelevant
+
+B204A_1-10 Name of medicine, txt
+           Dependent on: B204
+
+B205           In what weeks of gestation did you take (answer in B199A)?
+               (B205xxyy, where xx refers to the loop number and yy indicates week of gestation
+               (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+               Dependent on: B201 B203
+
+
+
+30 weekrs interview         Navn: SK30l.DOC             Skemaansv. AMN                 Side 53
+                          B2050101-B2050142
+                          B2050201-B2050242
+                                 .
+                                 .
+                                 .
+                          B2051001-B2051042
+
+B206         Have you GP or midwife diagnosed any anaemia during pregnancy?
+                          1. yes
+                          2. no →B211
+                          3. do not know →B211
+                          4. do not wish to answer →B211
+                          9. undefined
+                          10 irrelevant
+
+B207         Anaemia due to what?
+             Dependent on: B206
+                        B207_1 lack of iron
+                        B207_2 lack B12 / folic acid
+                        B207_3 hemorrhage
+                        B207_4 other → B207A
+                        B207_5 do not know → B211
+                        B207_6 do not wish to answer → B211
+
+B207A        Other reason for anaemia, txt
+             Dependent on: B207
+
+B208         Did you take ay medicine for anaemia during pregnancy?
+             Dependent on: B206
+                          1. yes
+                          2. no →B211
+                          3. do not know →B211
+                          4. do not wish to answer →B211
+                          9. undefined
+                          10 irrelevant
+
+B209         What medicine did you take?
+             Dependent on: B206 B208
+                        B209_1 iron pills
+                        B209_2 had a blood transfusion
+                        B209_3 herbal medicine → 208A
+                        B209_4 other → B209B
+                        B209_5 do not know
+                        B209_6 do not wish to answer
+
+B209A Name of herbal medicine, txt
+      Dependent on: B209
+
+B209B Name of other medicine, txt
+      Dependent on: B209
+
+B210         In what weeks of gestation did you take (answer in B209) / have a blood transfusion
+                (B210xxyy, where xx refers to the answer in B209 and yy indicates the week of
+                gestation (see master list). Variable value 0=no, 1=yes, 9=undefined, 10
+                =irrelevant)
+                Dependent on:
+30 weekrs interview          Navn:B206   B208
+                                   SK30l.DOC               Skemaansv. AMN                Side 54
+                             B2100101-B2100142
+                             B2100201-B2100242
+                             B2100301-B2100342
+                             B2100401-B2100442
+
+B211           During pregnancy some women are diagnosed with cell abnormalities in the cervix
+               uteri. Did you have such changes during pregnancy?
+                             1. yes
+                             2. no →B215
+                             3. do not know →B215
+                             4. do not wish to answer →B215
+                             9. undefined
+                             10 irrelevant
+
+B212           Do you know the character of the cell abnormalities?
+               Dependent on: B211
+                          1. light
+                          2. medium
+                          3. serious
+                          4. cancer
+                          5. do not know
+                          6. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+B213           How were you treated?
+               Dependent on: B211
+                          B213_1 no treatment
+                          B213_2 cryo treatment/freezing
+                          B213_3 laser evaporation
+                          B213_4 cryotherapy
+                          B213_5 disappeared by itself
+                          B213_6 other → B213A
+                          B213_7 do not know
+                          B213_8 do not wish to answer
+
+B213A          Other treatment, cell changes, txt
+               Dependent on: B213
+
+B214           Do you still have the cell abnormalities?
+               Dependent on: B211
+                             1. yes
+                             2. no
+                             3. do not know
+                             4. do not wish to answer
+                             9. undefined
+                             10 irrelevant
+
+B215           During pregnancy, have you had any serious disease that we have not yet touched
+               upon, ex. Heart diseases?
+                           1. yes
+                           2. no →B217
+                           3. do not know →B217
+                           4. do not wish to answer →B217
+                           5. undefined
+                           6. irrelevant
+30 weekrs interview         Navn: SK30l.DOC                Skemaansv. AMN             Side 55
+B216           What disease?
+               Dependent on: B215
+                          1. disease
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B216A          Other serious disease, txt
+               Dependent on: B216
+
+B217            Have you had a blood transfusion while pregnant?
+                           1. yes
+                           2. no
+                           3. do not know
+                           4. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+B218           Have you taken any kinds of pain killers, ex. Regular pain killers for headache,
+               stronger pain killers, during pregnancy?
+                            1. yes
+                            2. no →B222
+                            3. do not know →B222
+                            4. do not wish to answer →B222
+
+B219           The name of the pain killer?
+                           B219_1 Abalgin
+                           B219_2 Acetyl-salicylsyre
+                           B219_3 Albyl
+                           B219_4 Aspirin
+                           B219_5 Bonyl
+                           B219_6 Brufen
+                           B219_7 Codyl
+                           B219_8 Contalgin
+                           B219_9 Diclon
+                           B219_10 Doloxene
+                           B219_11 Doltard
+                           B219_12 Felden
+                           B219_13 Gelonida
+                           B219_14 Globentyl
+                           B219_15 Ibumetin
+                           B219_16 Ibuprofen
+                           B219_17 Idotyl
+                           B219_18 Ketogan
+                           B219_19 Kodamid
+                           B219_20 Kodimagnyl
+                           B219_21 Koffein-fenazon
+                           B219_22 Koffeotyl
+                           B219_23 koffipyrin
+                           B219_24 koffisal
+                           B219_25 Magnyl
+                           B219_26 Metadon
+                           B219_27 Naprosyn
+                           B219_28 Naproxen
+                           B219_29 Orudis
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                   Side 56
+                              B219_30 Palfium
+                              B219_31 Pamol
+                              B219_32 Panodil
+                              B219_33 Paracetamol
+                              B219_34 Petidin
+                              B219_35 Pinex
+                              B219_36 Pirkam
+                              B219_37 Prolixan
+                              B219_38 Setamol
+                              B219_39 Surgamyl
+                              B219_40 Tedolan
+                              B219_41 Temgesic
+                              B219_42 Treo
+                              B219_43 Voltaren
+                              B219_44 Zoflam
+                              B219_45 other
+                              →B219A
+                              B219_46 do not know
+                              B219_47 do not wish to answer
+
+B219A                 Other pain killer, txt
+                      Dependent on: B219
+
+B220           In what gestation weeks did you take (answer in B219)?
+               (B220xxyy, where xx refers to the answer in B219 and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, 9=undefined, 10 =irrelevant)
+               Dependent on: B219
+
+                              B2200101-B2200142
+                              B2200201-B2200242
+                                     .
+                                     .
+                                     .
+                              B2204501-B2204542
+
+B221_1-45 How many (answer in B219) did you take all together in a week?
+           Dependent on: B219
+                              1.     pills a week → B221A
+                              2.     pills, total → B122B
+                              3. do not know
+                              4. do not wish to answer
+                              9. undefined
+                              10.irrelevant
+
+B221A_1-45 Number of pills/week (1-99)
+           Dependent on: B221
+
+B221B_1-45 Total number of pills (1-99)
+           Dependent on: B221
+
+
+B222           Have you taken any medication against infection or inflammation during pregnancy,
+               ex. penicillin, sulfa drug, other antibiotics or medicine against fungus?
+                              1. yes
+                              2. no →B225
+                              3. do not know →B225
+30 weekrs interview           Navn: SK30l.DOC               Skemaansv. AMN               Side 57
+                          4. do not wish to answer →B225
+                          9. undefined
+                          10. irrelevant
+
+B223           Name of the medicine?
+               Dependent on: B222
+
+                          B223_1 abboticin
+                          B223_2 abboticin novum
+                          B223_3 achromycin
+                          B223_4 ampicillin
+                          B223_5 aureomycin
+                          B223_6 bactrim
+                          B223_7 calcipen
+                          B223_8 cefalexin
+                          B223_9 ciproxin
+                          B223_10 dalacin
+                          B223_11 diclosil
+                          B223_12 doktacillin
+                          B223_13 doxycyklin
+                          B223_14 draximox
+                          B223_15 dumocyklin
+                          B223_16 dumoxin
+                          B223_17 ekvacillin
+                          B223_18 elyzol
+                          B223_19 ery-maxin
+                          B223_20 erycin
+                          B223_21 erystrat
+                          B223_22 erythromycin
+                          B223_23 escumycin
+                          B223_24 fasigyn
+                          B223_25 fenoxicillin
+                          B223_26 flagyl
+                          B223_27 flemoxin
+                          B223_28 forilin
+                          B223_29 fucudin
+                          B223_30 heracillin
+                          B223_31 hexabotin
+                          B223_32 imacillin
+                          B223_33 imadrax
+                          B223_34 keflex
+                          B223_35 kefolor
+                          B223_36 lucopenin
+                          B223_37 lucosil
+                          B223_38 metronidazol
+                          B223_39 miraxid
+                          B223_40 oxycyklin
+                          B223_41 oxytetracyklin
+                          B223_42 oxytetral
+                          B223_43 penglobe
+                          B223_44 penicillin
+                          B223_45 pondocillin
+                          B223_46 primcillin
+                          B223_47 rocolin
+                          B223_48 rovamycin
+                          B223_49 selexid
+30 weekrs interview       Navn: SK30l.DOC          Skemaansv. AMN   Side 58
+                            B223_50 spectramox
+                            B223_51 sulfa
+                            B223_52 sulfametizol
+                            B223_53 sulfametizol med trimetoprim
+                            B223_54 sulfotrim
+                            B223_55 surlid
+                            B223_56 syntrizin
+                            B223_57 tarivid
+                            B223_58 temac
+                            B223_59 tetracyklin
+                            B223_60 tetralysal
+                            B223_61 vancocin
+                            B223_62 velosef
+                            B223_63 vepicombin
+                            B223_64 vibramycin
+                            B223_65 zinnat
+                            B223_66 zoroxin
+                            B223_67 other → B223A:
+                            B223_68 do not know
+                            B223_69 do not wish to answer
+
+B223A          Antibiotics, other, txt
+               Dependent on: B223
+B224           Took (answer in B223) in gestation week(s)?
+
+
+               (B224xxyy, where xx refers to the answer in B223 and yy indicates the gestation
+               week (see master list). Variable value 0=no, 1=yes, 9=undefined, 10 =irrelevant)
+               Dependent on: B222 B223
+
+                            B2240101-B2240142
+                            B2240201-B2240242
+                                   .
+                                   .
+                                   .
+                            B2246701-B2246742
+
+B225           Have you taken any sleeping medicine, sedatives or medicine against depression, or
+               other medicine that affects the mood or mental state of mind during pregnancy?
+                            1. yes
+                            2. no →B229
+                            3. do not know →B229
+                            4. do not wish to answer →B229
+                            9. undefined
+                            10.irrelevant
+
+B226           The name of the medicine against depression?
+               Dependent on: B225
+
+                            B226_1 alopam
+                            B226_2 amitriptylin
+                            B226_3 anafranil
+                            B226_4 apodorm
+                            B226_5 apozepam
+                            B226_6 aururix
+                            B226_7 bromam
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                  Side 59
+                      B226_8 cipramil
+                      B226_9 ciprex
+                      B226_10 concordin
+                      B226_11 dalmadorm
+                      B226_12 demolox
+                      B226_13 diazepam
+                      B226_14 dumolid
+                      B226_15 dumozolam
+                      B226_16 esucos
+                      B226_17 euhypnos
+                      B226_18 Fenemal
+                      B226_19 fevarin
+                      B226_20 flunipam
+                      B226_21 flunitrazepam
+                      B226_22 fluoxetin
+                      B226_23 flutin
+                      B226_24 foncil
+                      B226_25 fondozal
+                      B226_26 fondur
+                      B226_27 fontex
+                      B226_28 fonzac
+                      B226_29 frisium
+                      B226_30 halcion
+                      B226_31 hexalid
+                      B226_32 imipramin
+                      B226_33 imiprex
+                      B226_34 imovane
+                      B226_35 insidon
+                      B226_36 klomipramin
+                      B226_37 klopoxid
+                      B226_38 lendorm
+                      B226_39 lexotan
+                      B226_40 librium
+                      B226_41 Litarex
+                      B226_42 lithionit
+                      B226_43 lithiumkarbonat
+                      B226_44 ludiomil
+                      B226_45 marplan
+                      B226_46 mianserin
+                      B226_47 mogadon
+                      B226_48 navane
+                      B226_49 nitrazepam
+                      B226_50 noritren
+                      B226_51 normison
+                      B226_52 nozinan
+                      B226_53 oxabenz
+                      B226_54 oxazepam
+                      B226_55 pacisyn
+                      B226_56 pertofran
+                      B226_57 plegicil
+                      B226_58 pronoctan
+                      B226_59 prothiaden
+                      B226_60 prozil
+                      B226_61 quitaxon
+                      B226_62 rilamir
+                      B226_63 risolid
+                      B226_64 rohypnol
+30 weekrs interview   Navn: SK30l.DOC           Skemaansv. AMN   Side 60
+                            B226_65 ronal
+                            B226_66 roscal
+                            B226_67 roxiam
+                            B226_68 saroten
+                            B226_69 sensival
+                            B226_70 serenase
+                            B226_71 serepax
+                            B226_72 seroxat
+                            B226_73 sinquan
+                            B226_74 stesolid
+                            B226_75 stilnoct
+                            B226_76 surmontil
+                            B226_77 tafil
+                            B226_78 temazepam
+                            B226_79 temesta
+                            B226_80 terfluzin
+                            B226_81 tofranil
+                            B226_82 tolvon
+                            B226_83 tranxen
+                            B226_84 triazolam
+                            B226_85 triazoral
+                            B226_86 tryptizol
+                            B226_87 tymelyt
+                            B226_88 valaxona
+                            B226_89 valium
+                            B226_90 zoloft
+                            B226_91 other → B226A
+                            B226_92 do not know
+                            B226_93 do not wish to answer
+
+B226A          Other psycho active drug, txt
+               Dependent on: B226
+
+B227           In what weeks of gestation did you take the medicine?
+               (B227xxyy, where xx refers to the answer in B226 and yy indicates the week of
+               gestation (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+               Dependent on: B225 B226
+
+                            B2270101-B2270142
+                            B2270201-B2270242
+                                   .
+                                   .
+                                   .
+                            B2279101-B2279142
+
+B228_1-91 How many (answer in B226) did you take all together per week?
+           Dependent on: B225 B226
+                      1.     pills, total → B228A
+                      2.     pills per week → B228B
+                      3. do not know
+                      4. do not wish to answer
+                      9. undefined
+                      10.irrelevant
+
+B228A_1-91 Total number of pills (1-99)
+           Dependent on: B228
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN                  Side 61
+B228B_1-91 Number of pills per week (1-99)
+           Dependent on: B228
+
+From B229 to B231 runs in a loop of max 10. That means that when you reach B231, you must
+start all over again asking B229 until the answer is no longer yes, or until the loop has run 10
+times. The variables are named with the loop number at the end (ex. B229_3 means the 3rd time
+B192is being asked)
+
+B229_1-10 Have you taken any medicine during pregnancy that we have not yet talked about?
+                       1. yes
+                       2. no →B232
+                       3. do not know →B232
+                       4. do not wish to answer →B232
+                       9. undefined
+                       10 irrelevant
+
+B230_1-10 What medicine?
+           Dependent on: B229
+                       1. name → B230A
+                       2. do not know → B231
+                       3. do not wish to answer →B231
+                       9. undefined
+                       10 irrelevant
+
+B230A_1-10 name of medicine other medicine, txt
+           Dependent on: B230
+
+B231           In what weeks of gestation did you take that other medicine?
+               (B231xxyy, where xx refers to the loop number and yy indicates the gestation week
+               (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+               Dependent on: B229 B320
+
+                            B2310101-B2310142
+                            B2310201-B2310242
+                                  .
+                                  .
+                                  .
+                            B2311001-B2311042
+
+From B232 to B234 runs in a loop of max 10. That means that when you reach B234, you must
+start all over again asking B232 until the answer is no longer yes, or until the loop has run 10
+times. The variables are named with the loop number at the end (ex. B232_3 means the 3rd time
+B192is being asked)
+
+
+B232_1-10 Have you taken any herbal medicine that we have not talked baout yet during
+           pregnancy?
+                       1. yes
+                       2. no →B235
+                       3. do not know →B235
+                       4. do not wish to answer →B235
+                       9. undefined
+                       10 irrelevant
+
+B233_1-10 What kinds of herbal medicine have you taken during pregnancy?
+           Dependent on: B232
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                 Side 62
+                           1. name → B233A
+                           2. do not know
+                           3. do not wish to answer
+                           9. undefined
+                           10 irrelevant
+
+B233A_1-10 Name of herbal medicine, txt
+           Dependent on: B333
+
+B234           In what gestation week did you take the herbal medicine?
+
+             (B234xxyy, where xx refers to the loop number and yy indicates the week of gestation
+             (see master list). Variable value 0=no, 1=yes, 9=undefined, 10=irrelevant)
+              Dependent on: B232
+
+                        B2340101-B2340142
+                        B2340201-B2340242
+                                .
+                                .
+Now towards the end of the interview, I have some questions about your everyday life and
+habits in general
+                                .
+                        B2341001-B2341042
+
+
+B235           How many hours of sleep do you get for the time being?
+                         1.     Hours → B235A
+                         2. do not know
+                         3. do not wish to answer
+                         9. undefined
+                         10.       irrelevant
+                         11.       not asked
+
+B235A          Total number of hours sleep, average (0-24)
+               Dependent on: B235
+
+B235X          On average, how many hours do you sleep?
+               Dependent on Bversion (only in version2 and version3)
+
+                           1. Over 10 hours
+                           2. 8-9 hours
+                           3. 6-7 hours
+                           4. 4-5 hours
+                           5. Less than 4 hours
+                           6. It varies
+                           7. Do not know
+                           8. Do not wish to answer
+                           9. Undefined
+                           10. Irrelevant
+                           11. Not asked
+
+B236           Do you sleep in a water bed?
+                           1. yes
+                           2. no
+                           3. do not know
+                           4. do not wish to answer
+30 weekrs interview        Navn: SK30l.DOC             Skemaansv. AMN                 Side 63
+                            9. undefined
+
+B237           Are you sometimes not able to sleep all night due to, for instance, night work, the
+               pregnancy or family problems?
+                           1. yes
+                           2. no →B240
+                           3. do not know →B240
+                           4. do not wish to answer →B240
+                           9. undefined
+                           10 irrelevant
+
+B238           How often have you been awake most of the night?
+               Dependent on: B237
+                          1. less than once per month
+                          2. 1-3 times per month
+                          3. once per week
+                          4. several times per week
+                          5. do not know
+                          6. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B239           You are awake because of ...?
+               Dependent on: B237
+                          1. inconveniences in realation to pregnancy
+                          2. work
+                          3. care for famuily members
+                          4. andet → B239A
+                          5. do not know
+                          6. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B239A          The reason for missing sleep at night, txt
+               Dependent on: B239
+
+B240           Can you rest during the day?
+                           1. yes
+                           2. no
+                           3. do not know
+                            4. do not wish to answer
+                            9. undefined
+                            10 irrelevant
+
+B241           Have you been sauna bathing while pregnant?
+                          1. yes
+                          2. no →B243
+                          3. do not know →B243
+                          4. do not wish to answer →B243
+                          9. undefined
+                          10 irrelevant
+
+B242           In what weeks of gestation have you been sauna bathing?
+               Dependent on: B241
+                          B242_1-B242_42 (see master list)
+30 weekrs interview         Navn: SK30l.DOC                 Skemaansv. AMN                 Side 64
+B243           Have you used solarium during pregnancy?
+                          1. yes
+                          2. no →B245
+                          3. do not know →B245
+                          4. do not wish to answer →B245
+                          9. undefined
+
+B244           In what weeks of gestation did you use solarium?
+               Dependent on: B243
+                          B244_1-B244_42 (see master list)
+
+B245           How many glasses of tap water do you drink per day?
+                          1.    glasses (5 glasses = 1 liter) → B245A
+                          2. do not know
+                          3. do not wish to
+                          4. undefined
+
+B245A          Number of glasses per day (0-99)
+               Dependent on: B245
+
+BM01           Have any rooms in your house been painted during your pregnancy or just before you
+               got pregnant? (not the repair painting of small dots)
+                            1. yes
+                            2. no→ B246
+                            3. do not know → B246
+                            4. do not wish to answer →B246
+                            9. undefined
+
+BM02           What was painted. Furniture, floors, radiators or woodwork? (incl. floor varnish)
+               Dependent on: BM01
+                          1. yes
+                          2. no →BM08
+                          3. do not know →BM08
+                          4. do not wish to answer →BM08
+                          9. undefined
+                          10 irrelevant
+
+The next questions are only about paint etc. not about floors, walls.
+
+BM03           The painted suface, how big is it, like a door?
+               Dependent on: BM01 BM02
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+BM04           Painting in sleeping room?
+               Dependent on: BM01 BM02
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN                   Side 65
+                             9. undefined
+                             10 irrelevant
+
+BM05           Painting in living room?
+               Dependent on: BM01 BM02
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+BM06           Have other places been painted?
+               Dependent on: BM01 BM02
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+BM07A-C.       In what weeks of gestation was the painting carried out in (answers in BM04-BM06)?
+               Dependent on: BM01 BM02
+
+
+               From 1 month before pregnancy and 1 - 38 week (master list questions
+               about painting)
+
+BM08           Have ceilings or walls been painted?
+               Dependent on: BM01
+                          1. yes
+                          2. no →BM13
+                          3. do not know →BM13
+                          4. do not wish to answer →BM13
+                          9. undefined
+                          10 irrelevant
+
+BM09           Paint in sleeping room?
+               Dependent on: BM01 BM08
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+BM10           Paint in living room?
+               Dependent on: BM01 BM08
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+30 weekrs interview         Navn: SK30l.DOC            Skemaansv. AMN                 Side 66
+BM11           Paint in other rooms?
+               Dependent on: BM01 BM08
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+BM12A-C.       In what weeks of gestation were the walls/ceilings painted in the (answers in M09-
+               BM11)?
+               Dependent on: BM01 BM08
+
+               From 1 month before to 1 - 38 week (master list questions about painting)
+
+BM13           Were you present in the rooms during painting? (for more than two hours)
+               Dependent on: BM01
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+BM14           Was the paint water-based? (brushes can be cleaned in water)
+               Dependent on: BM01
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10irrelevant
+
+BM15           Was the paint oil-based? (brushes must be cleaned in turpentine/petroleum)
+               Dependent on: BM01
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not wish to answer
+                          9. undefined
+                          10.       irrelevant
+
+B246           Do you do any exercise during pregnancy?
+                           1. yes
+                           2. no →B250
+                           3. do not know →B250
+                           4. do not wish to answer →B250
+                           5. undefined
+                           6. irrelevant
+
+B247           What kind of exercise?
+               Dependent on: B246
+
+                            B247_1 gym/aerobics for pregnant
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN                     Side 67
+                            B247_2 normal gym/aerobics aerobics/gymnastik
+                            B247_3 dancing
+                            B247_4 cycling
+                            B247_5 fast walking
+                            B247_6 jogging, orienteering
+                            B247_7 ball games
+                            B247_8 swiming
+                            B247_9 fittness/health club
+                            B247_10 badminton
+                            B247_11 tennis
+                            B247_12 horse back ridning
+                            B247_13 other → B247A
+                            B247_14 do not know
+                            B247_15 do not wish to answer
+
+B247A          Other kind of exercise, txt
+               Dependent on: B246
+
+B248_1-13 How many times per week do you (answer in B247)?
+               Dependent on: B246 B247
+
+                            1.     times pr. Week → B248A
+                            2. do not know
+                            3. do not wish to answer
+                            9. undefined
+                            10 irrelevant
+
+B248A_1-13 Times per week (1-7, 9=undefined, 10 =irrelevant)
+               Dependent on: B248
+
+B249_1-13      For how many minutes per time do you (answer in B247)?
+               Dependent on: B246 B247
+                          1.    minutes → B249A
+                          2. do not know
+                          3. do not wish to answer
+                          9. undefined
+                          10 irrelevant
+
+B249A.1-13 Total number of muinutes per time (1-999)
+           Dependent on: B248
+
+B250           Have you been outside Denmark during pregnancy?
+                          1. yes
+                          2. no →B252
+                          3. do not know →B252
+                          4. do not wish to answer →B252
+                          9. undefined
+
+B251           Which continent(s) did you go to?
+               Dependent on: B250
+                          B251_1 Europe
+                          B251_2 North/Middle America
+                          B251_3 South America
+                          B251_4 Africa
+                          B251_5 Asia
+30 weekrs interview         Navn: SK30l.DOC            Skemaansv. AMN       Side 68
+                            B251_6    Australia/Oceania
+                            B251_7    do not know
+                            B251_8    do not wish to answer
+
+B251A          Which countries in Europe did you visit?
+               Dependent on: B250 B251
+                          B251A_1 Albania
+                          B251A_2 Andorra
+                          B251A_3 Belgium
+                          B251A_4 Bosnia
+                          B251A_5 Bulgaria
+                          B251A_6 England
+                          B251A_7 Estonia
+                          B251A_8 Finland
+                          B251A_9 France
+                          B251A_10 Greece
+                          B251A_11 Greenland
+                          B251A_12 the Netherlands
+                          B251A_13 Belrus
+                          B251A_14 Ireland
+                          B251A_15 Island
+                          B251A_16 Italy
+                          B251A_17 Yugoslavia
+                          B251A_18 Croatia
+                          B251A_19 Latvia
+                          B251A_20 Lichtenstein
+                          B251A_21 Lithuania
+                          B251A_22 Luxembourg
+                          B251A_23 Malta
+                          B251A_24 Moldavia
+                          B251A_25 Monaco
+                          B251A_26 Northern Ireland
+                          B251A_27 Norway
+                          B251A_28 Poland
+                          B251A_29 Portugal
+                          B251A_30 Rumania
+                          B251A_31 San Marino
+                          B251A_32 Switzerland
+                          B251A_33 Serbia
+                          B251A_34 Scotland
+                          B251A_35 Slovakia
+                          B251A_36 Spain
+                          B251A_37 Sweden
+                          B251A_38 Check Republic
+                          B251A_39 Turkey
+                          B251A_40 Germany
+                          B251A_41 Ukraine
+                          B251A_42 Hungary
+                          B251A_43 the Vatican
+                          B251A_44 Wales
+                          B251A_45 Austria
+                          B251A_46 Other →B251AA
+                          B251A_47 Do not know
+                            B251A_48 Do not want to answer
+
+B251AA         Other country in Europe, txt
+30 weekrs interview         Navn: SK30l.DOC               Skemaansv. AMN   Side 69
+               Dependent on: B251A
+
+B251B          Which countries did you visit in North America/Middle America?
+               Dependent on: B250 B251
+                          B251B_1 Antigua and Barbudo
+                          B251B_2 Barbados
+                          B251B_3 Bahamas
+                          B251B_4 Belize
+                          B251B_5 Bermuda
+                          B251B_6 Canada
+                          B251B_7 Cayman Islands
+                          B251B_8 Costa Rica
+                          B251B_9 Cuba
+                          B251B_10 Curacao
+                          B251B_11 Dominican Republic
+                          B251B_12 El Salvador
+                          B251B_13 Grenada
+                          B251B_14 Greenland
+                          B251B_15 Guadelope
+                          B251B_16 Guatemala
+                          B251B_17 Haiti
+                          B251B_18 Hawaii
+                          B251B_19 Honduras
+                          B251B_20 Jamaica
+                          B251B_21 Martinique
+                          B251B_22 Mexico
+                          B251B_23 Nicaragua
+                          B251B_24 Panama
+                          B251B_25 Puerto Rico
+                          B251B_26 Saint Kitts and Nevis
+                          B251B_27 Saint Lucia
+                          B251B_28 Saint Piere et Miquebu
+                          B251B_29 St. Vincent/Grenadines
+                          B251B_30 Trinidad and Tabago
+                          B251B_31 Turlos and Caicos Islands
+                          B251B_32 USA
+                          B251B_33 West India
+                          B251B_34 Other → B251BA
+                          B251B_35 Do not know
+                          B251B_36 Do not want to answer
+
+B251BA         Other country in North/Middle America, txt
+               Dependent on: B251B
+
+B251C          Which countries in South America did you visit?
+               Dependent on: B250 B251
+                           B251C_1 Argentine
+                           B251C_2 Bolivia
+                           B251C_3 Brasil
+                           B251C_4 Chile
+                           B251C_5 Colombia
+                           B251C_6 Ecuador
+                           B251C_7 the Falklands
+                           B251C_8 French Gyana
+                           B251C_9 Gyana
+                            B251C_10 Paraguay
+30 weekrs interview        Navn: SK30l.DOC              Skemaansv. AMN          Side 70
+                            B251C_11 Peru
+                            B251C_12 Surinam
+                            B251C_13 Uruguay
+                            B251C_14 Venezuela
+                            B251C_15 Other → B251CA
+                            B251C_16 Do not know
+                            B251C_17 Do not want to answer
+
+B251CA         Other country in South America, txt
+               Dependent on: B251C
+
+
+B251D          Which Africa countries did you visit?
+               Dependent on: B250 B251
+                            B251D_1 the Azores
+                            B251D_2 Algeria
+                            B251D_3 Angola
+                            B251D_4 Ascension
+                            B251D_5 Benin
+                            B251D_6 Botswana
+                            B251D_7 Burkina Faso
+                            B251D_8 Burundi
+                            B251D_9 Cameroun
+                            B251D_10 Centr.Afr.Rep.
+                            B251D_11 the Comores
+                            B251D_12 Congo
+                            B251D_13 Djibouti
+                            B251D_14 Egypt
+                            B251D_15 the Ivory Coast
+                            B251D_16 Etiopia
+                            B251D_17 Gabon
+                            B251D_18 Gambia
+                            B251D_19 Ghana
+                            B251D_20 Guinea
+                            B251D_21 Guinea-Bissau
+                            B251D_22 the Canary Islands
+                            B251D_23 Cap Verde
+                            B251D_24 Kenya
+                            B251D_25 Lesotho
+                            B251D_26 Liberia
+                            B251D_27 Libya
+                            B251D_28 Madagaskar
+                            B251D_29 Madeira
+                            B251D_30 Malawi
+                            B251D_31 Mali
+                            B251D_32 Morocco
+                            B251D_33 Mauritania
+                            B251D_34 Mauritius
+                            B251D_35 Mayotte
+                            B251D_36 Mozambique
+                            B251D_37 Namibia
+                            B251D_38 Niger
+                            B251D_39 Nigeria
+                            B251D_40 Reunion
+                            B251D_41 Rwanda
+                            B251D_42 Saint Helena
+30 weekrs interview        Navn: SK30l.DOC           Skemaansv. AMN   Side 71
+                            B251D_43 Sao Tome/Principe
+                            B251D_44 Senegal
+                            B251D_45 Seychellerne
+                            B251D_46 Sierra Leone
+                            B251D_47 Somalia
+                            B251D_48 Sudan
+                            B251D_49 Swaziland
+                            B251D_50 South African Republic
+                            B251D_51 Tanzania
+                            B251D_52 Chad
+                            B251D_53 Togo
+                            B251D_54 Tunisia
+                            B251D_55 Uganda
+                            B251D_56 West Sahara
+                            B251D_57 Zaire
+                            B251D_58 Zambia
+                            B251D_59 Zimbabwe
+                            B251D_60 Equt. Guinea
+                            B251D_61 Upper Volta
+                            B251D_62 Other → B251DA
+                            B251D_63 Do not know
+                            B251D_64 Do not want to answer
+
+B251DA         Other country in Africa, txt
+               Dependent on: B251D
+
+B251E          Which countries in Asia did you visit?
+               Dependent on: B250 B251
+                           B251E_1 Afghanistan
+                           B251E_2 the Arab Emirats
+                           B251E_3 Armenia
+                           B251E_4 Aserbajdsjan
+                           B251E_5 Bahrain
+                           B251E_6 Bangladesh
+                           B251E_7 Bhutan
+                           B251E_8 Brunei
+                           B251E_9 Burma
+                           B251E_10 Cypres
+                           B251E_11 the Phillipines
+                           B251E_12 Georgia
+                           B251E_13 Hong Kong
+                           B251E_14 India
+                           B251E_15 Indonesia
+                           B251E_16 Iraq
+                           B251E_17 Iran
+                           B251E_18 Israel
+                           B251E_19 Japan
+                           B251E_20 Jordan
+                           B251E_21 Kampuchea
+                           B251E_22 Kasakhstan
+                           B251E_23 China
+                           B251E_24 Kirgistan
+                           B251E_25 Kuwait
+                           B251E_26 Laos
+                           B251E_27 Libanon
+                           B251E_28 Macao
+                           B251E_29 Malaysia
+30 weekrs interview         Navn: SK30l.DOC          Skemaansv. AMN   Side 72
+                            B251E_30 the Maldives
+                            B251E_31 Mongolia
+                            B251E_32 Nepal
+                            B251E_33 North Korea
+                            B251E_34 Oman
+                            B251E_35 Pakistan
+                            B251E_36 Qatar
+                            B251E_37 Russia
+                            B251E_38 Saudi Arabia
+                            B251E_39 Singapore
+                            B251E_40 Sri Lanka
+                            B251E_41 Syria
+                            B251E_42 Tadsjikistan
+                            B251E_43 Taiwan
+                            B251E_44 Thailand
+                            B251E_45 Tibet
+                            B251E_46 Turkmenistan
+                            B251E_47 Turkey
+                            B251E_48 Usbekistan
+                            B251E_49 Vietnam
+                            B251E_50 Yemen
+                            B251E_51 Other → B251EA
+                            B251E_52 Do not know
+                            B251E_53 Do not want to answer
+
+B251EA         Other country in Asia, txt
+               Dependent on: B251E
+
+B251F          Which countries in Australia/Oceania did you visit?
+               Dependent on: B250 B251
+                           B251F_1 Australia
+                           B251F_2 Fiji
+                           B251F_3 French Polynesia
+                           B251F_4 Guam
+                           B251F_5 Kiribati
+                           B251F_6 Nauru
+                           B251F_7 New Zealand
+                           B251F_8 Northern Marianna Islands
+                           B251F_9 New Caledonia
+                           B251F_10 New Guinea
+                           B251F_11 Marshall Islands
+                           B251F_12 Micronesia
+                           B251F_13 Palau
+                           B251F_14 Pacific Islands
+                           B251F_15 Pitcairn
+                           B251F_16 the Solomon Islands
+                           B251F_17 Samoa Islands
+                           B251F_18 Tonga
+                           B251F_19 Tuvalu
+                           B251F_20 Vanuta
+                           B251F_21 Other → B251FA
+                           B251F_22 Do not know
+                           B251F_23 Do not want to answer
+B251FA         Other country in Australia/Oceania, txt
+30 weekrs interview         Navn: SK30l.DOC              Skemaansv. AMN   Side 73
+               Dependent on: B251F
+
+The interview is over now. Thank you for your participation.
+
+There will be no more telephone interviews during pregnancy. The next time you will be
+hearing from us is when your child is 6 months old. By then you will receive at letter from
+us with time and date for a new interview.
+
+                                                        Thank you very much and Goodbye!
+
+
+Important notes to the interview:
+
+B252           Special conditions in woman/her pregnancy, txt
+
+B253           How do you think about the contact between you and the pregnant woman?
+                           1. very good
+                           2. good
+                           3. fair
+                           4. bad
+
+Do you find the answers to "sensitive" questions trustworthy?
+
+B254_1         Smoking:
+                             1. yes   2.no     3.doubtful
+
+B254_2         Spirits:
+                             1. yes   2.no     3.doubtful
+
+B254_3         Hashish:
+                             1. yes   2.no     3.doubtful
+
+B254_4         Strains:
+                             1. yes   2.no     3.doubtful
+
+B254_5         Weight:
+                             1. yes   2.no     3.doubtful
+
+B255           Other important comments that you find vital for the quality of the information: (txt)
+
+
+
+INTERVIE       Interviewer id, txt
+
+
+
+
+30 weekrs interview          Navn: SK30l.DOC                Skemaansv. AMN                   Side 74
+

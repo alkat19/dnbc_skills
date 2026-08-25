@@ -1,0 +1,3810 @@
+Code book for 4th interview (the child is 18 months old)
+
+Revised by:
+Anne-Marie Nybo Andersen, professor
+Line Stenmann Kantsø, student assistant
+
+Section of Epidemiology, Institute of Public Health, University of Copenhagen
+
+Date of revision: 17.02.2026 (Inge Eisensee, data manager, Aarhus University)
+
+Documentation and guidance
+All variables start with a letter and contain three chiffers (e.g. R000). The answer categories are listed
+starting with 1.
+
+In most questions, the "undefined" variable has been given code 9, and the "irrelevant" variables has
+been given the code 10. 11 code for "irrelevant in this version, as the question was not asked". However,
+in questions with 10 or more answer categories these variables have been given code 99, 100 and 101.
+In continuing variables, which can include the value 99, the codes 999 and 1000 are used. In date
+variables code 99999999 and 100000000 are used.
+
+If a question is dependent on a previous answer a note is written in Concolas (e.g. R001, Dependent on
+R000) above the question. Likewise it is specified which question the respondent jumps to if the following
+questions depend on the answer of the question concerned (e.g. → R002).
+
+Variable names ending with a letter (e.g. R002A) is a sub question of the previous question where it does
+not make sense to assign the question a new name.
+
+
+
+
+                                                                                                             1
+Contents:
+
+D-questions:
+Smoking and alcohol
+Exposition/Exposure asthma and allergy
+Child care
+Medicine and diseases in child
+Mother-child relation
+Mother-child co-living conditions
+Father's time with child
+Special strains - mother's experience
+
+Motoric and cognitive development - mile stones
+
+Education - mother, birth-father or partner
+Family's financial status
+Antrophometry measures - birth parents
+Network
+Vaccinations
+Antrophometry measures - child
+Questions to teeth (questions for sub project)
+Asthma og allergy (questions for sub project)
+
+
+
+
+                                                  2
+Master list I (MONTHS)
+
+Number of simultaneously possible answers: 25 combinations of 1 - 25)
+
+1. None
+2. 6 1/2      8. 9 1/2          14. 12 1/2       20. 15 1/2      26. 18 1/2
+3. 7          9. 10             15. 13           21. 16          27. The entire period
+4. 7 1/2      10. 10 1/2        16. 13 1/2       22. 16 1/2      28. Do not know
+5. 8          11. 11            17. 14           23. 17          29. Do not want to answer
+6. 8 1/2      12. 11 1/2        18. 14 1/2       24. 17 1/2
+7. 9          13. 12            19. 15           25. 18
+
+Masterliste II (MOTNH2, genereret fra Masterliste I): Som Masterliste I bortset fra den første værdi
+(=Ingen)
+
+Masterliste III (ALLMONTH)
+
+Number of simultaneously possible answers:
+
+1. The entire period         11. 4 1/2        21. 9 1/2          31. 14 1/2
+2. 0                         12. 5            22. 10             32. 15
+3. 1/2                       13. 5 1/2        23. 10 1/2         33. 15 1/2
+4. 1                         14. 6            24. 11             34. 16
+5. 1 1/2                     15. 6 1/2        25. 11 1/2         35. 16 1/2
+6. 2                         16. 7            26. 12             36. 17
+7. 2 1/2                     17. 7 1/2        27. 12 1/2         37. 17 1/2
+8. 3                         18. 8            28. 13             38. 18
+9. 3 1/2                     19. 8 1/2        29. 13 1/2         39. 18 1/2
+10. 4                        20. 9            30. 14             40. Do not know
+                                                                 41. Do not want to answer
+DINTROA: Interviewer ID (not checked)
+
+DINTDATO: Interviewdato (not checked)
+
+DVERSION: (not checked)
+
+GRAVNR: Woman's pregnancy ID
+
+LBNR: Woman's project ID number
+
+
+
+
+                                                                                                       3
+INTRODUCTION
+
+
+Hello, you are speeking to                      from the investigation Better Health for Mother and Child
+
+(I would like to speak to:                  )
+
+Is it fine with you if we make the interview right now? It will take approximately 15 minutes?
+
+If NO make an appointment for the interview
+
+
+
+D000.1-4    Before we get started I would like to know if you had a boy or a girl?
+
+            - I assume that the child lives with you, normally.
+
+            Number of simultaneous questions: 2 (combination of 1 or 2 with 3)
+
+            D000_1. Boy
+            D000_2. Girl
+            D000_3. Child does not live with the mother on a regular basis
+            D000_4. Do not want to answer
+
+            If no mark in 3. → D001
+
+
+D000A.1-3 As most questions are about your child I do not think we should make the interview.
+
+            (If the mother does, after all, want to carry throught with the interview, please do not read the
+            following text to her)
+
+            We want to thank you for participating so far in this investigation. Without your and all the
+            other mothers' participation we would not have been able to gather the knowledge that we
+            have now to improve the health for mother and child.
+
+            Number of simultaneously possible answers: 2 (combinations of 1 with 2 or 3)
+
+            D000A_1. Type comment (obligatory):
+            D000A_2. The mother still wants to carry through with the interview
+            D000A_3. Make an end to the interview
+
+D000B       Comment (If D000A=1+3 → D201)
+
+
+
+
+                                                                                                                4
+                                                                                                     5
+D001       Are you pregnant again?
+
+           1. No
+           2. Yes
+           3. No, but have given birth to another child → D003 (TEKSTA, form. b)
+           4. Do not know
+           5. Do not want to answer
+           9. Undefined
+
+D002       Have you given birth since the last interview?
+           Dependent on: D001
+
+           1. No
+           2. Yes
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+           10Irrelevant
+
+           If D002 = 2. use wording b, otherwise a:
+a. Most questions deal with what has happened since your child was 6 months old. Therefore, please try
+to concentrate on the time after you child was 6 months old.
+
+b. Most questions deal with what has happened since your child was 6 months old. Now you child is 18
+months old, so please try to concentrate on what has happened since the age of 6 months.
+
+D003       Did you breast feed your child after it turned 6 months old?
+
+           1. Yes
+           2. No → D009
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+D004       When did you stop breast feeding?
+           Dependent on: D003
+
+           1. Stop breast feeding:        months        weeks → D004A
+           2. Still breast feed (If TANDL=0 → D009; If TANDL=1 → R005)
+           3. Do not know (If TANDL=0 → D009; If TANDL=1 → R005)
+           4. Do not want to answer
+           9. Undefined
+           10Irrelevant
+
+D004A1     Months. Stop breast feeding. (0-99)
+D004A2     Weeks . Stop breast feeding. (0-99)
+
+           For stop breast feeding <= 17 months. →D009
+
+R005       Has your child - within the last month - been breast fed outside normal breast feeding hours
+           for comfort or to fall asleep?
+           Dependent on: D003 TANDL
+
+           1. No → R007
+           2. Yes
+           3. Do not know →R007
+           4. Do not want to answer → R007
+
+                                                                                                          5
+                                                                                                    6
+        9. Undefined
+        10Irrelevant
+
+
+R006    Approximately how many times all toghether?
+        Dependent on: D003 R003 TANDL
+
+        (If the mother cannot come up with with a number of times, please say:)
+        [Was it from 1 to 5 times, 6-15, 16-30 times or more than 30 times?]
+
+        1. Number of times:      → R006A
+
+        2. 1-5 times → R007
+        3. 6-15 times → R007
+        4. 16-30 times → R007
+        5. Over 30 times → R007
+        6. Do not know → R007
+        7. Do not want to answer → R007
+        9. Undefined
+        10Irrelevant
+
+R006A   Number of times the child has been breast fed for comfort or to fall asleep (0-99)
+
+R007    Did you - within the last month - leave him/her with the nipple in his/her mouth when the
+        actual breast feeding was over - at night, for instance?
+        Dependent on: D003 TANDL
+
+        1. No →D009
+        2. Yes
+        3. Do not know →D009
+        4. Do not want to answer → D009
+        9. Undefined
+        10Irrelevant
+
+R008    Approximately how many times?
+        Dependent on: D003 D007 TANDL
+
+        (If the mother cannot come up with with a number of times, please say:)
+        [Was it from 1 to 5 times, 6-15, 16-30 times or more than 30 times?]
+
+        1. Number of times:      →R008A
+
+        2. 1-5 times → D009
+        3. 6-15 times → D009
+        4. 16-30 times → D009
+        5. Over 30 times → D009
+        6. Do not know → D009
+        7. Do not want to answer → D009
+        9. Undefined
+        10Irrelevant
+
+R008A   Number of times nipple without breast feeding(0-99)
+
+D009    During which age periods - after the age of 6 month - did your child have breast milk
+        substitues or powder gruel every day?
+
+        1. Master list I (MONTHS): Months scheme
+
+             D009_1. None
+                                                                                                        6
+                                                                                                    7
+              D009_2. 6 1/2 months
+              D009_3. 7 months
+              D009_4. 7 1/2 months
+              D009_5. 8 months
+              D009_6. 8 1/2 months
+              D009_7. 9 months
+              D009_8. 9 1/2 months
+              D009_9. 10 months
+              D009_10. 10 1/2 months
+              D009_11. 11 months
+              D009_12. 11 1/2 months
+              D009_13. 12 months
+              D009_14. 12 1/2 months
+              D009_15. 13 months
+              D009_16. 13 1/2 months
+              D009_17. 14 months
+              D009_18. 14 1/2 months
+              D009_19. 15 months
+              D009_20. 15 1/2 months
+              D009_21. 16 months
+              D009_22. 16 1/2 months
+              D009_23. 17 months
+              D009_24. 17 1/2 months
+              D009_25. 18 months
+              D009_26. 18 1/2 months
+              D009_27. The entire period
+              D009_28. Do not know
+              D009_29. Do not want to answer
+
+D010    How many decilitres of milk or yoghurt products does your child normally have in a day?
+
+        Number of possible simultaneous answers: 2 (3 with 1-2, and 5-8)
+
+        (1 child's glass or 1 chikld's cup = 1 dl)
+
+        (If the mother cannot come up with an answer, please say:)
+        [Was it: 1-2, 3-4, 5-6 or more than 6 dl?]
+
+        D010_1. Dl per day:    .      → D010A
+        D010_2. Less than 1 dl per day
+        D010_3. Uncertain, because mother does not know about quantities in child care institutions
+        D010_4. Child does not tolerate milk
+        D010_5. 1-2 dl
+        D010_6. 3-4 dl
+        D010_7. 5-6 dl
+        D010_8. More than 6 dl
+        D010_9. Do not know
+        D010_10. Do not want to answer
+
+        Answer=1+3 →D010A; If answer >1 og TANDL=1 → R011; If answer >1 og TANDL=0 →
+        D025.
+
+D010A   Total decilitres of milk/yoghurt per day (0-99) If TANDL=0 → D025
+
+R011    Within the last month, did he/she have anything else but breast milk substitue in the bottle?
+        Dependent on: TANDL
+
+        (Powder gruel, dietary supplement mixtuers are here the same as breast milk subsitute)
+                                                                                                        7
+                                                                                                 8
+
+           1. No → R019
+           2. Yes
+           3. Do not know → R019
+           4. Do not want to answer → R019
+           9. Undefined
+           10. Irrelevant
+
+R012       How many times did he/she have something else in the bottle ?
+           Dependent on: TANDL R011
+
+           (If the mother cannot come up with a number of times, please say:)
+           [Was it more than 5 times?]
+
+           1. 1 - 5 times → R019
+           2. Number of times over 5:    → R012A
+           3. More than 5 times → R013
+           4. Do not know → R019
+           5. Do not want to answer → R019
+           9. Undefined
+           10Irrelevant
+
+R012A     Number of times with something else than breast milk substitute in the bottle (0-99)
+R013.1-12 What was in the bottle?
+          Dependent on: TANDL R011 R012
+
+           (If the mother answers camomile tea only, please ask:)
+           [Was it without honney or sugar?]
+
+           Number of possible simultaneous answers: 10 (combinations of 1 - 10)
+
+           R013_1. Fruit juice/lemonade
+           R013_2. Juice
+           R013_3. soda water/cola or the like
+           R013_4. Camomile tea with honney or sugar
+           R013_5. Pure camomile tea (no honney, no sugar)
+           R013_6. Ordinary milk
+           R013_7. Water
+           R013_8. Other 1 (Text variable) Library list → R013A
+           R013_9. Other 2 (Text variable) Library list → R013B
+           R013_10. Other 3 (Text variable) Library list → R013C
+           R013_11. Do not know
+           R013_12. Do not want to answer
+
+R013A. Other in bottle 1
+R013B. Other in bottle 2
+R013C. Other in bottle 3
+
+           (If no marking in 1., 2., 3.or 4. → R015)
+
+R014.1-4   How often was it (answer in R013:1-4.)
+           Dependent on: TANDL R011 R012 R013
+
+
+           (If the mother cannot come up with a number of times, please say:)
+           [Was it 1-5, 6-15, 16-30 or more than 30 times?]
+
+           1. Number of times:      → R014A
+                                                                                                     8
+                                                                                                      9
+           2. 1-5 times → R014 / → R015
+           3. 6-15 times → R014 / → R015
+           4. 16-30 times → R014 / → R015
+           5. More than 30 times → R014 / → R015
+           6. Do not know →R014 / → R015
+           7. Do not want to answer → R014 / → R015
+           9. Undefined
+           10Irrelevant
+
+R014A.1-4 Number of times [answer from R013: 1.-4.] in the bottle (0-99)
+
+R015       Have you within the last month let him/her suck on the bottle after the feeding was over and
+           he/she dozed off?
+           Dependent on: TANDL R011 R01
+
+           1. No → R019
+           2. Yes
+           3. Do not know → R019
+           4. Do not want to answer → R019
+           9. Undefined
+           10irrelevant
+
+R016       How many times?
+           Dependent on: TANDL R011 R012 R015
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it more than 5 times?]
+
+           1. 1 - 5 times → R019
+           2. Number of times over 5:      →R016A
+           3. More than5 times → R017
+           4. Do not know → R019
+           5. Do not want to answer → R019
+           9. Undefined
+           10Irrelevant
+
+R016A      Number of times dozing off with bottle in mouth (0-99)
+
+R017       What was in the bottle?
+           Dependent on: TANDL R011 R012 R015 R016
+
+           (If the mother answers merely camomile tea, please ask:)
+           [Without honney/sugar?]
+
+           Number of possible simultaneous answers: 10 (combinations of 1-10)
+
+           R017_1. Fruit juice/lemonade
+           R017_2. Juice
+           R017_3. soda water/cola or the like
+           R017_4. Camomile tea with honney or sugar
+           R017_5. Pure camomile tea (no honney, no sugar)
+           R017_6. Ordinary milk
+           R017_7. Water
+           R017_8. Other 1 (Text variable) Library list →R017A
+           R017_9. Other 2 (Text variable) Library list → R017B
+           R017_10. Other 3 (Text variable) Library list → R017C
+           R017_11. Do not know
+           R017_12. Do not want to answer
+                                                                                                          9
+                                                                                               10
+
+
+R017A Ohter in bottle 1
+R017B Other in bottle 2
+R017C Other in bottle 3
+
+           If no markings in 1, 2., 3. or 4. → R019
+R018.1-4   How often was it (answer from the categories 1-4. i R017)?
+           Dependent on: TANDL R011 R012 R015 R016 R017
+
+           (If the mother cannot come up with a number of times, please say:)
+           [Was it: 1-5, 6-15, 16-30 or more than 30 times?]
+
+           1. Number of times:      →R018A
+           2. 1-5 times → R018 / → R019
+           3. 6-15 times → R018 / → R019
+           4. 16-30 times → R018 / → R019
+           5. More than 30 times → R018 / → R019
+           6. Do not know → R018 / →R019
+           7. Do not want to answer → R018 / → R019
+           9. Undefined
+           10 Irrelevant
+
+R018A.1-4 Number of times [answer in R017:1.-4.] in bottle (1-30)
+
+R019       What do you use on his/her tooth brush?
+           Dependent on: TANDL
+
+           (If the mother answers merely: tooth paste, please ask:)
+           [Is it tooth paste with fluorine?]
+
+           (If the mother does not know, please ask:)
+           [What is the name of the tooth paste?]
+
+           Number of possible simultaneous answers: 11 (combinations of 3- 12 + 15)
+
+           R019_1. Tooth paste with fluorine
+           R019_2. Tooth paste without fluorine
+           R019_3. Bamse Barn Tand Kräm
+           R019_4. Første tand (Zendium)
+           R019_5. My First (Colgate)
+           R019_6. Mælketand (Aquafresh)
+           R019_7. Mælketand (Macs)
+           R019_8. Pepsodent for Kids
+           R019_9. Colgate Junior
+           R019_10. Other name of tooth paste 1 (Text variable) Library list → R019A
+           R019_11. Other name of tooth paste 2 (Text variable) Library list → R019B
+           R019_12. Other name of tooth paste 3 (Text variable) Library list →R019C
+           R019_13 Tooth paste: Do not remember name and do not know if it contains fluorine
+           R019_14. Only water
+           R019_15. Other than tooth paste or water (Text variable) → R019D
+           R019_16. Do not know
+           R019_17. Do not want to answer
+
+R019A      Other name of tooth paste 1
+R019B      Other name of tooth paste 2
+R019C      Other name of tooth paste 3
+
+                                                                                                10
+R020     Does he/she use a comforter?                                                             11
+         Dependent on: TANDL
+R019D    Other than tooth pate or water
+
+
+         1. Yes
+         2. No →D025
+         3. Do not know → D025
+         4. Do not want to answer → D025
+         9. Undefined
+         10Irrelevant
+
+R021     Approx. How many hours, day and night, does he/she use the comforter?
+         Dependent on: TANDL R020
+
+         1. All day/practically all day → R022
+         2. . hours →R021A
+         3. From . to . hours → R021B1
+         4. Less than one hour per day/night → R022
+         5. Do not know → R022
+         6. Do not want to answer → R022
+         9. Undefined
+         10Irrelevant
+
+R021A    Hours, comforter (0-99) → R022
+R021B1   Hours, comforter interval start(0-99)
+R021B2   Hours, comforter interval end (0-99)
+
+R022     Do you ever dip the comforter into something he/she likes before giving it to him/her?
+         Dependent on: TANDL R020
+
+         1. No → D025
+         2. Yes
+         3. Do not know → D025
+         4. Do not want to answer → D025
+         9. Undefined
+         10Irrelevant
+
+R023     What do you dip the comforter into?
+         Dependent on: TANDL R020 R022
+
+         1. Honney → R024
+         2. Sugar→ R024
+         3. Fruit juice →R024
+         4. Other (Tekxt variable) Library list → R023A
+         5. Do not know→ D025
+         6. Do not want to answer → D025
+         9. Undefined
+         10Irrelevant
+
+R023A    Other , dip comforter into
+
+
+R024     How many times per week does that happen?
+         Dependent on: TANDL R020 R022 R023
+
+         (If the mother cannot compe up with a number of times, please say:)
+         [Was it: 1-5, 6-15 or more than 15 times?]
+
+                                                                                                   11
+                                                                                                     12
+           1. Number of times:      → R024A
+
+           2. 1-5 times → D025
+           3. 6-15 times → D025
+           4. Over 15 times → D025
+           5. Do not know → D025
+           6. Do not want to answer → D025
+           9. Undefined
+           10Irrelevant
+
+R024A      Number of times comforter dip into per week (0-99)
+
+D025       Has he/she ever had iron drops?
+
+           1. No → D027
+           2. Yes
+           3. Do not know → D027
+           4. Do not want to answer → D027
+           9. Undefined
+
+D026       For how many months did he/she have iron drops on a regluar basis?
+           Dependent on: D025
+
+           (Doubts: Fairly regular basis = at least 3 times per week)
+
+           (If the mother cannot come uo with a number of times, please say:)
+           [Was it less that 1, 1-2, 3-6 or more thant 6 months?]
+
+           1. Number of months:         → D026A
+
+           2. Under 1 months → D027
+           3. 1-2 months → D027
+           4. 3-6 months → D027
+           5. Over 6 months → D027
+           6. Do not know → D027
+           7. Do not want to answer →D027
+
+D026A      Number of months iron drops (0-99)
+
+D027       After the age of 6 months, has he/she had any supplements of cod-liver oil or fish oil?
+
+           1. No
+           2. Yes
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+           10Irrelevant
+
+D028.1-11 Approx. How many child's spoons of fish or fish on bread does he/she have per day?
+          1/4 lump of dark bread with fish on it= 1 child spoon.
+
+           (only mark category 5.: uncertain, if the mother mentions it herself)
+
+           (If the mother cannot come up with a number of times, please say:)
+           [Was is 1-2, 3-4, 5-6 or more than 6 per day?]
+
+           Number of possible simultaneous answers: 2 (combinations of: 1-4 with 5 and 6-9 med 5)
+
+
+                                                                                                      12
+                                                                                                    13
+
+
+          D028_1. Average number of child spoons per day:         → D028A
+          D028_2. Average number of child spoons per week:         → D028B
+          D028_3. Average number of child spoons per month:         → D028C
+          D028_4. Almost never has fish/fish on bread-> D029
+          D028_5. Uncertain, mother does not know what the child has in day care/institution → D029
+
+          D028_6. 1-2 child spoons per day → D029
+          D028_7. 3-4 child spoons per day → D029
+          D028_8. 5-6 child spoons per day → D029
+          D028_9. more than 6 child spoons per day → D029
+          D028_10. Do not know → D029
+          D028_11. Do not want to answer → D029
+
+D028A      Number of child spoons fish/day (0-99) → D029
+D028B      Number of child spoons fish/week (0-99) → D029
+D028C     Number of child spoons fish/month (0-99)
+
+D029.1-11 Approx. How many child spoons of meat and meat on bread does he/she have per day?
+          1 meat ball= 2 child spoons and 1 slice of meat for bread = 1child spoon.
+
+          (Only marking i category 5.: uncertain, the mother mentions it herself)
+
+          (If the mother cannot come up with a number of times, say:)
+          [Was it 1-2, 3-5, 6-8 or more than 8 per day?]
+
+          Number of possible simultaneous answers: 2 (combinations of: 1-4 with 5 and 6-9 with 5)
+
+          D029_1. Average child spoons per day:       →D029A
+          D029_2. Average child spoons per week:        → D029B
+          D029_3. Average child spoons per month:        →D029C
+          D029_4. Alomst never has meat/meat on bread →D030
+          D029_5. Uncertain, mother does not know what child has in day care/institution → D030
+
+          D029_6. 1-2 child spoons per day → D030
+          D029_7. 3-4 child spoons per day → D030
+          D029_8. 5-6 child spoons per day → D030
+          D029_9. More than 6 child spoons per day →D030
+          D029_10. Do not know → D030
+          D029_11. Do not want to answer → D030
+
+D029A     Number of child spoons per day (0-99) → D030
+D029B     Number of child spoons per week (0-99)→ D030
+D029C     Number of child spoons per month (0-99)
+
+SMOKING AND ALCOHOL
+
+D030      Does anyone ever smoke in your home?
+
+          1. Yes
+          2. No → D032
+          3. Do not know → D032
+          4. Do not want to answer → D032
+          9. Undefined
+          10 Irrelevant
+
+
+
+                                                                                                      13
+D031        After your child has turned 6 months old, has there been anoyone smoking daily in your
+            home while the child was present? The period must be of at least 1 week's duration.
+            Dependent on: D030                                                                            14
+
+             (Mother smoking under cooker is marked as Yes (category 3), if child is in the same room)
+
+             1. No
+             2. Not daily/less than 1 per day
+             3. Yes
+             4. Do not know
+             5. Do not want to answer
+             9. Undefined
+             10Irrelevant
+
+ D032        How many drinks did you have last week?
+
+             (If the mother cannot come up with a number of drinks, please say)
+             [Was it 1-6 per week, 1-2 per day, 3-4 per day, 5-6 per day or more than 6 per day?]
+
+             1. Number of drinks: → D032A
+             2. None →D033
+
+             3. 1-6 per week → D033
+             4. 1-2 per day → D033
+             5. 3-4 per day →D033
+             6. 5-6 per day → D033
+             7. more than 6 per day → D033
+             8. Do not know → D033
+             9. Do not want to answer →D033
+
+ D032A       Number drinks (0-99)
+
+ EXPOSURE ASTHMA - ALLERGIY
+
+ D033.1-7      a. What animals or pets have you had since his/her birth?
+
+             Use only wording a the first time the question is being asked
+
+             Mention one animal at a time
+
+             b. Other animals or pets? (i. gang)
+
+             1. No animals → D034
+             2. Name of animal/pet:                 Library list → D033A
+             3. Yes, but animal not in contact with child: Only animals kept outside → D033,b / -> D034
+             4. No or answers/only animlas that are not in contact with child → D034
+             5. Do not know → D034
+             6. Do not want to answer → D034
+             9. Undefined
+             10 Irrelevant
+
+ D033A.1-7 Types of animals and pets → D033, form. b
+
+ D034        Has he/she been in daily contact with animals in other places than the home?
+
+             1. No
+             2. Yes
+             3. Do not know
+             4. Do not want to answer
+             9. Undefined
+             10 irrelevant
+
+                                                                                                           14
+                                                                                                       15
+CARE OF THE CHILD
+
+D035       Approximately how many hours in a normal everyday do you spent with your child when
+           he/she is a awake?
+
+           1. The entire day/All my time → D036
+           2. Time with child in hours and minutes:    .    → D035A1
+           3. From: . to . → D035B1
+           4. Do not know → D036
+           5. Do not want to answer → D036
+           9. Undefined
+           10irrelevant
+
+D035A1     Hours/minutes time spent with child, mother (0-99) → D036
+D035B1     Hours/minutes, interval start, time spent with child, mother (0-99)
+D035B2     Hours/minutes, interval end, time spent with child, mother (0-99)
+
+D036.1-10 Has he/she been in day nursery, day-care or other kind of regular care outside the home
+          during the day?
+
+           (If the mother answers only Yes, please ask:)
+           [Where was he/she taken care of?]
+
+           (A regular day care must last at least 1 week)
+
+           Number of possible simultaneous answers: 7 (Combinations of 2 - 8)
+
+           D036_1. No
+           D036_2. In day nursery
+           D036_3. In integrated institution
+           D036_4. In day-care
+           D036_5. With family/frineds
+           D036_6. Other 1 (Text variable) → D036A
+           D036_7. Other 2 (Text variable) → D036B
+           D036_8. Other 3 (Text variable) → D036C
+           D036_09. Do not know
+           D036_10. Do not want to answer
+
+D036A. Other day care 1
+D036B. Other day care 2
+D036C. Other day care 3
+
+D037       Have you been a day-care mother after your child turned 6 months old?
+
+           1. No
+           2. Yes
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+           10Irrelevant
+
+MEDICINE - DISEASE IN CHILD
+
+           The following questions are about diseases in your child after he/she has turned 6 months
+           old.
+
+D038       Has he /she had a cold?
+
+                                                                                                        15
+                                                                                           16
+          1. No → D042
+          2. Yes
+          3. Do not know → D042
+          4. Do not want to answer → D042
+          9. Undefined
+          10Irrelevant
+
+ D039     How often did the cold last for more than 3 days in a row?
+          Dependet on: D038
+
+          (If the mother cannot come uo with a number of times, please say:)
+          [Was it 1-5 times, 6-10 times or more than 10 times?]
+
+          1. Never → D040
+          2. Never, but he/she has had s cold many times → D040
+          3. Number of times:       → D039A
+          4. Cold is almost a constant state of health → D040
+
+          5. 1-5 times → D040
+          6. 6-10 times → D040
+          7. Over 10 times → D040
+          8. Do not know → D040
+          9. Do not want to answer → D040
+          99 Undefined
+          100 Irrelevant
+
+ D039A    Number of times with cold for more than 3 days in a row (0-99)
+          Dependet on: D039
+
+          If answer in D039A = 1 or answer in D039 = 1 please use wording a, otherwise b
+ D040     a. Did he/she get any kind of treatment against cold?
+          Dependet on: D038
+
+          b. Did he/she at any time get treatment?
+
+          1. No → D042
+          2. Yes
+          3. Do not know → D042
+          4. Do not want to answer → D042
+          9. Undefined
+          10Irrelevant
+
+D041.1-18 What kind of treatment?
+          Dependet on: D038 D040
+
+
+          Number of possible simultaneous answers: 16 (kombinationer af 1. - 16.)
+
+          D041_1. Asthma medicine
+          D041_2. Bricanyl
+          D041_3. Iliadin
+          D041_4. Camomile tea bath
+          D041_5. Nose spray
+          D041_6. Otrivin
+          D041_7. Pamol
+          D041_8. Pinex
+          D041_9. Penicillin
+          D041_10. Salbuvent
+
+                                                                                            16
+                                                                                  17
+           D041_11. Salt water/salt water drops
+           D041_12. Sofradex
+           D041_13. Spirocort
+           D041_14. Other 1 (Text variable) Libary list → D041A
+           D041_15. Other 2 (Text variable) Libary list → D041B
+           D041_16. Other 3 (Text variable) Libary list → D041C
+           D041_17. Do not know
+           D041_18. Do not want to answer
+
+D041A. Other treatment against cold 1
+D041B. Other treatment against cold 2
+D041C. Other treatment agaisnt cold 3
+
+D042       Has he/she had a throat inflammation?
+
+           1. No → D046
+           2. Yes
+           3. Do not know → D046
+           4. Do not want to answer → D046
+           9. Undefined
+           10Irrelevant
+
+D043       How often did that last for more than 3 days in a row?
+           Dependet on: D042
+
+           (If the mother cannot come up with a number of times, please say:)
+           [Was it: 1-3, 4-6, 7-10 or more than 10 times?]
+
+           1. Never → D044
+           2. Never, but he/she has often had it → D044
+           3. Number of times:     →D043A
+           4. 4. 1-3 times → D044
+           5. 4-6 times → D044
+           6. 7-10 times → D044
+           7. More than 10 times → D044
+           8. Do not know →D044
+           9. Do not want to answer → D044
+           99Undefined
+           100 Irrelevant
+
+D043A      Number of times troat inflammation for more than 3 days (0-99)
+           Dependet on: D043
+
+           If answer D043A = 1 or D043 = 1, use wording a, otherwise b
+D044       a. Did he/she get any treatment ?
+           Dependet on: D042
+
+           b. Did he/she at any time get any kind of treatment ?
+           1. No → D046
+           2. Yes
+           3. Do not know →D046
+           4. Do not want to answer → D046
+           9. Undefined
+           10Irrelevant
+
+D045.1-13 What kind of treatment?
+
+           Number of possible simultaneous answers: 11 (combinations of 1 - 11)
+                                                                                   17
+                                                                                18
+
+           D045_1. Abboticin
+           D045_2. Doktacillin
+           D045_3. Erycin
+           D045_4. Exocin
+           D045_5. Penicillin
+           D045_6. Rocilin
+           D045_7. Spektramox
+           D045_8. Vepicombin
+           D045_9. Other 1 (Text variable) Libary list → D045A
+           D045_10. Other 2 (Text variable) Libary list → D045B
+           D045_11. Other 3 (Text variable) Libary list → D045C
+           D045_12. Do not know
+           D045_13. Do not want to answer
+
+D045A Other treatment troat inflammation 1
+D045B Other treatment troat inflammation 2
+D045C Other treatment troat inflammation 3
+
+           If answer in D042 = 1, 3 or 4, please use wording a, otherwise b
+D046       a. Constipation?
+
+           b. Has he/she been constipated?
+
+           1. No → D048
+           2. Yes
+           3. Do not know → D048
+           4. Do not want to answer → D048
+           9. Undefined
+           10Irrelevant
+
+D047       How often did constipation last for more than 3 days in a row?
+           Dependet on: D046
+
+           (If the mother cannot come up with a number of times, please say:)
+           [Was it 1-5, 6-10 or more than 10 times?]
+
+           1. Never → D048
+           2. Never, but he/she has been constipated many times → D048
+           3. Number of times:      → D047A
+           4. Constipation has been more or less cronic → D048
+
+           5. 1-5 times → D048
+           6. 6-10 times → D048
+           7. More than 10 times → D048
+           8. Do not know → D048
+           9. Do not want to answer → D048
+           99Undefined
+           100 Irrelevant
+
+D047A      Number of times constipation for more than 3 days (0-99)
+
+           If answer in D046 = 1, 3 or 4, use wording a, otherwise b
+
+D048       a. Thin faces or diarrhoea?
+
+
+
+
+                                                                                 18
+                                                                                19
+
+
+        b. Has he/she had thin faces or diarrhoea?
+
+        1. No → D060
+        2. Yes
+        3. Do not know →D060
+        4. Do not want to answer → D060
+        9. Undefined
+        10Irrelevant
+
+D049    How often did it last for more than 3 days in a row?
+        Dependet on: D048
+
+        (If the mother cannot come up with a number of times, please say)
+        [Was it 1-5, 6-10 or more than 10 times?]
+
+        1. Never → D060
+        2. Never, but he/she has had it many times → D060
+        3. Number of times:      →D049A
+
+        4. 1-5 times → D060
+        5. 6-10 times → D060
+        6. More than 10 times → D060
+        7. Do not know → D060
+        8. Do not want to answer → D060
+        9. Undefined
+        10Irrelevant
+
+D049A   Number of times with thin faces/diarrhoea for more than 3 days (0-99)
+
+        If answer in D048 = 1, 3 or 4, use wording a, otherwise b
+D060    a. Trush or other kinds of fungus?
+
+        b. Has he/she had trush or other kinds of fungus?
+
+        1. No → D064
+        2. Yes
+        3. Do not know → D064
+        4. Do not want to answer → D064
+        9. Undefined
+        10Irrelevant
+
+D061    How often did it last for more than 3 days in a row?
+        Dependet on: D060
+
+        (If the mother cannot come up with a number of times, please say)
+        [Was it 1-3, 4-6 or more than 6 times?]
+
+        1. Never → D062
+        2. Never, but he/she has had it many times → D062
+        3. Number of times:       →D061A
+        4. Trush or fungus has been more or less cronic → D062
+
+        5. 1-3 times → D062
+        6. 4-6 times → D062
+        7. More than 6 times → D062
+        8. Do not know → D062
+        9. Do not want to answer → D062
+                                                                                 19
+                                                                                             20
+           99Undefined
+           100 Irrelevant
+
+D061A      Number of times with trush or other kinds of fungus for more than 3 days (0-99)
+
+           If D061A = 1 or D061 = 1, use wording a, otherwise
+D062       a. Did he/she have any treatment?
+           Dependet on: D060
+
+           b. Did he/she at any time get any kind of treatment?
+
+           1. No → D064
+           2. Yes
+           3. Do not know →D064
+           4. Do not want to answer → D064
+           9. Undefined
+           10Irrelevant
+
+D063       What kind of treatment?
+           Dependet on: D060
+
+           Number of possible simultaneous answers: 13 (combinations of 1 - 13)
+
+           D063_1. Brenospor
+           D063_2. Brentacort
+           D063_3. Brentan Baby/Babypasta m. Brentan
+           D063_4. Ciloprin
+           D063_5. Soda water
+           D063_6. Lamisil
+           D063_7. Breat milk
+           D063_8. Mycostatin
+           D063_9. Ointment/Cream unspecified
+           D063_10. Trush juice
+           D063_11. Other 1 (Text variable) Libary list → D063A
+           D063_12. Other 2 (Text variable) Libary list → D063B
+           D063_13. Other 3 (Text variable) Libary list→ D063C
+           D063_14. Do not know
+           D063_15. Do not want to answer
+
+D063A Other treatment against trush or other kinds of fungus 1
+D063B Other treatment against trush or other kinds of fungus 2
+D063C Other treatment against trush or other kinds of fungus 3
+
+           If answer in D060 = 2, use wording b, otherwise a
+D064       a. False croup?
+
+           b. Has he/she had false croup?
+
+           1. No → D068
+           2. Yes
+           3. Do not know → D068
+           4. Do not want to answer → D068
+           9. Undefined
+           10irrelevant
+
+D065       How often has he/she had false croup?
+           Dependet on: D064
+
+           (If the mother cannot come up with a number of times, please say)
+                                                                                              20
+                                                                                21
+           [Was it: 1-3, 4-6, 7-10 or more than 10 times?]
+
+           1. Only once → D066
+           2. Number of times more than 1:       →D065A
+
+           3. 1-3 times → D066
+           4. 4-6 times → D066
+           5. 7-10 times → D066
+           6. More than 10 times → D066
+           7. Do not know → D066
+           8. Do not want to answer → D066
+
+D065A      Number of times with false croup (0-99)
+
+
+           If D065 = 1, use wording a, otherwise b
+D066       a. Did he/she get any kind of treatment?
+              Dependent on: D064
+
+           b. Did he/she at any time get any kind of treatment?
+           1. No → D068
+           2. Yes
+           3. Do not know → D068
+           4. Do not want to answer → D068
+           9. Undefined
+           10 Irrelevant
+
+D067.1-6   What kind of treatment?
+           Dependent on: D064
+
+           Number of possible simultaneous answers: 4 (combinations of 1 - 4)
+
+           D067_1. Paradryl with efedrin
+           D067_2. Other 1 (Text variable) Libary list →D067A
+           D067_3. Other 2 (Text variable) Libary list → D067B
+           D067_4. Other 3 (Text variable) Libary list→ D067C
+           D067_5. Do not know
+           D067_6. Do not want to answer
+
+D067A Other treatment against false croup 1
+D067B Other treatment against false croup 2
+D067C Other treatment against false croup 3
+
+           If answer in D064 = 1, 3 or 4, use wording a, otherwise b
+D068       a. Acute ear inflammation
+
+           b. Has he/she had acute ear inflammation?
+
+           1. No → D073
+           2. Yes
+           3. Do not know → D073
+           4. Do not want to answer → D073
+           9. Undefined
+           10 Irrelevant
+
+D069       How many times has he/she had acute ear inflammation?
+           Dependent on: D068
+
+                                                                                 21
+                                                                                 22
+          (If the mother cannot come up with a number of times, please say)
+          [Was it: 1-3, 4-6, 7-10 or more than 10 times?]
+
+          1. Only once→ D070
+          2. Number of times more than 1:       →D069A
+
+          3. 1-3 times → D070
+          4. 4-6 times → D070
+          5. 7-10 times → D070
+          6. More than 10 times → D070
+          7. Do not know →D070
+          8. Do not want to answer → D070
+          9. Undefined
+          10 Irrelevant
+
+ D069A    Number of times with acute ear inflammation (0-99)
+
+ D070     How old was he/she the first time he/she had acute ear inflammation?
+          Dependent on: D068
+
+          1. Age:       months. and    weeks → D070A
+          2. Age:       weeks → D070B
+          3. Do not know → D071
+          4. Do not want to answer → D071
+          9. Undefined
+          10 Irrelevant
+
+D070A1     Months. Age 1st time with acute ear inflammation (0-99)
+D070A2     Weeks. Age 1st time with acute ear inflammation (0-99) → D071
+D070B      Weeks. Age 1st time with acute ear inflammation (0-99)
+
+
+          If answer ini D069 = , use wording a, otherwise b
+ D071     a. Did he/she get any treatment?
+          Dependent on: D068
+
+          b. Did he/she at any point get any kind of treatment?
+
+          1. No → D073
+          2. Yes
+          3. Do not know →D073
+          4. Do not want to answer → D073
+          9. Undefined
+          10 Irrelevant
+
+ D072.1-19 What treatment?
+           Dependent on: D068
+
+          Number of possible simultaneous answers: 17 (combinations of 1 - 17)
+
+          D072_1. Abboticin
+          D072_2. Doktacillin
+          D072_3. Drain
+          D072_4. Erycin
+          D072_5. Flemoxin
+          D072_6. operation (puncture ear drum(s))
+          D072_7. Pamol
+          D072_8. Pinex
+                                                                                  22
+                                                                                 23
+           D072_9. Penicillin
+           D072_10. Pondocillin
+           D072_11. Primcillin
+           D072_12. Rocilin
+           D072_13. Spektramox
+           D072_14. Vepicombin
+           D072_15. Other 1 (Text variable) Libary list → D072A
+           D072_16. Other 2 (Text variable) Libary list → D072B
+           D072_17. Other 3 (Text variable) Libary list→ D072C
+           D072_18. Do not know
+           D072_19. Do not want to answer
+
+D072A Other treatment against acute ear inflammation 1
+D072B Other treatment against acute ear inflammation 2
+D072C Other treatment against acute ear inflammation 3
+
+S073       Has he/she had episodes with wheezing respiration?
+
+           1. No
+           2. Yes
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+D074       Has a doctor said that he/she has got asthma bronchitis or asthma?
+           1. No
+           2. Yes
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+           If answer in S073 = 1, 3 or and answer in D074 = 1, 3 or 4 →D079
+
+           If answer in S073 = 2, use the wording a
+D075       a. How many times has he/she had episodes of wheezing respiration?
+           Dependent on: S073 D074
+
+           If answer in S073 = 1, 3 or 4 and asnwer in D074 = 2, use wording b
+           b. How many times has he/she had episodes with asthma bronchitis?
+
+           (If the mother cannot come up witha number of times, please say:)
+           [Was it: 1-3, 4-6, 7-10 or more than 10 times?]
+
+           1. Number of episodes:       →D075A
+           2. Cronic or almost cronic condition →D076
+
+           3. 1-3 episodes →D076
+           4. 4-6 episodes → D076
+           5. 7-10 episodes →D076
+           6. More than 10 episodes →D076
+           7. Do not know →D076
+           8. Do not want to answer → D076
+           9. Undefined
+           10 Irrelevant
+
+D075A      Number of episodes with asthma bronchitis or asthma (0-99)
+
+           If answer in S073 = 2, use wording a
+
+                                                                                  23
+                                                                                                       24
+D076     a. How old was he/she when he/she had wheezing respiration?
+         Dependent on:S073 D074
+
+         If answer in S073 = 1, 3 or 4 and answer in D074 = 2, use wording b
+         b. How old was he/she when he/she had asthma bronchitis?
+
+         1. Master list II (MONTHS2, genereret fra MONTHS): Months scheme
+
+              D076_1. 6 1/2 months
+              D076_2. 7 months
+              D076_3. 7 1/2 months
+              D076_4. 8 months
+              D076_5. 8 1/2 months
+              D076_6. 9 months
+              D076_7. 9 1/2 months
+              D076_8. 10 months
+              D076_9. 10 1/2 months
+              D076_10. 11 months
+              D076_11. 11 1/2 months
+              D076_12. 12 months
+              D076_13. 12 1/2 months
+              D076_14. 13 months
+              D076_15. 13 1/2 months
+              D076_16. 14 months
+              D076_17. 14 1/2 months
+              D076_18. 15 months
+              D076_19. 15 1/2 months
+              D076_20. 16 months
+              D076_21. 16 1/2 months
+              D076_22. 17 months
+              D076_23. 17 1/2 months
+              D076_24. 18 months
+              D076_25. 18 1/2 months
+              D076_26. The entire period
+              D076_27. Do not know
+              D076_28. Do not want to answer
+
+
+         If D075A = 1, use wording a, otherwise b
+D077     a. Did he/she get any kind of treatment?
+         Dependent on: S073 D074
+
+         b. Did he/she at any time get any kind of treatment?
+
+         1. No → D079
+         2. Yes
+         3. Do not know → D079
+         4. Do not want to answer → D079
+         9. Undefined
+         10. Irrelevant
+
+D078.1-18 What kind fo treatment?
+          Dependent on: S073 D074
+
+         (If the ansawer is Bricanyl, Bricur, Salbuvent and/or Ventoline with no indication of type,
+         please ask:)
+         [Was it for inhalation?]
+
+                                                                                                        24
+                                                                                  25
+           Number of possible simultaneous answers: 10 (combinations of 1 - 16)
+
+           D078_1. Asthma medicine (unspecified)
+           D078_2. Asthma spray (unspecified)
+           D078_3. Bricanyl spray/spacer
+           D078_4. Bricanyl mixture
+           D078_5. Bricur spray/spacer
+           D078_6. Bricur mixture
+           D078_7. Pinex
+           D078_8. Pamol
+           D078_9. Salbuvent spray/spacer
+           D078_10. Salbuvent mixture
+           D078_11. Spirocort
+           D078_12. Ventoline spray/spacer
+           D078_13. Ventoline mixture
+           D078_14. Other 1 (Text variable) Libary list → D078A
+           D078_15. Other 2 (Text variable) Libary list → D078B
+           D078_16. Other 3 (Text variable) Libary list→ D078C
+           D078_17. Do not know
+           D078_18. Do not want to answer
+
+D078A. Other treatment against asthma bronchitis or asthma 1
+D078B. Other treatment against asthma bronchitis or asthma 2
+D078C. Other treatment against asthma bronchitis or asthma 3
+
+D079       Has he/she had bronchitis? (dry to loose cough)
+
+           1. No → D084
+           2. Yes
+           3. Do not know → D084
+           4. Do not want to answer → D084
+           9. Undefined
+           10irrelevant
+
+D080       How many times has he/she had bronchitis?
+           Dependent on: D079
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it: 1-3, 4-6, 7-10 or more than 10 times?]
+
+           1. Only 1 time → D081
+           2. Number of times more than 1:      →D080A
+           3. 1-3 times → D081
+           4. 4-6 times → D081
+           5. 7-10 times → D081
+           6. More than 10 times →D081
+           7. Do not know → D081
+           8. Do not want to answer → D081
+           9. Undefined
+           10Irrelevant
+
+D080A      Number of times with bronchitis (0-99)
+
+D081       How old was he/she when he/she had bronchitis?
+           Dependent on: D079
+
+           1. Master list II (MONTHS2, genereret fra MONTHS): Months scheme
+
+                                                                                   25
+                                                                                                         26
+                D081_1. 6 1/2 months
+                D081_2. 7 months
+                D081_3. 7 1/2 months
+                D081_4. 8 months
+                D081_5. 8 1/2 months
+                D081_6. 9 months
+                D081_7. 9 1/2 months
+                D081_8. 10 months
+                D081_9. 10 1/2 months
+                D081_10. 11 months
+                D081_11. 11 1/2 months
+                D081_12. 12 months
+                D081_13. 12 1/2 months
+                D081_14. 13 months
+                D081_15. 13 1/2 months
+                D081_16. 14 months
+                D081_17. 14 1/2 months
+                D081_18. 15 months
+                D081_19. 15 1/2 months
+                D081_20. 16 months
+                D081_21. 16 1/2 months
+                D081_22. 17 months
+                D081_23. 17 1/2 months
+                D081_24. 18 months
+                D081_25. 18 1/2 months
+                D081_26. Hele perioden
+                D081_27. Do not know
+                D081_28. Do not want to answer
+
+          If D080 = 1, use wording a, otherwise b
+D082      a. Did he/she get any kind of treatment?
+          Dependent on: D079
+
+          b. Did he/she at any time get any kind of treatment?
+
+          1. No → D084
+          2. Yes
+          3. Do not know → D084
+          4. Do not want to answer → D084
+          9. Undefined
+          10. Irrelevant
+
+D083.1-15 What kind of treatment?
+          Dependent on: D079
+
+
+          (If the answer is only Bricanyl, Bricur and/or Ventoline with no indication of type, please ask:)
+          [Was it for inhalation?]
+
+          Number of possible simultaneous answers: 13 (combinations of 1 - 13)
+
+          D083_1. Bisolvon
+          D083_2. Bricanyl spray/spacer
+          D083_3. Bricanyl mixture
+          D083_4. Bricur spray/spacer
+          D083_5. Bricur mixture
+          D083_6. cough mixture
+          D083_7. Pinex
+                                                                                                          26
+                                                                               27
+           D083_8. Pamol
+           D083_9. Ventoline spray/spacer
+           D083_10. Ventoline mixture
+           D083_11. Other 1 (Text variable) Libary list→ D083A
+           D083_12. Other 2 (Text variable) Libary list → D083B
+           D083_13. Other 3 (Text variable) Libary list→ D083C
+           D083_14. Do not know
+           D083_15. Do not want to answer
+
+D083A. Other treatment against bronchitis 1
+D083B. Other treatment against bronchitis 2
+D083C. Other treatment against bronchitis 3
+
+           If answer in D079 = 1, 3 or 4, use wording a, otherwise b
+D084       a.Pneumonia?
+
+           b. Has he/she had pneumonia?
+
+           (If the mother answers Yes, please ask: )
+           [Was the pneumonia diagnosed by a doctor?]
+
+           1. No → D089
+           2. Yes
+           3. Do not know →D089
+           4. Do not want to answer → D089
+           9. Undefined
+
+D085       How many times has he/she had pneumonia?
+           Dependent on: D084
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it: 1-3, 4-6 or more than 6 times?]
+
+           1. Only 1 time → S086
+           2. Number of times more than 1:       →D085A
+
+           3. 1-3 times → S086
+           4. 4-6 times → S086
+           5. More than 6 times → S086
+           6. Do not know →S086
+           7. Do not want to answer →S086
+           9. Undefined
+           10 Irrelevant
+
+D085A      Number of times with pneumonia (0-99)
+
+           If D085 = 1, use wording a, otherwise b
+S086       a. Was it diagnosed by a doctor?
+           Dependent on: D084
+
+           b. How many times was it diagnosed by a dcotor?
+
+           (If the mother cannot come up with a number of times, please say)
+
+
+
+
+                                                                                27
+          [Was it: 1-3, 4-6 or more than 6 times?]
+
+          1. Yes (hver gang) → D087
+          2. No (never) → D087
+          3. Only diagnosed by doctor -----number of times (if not each time):   →S086A
+
+          4. 1-3 times diagnosed by doctor (if not each time) → D087
+          5. 4-6 times diagnosed by doctor (if not each time) →D087
+          6. More than 6 times diagnosed by doctor (if not each time) → D087
+          7. Do not know → D087
+          8. Do not want to answer → D087
+          9. Undefined
+          10 Irrelevant
+
+S086A     Number of times pneumonia diagnosed by a doctor (0-99)
+
+          If answer in D085 = 1, use wording a, otherwise b
+D087      a. Did he/she get any treatment?
+          Dependent on: D084
+
+          b. Did he/she at any time get any kind of treatment?
+
+          1. No → D089
+          2. Yes
+          3. Do not know → D089
+          4. Do not want to answer → D089
+          9. Undefined
+          10irrelevant
+
+D088.1-12 What kind of treatment?
+
+          Number of possible simultaneous answers: 10 (kombinationer af 1. - 10.)
+
+          D088_1. Acipen
+          D088_2. Flemoxin
+          D088_3. Imacillin
+          D088_4. Penicillin
+          D088_5. Primcillin
+          D088_6. Rocilin
+          D088_7. Vepicombin
+          D088_8. Other 1 (Text variable) Libary list →D088A
+          D088_9. Other 2 (Text variable) Libary list → D088B
+          D088_10. Other 3 (Text variable) Libary list → D088C
+          D088_11. Do not know
+          D088_12. Do not want to answer
+
+D088A. Other treatment against pneumonia 1
+D088B. Other treatment against pneumonia 2
+D088C. Other treatment against pneumonia 3
+
+D089.     Has he/she ever had a temperture of fever of more than 38.5 with no other symptoms?
+          No rash, ...?
+
+          1. No → D093
+          2. Yes
+          3. Do not know → D093
+          4. Do not want to answer → D093
+          5. Undefined
+                                                                                                28
+D090       How often has he/she been like that?
+           Dependent on: D089
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it 1-5, 6-10 or more than 10 times?]
+
+           1. Only 1 time → D091
+           2. Number of times more than 1:        →D090A
+
+           3. 1-5 times →D091
+           4. 6-10 times →D091
+           5. More than10 times →D091
+           6. Do not know → D091
+           7. Do not want to answer →D091
+
+D090A      Number of times with more that 38.5 temperature fever (0-99)
+
+           If answer in D090 = 1, use wordinga, otherwise b
+D091       a. Did he/she get any kind of treatment?
+           Dependent on: D089
+
+           b. Did he/she at any time get any kind of treatment against it?
+
+           1. No → D093
+           2. Yes
+           3. Do not know →D093
+           4. Do not want to answer → D093
+           9. Undefined
+           10 Irrelevant
+
+
+D092.1-12 What kind of treatment?
+          Dependent on: D089
+
+           Number of possible simultaneous answers: 10 (kombinationer af 1. - 10.)
+
+           D092_1. Acipen
+           D092_2. Flemoxin
+           D092_3. Imacillin
+           D092_4. Penicillin
+           D092_5. Primcillin
+           D092_6. Rocilin
+           D092_7. Vepicombin
+           D092_8. Other 1 (Text variable) Libary list → D092A
+           D092_9. Other 2 (Text variable) Libary list→ D092B
+           D092_10. Other 3 (Text variable) Libary list → D092C
+           D092_11. Do not know
+           D092_12. Do not want to answer
+
+D092A. Other treatment against 38.5 fever 1
+D092B. Other treatment against 38.5 fever 2
+D092C. Other treatment against 38.5 fever 3
+
+D093       Has he/she had scarlet fever?
+
+           1. No → D097
+           2. Yes
+                                                                                     29
+           3. Do not know → D097
+           4. Do not want to answer → D097
+           9. Undefined
+           10 Irrelevant
+
+D094       How many times has he/she had scarlet fever?
+           Dependent on: D093
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it: 1-3, 4-6 or more than 6 times?]
+
+           1. Only 1 time→ D095
+           2. Number of times more than 1:        →D094A
+           3. 1-3 times → D095
+           4. 4-6 times →D095
+           5. More than 6 times →D095
+           6. Do not know → D095
+           7. Do not want to answer →D095
+           9. Undefined
+           10 Irrelevant
+
+D094A      Number of times with scarelt fever (0-99)
+
+           If answer in D094 = 1, use wording a, otherwise b
+D095       a. Did he/she get any kind of treatment?
+           Dependent on: D093
+
+           b. Did he/she at any time get any kind of treatment against it?
+
+           1. Yes
+           2. No → D097
+           3. Do not know → D097
+           4. Do not want to answer → D097
+           9. Undefined
+           10 Irrelevant
+
+D096.1-12 What kind of treatment?
+          Dependent on: D093
+
+           Number of possible simultaneous answers: 10 (combinations of 1 - 10)
+
+           D096_1. Acipen
+           D096_2. Flemoxin
+           D096_3. Imacillin
+           D096_4. Penicillin
+           D096_5. Primcillin
+           D096_6. Rocilin
+           D096_7. Vepicombin
+           D096_8. Other 1 (Text variable) Libary list → D096A
+           D096_9. Other 2 (Text variable) Libary list →D096B
+           D096_10. Other 3 (Text variable) Libary list → D096C
+           D096_11. Do not know
+           D096_12. Do not want to answer
+
+D096A. Other treatment against scarlet fever 1
+D096B. Other treatment against scarlet fever 2
+D096C. Other treatment against scarlet fever 3
+
+                                                                                  30
+        If answer in D093 = 2, use wording b, otherwise a
+D097    a. Fever cramps?
+
+        b. Has he/she had fever cramps?
+
+        1. No → D099
+        2. Yes
+        3. Do not know → D099
+        4. Do not want to answer → D099
+        9. Undefined
+
+D098    How often has he/she had fever cramps?
+        Dependent on: D097
+
+        (If the mother cannot come up with a number of times, please say)
+        [Was it: 1-5, 6-9 or - 10 or more times?]
+
+        1. Only 1 time → D098X
+        2. Number of times more than 1:         →D098A
+        3. 1-5 times → D098X
+        4. 6-9 times → D098X
+        5. 10 or more times → D098X
+        6. Do not know → D098X
+        7. Do not want to answer → D098X
+        9. Undefined
+        10 irrelevant
+
+D098A   Number of times with fever cramps (0-99)
+
+D098X   How long did the longest fever cramp last?
+        (not in version1)
+
+        (If the mother cannot indicate duration, please ask:)
+        [Did it last less than 5 minutes, from 6 to 14 minutes, from 15 to 29 minutes or did it last 30
+        minutes or more?]
+
+        1. Less than 5 minutes
+        2. 6-14 minutes
+        3. 15-29 minutes
+        4. 30 minutes or more
+        5. Do not know
+        6. Do not want to answer
+        9. Undefined
+        10Irrelevant
+        11Not asked
+
+        If answer in D097 = 2, use wordning b, otherwise a
+D099    a. 3-days fever?
+
+        b. Has he/she had 3-days fever?
+
+        1. No
+        2. Yes
+        3. Do not know
+        4. Do not want to answer
+        9. Undefined
+
+D100    The fifth child disease?
+
+                                                                                                          31
+         1. No
+         2. Yes
+         3. Do not know
+         4. Do not want to answer
+         9. undefined
+
+D101     Chicken pox?
+
+         1. No
+         2. Yes
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+
+D102     Rubella?
+
+         1. No
+         2. Yes
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+
+D103     Measles?
+
+         1. No
+         2. Yes
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+
+D104     Mumps?
+
+         1. No
+         2. Yes
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+
+S105     Has a doctor told you that he/she is allergic to food?
+
+         1. No → S106Q
+         2. Suspect it - looking into it
+         3. Yes
+         4. Do not know → S106Q
+         5. Do not want to answer → S106Q
+         9. Undefined
+
+
+S106.1-21 What kind of food?
+          Dependent on: S105
+
+
+         Number of possible simultaneous answers: 19 (kombinationer af 1. - 19.)
+
+         S106_1. Milk
+         S106_2. Eggs
+         S106_3. Soya
+         S106_4. Rye
+         S106_5. Wheat
+                                                                                   32
+         S106_6. Cereals in general
+         S106_7. Gluten
+         S106_8. Citrus fruit (oranges, lemon, lime)
+         S106_9. Strawberry
+         S106_10. Tomatoes
+         S106_11. Peanuts
+         S106_12. Nuts (other than peanuts)
+         S106_13. Beans
+         S106_14. Peas
+         S106_15. Cod
+         S106_16. Fish in general
+         S106_17. Shellfish
+         S106_18. Other 1 (Text variable) Libary lis → S106A
+         S106_19. Other 2 (Text variable) Libary list→ S106B
+         S106_20. Do not know
+         S106_21. Do not want to answer
+
+S106A.   Other food 1
+S106B.   Other food 2
+
+S106Q    Has he/she had pruritic skin eruption?
+         (not in version1)
+
+         1. No → D050
+         2. Yes
+         3. Do not know → D050
+         4. Do not want to answer → D050
+         9. Undefined
+         11 Not asked
+
+S106R    Has it been returning skin eruption?
+         (not in version1)
+         Dependent on: S106Q
+
+         1. Yes
+         2. No
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+         10Irrelevant
+         11Not asked
+
+S106S    Did it last for more than two weeks?
+         (not in version1)
+         Dependent on: S106Q
+
+         1. Yes
+         2. No
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+         10Irrelevant
+         11Not asked
+
+         If both S106R and S106S = 2, 3 o 4 -> D050
+
+S106T.1-41    During what periods since brith has he/she had skin eruptions?
+              (not in version1)
+              Dependent on: S106Q
+                                                                               33
+         Master list III (ALLMONTH): Months scheme
+
+         Number of psooible simultaneous answersr: 26 (combinations of 1-39)
+
+              S106T_1.         The entire period
+              S106T_2.         0 months
+              S106T_3.         1/2 months
+              S106T_4.         1 months
+              S106T_5.         1 1/2 months
+              S106T_6.         2 months
+              S106T_7.         2 1/2 months
+              S106T_8.         3 months
+              S106T_9.         3 1/2 months
+              S106T_10.        4 months
+              S106T_11.        4 1/2 months
+              S106T_12.        5 months
+              S106T_13.        5 1/2 months
+              S106T_14.        6 months
+              S106T_15.        6 1/2 months
+              S106T_16.        7 months
+              S106T_17.        7 1/2 months
+              S106T_18.        8 months
+              S106T_19.        8 1/2 months
+              S106T_20.        9 months
+              S106T_21.        9 1/2 months
+              S106T_22.        10 months
+              S106T_23.        10 1/2 months
+              S106T_24.        11 months
+              S106T_25.        11 1/2 months
+              S106T_26.        12 months
+              S106T_27.        12 1/2 months
+              S106T_28.        13 months
+              S106T_29.        13 1/2 months
+              S106T_30.        14 months
+              S106T_31.        14 1/2 months
+              S106T_32.        15 months
+              S106T_33.        15 1/2 months
+              S106T_34.        16 months
+              S106T_35.        16 1/2 months
+              S106T_36.        17 months
+              S106T_37.        17 1/2 months
+              S106T_38.        18 months
+              S106T_39.        18 1/2 months
+              S106T_40.        Do not know
+              S106T_41.        Do not want to answer
+
+S106U.1-19    Where was the skin eruption? (drawing in guide)
+              (not in version1)
+              Dependent on: S106Q
+         Number of possible simultaneous answers: 17 (combinations of 1-17)
+
+         S106U_1. In scalp
+         S106U_2. I pother
+         S106U_3. Around eyes
+         S106U_4. In cheeks
+         S106U_5. Around ears
+         S106U_6. Around mouth
+                                                                               34
+           S106U_7. In neck
+           S106U_8. In chest
+           S106U_9. In back
+           S106U_10. In elboes
+           S106U_11. Outer side of arms
+           S106U_12. In wrists
+           S106U_13. In hollow of the knee
+           S106U_14. In outer and inner sides of the legs
+           S106U_15. In the diaper area
+           S106U_16. Evenly distributed over the entire body
+           S106U_17. Other places (Text variable) →
+           S106UA S106U_18. Do not know
+           S106U_19. Do not want to answer
+
+S106UA     Other places skin eruptions
+
+S106V.1-16       What kind of treatment did he/she get?
+                 (not in version1)
+                 Dependent on: S106Q
+
+           Number of possible simultaneous answers: 13 (combinations of 1 - 13)
+
+           S106V_1. Betnovat
+           S106V_2. Dermil
+           S106V_3. Elocon
+           S106V_4. Hydrocortison
+           S106V_5. Hormone cream, unspecified
+           S106V_6. Legederm
+           S106V_7. Locoid
+           S106V_8. Mildison
+           S106V_9. Ointment/Cream unspecified
+           S106V_10. Uniderm
+           S106V_11. Other 1 (Text variable) Libary list → S106VA
+           S106V_12. Other 2 (Text variable) Libary list→ S106VB
+           S106V_13. Other 3 (Text variable) Libary list→ S106VC
+           S106V_14. None
+           S106V_15. Do not know
+           S106V_16. Do not want to answer
+
+S106VA. Other treatment against pruritic skin eruption 1
+S106VB. Other treatment against pruritic skin eruption 2
+S106VC. Other treatment against pruritic skin eruption 3
+
+S106X      Was it infant eczema, also called asthma eczema?
+           (not in version1)
+           Dependent on: S106Q
+
+           1. Yes → S051
+           2. No
+           3. No, skin eruption in connection with fever disease
+           4. No, skin eruption in connection with nettle fever
+           5. Do not know
+           6. Do not want to answer
+           9. Undefined
+           10Irrelevant
+           11Not asked
+
+           If s106X = 2, 3, 4, 5 or 6, use wording b, otherwise a
+
+                                                                                  35
+D050     a. Has he/she had infant eczema, also called asthma eczema?
+         Dependent on: S106X
+
+         b. Has he/she at any time had infant eczema, also called asthma eczema?
+
+         1. No → D054
+         2. Yes
+         3. Do not know →D054
+         4. Do not want to answer → D054
+         9. Undefined
+         10Irrelevant
+
+
+S051     Did a doctor say that he/she had infant eczema, also called asthma eczema?
+         Dependent on: D050
+
+         1. Yes
+         2. No
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+         10irrelevant
+
+         If D050 is different from 2 → D054
+
+S106Y.1-41    In which periods after birth has he/she had eczema?
+
+         Master list III (ALLMONTH): Months scheme
+
+              S106Y_1.         The entire period
+              S106Y_2.         0 months
+              S106Y_3.         1/2 months
+              S106Y_4.         1 months
+              S106Y_5.         1 1/2 months
+              S106Y_6.         2 months
+              S106Y_7.         2 1/2 months
+              S106Y_8.         3 months
+              S106Y_9.         3 1/2 months
+              S106Y_10.        4 months
+              S106Y_11.        4 1/2 months
+              S106Y_12.        5 months
+              S106Y_13.        5 1/2 months
+              S106Y_14.        6 months
+              S106Y_15.        6 1/2 months
+              S106Y_16.        7 months
+              S106Y_17.        7 1/2 months
+              S106Y_18.        8 months
+              S106Y_19.        8 1/2 months
+              S106Y_20.        9 months
+              S106Y_21.        9 1/2 months
+              S106Y_22.        10 months
+              S106Y_23.        10 1/2 months
+              S106Y_24.        11 months
+              S106Y_25.        11 1/2 months
+              S106Y_26.        12 months
+              S106Y_27.        12 1/2 months
+              S106Y_28.        13 months
+              S106Y_29.        13 1/2 months
+
+                                                                                      36
+                S106Y_30.       14 months
+                S106Y_31.       14 1/2 months
+                S106Y_32.       15 months
+                S106Y_33.       15 1/2 months
+                S106Y_34.       16 months
+                S106Y_35.       16 1/2 months
+                S106Y_36.       17 months
+                S106Y_37.       17 1/2 months
+                S106Y_38.       18 months
+                S106Y_39.       18 1/2 months
+                S106Y_40.       Do not know
+                S106Y_41.       Do not want to answer
+
+S106Z.1-19      Where was the eczema? (drawing in guide)
+                (not in version1)
+                Dependent on: D050
+          Number of possible simultaneous answers: 17 (combinations of
+          1-17)
+
+          S106Z_1. In scalp
+          S106Z_2. I pother
+          S106Z_3. Around eyes
+          S106Z_4. In cheeks
+          S106Z_5. Around ears
+          S106Z_6. Around mouth
+          S106Z_7. In neck
+          S106Z_8. In chest
+          S106Z_9. In back
+          S106Z_10. In elboes
+          S106Z_11. Outer side of arms
+          S106Z_12. In wrists
+          S106Z_13. In hollow of the knee
+          S106Z_14. In outer and inner sides of the legs
+          S106Z_15. In the diaper area
+          S106Z_16. Evenly distributed over the entire body
+          S106Z_17. Other places (Text variable) →S106ZA
+          S106Z_18. Do not know
+          S106Z_19. Do not want to answer
+S106ZA
+          Eczema other places
+D053.1-16 What treatment did he/she get?
+
+          Number of possible simultaneous answers: 13 (combinations of 1. - 13.)
+
+          D053_1. Betnovat
+          D053_2. Dermil
+          D053_3. Elocon
+          D053_4. Hydrocortison
+          D053_5. Hormone cream, unspecified
+          D053_6. Legederm
+          D053_7. Locoid
+          D053_8. Mildison
+
+
+
+
+                                                                                   37
+           D053_9. Ointment/cream unspecified
+           D053_10. Uniderm
+           D053_11. Other 1 (Text variable) Libary list → D053A
+           D053_12. Other 2 (Text variable) Libary list → D053B
+           D053_13. Other 3 (Text variable) Libary list→ D053C
+           D053_14. Ingen
+           D053_15. Do not know
+           D053_16. Do not want to answer
+
+D053A. Other treatment against infant eczema 1
+D053B. Other treatment against infant eczema 2
+D053C. Other treatment against infant eczema 3
+
+           If s106X = 4 → D055
+D054       Did he/she have nettle fever?
+
+           1. No → D056
+           2. Yes
+           3. Yes, but did already answer in connection with questions about skin eruptions
+           4. Do not know → D056
+           5. Do not want to answer →D056
+           9. Undefined
+
+D055       How often has he/she had nettle fever?
+           Dependent on: D054
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it: 1-3, 4-6 or more than 6 times?]
+
+           1. Only 1 time → D056
+           2. Number of times more than 1:       →D055A
+           3. 1-3 times → D056
+           4. 4-6 times → D056
+           5. More than 6 times → D056
+           6. Do not know →D056
+           7. Do not want to answer → D056
+           9. Undefined
+           10irrelevant
+
+D055A      Number of times with nettle fever (0-99)
+
+D056       Has he/she had other kinds of eczema or skin eruptions?
+
+           1. No → D107
+           2. Yes
+           3. Do not know →D107
+           4. Do not want to answer → D107
+           9. Undefined
+           10Irrelevant
+
+D057       How often has he/she had other kinds of eczema or skin eruptions?
+           Dependent on: D056
+
+           (If the mother cannot come up with a number of times, please say)
+           [Was it: 1-3, 4-6 or more than 6 times?]
+
+           1. Only 1 time →D058
+
+                                                                                              38
+           2. Number of times more than 1:       →D057A
+           3. More or less a cronic condition → D058
+           4. 1-3 times → D058
+           5. 4-6 times →D058
+           6. More than→ D058
+           7. Do not know → D058
+           8. Do not want to answer →D058
+           9. Undefined
+           10Irrelevant
+
+D057A      Number of times with other kinds of eczema/skin eruptions
+
+           If answer in D057 = 1, use wording a, otherwise b
+D058       a. Did he/she get any treatment?
+           Dependent on: D056
+
+           b. Did he/she at any time get any kind of treatment against it?
+
+           1. No →D107
+           2. Yes
+           3. Do not know → D107
+           4. Do not want to answer →D107
+           9. Undefined
+           10 Irrelevant
+
+D059.1-12 What kind of treatment?
+          Dependent on: D056 D058
+
+           Number of possible simultaneous answers: 10 (combinations of 1 - 10)
+
+           D059_1. Betnovat
+           D059_2. Canesten
+           D059_3. Dermil
+           D059_4. Elocon
+           D059_5. Hydrocortison
+           D059_6. Locoid
+           D059_7. Ointment/cream, unspecified
+           D059_8. Other 1 (Text variable) Libary list → D059A
+           D059_9. Other 2 (Text variable) Libary list → D059B
+           D059_10. Other 3 (Text variable) Libary list →D059C
+           D059_11. Do not know
+           D059_12. Do not want to answer
+
+D059A. Other treatment against other kinds of eczema 1
+D059B. Other treatment against other kinds of eczema 2
+D059C. Other treatment against other kinds of eczema 3
+
+REDUCED HEARING
+
+D107       Has there ever been suspicion of reduced hearing?
+
+           (If the mother answers yes, say:)
+           Has a doctor diagnosed reduced hearing?
+
+           1. No, never suspicion about reduce hearing → O109M
+           2. Yes, suspicion but not diagnosed by doctor about reduced hearing
+           3. Yes, suspicion about and docotor diagnosed reduced hearing
+           4. Do not know →O109M
+
+                                                                                  39
+          5. Do not want to answer →O109M
+          9. Undefined
+
+D108      How old was he/she when the 1st suspicion about reduced hearing arose?
+          Dependent on: D107
+
+          1. Age:     months and       weeks → D108A
+          2. Age:     weeks →D108B
+          3. Age:     days → D108C
+          4. Do not know → D109
+          5. Do not want to answer → D109
+D108A1    Months. Age of 1st suspicion reduced hearing (0-99)
+D108A2    Weeks. Age of 1st suspicion reduced hearing (0-99) →D109
+D108B.    Weeks. Age of 1st suspicion reduced hearing (0-99)→ D109
+D108C.    Days. Age of 1st suspicion reduced hearing (0-99)
+
+D109      For how long - since the birth up till now - all togehter has there been a suspicion about
+          reduced hearing?
+          Dependent on: D107
+
+          1. Total duration:     months and    weeks →D109A
+          2. Total duration:     weeks → D109B
+          3. Total duration:     days → D109C
+          4. Do not know → O109M
+          5. Do not want to answer → O109M
+          9. Undefined
+          10 irrelevant
+
+D109A1 Months. Total duration of suspicion about reduced hearing (0-99)
+D109A2 Weeks. Total duration of suspicion about reduced hearing (0-99) → O109M
+D109B. Weeks. Total duration of suspicion about reduced hearing (0-99)→ O109M
+D109C. Days. Total duration of suspicion about reduced hearing (0-99)
+
+REDUCED VISION/STRABISMUS
+
+O109M     Has there ever been any suspicion about reduced vision?
+          (not in version1)
+
+
+          1. Yes
+          2. No → O109S
+          3. Do not know →O109S
+          4. Do not want to answer → O109S
+          9. Undefined
+          11Not asked
+
+
+
+O109N     Did a doctor diagnose reduced vision?
+          (not in version 1)
+          Dependent: O109M
+
+          1. Yes
+          2. No → O109R
+          3. Do not know → O109R
+          4. Do not want to answer →O109R
+          9. Undefined
+          10Irrelevant
+                                                                                                       40
+          11Not asked
+          12
+
+O109P     Has a doctor found the cause of reduced vision?
+          (Not in version1)
+          Dependent on: O109M O109N
+
+          1. Yes
+          2. No → O109R
+          3. Do not know →O109R
+          4. Do not want to answer → O109R
+          9. Undefined
+          10Irrelevant
+          11Not asked
+
+O109Q.1-12     What is the cause?
+               (Not in version1)
+               Dependent on: O109M O109N O109P
+
+          Number of possible simultaneous answers 10 (combinations of 1-10)
+
+          O109Q_1. cataract
+          O109Q_2. glaucoma
+          O109Q_3. missing lense
+          O109Q_4. myopia, very strong
+          O109Q_5. small eyes (microphthalmus)
+          O109Q_6. hanging eye lid (ptose)
+          O109Q_7. disease in retina
+          O109Q_8. blindness/almost blind
+          O109Q_9. Tumor
+          O109Q_10. Other         (Text variable) →O109QA
+          O109Q_11. Do not know
+          O109Q_12. Do not want to answer
+
+O109QA.   Other reason, reduced vision
+
+O109R     Has he/she got glasses or contact lenses?
+          (Not in version1)
+          Dependent on: O109M
+
+          1. Yes
+          2. No
+          3. Do not know
+          4. Do not want to answer
+          9. Undefined
+          10Irrelevant
+          11Not asked
+
+O109S     Has there ever been any suspicion of strabismus?
+          (Not in version1)
+
+          1. Yes
+          2. No -> O109Z
+          3. Do not know -> O109Z
+          4. Do not want to answer → O109Z
+          9. Undefined
+          10 Irrelevant
+
+O109T     Did a doctor diagnose strabismus?
+          (Not in version1)                                                   41
+          Dependent on: O109S
+         1. Yes
+         2. No
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+         10Irrelevant
+         11Not asked
+
+O109U    Does your child still have strabismus?
+         (Not in version1)
+         Dependent on: O109S
+
+         1. Yes → O109X
+         2. No
+         3. Do not know → O109Z
+         4. Do not want to answer → O109Z
+         9. Undefined
+         10Irrelevant
+         11Not asked
+
+O109V    When did strabismus end?
+         (Not in version1)
+
+         1. Age:     months and       weeks → O109VA1
+         2. Age:     months → O109VB
+         3. Do not know →O109Y
+         4. Do not want to answer → O109Y
+
+O109VA1 Months. End strabismus (0-99)
+O109VA2 Weeks. End strabismus (0-9)→ O109Y
+O109VB. Months. End strabismus (0-99)
+
+O109X    Is strabismus present constantly or only some times, e.g. when child is tired?
+         (Not in version1)
+         Dependent on: O109S O109U
+         1. All the time
+         2. Some times
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+         10Irrelevant
+         11Not asked
+
+O109Y    Has he/she been treated for strabismus?
+         (Not in version1)
+         Dependent on: O109S O109U
+
+         1. Yes
+         2. No
+         3. Do not know
+         4. Do not want to answer
+         9. Undefined
+         10Irrelevant
+         11Not asked
+
+O109Z    Has any member of child's close family strabismus or had strabismus?
+         (Not in version1)
+                                                                                          42
+          1. Yes, child's father and/or mother
+          2. Yes, one or more sisters
+          3. No
+          4. Do not know
+          5. Do not want to answer
+          9. Undefined
+          10Irrelevant
+          11Not asked
+
+D110      Has he/she ever had a sunburn with blisters?
+
+          1. No
+          2. Yes
+          3. Do not know
+          4. Do not want to answer
+          9. Undefined
+
+          D111 only for boys (SEX=1)
+D111      Are the testicles in scrotum?
+          Dependent on: SEX
+
+          1. Yes, both
+          2. Only one
+          3. No
+          4. Do not know, but earlier the doctor said that none/one was in scrotum
+          5. Do not know
+          6. Do not want to answer
+          9. Undefined
+          10 irrelevant
+
+D112.1-22 Was he/she born with any acertained malformations?
+
+          Number of possible simultaneous answers 19 (combinations of 2-20)
+
+
+        D112_1. No
+        D112_2. Yes, cleft in lips/palate/gum
+        D112_3. Yes, malformation ears (external or internal)
+        D112_4. Yes, malformation eyes (external or internal)
+        D112_5. Yes, Adhesion of fingers
+        D112_6. Yes, Adhesion of toes
+        D112_7. Yes, Clubfoot
+        D112_8. Yes, dislocation of hip
+        D112_9. Yes, spinal cord hernia or cerebral hernia
+        D112_10. Yes, hydrocephalus/water on the brain
+        D112_11. Yes, heart malformation/heart disease
+        D112_12. Yes, kidney/bladder malformations
+        D112_13. Yes, hole in abdominal wall
+        D112_14. Yes, constriction of gullet, stomach or enterostenosis
+        D112_15. Yes, no or rectum or constricted rectum
+        D112_16. Yes, mongolism/Downs syndrome (Trisomi 21)
+        D112_17. Yes, boys: no or only one testicle in scrotum
+        D112_18. Yes, boys: end of urethra in under side of penis
+        D112_19. Other 1 (Text variable) → C112A
+        D112_20. Other 2 (Text variable) → C112B
+        D112_21. Do not know
+        D112_22. Do not wish to answer
+
+                                                                                     43
+D112A.       Other 1 - congential malformation
+D112B.       Other 2 - congential malformation
+
+             Wording a to be used only the first time D113 is being asked
+
+D113.1-5     a. Has he/she had other diseases or sufferings than the ones we have been talking about right
+                now?
+             b. Has he/she had other diseases/sufferings?
+
+           (If the mother answers diaper rash (sore, red, irritated skin), do not mark, but please
+           repeat question:)
+           [Has he/she had other diseases/sufferings?]
+
+           1. No → D117
+           2. Yes: Name of disease (Text variable) → C113
+           3. Do not know →D117
+           4. Do not wish to answer →D117
+           9. Undefined
+
+D113.1-5 Name of disease/suffering
+
+D114.1-5     How old was he/she at that time?
+
+           a. Master list II (MONTHS2, genereret fra months): Months scheme
+
+             D114xxyy, xx indicates number of othern disease from D113 and yy indicates answer option
+             in D114
+
+                   D1140101-D1140501. 6 1/2 months
+                   D1140102-D1140502. 7 months
+                   D1140103-D1140503. 7 1/2 months
+                   D1140104-D1140504. 8 months
+                   D1140105-D1140505. 8 1/2 months
+                   D1140106-D1140506. 9 months
+                   D1140107-D1140507. 9 1/2 months
+                   D1140108-D1140508. 10 months
+                   D1140109-D1140509. 10 1/2 months
+                   D1140110-D1140510. 11 months
+                   D1140111-D1140511. 11 1/2 months
+                   D1140112-D1140512. 12 months
+                   D1140113-D1140513. 12 1/2 months
+                   D1140114-D1140514. 13 months
+                   D1140115-D1140515. 13 1/2 months
+                   D1140116-D1140516. 14 months
+                   D1140117-D1140517. 14 1/2 months
+                   D1140118-D1140518. 15 months
+                   D1140119-D1140519. 15 1/2 months
+                   D1140120-D1140520. 16 months
+                   D1140121-D1140521. 16 1/2 months
+                   D1140122-D1140522. 17 months
+                   D1140123-D1140523. 17 1/2 months
+                   D1140124-D1140524. 18 months
+                   D1140125-D1140525. 18 1/2 months
+                   D1140126-D1140526. The entire period
+                   D1140127-D1140527. Do not know
+                   D1140128-D1140528. Do not want to answer
+
+
+
+                                                                                                        44
+D115.1-5     Did he/she get any kind of treatment?
+             Dependent on: D113
+
+             1. No → D113 / → D117
+             2. Yes
+             3. Do not know → D113 / → D117
+             4. Do not want to answer →D113 / →D117
+             9. Undefined
+             10. Irrelevant
+
+D116.1-5     What treatment
+             Dependent on: D113 D115
+
+
+             Number of possible simultaneous answers: 4 (kombinationer af 1.-4.)
+
+
+             D116xxyy, xx indicates number of othern disease from D113 and yy indicates answer option
+             in D116
+
+             D1160101-D1160501. name of treatment 1 (Text variable) → D116A
+             D1160102-D1160502. name of treatment 2 (Text variable) → D116B
+             D1160103-D1160503. name of treatment 3 (Text variable) → D116C
+             D1160104-D1160504. name of treatment 4 (Text variable) →D116D
+             D1160105-D1160505. Do not know
+             D1160106-D1160506. Do not want to answer
+
+D116A.1-5 Treatment same disease or suffering1 → D113, form. b / →D117
+D116B.1-5 Treatment same disease or suffering 2 → D113, form. b / → D117
+D116C.1-5 Treatment same disease or suffering 3 → D113, form. b / → D117
+D116D.1-5 Treatment same disease or suffering 4 → D113, form. b / → D117
+
+MOTHER - CHILD REALTION
+D117  How has it been for you to take care of your child?
+      You can answer very easy, fairly easy, difficult or very difficult.
+
+           1. Very easy → C170
+           2. Fairly easy → C170
+           3. Difficult
+           4. Very difficult
+           5. Do not know → C170
+           6. Do not wish to answer → C170
+           9. Undefined
+
+D118.1-16          Why has it been difficult?
+                   Dependent on: D117
+
+           (If the mother answers illness in other person than mother or child, work situation, housing,
+           economy or the like, it is registered as: Specific external conditions)
+
+           Number of possible simultaneous answers: 14 (combinations of 1. -14.)
+
+           D118_1. Difficulties with breast feeding
+           D118_2. Child does not eat as supposed to
+           D118_3. Sleeping difficulties child
+           D118_4. Disease/handicap child
+           D118_5. Difficult/unquiet child (not disease nor handicap)
+           D118_6. Medical disease/handicap - mother
+           D118_7. Mental illness - mother
+           D118_8. General state of tiredness, strain, discontentment - mother
+           D118_9. Feeling of insecurity in mother as to how to take care of the child
+                                                                                                           45
+         D118_10. Bad contact with child
+         D118_11. New pregnancy
+         D118_12. Preterm born child
+         D118_13. Specific external conditions not covered by the categories mentiond
+         D118_14. Other (Text variable) → D118A
+         D118_15. Do not know
+         D118_16. Do not wish to answer
+
+D118A. Other reasons why it may be difficult to take care of the child
+
+MOTHER - CHILD CO-HABITATION
+
+D119        Do you live with the child's birth father?
+
+            1. Yes → D120
+            2. Father, but not birth father: Donor child → D120
+            3. No, new husband → D120
+            4. No, partner → D120
+            5. No, with family/friends (not partner) → D120
+            6. No, live with no adults → D120
+            7. Other (Text variable) → D119A
+            8. Do not know → D120
+            9. Do not want to answer → D120
+            99. Undefined
+
+D119A.      Other kind of co-habitation
+
+D120        Have there been any changes in relation to whom you and the child have lived whith after
+            he/she turned 6 months old?
+
+            (Only marking in 2 (Yes), if changes in co-habitation in relation to other husband/partner than
+            now or changes in living with other adults)
+
+            1. No; If D119 = 1.-4. → D122; If D119 = 5.-7. → D123
+            2. Yes
+            3. Do not know; If D119 = 1.-4. →D122; If D119 = 5.-7. → D123
+            4. Do not want to answer; If D119 = 1.-4. → D122; If D119 = 5.-7. →D123
+            9. Undefined
+
+D121        With whom have you and your child lived with for the major part of his/her life since he/she
+            turend 6 months old?
+            Dependent on: D119 D120
+
+            1. Birth father → D122, if D119 < 5. if D119 = 5.-9. → D123
+            2. Father, but not birth father: Donor child → D122, If D119 < 5. If D119 = 5.-9. → D123
+            3. New husband →D122, If D119 < 5. If D119 = 5.-9. --< D123
+            4. Other partner → D122, If D119 < 5. If D119 = 5.-9. →D123
+            5. Lived alone → D122, If D119 < 5. If D119 = 5.-9. → D123
+            6. Family/frineds, without partner →D122, If D119 < 5. If D119 = 5.-9. → D123
+            7. Other (Text variable) → D121A
+            8. Do not know → D122, If D119 < 5. If D119 = 5.-9. → D123
+            9. Do not want to answer → D122, If D119 < 5. If D119 = 5.-9. →D123
+
+D121A        Other kinds of co-habitation most of the time, If D119 =5.-9. → D123
+
+
+                                                                                                           46
+FATHER TIME WITH CHILD
+
+            Put child's father in D122 for D119 = 1. or. 2., your present husband or D119 = 3. og your
+            partner for D119 = 4.
+
+D122.1-8    Approximately how many hours does child's father/your present husband/partner spent with
+            child on a normal day while child is awake?
+            Dependent on: D119 D120 D121
+
+            Number of possible simultaneous answers: 3 (1. med 2.- 6. og 6. med 1.-5.)
+
+            D122_1. Changing work hours, last week
+
+            D122_2. Hours: . → D122A
+            D122_3. From: . to . hours →D122B
+            D122_4. All the time
+            D122_5. No time
+            D122_6. Is often gone for longer periods (at least 2 weeks)
+            D122_7. Do not know
+            D122_8. Do not want to answer
+
+       If answer = 1+2 or 6+2 → D122A. If answer = 6+3 or 1+3 → D122B1. 4-8 alone → D123
+
+D122A       Hours, Father time spent with child (0-99) → D123
+D122B1      Hours, interval start. Father time spent with child (0-99)
+D122B2      Hours, interval end Father time spent with child (0-99)
+
+SPECIAL STRAINS - MOTHER'S EXPERIENCE
+
+D123        Have you - after the child has turned 6 months old - felt burdened by any of the things I am
+            going to mention now?
+            You can answer NO, A LITTLE or A LOT
+
+            Economy?
+
+            1. No
+            2. Alittle
+            3. A lot
+            4. Do not know
+            5. Do not want to answer
+            9. Undefined
+
+D124        Housing?
+
+            1. No
+            2. A little
+            3. A lot
+            4. Do not know
+            5. Do not want to answer
+            6. Undefined
+
+D125        Work?
+
+            1. No
+            2. A little
+            3. A lot
+
+                                                                                                           47
+       4. Do not know
+       5. Do not want to answer
+       9. Undefined
+
+D126   Relationship to partner?
+
+       1. No
+       2. A little
+       3. A lot
+       4. Ingen partner haft i perioden
+       5. Do not know
+       6. Do not want to answer
+       9. Undefined
+
+D127   Relationship to family and friends?
+
+       1. No
+       2. A little
+       3. A lot
+       4. Do not know
+       5. Do not want to answer
+       9. Undefined
+
+D128   Disease in child?
+
+       1. No
+       2. A little
+       3. A lot
+       4. Do not know
+       5. Do not want to answer
+       9. Undefined
+
+D129   Own disease?
+       1. No
+       2. A little
+       3. A lot
+       4. Do not know
+       5. Do not want to answer
+       9. Undefined
+
+       If D126=4 → D131
+
+D130   Disease in partner?
+       Dependent on: D126
+
+       1. No
+       2. A little
+       3. A lot
+       4. No partner in that period
+       5. Do not know
+       6. Do not want to answer
+       9. Undefined
+       10 irrelevant
+
+D131   Disease in family or close friends?
+
+       1. No
+       2. A little
+                                             48
+            3. A lot
+            4. Do not know
+            5. Do not want to answer
+            9. Undefined
+
+D132        Other things?
+
+            1. No
+            2. A little
+            3. A lot
+            4. Do not know
+            5. Do not want to answer
+            9. Undefined
+
+D133        How have you been feeling on average mentally from the time when the child has turned 6
+            months old and until now?
+            You can answer: Really fine, fine, fair, bad, very bad
+
+            1. Really fine
+            2. Fine
+            3. Fair
+            4. Bad
+            5. Very bad
+            6. Do not know
+            7. Do not want to answer
+            9. Undefined
+
+MOTORIC AND COGNITIVE DEVELOPMENT - MILE STONES
+
+D134    The following questions are about what your child can do right now, but first I need to know if
+        he/she has any serious physical or developmental problems that you have not mentiond
+        earlier?
+
+
+            1. No → INTROB
+            2. Yes
+            3. Do not know → INTROB
+            4. Do not want to answer → INTROB
+            9. Undefined
+
+D135.1-10     What problems have been diagnosed after the child has turned 6 months old?
+              Dependent on: D134
+
+            Number of possible simultaneous answers: 8 (combinations of 1. - 8.)
+
+            D135_1. Acertained braine damage
+            D135_2. General delay in development
+            D135_3. Problems, hearing
+            D135_4. Problems, sight
+            D135_5. Motoric problems
+            D135_6. Other 1 (Text variable) Libary list → D135A
+            D135_7. Other 2 (Text variable) Libary list→D135B
+            D135_8. Other 3 (Text variable) Libary list→D135C
+            D135_9. Do not know
+            D135_10. Do not want to answer
+
+D135A. Other problems in child 1
+D135B. Other problems in child 2
+D135C. Other problems in child 3
+                                                                                                          49
+    INTROA     We ask all mothers the same questions, but as your child have special problems, the following
+    questions may not be relevant for him/her.
+
+                 → D136
+
+    INTROB.      I will also ask you questions about things that most children cannot do until they reach the age
+                 of 18 month, and of course it varies a lot when normally developed children can do different
+                 things
+.
+
+    CHILD'S DEVELOPMENT
+
+    Physical development:
+
+    D136         How old was he/she when he/she could sit with no support?
+
+                 1. Age:       month and          weeks → D136A
+                 2. Still does not sit without support → D139
+                 3. Do not know → D137
+                 4. Do not want to answer → D137
+                 5. Undefined
+
+    D136A1       Months. Age for sitting alone without support (0-99)
+    D136A2       Weeks. Age for sitting alone without support (0-9)
+
+    D137         When was the first time he/she could walk alone without support?
+                 Dependent on: D136
+
+                 1. Age:      months and       weeks → D137A
+                 2. Can not walk without support yet → D139
+                 3. Do not know →D138
+                 4. Do not want to answer →D138
+                 9. Undefined
+                 10Irrelevant
+
+    D137A1       Months. Age for walking without support (0-99)
+    D137A2       Weeks. Age for walking without support (0-9)
+
+    D138         Can he/she go up stairs with the support from a hand or a banister?
+                 Dependent on: D136 D137
+
+                 1. Yes
+                 2. No
+                 3. Do not know
+                 4. Do not want to answer
+                 9. Undefined
+                 10Irrelevant
+
+    Self-help:
+
+    D139         Can he/she take off socks and shoes when you ask him/her to do so?
+
+                 1. Yes
+                 2. No
+                 3. Do not know
+                 4. Do not want to answer
+                 9. Undefined
+
+                                                                                                               50
+D140       Can he/she drink from an ordinary glass/cup without help?
+
+           1. Yes
+           2. No
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+
+Social development:
+
+D141       Can he/she be occupied with the same thing for at least 15 minutes without adult
+           participation?
+
+           1. Yes
+           2. No
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+           If D136 or D137 = 2. → D143
+
+           If D142 skipped, the programme automically makes a mark in category 2..
+D142       Can he/she go get things and bring it to others if told to?
+           Dependent on: D136 D137
+
+           1. Yes
+           2. No
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+Cognitive development:
+
+D143       Does he/she try to make marks in for instance table or paper with colour pencils or other
+           objects?
+
+           1. Yes
+           2. No
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+D144       Does he/she automatically turn the picture right when he/she looks in a book?
+
+           1. Yes
+           2. No
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+
+Communication:
+
+D145       Does he/she use word-like sounds to tell what he/she wants?
+
+           1. Yes
+           2. No
+
+                                                                                                       51
+            3. Do not know
+            4. Do not want to answer
+            9. Undefined
+ D146       Approximately how many things can he/she mention by name?
+            Must be so pronounced that a stranger will understand.
+
+            (If the mother cannot come up with a number of words, please say:)
+            [Is it less than 10 words, 11-25, 26-100, 101-300 or more than 300 words?]
+
+            1. Number of words:         →D146A
+
+            2. Less than 10 → D147 / →D148
+            3. 11-25 →D147 / →D148
+            4. 26-100 →D147 / →D148
+            5. 101-300 →D147 / → D148
+            6. More than 300 words →D147 / → D148
+            7. Do not know → D147 / → D148
+            8. Do not want to answer → D147 / → D148
+
+            If answer <>1 og D145 = 2. → D148 otherwise > D147
+
+D146A Number of things he/she knows the name of (0-999) If D145=2 → D148 or D147
+If D147 is skipped, the program automatically makes a mark in category 2
+
+ D147       Does he/she use 2-words-sentences?
+            Dependent on: D145
+
+            1. Yes
+            2. No
+            3. Do not know
+            4. Do not want to answer
+            9. Undefined
+            10Irrelevant
+
+ D148.1-6   In the next questions, please answer from what is most typical of your child.
+
+            Is he/she restless in his/her sleep?
+
+            Number of possible simultaneous answers: 2 (combinations pf 1.-3. with 4.)
+
+            D148_1. Yes
+            D148_2. Both yes og no
+            D148_3. No
+            D148_4. Does not want to fall asleep
+            D148_5. Do not know
+            D148_6. Do not want to answer
+
+ D149       Do you think he/she is MORE or LESS active than kids the same?
+
+            1. More active
+            2. Like kdis his/her own age
+            3. Less active
+            4. too active/hyper active/very restless
+            5. Very passive and quiet
+            6. Do not know
+            7. Do not want to answer
+            9. Undefined
+
+                                                                                            52
+D150       Is he/she a happy child?
+           1. Yes
+           2. Both yes og no
+           3. No
+           4. Do not know
+           5. Do not want to answer
+           9. Undefined
+
+D151.1-6   Is he/she a cautious and guarded child?
+           Number of possible simultaneous answers: 2 (combination of the categories 1.-3. with 4.)
+
+           D151_1. Yes
+           D151_2. Both yes og no
+           D151_3. No
+           D151_4. Only among strangers
+           D151_5. Do not know
+           D151_6. Do not want to answer
+
+EDUCATION: MOTHER, BIRTH FATHER/PARTNER
+
+MOTHER
+           Now for some questions about school and education
+
+D152.1-20 At what level did you end school?
+
+           (If the mother answers 9th or 10th class, ask)
+           [Did you get a certificate?]
+
+           Number of possible simultaneous answers: 2 (combinations of 17. with 1 of the categories 1.
+           to 16. and 18.. Ref. to D154 has priority)
+
+           D152_1. 6th class or less
+           D152_2. 7th class
+           D152_3. 8th class
+           D152_4. 9th class without certificate
+           D152_5. 9th class with certificate
+           D152_6. 10th class without certificate
+           D152_7. 10th class with certificate
+           D152_8. Lower secondary school leaving examination
+           D152_9. Higher Preparatory Examination, end → D154
+           D152_10. Higher Preparatory Examination, on-going → D154
+           D152_11. General Certificate of Education, end →D154
+           D152_12. General Certificate of Education on-going → D154
+           D152_13. Technical A-Level College, end →D154
+           D152_14. Technical A-Level College, on-going →D154
+           D152_15. Commercial A-Level College, end → D154
+           D152_16. Commercial A-Level College, on-going → D154
+           D152_17. Foreign school
+           D152_18. Other (Text variable) → D152A
+           D152_19. Do not know
+           D152_20. Do not want to answer
+
+           Answer 9-16 alone or with 17 → D154
+
+D152A      Other class end of school (Mother)
+
+D153       Have you taken a basic vocational training course?
+           Dependent on: D152
+
+                                                                                                         53
+           1. No
+           2. Yes, EGU, end
+           3. Yes, EGU, on-going
+           4. Yes, EFG, end
+           5. Yes, EFG, on-going
+           6. Yes, FUU, end
+           7. Yes, FUU, on-going
+           8. Do not know
+           9. Do not want to answer
+           99Undefined
+           100 irrelevant
+
+D154       What is the highest level of education that you have?
+
+           1. Education (Text variable) → D154A
+           2. does not have any professional education → D155
+           3. Do not know →D155
+           4. Do not want to answer → D155
+           9. Undefined
+           10Irrelevant
+
+D154A      Education, mother
+
+BIIRTH FATHER
+
+           Now the same questions about education for the birth father
+
+D155.1-21 At what level did he school?
+
+           (If the mother answers 9thn or 10 th class, ask)
+           [With/without certificate?]
+
+           Number of possible simultaneous answers: 2 (combinations of 17. with 1 of the categories 1.
+           to 16.and 19. Ref. toD157 have priority)
+
+
+           D155_1. 6th class or less
+           D155_2. 7th class
+           D155_3. 8th class
+           D155_4. 9th class without certificate
+           D155_5. 9th class with certificate
+           D155_6. 10th class without certificate
+           D155_7. 10th class with certificate
+           D155_8. Lower secondary school leaving examination
+           D155_9. Higher Preparatory Examination, end → D157
+           D155_10. Higher Preparatory Examination, on-going → D157
+           D155_11. General Certificate of Education, end → D157
+           D155_12. General Certificate of Education on-going → D157
+           D155_13. Technical A-Level College, end → D157
+           D155_14. Technical A-Level College, on-going →D157
+           D155_15. Commercial A-Level College, end → D157
+           D155_16. Commercial A-Level College, on-going →D157
+           D155_17. Foreign school
+           D155_18. Other (Text variable) → D155A
+           D155_19. Do not know
+           D155_20. Do not want to answer
+
+           Answer 9-16 alone or with 17 → D154
+
+                                                                                                         54
+D155A      Other class end of school (Birth father)
+
+D156      Has he taken a basic vocational training course?
+          Dependent on: D155
+
+           1. No
+           2. Yes, EGU, end
+           3. Yes, EGU, on-going
+           4. Yes, EFG, end
+           5. Yes, EFG, on-going
+           6. Yes, FUU, end
+           7. Yes, FUU, on-going
+           8. Do not know
+           9. Do not want to answer
+           99Undefined
+           100 irrelevant
+
+ D157      What is the highest level of education that he has?
+
+           1. Education (Text variable) →D157A
+           2. does not have any professional education → D155
+           3. Do not know →D155
+           4. Do not want to answer → D155
+           9. Undefined
+
+              For answer <> 1: If D119 = 1. or 5.-9. and D120 = 1. or 3.-4. or
+              If D119 = 1. or. 5.-9. and D120 = 2. and D121 = 1. or 5.-9. → D161, or else → D158
+
+
+D157A      Education, birth father
+
+           IfD119 = 1. el. 5.-9. og D120 = 1. el. 3.-4. or If D119 = 1. el. 5.-9. og D120 = 2. og D121 = 1.
+           el. 5.-9. →D161
+
+PARTNER
+
+           For D158 the following applies:
+           If D119 = 2.-3. og D120 = 1. el. 3.-4. your husband
+           If D119 = 4. og D120 = 1. el. 3.-4.your partner
+           If D119 = 2.-3. og D120 = 2. og D121 = 1. your husband
+           If D119 = 4. og D120 = 2. og D121 = 1. your partner
+           If D119 = 1. el. 3.-4. og D120 = 2. og D121 = 2. your ex-husband
+           If D119 = 1.-2. el. 4. og D120 = 2. og D121 = 3. your ex-husband
+           If D119 = 1.-3. og D120 = 2. og D121 = 4. your ex partner
+
+           If D155 = 18. use wording b, otherwise a
+
+D158.1-20 a. Now I will repeat the same questions about school and education, this time for your ex
+          husband/partner.
+          Denpendent on: D119 D120 D121
+
+           b. Well, instead I will ask about your ex-husband/partners school and education.
+
+           At what level did he end school?
+
+           (If the mother answers 9thn or 10 th class, ask:)
+           [With/without certificate?]
+
+
+                                                                                                              55
+        Number of possible simultaneous answers: 2 (combination of 17. with 1.-16. and 18.
+        References to D160 have priority)
+
+
+        D158_1. 6th class or less
+        D158_2. 7th class
+        D158_3. 8th class
+        D158_4. 9th class without certificate
+        D158_5. 9th class with certificate
+        D158_6. 10th class without certificate
+        D158_7. 10th class with certificate
+        D158_8. Lower secondary school leaving examination
+        D158_9. Higher Preparatory Examination, end →D160
+        D158_10. Higher Preparatory Examination, on-going → D160
+        D158_11. General Certificate of Education, end → D160
+        D158_12. General Certificate of Education on-going-→D160
+        D158_13. Technical A-Level College, end → D160
+        D158_14. Technical A-Level College, on-going → D160
+        D158_15. Commercial A-Level College, end → D160
+        D158_16. Commercial A-Level College, on-going → D160
+        D158_17. Foreign school
+        D158_18. Other (Text variable) → D158A
+        D158_19. Do not know
+        D158_20. Do not want to answer
+
+        Answer 9-16 alone or with 17 → D160
+
+D158A   Other class end of school (Birth father)
+
+D159    Has he taken a basic vocational training course?
+        Denpendent on: D119 D120 D121 D158
+
+        1. No
+        2. Yes, EGU, end
+        3. Yes, EGU, on-going
+        4. Yes, EFG, end
+        5. Yes, EFG, on-going
+        6. Yes, FUU, end
+        7. Yes, FUU, on-going
+        8. Do not know
+        9. Do not want to answer
+        99Undefined
+        100 Irrelevant
+
+
+D160    What is the highest level of education that he has?
+
+        1. Education (Text variable) → D160A
+        2. does not have any professional education → D161
+        3. Do not know → D161
+        4. Do not want to answer → D161
+        9. Irrelevant
+
+D160A   Education, birth father
+
+
+FAMILY'S ECONOMIC LEVEL
+
+                                                                                             56
+          Now questions about your incomes
+
+D161      What is the family's annual gross income, i.e before tax?
+          Public transfer incomes are income
+
+          1. Total annual income:           kr.
+          2. Do not know → INTRO161
+          3. Do not want to answer -> INTRO161
+          9. Undefined
+          10Irrelevant
+
+D161A     Gross income DKK (0-99.999.999)
+
+ANTROPHOMETRY MEASURES - BIRTH PARENTS
+
+INTRO161. If D155_18 = 1 use wording b
+                 a. The following questions are about your waist measurements and weight
+
+                 b. The following questions are about your weight
+
+          If D001 = 2. → D164
+
+D162      What is your weight?
+          Denpendent on: D001
+
+          1.     .   kilos → D162A
+          2. Do not know → D163
+          3. Do not want to answer → D163
+          9. Undefined
+          10Irrelevant
+
+D162A     Decimal figures, kilos mother's present weight (0-999)
+
+D163      What is your waist measurement?
+          Denpendent on: D001
+
+          1. Waist measurement:         →D163A
+          2. Do not know → D166
+          3. Do not want to answer → D166
+          9. Undefined
+          10Irrelevant
+
+D163A     Waist measurement, cm mother (0-500)
+
+          → D166
+
+D164      What was your weight before the present pregnancy?
+
+          1.     .   kilos → D164A
+          2. Do not know → D165
+          3. Do not want to answer →D165
+          9. Undefined
+          10Irrelevant
+
+D164A     Decimal figures, kilos - mother's weight before present pregnancy (0-999)
+
+D165      Waist measurement before present pregnancy?
+          Denpendent on: D163
+
+                                                                                           57
+          1. Waist measurement:         cm → D165A
+          2. Do not know →D166, unless D155=18: → D169
+          3. Do not want to answer → D166, unless D155=18: →D169
+          9. Undefined
+          10irrelevant
+
+D165A     Waist measurement before present pregnancy (0-999)
+
+          If D155 = 18. → D169
+
+D166      What does the birth father weigh?
+
+          1.     .   kilos → D166A
+          2. Do not know →D167
+          3. Do not want to answer →D167
+          9. Undefined
+          10Irrelevant
+
+          If D155 =18.→D169
+
+D166A     Decimal figures, kilos - weight, birth father (0-999)
+
+D167      How tall is he?
+          Dependent on: D155
+
+          1. Height:         cm
+          2. Height:   .     m → D167B
+          3. Do not know → D168
+          4. Do not want to answer → D168
+          9. Undefined
+          10Irrelevant
+
+
+D167A     Height, cm, birth father (0-999) → D168
+D167B     Decimal figures, m - height birth father (0-3)
+
+D168      What is his waist measurement?
+
+          1. Waist measurement:         cm
+          2. Do not know → D169
+          3. Do not want to answer → D169
+          9. Undefined
+          10Irrelevant
+
+D168A     Waist measurement, cm, birth father (0-300)
+
+NETWORK
+
+D169      How many persons do you know that would help you if you would fall ill and need support?
+
+          (If the mother cannot come up with a number of times, please say)
+          [Is it: 1-3, 4-8 or more than 8 persons?]
+
+          1. None → D170
+          2. Number of persons:     → D169A
+          3. 1-3 persons →D170
+          4. 4-8 persons → D170
+          5. More than 8 persons → D170
+          6. Do not know → D170
+                                                                                                     58
+          7. Do not want to answer → D170
+          9. Undefined
+
+D169A     Number of persons, support (0-99)
+
+D170      How many persons do you know with whom you can have confidential conversations?
+
+          (If the mother cannot come up with a number of times, please say)
+          [Is it: 1-3, 4-8 or more than 8 persons?]
+
+          1. None → D171
+          2. Number of persons:       → D170A
+
+          3. 1-3 persons→D171
+          4. 4-8 persons → D171
+          5. More than 8 persons → D171
+          6. Do not know → D171
+          7. Do not want to answer → D171
+          9. Undefined
+
+D170A     Number of persons, confidential conversation (0-99)
+
+D171      All in all, are you content with the support you get from your surroundings?
+          You may answer: Yes, both yes and no, and No
+
+          1. Yes
+          2. Both yes and no
+          3. No
+          4. Do not know
+          5. Do not want to answer
+          9. Undefined
+
+          The last questions are about information in Barnets Bog (athe child's book) and from the
+          vaccination certificate.
+
+D172      How many visits in the home have you had from the visiting nurse since the child was born?
+
+          (If the mother cannot come up with a number of times, say:)
+          [Was it 1-4, 5-8 or more than 8 visits?]
+
+          1. Number of visits:     → D172A
+          2. 1-4 visits → D173
+          3. 5-8 visits →D173
+          4. more than 8 visits → D173
+          5. Do not know → D173
+          6. Do not want to answer →D173
+          9. Undefined
+
+D172A     Number of visits from the visiting nurse (0-99)
+
+VACCINATIONS
+
+D173.1-11 Which from the most common vaccinations has he/she had?
+
+          Number of possible simultaneous answers: 7 (combinations of 2. - 8.)
+
+          D173_1. All 7
+          D173_2. Di-Te-Ki-Pol 1 (3 mdr.)
+          D173_3. HIB 1 (3 mdr.)
+                                                                                                       59
+            D173_4. Di-Te-Ki-Pol 2 (5 mdr.)
+            D173_5. HIB 2 (5 mdr.)
+            D173_6. Di-Te-Ki-Pol 3 (12 mdr.)
+            D173_7. HIB 3 (12 mdr.)
+            D173_8. MFR 1 (15 mdr.)
+            D173_9. None
+            D173_10. Do not know
+            D173_11. Do not want to answer
+
+D174        Has he/she had other vaccinations?
+
+            1. No → D177
+            2. Yes
+            3. Do not know → D177
+            4. Do not want to answer → D177
+            9. Undefined
+
+D175.1-5    What was he/she vaccinated against?
+
+            1. Name of vaccine (Text variable)
+            2. Do not know → D176
+            3. Do not want to answer → D177
+            9. Undefined
+            10Irrelevant
+
+D175A.1-5 Name of other vaccinations
+
+D176.1-5    Other vaccinations?
+
+            1. No → D177
+            2. Yes → D175
+            3. Do not know → D177
+            4. Do not want to answer → D177
+            9. Undefined
+            10Irrelevant
+
+ANTROPHOMETRY MEASURES CHILD
+
+D177        Now I would like to have the information from the child's five-months examination with the
+
+The date of five-months examination
+
+            1. Date: day/month/year
+            2. The child did not have the exxcamination at 5 months → D181
+            3. The child did ahve the examinations but I do not have the information →D181
+            4. I have the information but not hte date → D178
+            5. Do not know → D181
+            6. Do not want to answer → D181
+D178        Child height
+            Dependent on: D177
+            9. Undefined
+
+D177A       Date 5-months examinations DD/MM/YYYY from1/1-96
+
+            1. Height:
+            2. not measured → D179
+            3. Do not know → D179
+            4. Do not want to answer → D179
+                                                                                                         60
+        9. Undefined
+        10Irrelevant
+
+D178A   Height at five months in cm (0-150)
+
+D179    Weight
+        Dependent on: D177
+
+        1. weight:     grams → D179A
+        2. not measured → D180
+        3. Do not know → D180
+        4. Do not want to answer →D180
+        9. Undefined
+        10 Irrelevant
+
+D179A   weight in grams at 5 months examination (1-20000)
+
+D180    Cranical circumference
+        Dependent on: D177
+
+        1. Cranical circumference:  cm → D180A
+        2. not measured → D181
+        3. Do not know → D181
+        4. Do not want to answer →D181
+        9. Undefined
+        10Irrelevant
+
+D180A   Crancial circumference in cm at the 5 months GP examination (1-150)
+
+        If D177 = 2., 3., 5. or 6. use wording b, otherwise a
+D181    a. And now the same information but from the 12 months GP examination
+        First the date
+
+        b. Now I would like to have the inforamtion from the 12 m,onths GP examination
+        First the date
+
+        1. Date: DD/MM/YYYY
+        2. child not examinated at 12 months. → D185
+        3. child examinated, but I do not have the information →D185
+        4. do have the information but not the date → D182
+        5. Do not know → D185
+        6. Do not want to answer → D185
+        9. Undefined
+        10irrelevant
+
+D181A   Date of 12.-months GP examination (1/1-96 - d.d.)
+
+D182    Height
+        Dependent on: D181
+
+        1. Height:     → D182A
+        2. not measured → D183
+        3. Do not know → D183
+        4. Do not want to answer → D183
+        9. Undefined
+        10 Irrelevant
+
+D182A   Height in cm at 12 months GP examination (1-150)
+                                                                                         61
+D183    Weight
+        Dependent on: D181
+
+        1. Weight:      grams → D183A
+        2. not measured → D184
+        3. Do not know → D184
+        4. Do not want to answer → D184
+        9. Undefined
+        10Irrelevant
+
+D183A   Weight in grams, 12 months examnination with GP (1-20.000)
+
+D184    Cranial circumference
+        Dependent on: D181
+
+        1. Cranial circumference:     cm → D184A
+        2. Not measured→ D185
+        3. Do not know → D185
+        4. Do not want to answer → D185
+        9. Undefined
+        10Irrelevant
+
+D184A   Cranial circumference at 12 months (1-150)
+
+        If answer in D180=1 → INTRO1
+
+D185    Do you have a measurement of cranial circumference taken at another time (must be after
+        birth)?
+        .
+
+        1. No → INTRO1
+        2. Yes
+        3. Yes, but I do not have the information → INTRO1
+        4. Do not know → INTRO1
+        5. Do not want to answer → INTRO1
+        9. Undefined
+
+D186    When was the last meaurement?
+
+        1. Date: DD/MM/YYYY
+        2. Do not know → D187
+        3. Do not want to answer → D187
+        9. Undefined
+
+D186A   Date last measurement of cranial circumference (1/1-96 - d.d.)
+
+D187    What was the cranial circumference?
+
+        1. cranial circumference :   cm →D187A
+        2. Do not know → INTRO1
+        3. Do not want to answer → INTRO1
+        9. Undefined
+
+D187A   Last cranial circumference (0-999)
+
+
+                                                                                                  62
+From T188 to T195 only for women in Copenhagen and Northern Jutland
+
+SUB PROJECT 2 DENTIST (LBC)
+
+INTRO1     Now follows a few additional question about your child's teeth
+           (If TANDL2=0 → S196)
+
+T188       How old was he/she when he/she had his/her first tooth?
+           Dependent on: TANDL2
+
+           1. Age:     month and       weeks → D188A
+           2. Do not know →T189
+           3. Do not want to answer → T189
+
+T188A1     Months. Age 1st tooth (0-99)
+T188A2     Weeks. Age 1st tooth (0-9)
+
+T189       Any symptoms with the cutting of teeth?
+           Dependent on: TANDL2
+
+           1. No →T191
+           2. Yes
+           3. Do not know →T191
+           4. Do not want to answer →T191
+           9. Undefined
+
+T190.1-8   What symptoms?
+
+           Number of possible simultaneous answers: 6 (combinations of 1.- 6.)
+
+           T190_1. Fever
+           T190_2. Diarrhoea
+           T190_3. Red bottom
+           T190_4. Other 1 (Text variable) →T190A
+           T190_5. Other 2 (Text variable) → T190B
+           T190_6. Other 3 (Text variable) → T190C
+           T190_7. Do not know
+           T190_8. Do not want to answer
+
+T190A Other symptoms with cutting of teeth 1
+T190B Other symptoms with cutting of teeth 2
+T190C Other symptoms with cutting of teeth 3
+
+T191       Has he/she ever hurt his/her teeth?
+           Dependent on: TANDL2
+
+           1. No
+           2. Yes
+           3. Do not know
+           4. Do not want to answer
+           9. Undefined
+           10Irrelevant
+
+T192       Caries in teeth?
+           Dependent on: TANDL2
+
+           1. No
+
+                                                                                 63
+        2. Yes
+        3. Do not know
+        4. Do not want to answer
+        9. Undefined
+        10Irrelevant
+
+T193    Any bleedings from or pain in gums?
+        Dependent on: TANDL2
+
+        1. No
+        2. Yes
+        3. Yes, only in connection with a knock on teeth
+        4. Yes, only in comnection with cutting of teeth
+        5. Do not know
+        6. Do not want to answer
+        9. Undefined
+        10Irrelevant
+
+T194    How often do you brush his/her teeth?
+        Dependent on: TANDL2
+
+        1. 1 time per day
+        2. more than 1 time per day
+        3. less than 1 time per day
+        4. never
+        5. Do not know
+        6. Do not want to answer
+        9. Undefined
+        10Irrelevant
+
+T195    Would he/she need to see a dentist?
+        Dependent on: TANDL2
+
+        1. No
+        2. No need, but went to the routine check
+        3. Yes
+        4. Do not know
+        5. Do not want to answer
+        9. Undefined
+        10Irrelevant
+
+ASTHMA AND ALLERGY - SUB PROJECT QUESTIONS (S)
+
+        The last questions are about infant eczema and allergy in the family.
+
+S196    Has any of your other childre by birth had infant eczema, also called astham eczema?
+
+        1. No
+        2. Yes
+        3. I do not have other children
+        4. Do not know
+        5. Do not want to answer
+        9. Undefined
+
+S197    Have you ever had infant eczema yourself?
+
+        1. No
+        2. Yes
+
+                                                                                               64
+        3. Do not know
+        4. Do not want to answer
+        9. Undefined
+
+S198    Have you ever had hay fever or allergic cold?
+
+        1. No
+        2. Yes
+        3. Do not know
+        4. Do not want to answer
+        9. Undefined
+
+S199    Has the child's birth father ever had infant eczema?
+
+        1. No
+        2. Yes
+        3. Do not know
+        4. Do not want to answer
+        9. Undefined
+
+S200    Has he ever had hay fever or allergic cold?
+
+        1. No
+        2. Yes
+        3. Do not know
+        4. Do not want to answer
+        9. Undefined
+
+        THE INTERVIEW IS OVER
+
+        Now the interview is over and I would like to thank you for haveing spent time on this
+        investigationen. Without your and all the other mothers' participatuion we would not have
+        been able to gather the knowledge that we have now to improve the health for mother and
+        child.
+
+D201    For the interviewer
+
+        Your comments.
+
+        1. Special comments from interviewer:
+        2. No comments → END
+
+D201A   Special comments
+
+END                      << Push a bottom >
+
+
+
+
+                                                                                                    65
+Sub Projects
+
+O = Eye project
+
+R = Dentist project 1: Svend Poulsen (Amterne Ringkøbing og Århus)
+
+S = Asthma project: Mads Melby
+
+T = Dentist project 2: Lisa Bøge Christensen (Københavns kommune og Nordjyllands Amt)
+
+Other specielt interests
+
+Kim Fleischer Michaelsen: Diet (nursing question and head circumference)
+
+Sjúrður Olsen: N-3 (fish and fishoil question)
+
+Mads Melby: Asthma (asthma, bronchitis, hives, eczema, smoking)
+
+Peter Aaby: Vaccination
+
+Thorkild Sørensen: Obesity (weight and height)
+
+
+
+
+                                                                                        66
+

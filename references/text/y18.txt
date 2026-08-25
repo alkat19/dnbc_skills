@@ -1,0 +1,2649 @@
+                    Codebook for the 18-year follow-up
+Prepared by
+Stine Danielsen, student assistant
+Andrea Joensen, student assistant
+Nadia Mirsharghi Mikkelsen, student assistant
+Luise Cederkvist Kristiansen, data manager
+
+Section of Epidemiology, Department of Public Health, University of Copenhagen
+
+Date: 16 March 2023
+
+Documentation and guidelines
+The codebook is subdivided with a headline for each topic and contains supplementary or
+explanatory text from the questionnaire. The supplementary or explanatory text is written in
+italics.
+
+With the exception of the Key Variables, all variables start with a G and contain three digits (ex.
+G001).
+
+"Not answered" (missing) is coded as 99. The electronic questionnaire is set up in a way which
+should make it impossible to skip questions. Thus, if the 18-year old has not answered a
+question, they will be asked to respond to proceed. Missing will also occur if the respondent has
+started but not completed the questionnaire within the 3-month deadline.
+
+"Not applicable" is coded as 100 and occurs if the question is dependent on an answer given in
+a previous question. The dependency of a variable on other variables is stated at each question
+and written in Consolas (e.g. G002, Dependent on G001). In addition, it is specified which
+question the respondent jumps to if the following questions depend on the answer of the
+question concerned (e.g. → G003).
+
+Some variables have underscores to mark that they belong together or are part of a scale, e.g.
+G019_1-G019_7.
+
+Questions with multiple possible answers, e.g., G068_01-G068_12: Which of the following
+drugs have you tried? (Multiple answers possible) are coded as 0 = No, 1 = Yes, 99 = Not
+answered.
+Table of Contents
+Key Variables ......................................................................................................................................................... 3
+Occupation .............................................................................................................................................................. 4
+Household and family ......................................................................................................................................... 5
+Social relations and wellbeing ......................................................................................................................... 8
+Smoking................................................................................................................................................................. 10
+Alcohol ................................................................................................................................................................... 12
+Sleep ....................................................................................................................................................................... 15
+Gambling ............................................................................................................................................................... 17
+Self-harm and suicide ....................................................................................................................................... 19
+Affective disorders ............................................................................................................................................ 22
+Strength and difficulties .................................................................................................................................. 23
+Drugs ...................................................................................................................................................................... 26
+Psychosis-like symptoms ................................................................................................................................ 30
+Eating disorders ................................................................................................................................................. 37
+Sexual experience .............................................................................................................................................. 40
+Musculoskeletal system .................................................................................................................................. 43
+Anxiety ................................................................................................................................................................... 45
+Psoriasis ................................................................................................................................................................ 46
+Hearing .................................................................................................................................................................. 47
+Asthma ................................................................................................................................................................... 50
+Negative life events ........................................................................................................................................... 53
+Body and body shape........................................................................................................................................ 53
+Further information ......................................................................................................................................... 54
+
+
+
+
+                                                                                                                                                                              2
+Key Variables
+LBGRAVFF
+Identification number for the 18-year old
+
+G_INVI_DATE
+Date of invitation to the 18-year follow-up
+
+dd/mm/yyyy
+
+G_CONS_DATE
+Date of receipt of first letter of consent
+
+dd/mm/yyyy
+
+G_STARTED_DATE
+Date of commencement of questionnaire
+
+dd/mm/yyyy
+
+G_COMPLETED_DATE
+Date when the questionnaire was answered or when the questionnaire was closed down
+without full completion
+
+dd/mm/yyyy
+
+G_RESPONSE
+Indicator of complete response
+Complete response is defined as questionnaire being registered as finished. Partial response is
+defined as no missings in G001 through G019_7.
+
+0. No response
+1. Complete response
+2. Partial response
+
+G_SEX
+1. Boy
+2. Girl
+
+G_AGE_INVI 1
+Age at invitation date
+1. 18 years
+2. 19 years
+
+
+
+
+1
+    One observation is missing as information on the invitation date is missing.
+
+
+
+                                                                                              3
+G_AGE_CONS
+Age when consent form was sent
+1. Under 18 years
+2. 18 years
+3. 19 years
+
+Intro:
+
+Hello (Name)
+
+Thank you for participating in the 18-year follow-up!
+When you answer the questionnaire, you contribute to creating knowledge about what is important for
+the wellbeing and health among young people.
+
+You have received an invitation with information about the topics of the questionnaire, so we will start the
+questionnaire right away.
+
+First, we would like to know what you do on a daily basis.
+
+Occupation
+
+G001          What do you do?
+1. I am attending school / obtaining an education
+2. I am doing something else → G003
+99. Not answered
+
+G002       What kind of school or education are you attending?
+Dependent on G001
+
+1. Elementary school → G004
+2. STX, HF, HHX, HTX → G004
+3. Vocational education / technical school (school or internship) → G004
+4. School of production → G004
+5. Short higher education (shorter than 3 years) → G004
+6. Medium long higher education (3-4 years) → G004
+7. Long higher education (more than 4 years) → G004
+8. Folk school
+9. Other → G002_A → G004
+99. Not answered
+100. Not applicable
+
+G002_A     Other (free text)
+Dependent on G002
+
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                                          4
+G003       What is your occupation?
+Dependent on G001
+
+1. Employed
+2. Unemployed / in an activating program → G005
+3. Long-term sickness leave, under revalidating or similar → G005
+4. Soldier / military
+5. Taking time off / gap year → G005
+6. Waiting to start education → G005
+7. Other → G003_A → G005
+99. Not answered
+100. Not applicable
+
+G003_A     Other (free text)
+Dependent on G003
+
+99. Not answered
+100. Not applicable
+
+G004       How many full days of school/work have you skipped within the last month?
+Dependent on G001, G003
+
+1. None
+2. 1 day
+3. 2 days
+4. 3-4 days
+5. 5-6 days
+6. 7 days or more
+7. Do not know
+99. Not answered
+100. Not applicable
+
+Household and family
+
+Here follow some questions regarding your living situation and family.
+
+G005            Who are you currently living with?
+1. Both of my parents → G009
+2. Split my time equally / almost equally between my mother and father → G007
+3. My mother → G007
+4. My mother and her new partner / husband → G007
+5. My father → G007
+6. My boyfriend / girlfriend →G006
+7. My father and his new partner / wife → G007
+8. A friend → G006
+9. Institution or foster family → G006
+
+
+
+                                                                                       5
+10. Commune, student residence (dorm), boarding school or folk school → G006
+11. I am living alone → G006
+12. Other → G005_A
+99. Not answered
+
+G005_A     Other (free text)
+Dependent on G005
+
+99. Not answered
+100. Not applicable
+
+G006       Are your parents living together?
+Dependent on G005
+
+0. No
+1. Yes → G009
+99. Not answered
+100. Not applicable
+
+G007       Why are your parents not living together?
+Dependent on G005, G006
+
+1. My parents never lived together → G009
+2. My parents divorced / separated → G008
+3. My mother or father is dead → G008 and then → G012
+4. They work far from each other → G009
+5. Other → G007_A → G009
+6. Do not know → G009
+99. Not answered
+100. Not applicable
+
+G007_A     Other (free text)
+Dependent on G007
+
+99. Not answered
+100. Not applicable
+
+G008       How old were you when it happened?
+Dependent on G007
+
+0. 0 years
+1. 1 years
+2. 2 years
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+
+
+
+                                                                               6
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G009       How would you describe your parents' relationship to each other?
+Dependent on G005, G006, G007
+
+1. They communicate well
+2. They fight a lot
+3. They barely or never speak with each other
+4. Do not know
+99. Not answered
+100. Not applicable
+
+G010       How would you describe your relationship to your mother?
+Dependent on G005, G006, G007
+
+1. We communicate well
+2. We fight a lot
+3. We barely or never speak with each other
+4. Do not know
+99. Not answered
+100. Not applicable
+
+G011       How would you describe your relationship to your father?
+Dependent on G005, G006, G007
+
+1. We communicate well
+2. We fight a lot
+3. We barely or never speak with each other
+4. Do not know
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                              7
+Social relations and wellbeing
+The next questions are about your relationship to other people and how you generally feel.
+
+G012          How many close friends do you have?
+1. I do not have any close friends
+2. One
+3. Two
+4. 3-5
+5. 6-9
+6. 10 or more
+7. Do not know
+99. Not answered
+
+G013           Is it easy or difficult for you to make new friends?
+1. Very easy
+2. Easy
+3. Difficult
+4. Very difficult
+5. Do not know
+99. Not answered
+
+G014          Have you bullied anyone within the last 6 month?
+0. No
+1. Yes, a few times
+2. Yes, several times
+3. Do not know
+99. Not answered
+
+G015       Do you currently have a boyfriend/girlfriend?
+Dependent on G005
+
+1. Yes, we have been together for more than a year
+2. Yes, we have been together for 7-12 months
+3. Yes, we have been together for 3-6 months
+4. Yes, we have been together for less than 3 months
+5. No, but I have previously had a boyfriend / girlfriend
+6. No, I have never had a boyfriend / girlfriend
+7. Do not know
+99. Not answered
+100. Not applicable
+
+G016          How often do you feel lonely?
+1. Never
+2. Occasionally
+3. Often
+4. Very often
+
+
+
+
+                                                                                             8
+   5. Do not know
+   99. Not answered
+
+   G017         How would you describe your overall health?
+   1. Outstanding
+   2. Very good
+   3. Good
+   4. Less good
+   5. Bad
+   99. Not answered
+
+   G018             How satisfied are you currently with your life? Indicate satisfaction on a scale
+                    from 0-10, where 10 is "the best possible life" and 0 is "the worst imaginable life"
+   0. 0
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   8. 8
+   9. 9
+   10. 10
+   99. Not answered
+
+   How have you been feeling these past 2 weeks?
+
+                                                Most of the
+            Not answered 99.         Always                   Occasionally      Rarely         Never
+                                                  time
+          How often do you feel
+G019_1    that you will do well in     1.           2.             3.             4.             5.
+          the future?
+          How often do you feel
+G019_2 useful?                         1.           2.             3.             4.             5.
+          How often do you feel
+G019_3 relaxed?                        1.           2.             3.             4.             5.
+          How often do you
+G019_4    handle problems              1.           2.             3.             4.             5.
+          successfully?
+          How often do you
+G019_5 think clearly?                  1.           2.             3.             4.             5.
+          How often do you feel
+G019_6    close with other             1.           2.             3.             4.             5.
+          people?
+          How often do you
+G019_7    have your own                1.           2.             3.             4.             5.
+          opinion about things?
+
+
+
+
+                                                                                                           9
+Smoking
+
+Now to some questions on smoking.
+
+G020        Have you ever tried to smoke an entire cigarette?
+0. No → G025
+1. Yes
+99. Not answered
+
+G021       How old were you the first time you smoked an entire cigarette? Type in your age.
+Dependent on G020
+
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G022       How often do you currently smoke cigarettes?
+Dependent on G020
+
+1. Every day
+2. A least once a week - but not every day
+3. A least once a month - but not every week → G025
+4. I am not currently smoking → G025
+99. Not answered
+100. Not applicable
+
+G023       How old were you when you started smoking at least once a week? Type in your
+           age.
+Dependent on G020, G022
+
+0. 0 years
+1. 1 years
+2. 2 years
+
+
+
+                                                                                          10
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G024      Think about the past 4 weeks. How many cigarettes have you smoked on a weekly
+          basis (average)?
+Dependent on G020, G022
+
+1. Less than 10
+2. 10-34
+3. 35-69 (5-9 per day)
+4. 70-105 (10-15 per day)
+5. More than 105 (more than 15 per day)
+6. Do not know
+99. Not answered
+100. Not applicable
+
+G025        Have you tried smoking E-cigarettes?
+0. No → G027
+1. Yes
+99. Not answered
+
+G026       How often do you currently smoke E-cigarettes?
+Dependent on G025
+
+1. Every day
+2. A least once a week - but not every day
+3. A least once a month - but not every week
+4. I am not currently smoking E-cigarettes
+
+
+
+
+                                                                                      11
+99. Not answered
+100. Not applicable
+
+
+Alcohol
+
+Now to some questions on alcohol.
+
+G027       Have you ever had more than one alcoholic drink (alcopop, beer, cider, wine, spirit,
+           or other type of alcohol)?
+0. No → G035
+1. Yes
+99. Not answered
+
+G028      How old were you when you first had more than one alcoholic drink (alcopop, beer,
+          wine, spirit, or other type of alcohol)? Type in your age.
+Dependent on G027
+
+0. 0 years
+1. 1 years
+2. 2 years
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                             12
+The next questions are concerning your alcohol consumption within the last year.
+
+G029      How often do you drink alcohol?
+Dependent on G027
+
+1. Never → G035
+2. No more than once a month
+3. 2-4 times a month
+4. 2-3 times a week
+5. At least 4 times a week
+99. Not answered
+100. Not applicable
+
+G030      How many alcoholic drinks do you usually drink, when you are drinking?
+Dependent on G027, G029
+
+1. 1-2
+2. 3-4
+3. 5-6
+4. 7-9
+5. 10 or more
+99. Not answered
+100. Not applicable
+
+G031      How often do you drink 5 alcoholic drinks or more at the same occasion?
+Dependent on G027, G029
+
+1. Never
+2. Less often than once a month
+3. Monthly
+4. Weekly
+5. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                    13
+   Have you within the last year experienced that...
+   Dependent on G027, G029
+
+             Not answered 99.                 Less than                              Daily or
+                                    Never                  Monthly     Weekly
+            Not applicable 100.             once a month                           almost daily
+          ... you could not stop
+G032_1 drinking, once you            1.          2.          3.          4.            5.
+          started?
+          ... you could not do
+          what you were
+G032_2    supposed to do             1.          2.          3.          4.            5.
+          because you were
+          drinking?
+          ... you needed an
+          alcoholic drink in the
+G032_3    morning, after drinking    1.          2.          3.          4.            5.
+          heavily the day
+          before?
+          ... you have felt guilty
+G032_4 or regretful after            1.          2.          3.          4.            5.
+          drinking?
+          ... you could not
+          remember what
+G032_5    happened the night         1.          2.          3.          4.            5.
+          before after drinking?
+
+
+   G033      Have you or anyone else ever gotten hurt or been in an accident because you had
+             been drinking?
+   Dependent on G027, G029
+
+   0. No
+   1. Yes, but not within the last year
+   2. Yes, within the last year
+   99. Not answered
+   100. Not applicable
+
+   G034      Have anyone in your family, a friend, a doctor or someone else been worried about
+             your alcohol consumption or suggested that you drink less?
+   Dependent on G027, G029
+
+   0. No
+   1. Yes, but not within the last year
+   2. Yes, within the last year
+   99. Not answered
+   100. Not applicable
+
+
+
+
+                                                                                              14
+Sleep
+
+Now we would like to know about your sleeping habits.
+
+G035        At what time do you typically go to sleep on weekdays?
+1. Approx. 19.00 o'clock or earlier
+2. Approx. 20.00 o'clock
+3. Approx. 21.00 o'clock
+4. Approx. 22.00 o'clock
+5. Approx. 23.00 o'clock
+6. Approx. 24.00 o'clock
+7. Approx. 01.00 o'clock
+8. Approx. 02.00 o'clock
+9. Approx. 03.00 o'clock or later
+10. Do not know
+99. Not answered
+
+G036         At what time do you typically go to sleep on weekend/vacation?
+1. Approx. 19.00 o'clock or earlier
+2. Approx. 20.00 o'clock
+3. Approx. 21.00 o'clock
+4. Approx. 22.00 o'clock
+5. Approx. 23.00 o'clock
+6. Approx. 24.00 o'clock
+7. Approx. 01.00 o'clock
+8. Approx. 02.00 o'clock
+9. Approx. 03.00 o'clock or later
+10. Do not know
+99. Not answered
+
+G037        When do you typically wake up or are woken up on weekdays?
+1. Approx. 5.00 o'clock or earlier
+2. Approx. 6.00 o'clock
+3. Approx. 7.00 o'clock
+4. Approx. 8.00 o'clock
+5. Approx. 9.00 o'clock
+6. Approx. 10.00 o'clock
+7. Approx. 11.00 o'clock
+8. Approx. 12.00 o'clock
+9. Approx. 13.00 o'clock or later
+10. Do not know
+99. Not answered
+
+G038          When do you typically wake up or are woken up during the weekend/vacation?
+1. Approx. 5.00 o'clock or earlier
+2. Approx. 6.00 o'clock
+3. Approx. 7.00 o'clock
+
+
+
+                                                                                           15
+4. Approx. 8.00 o'clock
+5. Approx. 9.00 o'clock
+6. Approx. 10.00 o'clock
+7. Approx. 11.00 o'clock
+8. Approx. 12.00 o'clock
+9. Approx. 13.00 o'clock or later
+10. Do not know
+99. Not answered
+
+G039          How often do you take a nap during the day?
+1. Rarely or never → G041
+2. A few times a month
+3. A few times a week
+4. Every day or almost every day
+5. Do not know → G041
+99. Not answered
+
+G040       For how long do you typically sleep, when you take a nap?
+Dependent on G039
+
+1. Approx. ½ hour or less
+2. Approx. 1 hour
+3. Approx. 2 hours
+4. Approx. 3 hours
+5. Approx. 4 hours
+6. Approx. 5 hours or more
+7. Do not know
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                       16
+ Here follow some questions on how you sleep at night.
+
+                                                                           Every day or
+                               Rarely or   A few times a   A few times a
+         Not answered 99.                                                  almost every   Do not know
+                                never          month           week
+                                                                               day
+       How often do you
+G041   sleep badly or             1.            2.              3.             4.             5.
+       restlessly?
+       How often do you
+G042   have trouble falling       1.            2.              3.             4.             5.
+       asleep?
+       How often do you
+G043   wake up too early in       1.            2.              3.             4.             5.
+       the morning?
+       How often do you
+       wake up several times
+G044   during the night and       1.            2.              3.             4.             5.
+       have trouble falling
+       asleep again?
+       Do you snore loudly
+G045   when you sleep?            1.            2.              3.             4.             5.
+
+
+ Gambling
+
+ Now some questions on gambling.
+
+ Within the past month, have you used money on the following:
+ G046_1       1.     Slot machines
+ G046_2       1.     Lotto scratch ticket
+ G046_3       1.     Bets with friends that included money
+ G046_4       1.     Card game, dice game etc. for money
+ G046_5       1.     Odds sites (where you can bet on football matches, horse races etc.)
+ G046_6       1.     Lottery
+ G046_7       1.     Online games, e.g. poker, casinos, bingo etc. on the internet
+ G046_8       1.     I have not spent money on any kind of games → G048
+ G046_9       1.     Other game → G046_A
+
+ Coding: No = 0, Yes = 1, Not answered = 99
+
+ G046_A     Specify the other game (free text)
+ Dependent on G046_9
+
+ 99. Not answered
+ 100. Not applicable
+
+
+
+
+                                                                                                    17
+In the past years, have there been periods where...
+
+G047_1     ... you have had to gamble more and more to get the same feeling of excitement?
+Dependent on G046_8
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+G047_2     ... you have unsuccessfully tried to reduce or control your desire to gamble?
+Dependent on G046_8
+
+0. No → G047_3
+1. Yes
+99. Not answered
+100. Not applicable
+
+G047_2A    Has this happened 3 times or more?
+Dependent on G047_8, G047_2
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+G047_3     ... you have gambled to forget personal problems?
+Dependent on G046_8
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+G047_4    ... you, after losing money on a game, have returned another day to win back the
+          money you lost?
+Dependent on G046_8
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                           18
+G047_5    ... you have lied to family, friends or others, about how much you gamble, or how
+          much money you have lost on gambling?
+Dependent on G046_8
+
+0. No → G048
+1. Yes
+99. Not answered
+100. Not applicable
+
+G047_5A    Has this happened 3 times or more?
+Dependent on G046_8, G047_5
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+Self-harm and suicide
+
+The next questions are about self-harm and suicide.
+
+G048        Have you ever thought about harming or hurting yourself?
+0. No → G051
+1. Yes
+2. Do not know → G051
+99. Not answered
+
+G049      How often have you had these thought within the last year?
+Dependent on G048
+
+1. At no time → G051
+2. One time
+3. 2-5 times
+4. 6-10 times
+5. More than 10 times
+6. Do not know → G051
+99. Not answered
+100. Not applicable
+
+G050      When was the last time, you had these thoughts?
+Dependent on G048, G049
+
+1. Within the last week
+2. About 2-4 weeks ago
+3. About 1-5 months ago
+4. About 6-12 months ago
+5. Do not know
+
+
+
+                                                                                            19
+99. Not answered
+100. Not applicable
+
+G051        Have you ever harmed or hurt yourself on purpose?
+0. No → G055
+1. Yes
+2. Do not know → G055
+99. Not answered
+
+G052      How often have you harmed or hurt yourself on purpose within the last year?
+Dependent on G051
+
+1. At no time → G055
+2. One time
+3. 2-5 times
+4. 6-10 times
+5. More than 10 times
+6. Do not know → G055
+99. Not answered
+100. Not applicable
+
+G053      When was the last time you harmed or hurt yourself on purpose?
+Dependent on G051, G052
+
+1. Within the last week
+2. About 2-4 weeks ago
+3. About 1-5 months ago
+4. About 6-12 months ago
+5. Do not know
+99. Not answered
+100. Not applicable
+
+G054      If you like, you can write which methods you used to hurt yourself (free text)
+Dependent on G051
+
+99. Not answered
+100. Not applicable
+
+G055        Have you ever thought about taking your own life (even though you would not do
+            it)?
+0. No → G058
+1. Yes
+2. Do not know → G058
+99. Not answered
+
+
+
+
+                                                                                             20
+G056      How often have you had these thought within the last year?
+Dependent on G055
+
+1. At no time → G058
+2. One time
+3. 2-5 times
+4. 6-10 times
+5. More than 10 times
+6. Do not know → G058
+99. Not answered
+100. Not applicable
+
+G057      When was the last time, you had these thoughts?
+Dependent on G055, G056
+
+1. Within the last week
+2. About 2-4 weeks ago
+3. About 1-5 months ago
+4. About 6-12 months ago
+5. Do not know
+99. Not answered
+100. Not applicable
+
+G058        Have you ever had plans to kill yourself (considered method, done preparations)?
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+G059        Have you ever tried to kill yourself?
+0. No → G061_01
+1. Yes
+2. Do not know → G061_01
+99. Not answered
+
+G060      Have you tried to kill yourself within the last year?
+Dependent on G059
+
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                               21
+      Affective disorders
+
+      The following questions concern your well-being.
+
+      Within the past 2 weeks, how often...
+
+                                                               Little less    Little more
+                                                                                             Most of the
+           Not answered 99.     At no point   Occasionally   than half the   than half the                 All the time
+                                                                                               time
+                                                                  time            time
+          ... have you felt
+G061_01 sad, unhappy?               1.             2.             3.              4.             5.            6.
+          ... have you lost
+G061_02   interest in your          1.             2.             3.              4.             5.            6.
+          daily doings?
+          ... have you felt
+G061_03   you missed energy         1.             2.             3.              4.             5.            6.
+          and strength?
+          ... have you felt
+G061_04 less confident?             1.             2.             3.              4.             5.            6.
+          ... have you felt
+G061_05 guilty?                     1.             2.             3.              4.             5.            6.
+          ... have you felt
+G061_06   that life was not         1.             2.             3.              4.             5.            6.
+          worth living?
+          ... have you
+          struggled to
+          concentrate. e.g.,
+G061_07   when reading the          1.             2.             3.              4.             5.            6.
+          paper, watching
+          television?
+          ... have you felt
+G061_08 restless?                   1.             2.             3.              4.             5.            6.
+          ... have you felt
+G061_09 more quiet?                 1.             2.             3.              4.             5.            6.
+          ... have you had
+G061_10   trouble sleeping at       1.             2.             3.              4.             5.            6.
+          night?
+          ... have you had a
+G061_11 reduced appetite?           1.             2.             3.              4.             5.            6.
+          ... have you had an
+G061_12   increased                 1.             2.             3.              4.             5.            6.
+          appetite?
+
+
+
+
+                                                                                                                      22
+ Strength and difficulties
+ The next questions concern your strength and difficulties. We will ask you to choose the
+ description that fits you the best. Try to answer all questions even though you are unsure or do
+ not think the statement makes sense.
+ Answer based on how it has been within the last 6 months.
+
+ Note! As seen on the following pages, G062_1-G062_25 have been recoded to fit with the SDQ
+ classification (© Goodman, 1999).
+
+                                                                                       Somewhat   Certainly
+                                    Not answered 99.                        Not true
+                                                                                         true       true
+
+G062_01    I try to be nice to other people. I care about their feelings.     1.          2.         3.
+G062_02    I am restless, I find it hard to sit down for long.                1.          2.         3.
+G062_03    I get a lot of headaches, stomach-aches or sickness.               1.          2.         3.
+G062_04    I usually share with others, for example food or drink.            1.          2.         3.
+G062_05    I get very angry and often lose my temper.                         1.          2.         3.
+G062_06    I would rather be alone than with other people.                    1.          2.         3.
+G062_07    I am generally willing to do what other people want.               1.          2.         3.
+G062_08    I worry a lot.                                                     1.          2.         3.
+G062_09    I am helpful if someone is hurt, upset or feeling ill.             1.          2.         3.
+G062_10    I am constantly fidgeting or squirming.                            1.          2.         3.
+G062_11    I have at least one good friend.                                   1.          2.         3.
+G062_12    I can make other people do what I want.                            1.          2.         3.
+G062_13    I am often unhappy, depressed or tearful.                          1.          2.         3.
+G062_14    Other people generally like me.                                    1.          2.         3.
+G062_15    I am easily distracted, I find it difficult to concentrate.        1.          2.         3.
+G062_16    I am nervous in new situations, I easily lose confidence.          1.          2.         3.
+G062_17    I am kind to children.                                             1.          2.         3.
+G062_18    I am often accused of lying or cheating.                           1.          2.         3.
+G062_19    Other people pick on me or bully me.                               1.          2.         3.
+           I often offer to help if someone needs it (family, friends,
+G062_20    colleagues).                                                       1.          2.         3.
+
+G062_21    I think before I do things.                                        1.          2.         3.
+
+
+
+
+                                                                                                          23
+     G062_22       I take things that are not mine (at home, work or elsewhere).     1.          2.         3.
+                   I get along better with older people than with people of my
+     G062_23       own age.                                                          1.          2.         3.
+
+     G062_24       I have many fears, I am easily scared.                            1.          2.         3.
+     G062_25       I finish the work I'm doing. My concentration is good.            1.          2.         3.
+
+       G062_A        Please note any other comments or concerns here (free text)
+
+       99. Not answered
+
+       The questions G062_01-G062_25 have in the following been recoded to the values provided by
+       the Strengths and Difficulties Questionnaire (SDQ) © Goodman, 1999. The variables below can
+       be used, if one wishes to use Goodman's screening algorithms:
+
+                                                                                              Somewhat   Certainly
+                                         Not answered 99.                          Not true
+                                                                                                true       true
+
+G062_01_sdq I try to be nice to other people. I care about their feelings.           0.          1.         2.
+G062_02_sdq I am restless, I find it hard to sit down for long.                      0.          1.         2.
+G062_03_sdq I get a lot of headaches, stomach-aches or sickness.                     0.          1.         2.
+G062_04_sdq I usually share with others, for example food or drink.                  0.          1.         2.
+G062_05_sdq I get very angry and often lose my temper.                               0.          1.         2.
+G062_06_sdq I would rather be alone than with other people.                          0.          1.         2.
+G062_07_sdq I am generally willing to do what other people want.                     2.          1.         0.
+G062_08_sdq I worry a lot.                                                           0.          1.         2.
+G062_09_sdq I am helpful if someone is hurt, upset or feeling ill.                   0.          1.         2.
+G062_10_sdq I am constantly fidgeting or squirming.                                  0.          1.         2.
+G062_11_sdq I have at least one good friend.                                         2.          1.         0.
+G062_12_sdq I can make other people do what I want.                                  0.          1.         2.
+G062_13_sdq I am often unhappy, depressed or tearful.                                0.          1.         2.
+G062_14_sdq Other people generally like me.                                          2.          1.         0.
+G062_15_sdq I am easily distracted, I find it difficult to concentrate.              0.          1.         2.
+G062_16_sdq I am nervous in new situations, I easily lose confidence.                0.          1.         2.
+G062_17_sdq I am kind to children.                                                   0.          1.         2.
+G062_18_sdq I am often accused of lying or cheating.                                 0.          1.         2.
+
+
+
+
+                                                                                                                 24
+G062_19_sdq Other people pick on me or bully me.                                0.       1.         2.
+                  I often offer to help if someone needs it (family, friends,
+G062_20_sdq colleagues).                                                        0.       1.         2.
+
+G062_21_sdq I think before I do things.                                         2.       1.         0.
+G062_22_sdq I take things that are not mine (at home, work or elsewhere).       0.       1.         2.
+                  I get along better with older people than with people of my
+G062_23_sdq own age.                                                            0.       1.         2.
+
+G062_24_sdq I have many fears, I am easily scared.                              0.       1.         2.
+G062_25_sdq I finish the work I'm doing. My concentration is good.              2.       1.         0.
+
+       G063         Overall, do you think that you have difficulties in one or more of the following areas:
+                    emotions, concentration, behaviour or being able to get on with other people?
+       0. No → G068_1
+       1. Yes, minor difficulties
+       2. Yes, definite difficulties
+       3. Yes, severe difficulties
+       99. Not answered
+
+       G064         How long have these difficulties been present?
+       Dependent on G063
+       1. Less than 1 month
+       2. 1-5 months
+       3. 6-12 months
+       4. More than 1 year
+       99. Not answered
+       100. Not applicable
+
+       G065       Do the difficulties upset or make you distressed?
+       Dependent on G063
+
+       1. Not at all
+       2. A little bit
+       3. Quite a lot
+       4. Very much
+       99. Not answered
+       100. Not applicable
+
+
+
+
+                                                                                                         25
+   Do the difficulties interfere with your everyday life with regard to...
+   Dependent on G063
+
+                    Not answered 99.              Not at all   A little bit   Quite a lot   Very much
+                   Not applicable 100.
+          ... people close to you (e.g. family or
+G066_1    partner)                                   1.            2.             3.           4.
+          ... making new friends or preserving
+G066_2 old friendships?                              1.            2.             3.           4.
+
+G066_3 ... work or study?                              1.            2.             3.           4.
+
+G066_4 ... sport or other activities?                  1.            2.             3.           4.
+
+   G067       Do the difficulties make it hard for those around you (family, friends, etc.)?
+   Dependent on G063
+
+   1. Not at all
+   2. A little bit
+   3. Quite a lot
+   4. Very much
+   99. Not answered
+   100. Not applicable
+
+   Drugs
+   The next questions concern drug use.
+
+   Which of the following drugs have you tried:
+   G068_01     1.     Weed or pot
+   G068_02     1.     Amphetamine (speed)
+   G068_03     1.     Ecstasy / MDA, fantasy or similar
+   G068_04     1.     Sedatives or sleeping medicine (not prescribed)
+   G068_05     1.     Cocaine
+   G068_06     1.     LSD
+   G068_07     1.     Opiates (heroin, morphine, methadone, krokodil or similar)
+   G068_08     1.     Psychedelic fungi
+   G068_09     1.     Sniffing solvents or lighter gas
+   G068_10     1.     Sniffing nitrous oxide (laughing gas)
+   G068_11     1.     I have never tried any of those drugs
+   G068_12     1.     Other kind of drugs
+
+   Coding: No = 0, Yes = 1, Not answered = 99
+
+
+
+
+                                                                                                        26
+G068_12A What other kind of drugs (free text)
+Dependent on G068_12
+
+99. Not answered
+100. Not applicable
+
+Within the last year...
+
+G069_01        How many times have you used this? [Weed]
+Dependent on G068_01
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly → G070_1-G070_6
+6. Daily or almost daily → G070_1-G070_6
+99. Not answered
+100. Not applicable
+
+G069_02    How many times have you used this? [Amphetamine (speed)]
+Dependent on G068_02
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_03    How many times have you used this? [Ecstasy/MDA, fantasy]
+Dependent on G068_03
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                       27
+G069_04   How many times have you used this? [Sedatives or sleeping medicine (not
+          prescribed)]
+Dependent on G068_04
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_05    How many times have you used this? [Cocaine]
+Dependent on G068_05
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_06    How many times have you used this? [LSD]
+Dependent on G068_06
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_07    How many times have you used this? [Opiates (heroin, morphine, methadone,
+           krokodil or similar)]
+Dependent on G068_07
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+
+
+                                                                                       28
+G069_08    How many times have you used this? [Psychedelic fungi]
+Dependent on G068_08
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_09    How many times have you used this? [Sniffing solvents or lighter gas]
+Dependent on G068_9
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_10    How many times have you used this? [Sniffing nitrous oxide (laughing gas)]
+Dependent on G068_10
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+G069_11    How many times have you used this? [Other kind of drugs]
+Dependent on G069_12
+
+1. Not within the last year
+2. Once
+3. Less than once a month
+4. Monthly
+5. Weekly
+6. Daily or almost daily
+99. Not answered
+100. Not applicable
+
+
+
+                                                                                        29
+     Think back on the past 12 months
+     Dependent on G068_01, G069_01
+
+
+                     Not answered 99.                                   From time   Fairly
+                                                       Never   Rarely                        Very often
+                    Not applicable 100.                                  to time    often
+
+G070_1 Have you smoked weed before midday?              1.      2.         3.        4.         5.
+         Have you smoked weed when you were
+G070_2 alone?                                           1.      2.         3.        4.         5.
+         Have you had memory problems when you
+G070_3 smoked weed?                                     1.      2.         3.        4.         5.
+         Have friends or members of your family told
+G070_4   you that you ought to reduce your weed         1.      2.         3.        4.         5.
+         use?
+         Have you unsuccesfully tried to reduce or
+G070_5 stop smoking weed?                               1.      2.         3.        4.         5.
+         Have you had problems because of your
+G070_6   use of weed (arguments, fights, accidents,     1.      2.         3.        4.         5.
+         bad test result at school or similar)?
+
+
+     G070_6A Describe your problems here (free text)
+     Dependent on G070_6
+
+     99. Not answered
+     100. Not applicable
+
+     Psychosis-like symptoms
+     Here comes some questions on specific emotions and experiences you might have had.
+
+     G071         Some people believe that other people can read their mind. Have other people ever
+                  read your mind?
+     0. No, never → G076
+     1. Yes, maybe
+     2. Yes definitely
+     99. Not answered
+
+     G072      How often have other people read your mind since you turned 14?
+     Dependent on G071
+
+     1. Never → G076
+     2. Once or twice
+     3. Less than once a month
+     4. More than once a month
+
+
+
+
+                                                                                                     30
+5. Nearly every day
+99. Not answered
+100. Not applicable
+G073        Did this affect you or made you upset?
+Dependent on G071, G072
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+G074      Do you believe people have used special powers to read your mind?
+Dependent on G071, G072
+
+0. No, never
+1. Yes, maybe
+2. Yes, definitely
+99. Not answered
+
+G075      If people have read your mind, did this happen within 24 hours of you using or
+          smoking cannabis or other drugs?
+Dependent on G071, G072
+
+0. No, it happened at other times as well
+1. Yes, within 24 hours of using cannabis or other drugs
+99. Not answered
+100. Not applicable
+
+G076         Have you ever felt, that you were sent special messages through the television or
+             radio, or that a TV programme had been arranged especially for you?
+0. No, never → G080
+1. Yes, maybe
+2. Yes, definitely
+99. Not answered
+
+G077      How often has this happened since you turned 14?
+Dependent on G076
+
+1. Never → G080
+2. Once or twice
+3. Less than once a month
+4. More than once a month
+5. Nearly every day
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                                 31
+G078      Did this affect you or made you upset?
+Dependent on G076, G077
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+G079      When you felt that you were sent special messages through the television or radio,
+          did this happen within 24 hours of you using or smoking cannabis or other drugs?
+Dependent on G076, G077
+
+0. No, it happened at other times as well
+1. Yes, only within 24 hours of using cannabis or other drugs
+99. Not answered
+100. Not applicable
+
+G080         Have you ever felt you were being followed or spied on?
+0. No, never → G084
+1. Yes, maybe
+2. Yes, definitely
+99. Not answered
+
+G081      How often has this happened since you turned 14?
+Dependent on G080
+
+1. Never → G084
+2. Once or twice
+3. Less than once a month
+4. More than once a month
+5. Nearly every day
+99. Not answered
+100. Not applicable
+
+G082      Did this affect you or make you upset?
+Dependent on G080, G081
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                           32
+G083      If you ever felt, you were being followed or spied on, did this happen within 24
+          hours of you using or smoking cannabis or other drugs?
+Dependent on G080, G081
+
+0. No, it happened at other times as well
+1. Yes, only within 24 hours of using cannabis or other drugs
+99. Not answered
+100. Not applicable
+
+G084         Have you ever heard voices that other people could not hear?
+0. No, never → G089
+1. Yes, maybe
+2. Yes definitely
+99. Not answered
+
+G085      How often have you heard voices that other people could not hear since you turned
+          14?
+Dependent on G084
+
+1. Never → G089
+2. Once or twice
+3. Less than once a month
+4. More than once a month
+5. Nearly every day
+99. Not answered
+100. Not applicable
+
+G086      Did this affect you or make you upset?
+Dependent on G084, G085
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+G087      If you heard voices that other people could not hear, did this happen:
+Dependent on G084, G085
+
+1. Only within 24 hours of using cannabis or other drugs
+2. Only when I had a high temperature because I was ill
+3. Only as I was falling asleep or as I was waking up
+4. It happened at other times
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                             33
+     If you have heard voices that other people could not hear, what did the voice do?
+     (It is possible to choose more than one answer)
+     Dependent on G084, G085
+
+                                     Not answered 99.                           No       Yes
+                                     Not applicable 100.
+
+G088_1 Call my name.                                                            0.        1.
+
+G088_2 Said something or commenting on something I was doing or thinking.       0.        1.
+
+G088_3 Talked about me with a different voice.                                  0.        1.
+
+G088_4 Said something nice about me.                                            0.        1.
+
+G088_5 Said something horrible about me.                                        0.        1.
+
+G088_6 Other.                                                                   0.        1.
+
+     G089         Have you ever felt that you were controlled by a special power?
+     0. No, never → G094
+     1. Yes, maybe
+     2. Yes definitely
+     99. Not answered
+
+     G090      How often have you felt that you were controlled by a special power since you
+               turned 14?
+     Dependent on G089
+
+     1. Never → G094
+     2. Once or twice
+     3. Less than once a month
+     4. More than once a month
+     5. Nearly every day
+     99. Not answered
+     100. Not applicable
+
+     G091      Who/what did you think was controlling you?
+     Dependent on G089, G090
+
+     1. God or another religious figure
+     2. Someone or something else
+     99. Not answered
+     100. Not applicable
+
+
+
+
+                                                                                               34
+G092      Did this affect you or make you upset?
+Dependent on G089, G090
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+G093      If you ever felt you were controlled by a special power, did this happen within 24
+          hours of using or smoking cannabis or other drugs?
+Dependent on G089, G090
+
+0. No, it happened at other times as well
+1. Yes, only within 24 hours of using cannabis or other drugs
+99. Not answered
+100. Not applicable
+
+G094         Have you ever seen something or someone that other people could not see?
+0. No, never → G098
+1. Yes, maybe
+2. Yes, definitely
+99. Not answered
+
+G095      How often have you seen something or someone that other people could not see
+          since you turned 14?
+Dependent on G094
+
+1. Never → G098
+2. Once or twice
+3. Less than once a month
+4. More than once a month
+5. Nearly every day
+99. Not answered
+100. Not applicable
+
+G096      Did this affect you or make you upset?
+Dependent on G094, G095
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                               35
+G097      If you have seen something or someone that other people could not see, did this
+          happen:
+Dependent on G094, G095
+
+1. Only within 24 hours of using cannabis or other drugs
+2. Only when I had a high temperature because I was ill
+3. Only as I was falling asleep or as I was waking up
+4. It happened at other times
+99. Not answered
+100. Not applicable
+
+G098         Have you ever felt that you are something special, or that you have special powers,
+             e.g., ability to read other people's minds, or that you have been chosen to perform
+             great and important tasks? (not in the sense of being very clever or coming from an
+             important family)
+0. No, never → G102
+1. Yes, maybe
+2. Yes, definitely
+99. Not answered
+
+G099      How often have you felt that you were something special or had special powers
+          since you turned 14?
+Dependent on G098
+
+1. Never → G102
+2. Once or twice
+3. Less than once a month
+4. More than once a month
+5. Nearly every day
+99. Not answered
+100. Not applicable
+
+G100      Did this affect you or make you upset?
+Dependent on G098, G099
+
+0. No, not at all
+1. Yes, a bit
+2. Yes, quite
+3. Yes, very
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                              36
+G101      If you ever felt you were something special or had special powers, did this happen
+          within 24 hours of using or smoking cannabis or other drugs?
+Dependent on G098, G099
+
+0. No, it happened at other times as well
+1. Yes, only within 24 hours of using cannabis or other drugs
+99. Not answered
+100. Not applicable
+
+Eating disorders
+
+The next questions concern your relationship to food, eating and exercise during the past year.
+
+G102         Have you been on a diet to avoid gaining weight?
+1. I am always on a diet
+2. Often
+3. Several times
+4. A couple of times
+5. Never
+6. Do not know
+99. Not answered
+
+G103        To what extent have you avoided eating because you were afraid it would make
+            you fat?
+1. Not at all
+2. A little bit
+3. A lot
+4. All the time
+5. Do not know
+99. Not answered
+
+G104        Have you fasted (that is, not eaten anything for at least a day or longer) to lose or
+            avoid gaining weight?
+1. Never
+2. Less than once a month
+3. 1-3 times a month
+4. Once a week
+5. Several times a week
+6. Every day
+7. Do not know
+99. Not answered
+
+G105         Have you thrown up on purpose to lose or avoid gaining weight?
+1. Never
+2. Less than once a month
+3. 1-3 times a month
+4. Once a week
+
+
+
+
+                                                                                                    37
+    5. Several times a week
+    6. Every day
+    7. Do not know
+    99. Not answered
+
+    G106         Have you taken laxatives or other types of medication to lose or avoid gaining
+                 weight?
+    1. Never
+    2. Less than once a month
+    3. 1-3 times a month
+    4. Once a week
+    5. Several times a week
+    6. Every day
+    7. Do not know
+    99. Not answered
+
+    Some people binge eats, which means they eat an unusual large amount of food in a
+    short amount of time.
+
+    G107         Within the last year, how often have you been binge eating?
+    1. Never → G109
+    2. Less than once a month
+    3. 1-3 times a month
+    4. Once a week
+    5. Several times a week
+    6. Every day
+    7. Do not know → G109
+    99. Not answered
+
+    When you were binge eating...
+    Dependent on G107
+
+                                    Not answered 99.                                         Do not
+                                                                                No   Yes
+                                   Not applicable 100.                                       know
+         ... did you feel that you could not stop eating even though you wanted
+G108_1   to?                                                                    0.   1.           2.
+
+G108_2   ... did you eat until you had a stomach ache or felt sick?               0.   1.           2.
+G108_3   ... did you feel bad or guilty after eating too much food?               0.   1.           2.
+
+    G109         What best describes what you are trying to do with your weight?
+    1. I am not trying to do anything
+    2. Maintain my weight
+    3. Gain weight
+    4. Lose weight
+    5. Do not know
+    99. Not answered
+
+
+
+                                                                                                       38
+     During the past year...
+
+           Not answered 99.   Never       Rarely    Occasionally    Often      Every day   Do not know
+
+          ... how often have
+G110_1 you felt too fat?        1.          2.           3.          4.           5.           6.
+          ... how often have
+          you felt that you
+G110_2    wanted to be          1.          2.           3.          4.           5.           6.
+          thinner?
+          ... how often have
+          you been worried
+G110_3    about having too      1.          2.           3.          4.           5.           6.
+          much fat on your
+          body?
+          ... how often have
+          you worried about
+G110_4    gaining a little      1.          2.           3.          4.           5.           6.
+          weight (even 1
+          kg)?
+
+
+     G111         During the past year, how often have you thought about wanting toned or defined
+                  muscles?
+     1. Never
+     2. Rarely
+     3. Occasionally
+     4. Often
+     5. Every day
+     6. Do not know
+     99. Not answered
+
+     G112         During the past year, how often have you used nutritional supplements to build
+                  muscles?
+     1. Never
+     2. Less than once a month
+     3. 1-3 times a month
+     4. Once a week
+     5. Several times a week
+     6. Every day
+     7. Do not know
+     99. Not answered
+
+     G113         During the past year, how often have you used steroids to build muscles?
+     1. Never
+     2. Less than once a month
+     3. 1-3 times a month
+     4. Once a week
+     5. Several times a week
+     6. Every day
+
+
+
+                                                                                                    39
+7. Do not know
+99. Not answered
+
+G114         In the past year, have you exercised to lose or avoid gaining weight?
+1. Never → G117
+2. Less than once a month
+3. 1-3 times a month
+4. Once a week
+5. Several times a week
+6. Every day
+7. Do not know → G117
+99. Not answered
+
+G115      In the past year, has it been difficult for you to attend school or work because you
+          spend a lot of time exercising?
+Dependent on G114
+
+0. No
+1. Yes, occasionally
+2. Yes, often
+3. Do not know
+99. Not answered
+100. Not applicable
+
+G116      Do you feel guilty, if you skip working out/exercising?
+Dependent on G114
+
+0. No
+1. Yes, occasionally
+2. Yes, often
+3. I never skip working out/exercising
+99. Not answered
+100. Not applicable
+
+Sexual experience
+
+The next questions are about your sexual experience, orientation and gender identity. With
+regard to questions on sex, we are referring to all types of sexual intercourse with another
+person.
+
+G117       Have you ever had sex?
+0. No → G126
+1. Yes
+99. Not answered
+
+
+
+
+                                                                                                 40
+G118      How old were you the first time you had sex? Type in your age.
+Dependent on G117
+
+0. 0 years
+1. 1 years
+2. 2 years
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G119      How many people have you had sex with?
+Dependent on G117
+
+Answer options: 1-98
+
+999. Not answered
+1000. Not applicable
+
+G120      How many times have you had unprotected sex (not used any kind of protection)?
+Dependent on G117
+
+1. 0 times → G126
+2. A single time
+3. 2-5 times
+4. 6-10 times
+5. More than 10 times
+6. Do not know → G126
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                       41
+G121      Have you ever been pregnant?
+Dependent on G117, G_SEX, G120
+
+0. No → G126
+1. Yes
+2. Do not know → G126
+99. Not answered
+100. Not applicable
+
+G122      Are you currently pregnant?
+Dependent on G117, G_SEX, G120, G121
+
+0. No → G123
+1. Yes
+2. Do not know → G123
+99. Not answered
+100. Not applicable
+
+G123      Do you want to complete the pregnancy?
+Dependent on G117, G_SEX, G120, G121, G122
+
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+G124      Have you given birth to a child?
+Dependent on G117, G_SEX, G120, G121
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+G125      Have you ever made a girl pregnant?
+Dependent on G117, G_SEX, G120
+
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                   42
+   G126        Which of the following best describe persons you have been attracted to since you
+               turned 15?
+   1. Only persons of the opposite gender
+   2. Mostly persons of the opposite gender, but also at least one person of my own gender
+   3. Men and woman equally
+   4. Mostly persons of my own gender, but also at least one person of the opposite gender
+   5. Only persons of my own gender
+   6. I have never been attracted to anyone
+   7. Do not know
+   99. Not answered
+
+   Some people behave like the opposite gender or are not completely happy about their
+   gender. How well do the following statements describe you?
+
+                   Not answered 99.           Not at all    Somewhat       Very well     Do not know
+
+          I behave as was I of the opposite
+G127_1 gender.                                   1.            2.             3.              4.
+
+G127_2 I wish I was of the opposite gender.      1.            2.             3.              4.
+
+
+   Musculoskeletal system
+   The next questions concern pain in neck, middle back and lower back.
+
+   G128         Have you within the last year suffered from neck pain?
+   0. No → G130
+   1. Yes, once or twice
+   2. Yes, occasionally
+   3. Yes, often
+   4. Do not know → G130
+   99. Not answered
+
+   G129      How much did it hurt, when it hurt the most? 0 is "it did not hurt" and 10 is "it hurt
+             very much"
+   Dependent on G128
+
+   0. 0 (it did not hurt)
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   8. 8
+   9. 9
+
+
+
+
+                                                                                                      43
+10. 10 (it hurt very much)
+99. Not answered
+100. Not applicable
+
+G130         Have you within the last year suffered from (upper) back pain?
+0. No → G132
+1. Yes, once or twice
+2. Yes, occasionally
+3. Yes, often
+4. Do not know → G132
+99. Not answered
+
+G131      How much did it hurt when it hurt the most? 0 is "it did not hurt" and 10 is "it hurt
+          very much"
+Dependent on G130
+
+0. 0 (it did not hurt)
+1. 1
+2. 2
+3. 3
+4. 4
+5. 5
+6. 6
+7. 7
+8. 8
+9. 9
+10. 10 (it hurt very much)
+99. Not answered
+100. Not applicable
+
+G132         Have you within the last year suffered from lower back pain?
+0. No → G135
+1. Yes, once or twice
+2. Yes, occasionally
+3. Yes, often
+4. Do not know → G135
+99. Not answered
+
+G133      How much did it hurt when it hurt the most? 0 is "it did not hurt" and 10 is "it hurt
+          very much"
+Dependent on G132
+
+0. 0 (it did not hurt)
+1. 1
+2. 2
+3. 3
+4. 4
+5. 5
+
+
+
+                                                                                                  44
+     6. 6
+     7. 7
+     8. 8
+     9. 9
+     10. 10 (it hurt very much)
+     99. Not answered
+     100. Not applicable
+
+     Within the last year, has pain in the neck, (upper) back or lower back...
+     Dependent on either G128, G130, G132 being equal to 1, 2 or 3
+
+
+                Not answered 99.                                Yes, once or      Yes,
+                                                    No                                        Yes, often   Do not know
+                Not applicable 100.                                twice       occasionally
+
+
+          ... caused you to stay home
+G134_1 from school/work?                             0.             1.              2.              3.         4.
+
+          ... prohibited you from doing
+G134_2 sports/exercise?                              0.             1.              2.              3.         4.
+
+          ... made you see a doctor,
+G134_3 acupuncturist, chiropractor or                0.             1.              2.              3.         4.
+          physiotherapist?
+
+
+
+     Anxiety
+     The next questions concern situations that make you scared or anxious.
+
+     How often has the following happened to you?
+
+                      Not answered 99.                    Never          Occasionally         Often         Always
+
+            I feel scared when I have a test in
+    G135 school.                                           1.                  2.              3.             4.
+            I feel scared if I have to use public
+    G136 bathrooms.                                        1.                  2.              3.             4.
+            I feel scared to make a fool of myself
+    G137 in front of other people.                         1.                  2.              3.             4.
+            I worry that I will do badly at
+    G138 school/work.                                      1.                  2.              3.             4.
+            I suddenly feel as if I cannot
+    G139 breathe, even when there is no                    1.                  2.              3.             4.
+            reason.
+            I suddenly start to tremble or shake,
+    G140 even when there is no reason.                     1.                  2.              3.             4.
+            I feel scared if I have to travel by
+    G141 car, bus or train.                                1.                  2.              3.             4.
+
+
+
+                                                                                                                     45
+        I worry about what other people
+G142 think of me.                                  1.      2.          3.            4.
+        I am afraid of being in crowded
+G143 places (e.g., shopping centres, the           1.      2.          3.            4.
+        cinema, buses with many people).
+        All of a sudden, I feel really scared
+G144 without any reason.                           1.      2.          3.            4.
+        I suddenly become dizzy or weak
+G145 even when there is no reason.                 1.      2.          3.            4.
+        I feel scared if I have to talk in front
+G146 of my class or another big group.             1.      2.          3.            4.
+        All of a sudden, my heart starts to
+G147 race without any reason.                      1.      2.          3.            4.
+        I worry that I will suddenly feel
+G148    scared even though there is nothing        1.      2.          3.            4.
+        to be scared of.
+        I am afraid of being in small, closed
+G149 places, like tunnels or small rooms.          1.      2.          3.            4.
+
+
+ Psoriasis
+ Now to some questions on the skin disease psoriasis.
+
+ G150        Have you ever had an outbreak of psoriasis?
+ 0. No → G155
+ 1. Yes
+ 2. Do not know → G155
+ 99. Not answered
+
+ G151      Has the disease been diagnosed by a doctor?
+ Dependent on G150
+
+ 0. No → G152 and then → G154
+ 1. Yes
+ 99. Not answered
+ 100. Not applicable
+
+ G152      How old were you when you had your first outbreak of psoriasis? Type in your age.
+ Dependent on G150
+
+ 0. 0 years
+ 1. 1 years
+ 2. 2 years
+ 3. 3 years
+ 4. 4 years
+ 5. 5 years
+ 6. 6 years
+
+
+
+
+                                                                                          46
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G153      Have you received prescription drugs/cream or light therapy for psoriasis within the
+          last three months?
+Dependent on G150, G151
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+G154      Do you also have pain in your joints?
+Dependent on G150
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+Hearing
+Now to some questions on music and hearing.
+
+G155       Do you ever listen to music from an MP3 player, iPod or phone using headphones
+           or in-ear headphones?
+0. No → G158_1
+1. Yes
+99. Not answered
+
+
+
+
+                                                                                            47
+     G156      How often do you listen to music using headphones or in-ear headphones?
+     Dependent on G155
+
+     1. Several times a day
+     2. Once a day
+     3. Nearly every day (5-6 days a week)
+     4. A few times a week (2-4 days a week)
+     5. Once a week
+     6. Less than once a week
+     7. Rarely
+     99. Not answered
+     100. Not applicable
+
+     G157      How loud is the music, when you use headphones or in-ear headphones?
+     Dependent on G155
+
+     1. I have difficulties hearing other loud sounds
+     2. I can hear loud sounds but not that people talk to me
+     3. I have no problems hearing sounds around me or when people are talking to me
+     99. Not answered
+     100. Not applicable
+
+     How often do you participate in following activities with loud sound or noises?
+
+                                                                               A few
+                                    At least                         A few                Once or a
+                                               2-4 times   Once a              times
+            Not answered 99.       five time                        times a               few times   Never
+                                                a week      week              every six
+                                    a week                           month                  a year
+                                                                               month
+
+G158_1 Go to concerts.                1.          2.         3.       4.         5.          6.        7.
+         Play an instrument or
+G158_2 in a band.                     1.          2.         3.       4.         5.          6.        7.
+         Go to parties with loud
+G158_3 music.                         1.          2.         3.       4.         5.          6.        7.
+         Work in an
+         environment with loud
+G158_4   noises caused by             1.          2.         3.       4.         5.          6.        7.
+         machines or voices.
+
+
+     G159         How often do you use earplugs or hearing protector when you are in a noisy
+                  environment?
+     1. Never
+     2. Rarely
+     3. Occasionally
+     4. Often
+     5. Always
+     99. Not answered
+
+
+
+
+                                                                                                              48
+G160        Do you suffer from impaired hearing?
+0. No → G164
+1. Yes
+2. Maybe/I suspect it
+3. Do not know → G164
+99. Not answered
+
+G161      How old were you when the impaired hearing started? Type in your age.
+Dependent on G160
+
+0. 0 years
+1. 1 years
+2. 2 years
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G162      On which ear(s) is your hearing impaired?
+Dependent on G160
+
+1. Left ear
+2. Right ear
+3. Both ears
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                  49
+G163      Have you been treated for the hearing impairment?
+Dependent on G160
+
+0. No → G164
+1. Yes with hearing aid → G164
+2. Yes, with other treatment
+99. Not answered
+100. Not applicable
+
+G163_A    Which treatment? (free text)
+Dependent on G160, G163
+
+99. Not answered
+100. Not applicable
+
+Asthma
+The next questions concern breathing problems and asthma.
+
+G164        Have you had wheezing or whistling breathing within the past 12 months?
+0. No → G167
+1. Yes
+2. Do not know → G167
+99. Not answered
+
+Within the past 12 months...
+
+G165_1    Have you had shortness of breath at the same time as wheezing or whistling
+          breathing?
+Dependent on G164
+
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+G165_2    Did you have wheezing or whistling breathing without having a cold?
+Dependent on G164
+
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+
+
+
+                                                                                       50
+G166        Have you tried waking up with a feeling of tightness in the chest?
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+
+G167        Have you been awakened by breathing difficulties?
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+
+G168        Have you been awakened by a cough attack?
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+
+G169        Have you ever had asthma?
+0. No → G174
+1. Yes
+2. Do not know → G174
+99. Not answered
+
+G170      Has a doctor ever told you that you had asthma?
+Dependent on G169
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+G171      How old were you when you had your first asthma attack? Type in your age.
+Dependent on G169
+
+0. 0 years
+1. 1 years
+2. 2 years
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+
+
+
+                                                                                      51
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G172      How old were you when you had your latest asthma attack?
+Dependent on G169
+
+0. 0 years
+1. 1 years
+2. 2 years
+3. 3 years
+4. 4 years
+5. 5 years
+6. 6 years
+7. 7 years
+8. 8 years
+9. 9 years
+10. 10 years
+11. 11 years
+12. 12 years
+13. 13 years
+14. 14 years
+15. 15 years
+16. 16 years
+17. 17 years
+18. 18 years
+19. 19 years
+20. 20 years
+21. 21 years
+99. Not answered
+100. Not applicable
+
+G173      Are you currently taken medicine for your asthma (inhalators, spray or pills)?
+Dependent on G169
+
+0. No
+1. Yes
+2. Do not know
+99. Not answered
+100. Not applicable
+
+
+
+                                                                                           52
+  Negative life events
+  The next questions concern events that might have affected you.
+
+  Within the past 12 months, have you experienced any of the following?
+
+                                                                     Yes, but I   Yes, I was      Yes, I was
+                      Not answered 99.                                                                         Do not
+                                                             No       was not      a little bit      very
+                  Not applicable 100. (G180)                                                                   know
+                                                                     affected      affected        affected
+          That your parents have had difficulties
+G174 paying their bills.                                      0.        1.             2.            3.         4.
+          That one of your parents has lost their
+G175 job.                                                     0.        1.             2.            3.         4.
+          That one of your parents was drunk or in
+          other ways intoxicated in a way which
+G176      embarrassed you or made you feel                    0.        1.             2.            3.         4.
+          uncomfortable.
+          That you are/have been seriously ill or in
+G177 an accident                                              0.        1.             2.            3.         4.
+          That someone in your close family is/has
+G178      been seriously ill, in an accident or has           0.        1.             2.            3.         4.
+          died.
+          That a friend is/has been seriously ill, in
+G179 an accident or has died                                  0.        1.             2.            3.         4.
+          That your parents have split up.
+G180 Dependent on G005                                        0.        1.             2.            3.         4.
+
+
+  Body and body shape
+  G181              How tall are you? (Please type in your height in cm e.g. 176. You cannot use
+                    comma or similar in the field)2
+
+  ___ cm (150-220 cm)
+
+  999. Not answered
+
+  G182         When were you measured?
+  1. Today
+  2. Within the last month
+  3. Within the last 6 months
+  4. 6-12 months ago
+  5. More than 12 months ago
+  99. Not answered
+
+
+
+  2
+      Continuous variable - be aware of extreme values in dataset.
+
+
+
+                                                                                                                        53
+G183              How much do you weigh? (Please type in your weight in kilos e.g. 73. You cannot
+                  use comma or similar in the field)3
+
+___ cm (30-220 kilos)
+
+999. Not answered
+
+G184         When were you weighted?
+1. Today
+2. Within the last month
+3. Within the last 6 months
+4. 6-12 months ago
+5. More than 12 months ago
+99. Not answered
+
+G185      Have you had your menstrual period within the last 3 months?
+Dependent on G_SEX
+
+1. Yes
+2. No, but before that
+3. No, I have never had menstruation
+99. Not answered
+100. Not applicable
+
+G186      Do you take any types of hormone pills or injections? (e.g., contraceptive pills, mini
+          pills, hormone spiral, birth control implant or likewise)
+Dependent on G_SEX
+
+0. No
+1. Yes
+99. Not answered
+100. Not applicable
+
+Further information
+X2_1        Which devise did you use to answer the questionnaire?
+1. Mobile phone
+2. Tablet
+3. Computer
+4. Other
+99. Not answered
+
+
+
+
+3
+    Continuous variable - be aware of extreme values in dataset.
+
+
+
+                                                                                                    54
+

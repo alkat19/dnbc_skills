@@ -1,0 +1,25 @@
+# concept <TAB> space-separated search terms
+# Terms are stems chosen against the real corpus wording, not guesses. search.py expands
+# each one further (stemming + compound squashing), so keep them short and generous.
+# 'eat' matched 'treatment' 586 times; 'otitis' was 6/7 'parotitis' (mumps);
+# 'mental' caught 'developmental'. Anchor a term only when its mid-word hits are
+# off-topic -- 'allerg' inside 'hypoallergenic' is a hit worth keeping.
+# Check a change with:  python3 scripts/search.py --topic <name> --names | head -1
+alcohol	alcohol drink beer wine spirit units binge
+allergy	allerg asthma eczema hayfever wheez rash atopic
+anxiety	anxi nerv worr panic phobi tense
+birth	gestation deliver caesarean birthweight apgar labour labor
+breastfeeding	breast milk nurs suckl weaning bottle
+childcare	creche kindergarten childminder nursery institution daycare
+depression	depress sad blue mood \bmental anxi nerv psychiatr
+diet	diet food \beat vegetab fruit fish meat vitamin supplement
+education	educat school train apprentice degree vocational
+infection	infect fever antibiotic influenza urinary cystitis pneumonia \botitis
+medication	medic drug tablet pill treatment prescri
+occupation	occupat job work employ profession unemploy
+pregnancy	pregnan gestation trimester nausea vomit bleeding
+sleep	sleep bedtime night wake insomnia nightmare bedwetting tired
+smoking	smok cigaret tobacco nicotin cheroot cigar pipe passive
+socioeconomic	income educat occupat employ social benefit economic housing
+stress	stress strain burden cope demand pressure
+weight	weight height bmi kilo overweight obes

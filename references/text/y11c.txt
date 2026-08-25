@@ -1,0 +1,2813 @@
+Codebook for the 11-year follow-up (Child)
+Drafted by
+Filippa Nyboe Norsker, student assistant
+Pernille Stemann Larsen, PhD student
+Tanja Majbrit Knudsen, research assistant
+Anne Marie Nybo Andersen, professor
+
+Section of Social Medicine, Department of Public Health, University of Copenhagen
+
+Dato: 16 September 2014, rev 29 June 2018
+
+Documentation and guidelines
+The code book contains section headlines and contains the supplementary or explanatory text
+from the questionnaire. The supplementary/explanatory text is written in italics.
+
+With the exception of the Key Variables all variables start with an E. The variable ID contains
+three chiffers (ex. E000). The answer categories are listed starting with 1.
+
+The "Not answered" variable (missing) has been given code 99. The electronic questionnaire
+has been set up with a maximum of obligatory questions. Thus the respondent cannot procede
+to questions B before having answered question A.
+There is a number of exeptions and all voluntary questions are highlighted in italics in the
+codebook above the question itself. For these highlighted questions it will be possible to
+continue without answering. Missing will also occur if the respondent has started but not
+completed the questionnaire within the 3 month deadline.
+
+The "Not applicable" variable has been give the code 100 and occurs if the question is
+dependent on an answer given in a previous question. If a question is dependent on a previous
+answer a note is written in Consolas (e.g. E004, Dependent on E003) above the question.
+Correspondingly it is specified which question the respondent jumps to if the following questions
+depend on the answer of the question concerned (e.g. ->E003)
+
+Variable names ending with a letter (E000A), er et underquestion til det forgående question, and
+How det ikke giver mening at questionet fyears tildelt et nyt navn. In some cases a question
+ending with a capital letter will contain a text answer (see E002A), or a number (see. E007A).
+
+Some variables have underscores to show that they belong together or are part of a scale (ex.
+The Stress in Children Scale, E022_1-E002_21).
+
+
+
+
+                                                                                                  1
+Table of Contents
+Key Variables ................................................................................................................................................................ 3
+Background information............................................................................................................................................... 3
+Family Structure ........................................................................................................................................................... 4
+Social relations and well-being ..................................................................................................................................... 6
+School achievements .................................................................................................................................................... 7
+General well-being ....................................................................................................................................................... 9
+Dietary habits ............................................................................................................................................................. 17
+Physical activity/inactivity .......................................................................................................................................... 25
+Traffic behaviour ........................................................................................................................................................ 31
+Smoking and alcohol................................................................................................................................................... 32
+Your health ................................................................................................................................................................. 35
+Musculoskeletal system ............................................................................................................................................. 38
+Dental health .............................................................................................................................................................. 40
+Strenghts and Difficulties ........................................................................................................................................... 41
+Music .......................................................................................................................................................................... 46
+Mental Health ............................................................................................................................................................. 46
+Medicine use .............................................................................................................................................................. 49
+Sex .............................................................................................................................................................................. 50
+Mobile phones ............................................................................................................................................................ 50
+Body and looks ........................................................................................................................................................... 51
+
+
+
+
+                                                                                                                                                                                   2
+Key Variables
+LBGRAVFF
+DNBC Child Identification number
+
+LBGRAV
+DNBC Mother Identification number
+
+E_INVITDATE
+Date for child invitation to the 11-year follow-up
+
+E_QDATE
+Date for questionnaire completion
+
+E_BESVAR
+Indicator for degree of completion
+   1. Questionnaire is complete
+   2. Questionnaire is not complete
+
+E_VERSION
+Indicates the version of the questionnaire. Two versions exist as small number of questions
+were added on the 6th April 2011. (E119).
+   3. version 1
+   4. version 2
+
+E_SEX
+  1. boy
+  2. girl
+
+
+
+Background information
+Hello again, [childname]
+Welcome to the Club11 questionnaire
+- we are very happy that you wanted to join in!
+
+Questions and answers start on the next page. It is a good idea to read all answer choises
+through before picking your answer. Remember - there is no such thing as a right or a wrong
+answer. Pick the answer that describes your situation best. Click on the loudspeakers to hear a
+voice read the questions and answers aloud.
+
+Ready to start?
+Click Next page to start answering the questions.
+Enjoy!
+E001        How old are you?
+    1. 10
+    2. 11
+    3. 12
+    4. 13
+
+
+                                                                                                  3
+   5. 14
+   99. not answered
+
+E002       Which grade are you in?
+  1. third
+  2. fourth
+  3. fifth
+  4. sixt
+  5. seventh
+  6. other____ -> E002A
+  99. not answered
+
+Dependent on E002
+E002A      _____
+not answered=99, not applicable=100
+
+
+
+Family Structure
+(E003: Question may be skipped without answering)
+E003        Which adults do you live with all the time or most of the time?
+  1. both my parents -> E007
+  2. I split my time equally/almost equally between my mother and my father
+  3. my mother
+  4. my mother and her new boyfriend/husband
+  5. my father
+  6. my father and his new girlfriend/wife
+  7. live in a foster family -> E007
+  8. live in a children's home -> E007
+  9. other____ -> E003A
+  99. not answered
+
+Dependent on E003
+E003A      _____ -> E007
+not answered=99, not applicable=100
+
+E004        Why are your parents not living together?
+Dependent on E003
+   1. my parents never lived together -> E006
+   2. my parents got divorced or split up
+   3. my mother or father died ->E007
+   99. not answered
+  100. not applicable
+
+E005      How old were you approximately, when your parents split up?
+Dependent on E003 E004
+   1. 0
+   2. 1
+
+
+                                                                              4
+   3. 2
+   4. 3
+   5. 4
+   6. 5
+   7. 6
+   8. 7
+   9. 8
+   10. 9
+   11. 10
+   12. 11
+   13. 12
+   14. 13
+   15. 14
+   99. not answered
+   100. not applicable
+
+E006         Are you happy about your living arrangements?
+Dependent on E003 E004
+   1. Yes, I am very happy with it
+   2. It is ok
+   3. No, I wish things were different
+   99. not answered
+  100. not applicable
+
+
+The next questions are about the siblings you may have and whether you live with them - all of
+the time or most of the time.
+
+BIOLOGICAL siblings=You have the same father and mother
+HALF-siblings=You either have the same father or the same mother
+BONUS-siblings =You neither have the same father nor the same mother
+
+E007       Do you have any biological siblings?
+  1. yes
+  2. no -> E008
+  99. not answered
+
+Dependent on E007
+E007A      How many biological siblings do you have?
+not answered=99, not applicable=100
+
+Dependent on E007
+E007B      How many of your biological siblings do you live with?
+not answered=99, not applicable=100
+
+E008      Do you have any half-siblings?
+  1. yes
+  2. no -> E009
+
+
+                                                                                                 5
+   99. not answered
+
+Dependent on E008
+E008A      How many half-siblings do you have?
+not answered=99, not applicable=100
+
+Dependent on E008
+E008B      How many of your half-siblings do you live with?
+not answered=99, not applicable=100
+
+E009        Do you have any bonus-siblings?
+Dependent on E003
+   1. yes
+   2. no -> E010
+   99. not answered
+
+Dependent on E003 E009
+E009A      How many bonus-siblings do you have?
+not answered=99, not applicable=100
+
+Dependent on E003 E009
+E009B      How many of your bonus siblings do you live with?
+not answered=99, not applicable=100
+
+E010       How many persons do you share a room with?
+  1. none
+  2. one - we are two
+  3. two - we are three
+  4. three - we are four
+  99. not answered
+
+
+
+Social relations and well-being
+The next questions are about how you get along with others and how you are doing at school
+and in general.
+The first questions concern your relationship with children your own age.
+E011_1       How many of your close friends are boys at the moment?
+   1. none
+   2. one
+   3. two
+   4. three or more
+   99. not answered
+
+E011_2    How many of your close friends are girls at the moment?
+  1. none
+  2. one
+  3. two
+
+
+                                                                                             6
+   4. three or more
+   99. not answered
+
+E012        Is it easy or difficult for you to make new friends?
+  1. very easy
+  2. easy
+  3. difficult
+  4. very difficult
+  99. not answered
+
+E013       How often are you visiting friends or have friends come to your house?
+  1. at least 5 days per week
+  2. 2-4 days per week
+  3. once a week
+  4. a couple of times per month
+  5. not every month
+  99. not answered
+
+
+The next questions are about bullying. Bullying is when somebody is kept out, teased, beaten or
+hurt in an intimidating way again and again.
+E014_1        Within the last year has anybody bullied you?
+   1. yes, several times
+   2. yes, a few times
+   3. no
+   99. not answered
+
+E014_2     Within the last year have you bullied others?
+  1. yes, several times
+  2. yes, a few times
+  3. no
+  99. not answered
+
+
+
+School achievements
+The next questions are about your school.
+E015_1     How would you rate your own school achievements?
+   1. Excellent
+   2. Good
+   3. Fair
+   4. Poor
+  99. not answered
+
+E015_2    In your own opinion how good are you at maths?
+  1. Excellent
+  2. Good
+  3. Fair
+
+
+                                                                                              7
+   4. Poor
+   99. not answered
+
+E015_3     In your own opinion how good are you at Danish?
+  1. Excellent
+  2. Good
+  3. Fair
+  4. Poor
+  99. not answered
+
+E015_4     In your own opinion how good are you at sports?
+  1. Excellent
+  2. Good
+  3. Fair
+  4. Poor
+  99. not answered
+
+E016       Are you dyslectic?
+  1. yes
+  2. maybe
+  3. no
+  4. don't know
+  99. not answered
+
+E017        How easy do you find reading?
+  1. very easy
+  2. easy
+  3. difficult
+  4. very difficult
+  99. not answered
+
+E018        How easy do you find spelling?
+  1. very easy
+  2. easy
+  3. difficult
+  4. very difficult
+  99. not answered
+
+E019       Do you need help with your homework?
+  1. yes, almost always
+  2. yes, sometimes
+  3. yes, but very rarely
+  4. no -> E021
+  99. not answered
+
+E020      Is there somebody you can ask, if you need help with your homework?
+Dependent on E019
+   1. yes
+
+
+                                                                                8
+   2. no
+   99. not answered
+   100. not applicable
+
+
+
+General well-being
+The next question is about how you feel all in all.
+See the picture of a ladder below. Step 10 of the ladder means Her er et billede af en stige. Trin
+"the best life ever" and step 0 means "the worst life ever" for you.
+E021          Where would you place yourself on the ladder at the moment?
+    1. 10
+    2. 9
+    3. 8
+    4. 7
+    5. 6
+    6. 5
+    7. 4
+    8. 3
+    9. 2
+    10. 1
+    11. 0
+    99. not answered
+
+Below you see some description of how a person can feel. How often do you feel this way?
+E022_1      I get angry
+   1. very often
+   2. often
+   3. sometimes
+   4. never
+   99. not answered
+
+E022_2     I get headaches
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_3     I like going to school
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_4    I feel calm and happy
+  1. very often
+
+
+                                                                                                 9
+   2. often
+   3. sometimes
+   4. never
+   99. not answered
+
+E022_5     I get stomach pains
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_6     I feel lonely
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_7     I get sad
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_8     I like to be at school
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_9     The other kids tease me
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_10 I fall asleep easily at night
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_11     I feel calm
+
+
+                                        10
+   1. very often
+   2. often
+   3. sometimes
+   4. never
+   99. not answered
+
+E022_12 Things work out as I have planned
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+E022_13 I feel happy
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_14 When I am happy I show it
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_15 Sometimes I do not have time to do the things I have planned for
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_16 When I have a hard time it helps being with my friends
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_17 When I am sad I show it
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_18    Sometimes I can't manage with the things I have to do
+
+
+                                                                           11
+   1. very often
+   2. often
+   3. sometimes
+   4. never
+   99. not answered
+
+E022_19 When I have a hard time there is an adult to talk to
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_20 If anyone teases me I will protest
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+E022_21 It is easy to concentrate during lessons at school
+  1. very often
+  2. often
+  3. sometimes
+  4. never
+  99. not answered
+
+During the last 12 months did any of the below things happen to you:
+E023_1       that you are or have been seriously ill
+   1. yes
+   2. no
+   99. not answered
+
+E023_2     that you had a serious accident
+  1. yes
+  2. no
+  99. not answered
+
+E023_3     that someone in your close family was very ill
+  1. yes
+  2. no
+  99. not answered
+
+E023_4     that someone in your close family had a serious accident
+  1. yes
+  2. no
+  99. not answered
+
+
+
+                                                                       12
+E023_5     that someone in your close family died
+  1. yes
+  2. no
+  99. not answered
+
+E023_6     that one of your closest friends died
+  1. yes
+  2. no
+  99. not answered
+
+E023_7     that your parents split up
+  1. yes
+  2. no
+  99. not answered
+
+E023_8     that you changed school
+  1. yes
+  2. no
+  99. not answered
+
+E023_9     that you have had serious problems with a teacher in school
+  1. yes
+  2. no
+  99. not answered
+
+E023_10 that your parents have had difficulties paying their bills
+  1. yes
+  2. no
+  99. not answered
+
+E023_11 that your father or mother lost their job
+  1. yes
+  2. no
+  99. not answered
+
+E023_12 that your father or mother is away because of their job
+  1. yes
+  2. no
+  99. not answered
+
+E023_13     that one of your parents was drunk or in other ways intoxicated in a way which
+            embarrassed you
+   1. yes
+   2. no
+   99. not answered
+
+E023_14 that a friend was serioulsy ill or has been injured
+  1. yes
+
+
+                                                                                             13
+   2. no
+   99. not answered
+
+E023_15 that you have lost contact with your best friend
+  1. yes
+  2. no
+  99. not answered
+
+E024        At what time do you usually go to sleep on weekdays or during the weekend?
+            On weekdays I go to sleep at about...
+   1. 19.00 or earlier
+   2. 19.30
+   3. 20.00
+   4. 20.30
+   5. 21.00
+   6. 21.30
+   7. 22.00
+   8. 22.30
+   9. 23.00
+   10. 23.30
+   11. 24.00
+   12. 00.30
+   13. 01.00
+   14. 02.00
+   15. 03.00 or senere
+   99. not answered
+
+E025        At what time do you usually go to sleep on weekdays or during the weekend?
+            During the weekend, I go to sleep at about...
+   1. 19.00 or før
+   2. 19.30
+   3. 20.00
+   4. 20.30
+   5. 21.00
+   6. 21.30
+   7. 22.00
+   8. 22.30
+   9. 23.00
+   10. 23.30
+   11. 24.00
+   12. 00.30
+   13. 01.00
+   14. 02.00
+   15. 03.00 or senere
+   99. not answered
+
+E026       When do you get wakened/waken on weekdays or during the weekend?
+           On weekdays somebody wakes me/I wake up at about...
+
+
+                                                                                         14
+   1. 5.00 or earlier
+   2. 5.30
+   3. 6.00
+   4. 6.30
+   5. 7.00
+   6. 7.30
+   7. 8.00
+   8. 8.30
+   9. 9.00
+   10. 9.30
+   11. 10.00
+   12. 11.00
+   13. 12.00
+   14. 13.00 or later
+   99. not answered
+
+E027        When do you get wakened/waken on weekdays or during the weekend?
+            During the weekend, somebody wakes me/I wake up at about...
+   1. 5.00 or earlier
+   2. 5.30
+   3. 6.00
+   4. 6.30
+   5. 7.00
+   6. 7.30
+   7. 8.00
+   8. 8.30
+   9. 9.00
+   10. 9.30
+   11. 10.00
+   12. 11.00
+   13. 12.00
+   14. 13.00 or later
+   99. not answered
+
+Now to some questions about your sleep
+E028_1     Do you feel that you don't get enough sleep?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_2     Do you think that you sleep too much?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_3      Do you wake up during the night when your parents think you are asleep?
+
+
+                                                                                      15
+   1. always/almost always (5-7 times per week)
+   2. sometimes(2-4 times per week)
+   3. rarely/never (0-1 hour per week)
+   99. not answered
+
+E028_4     Do you find it difficult to go back to sleep if you wake up during the night?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_5     Do you have nightmares?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_6     Does pain wake you up during the night?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_7     Do you sometimes get up and get into somebody else's bed during the night?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_8     Do you find it difficult to wake up in the morning?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_9     Are you tired when you get up in the morning?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-1 hour per week)
+  99. not answered
+
+E028_10 Do you feel tired during the day?
+  1. always/almost always (5-7 times per week)
+  2. sometimes(2-4 times per week)
+  3. rarely/never (0-once a week)
+  99. not answered
+
+E028_11     Do you ever take a nap during the day?
+
+
+                                                                                           16
+   1. always/almost always (5-7 times per week)
+   2. sometimes (2-4 times per week)
+   3. rarely/never (0-1 hour per week)
+   99. not answered
+
+E029       Do you ever wet the bed in your sleep?
+  1. yes, it happens a lot
+  2. yes, it happens from time to time
+  3. no
+  99. not answered
+
+
+
+Dietary habits
+The next questions are about the things you eat.
+E030_1      How often do you have breakfast - (not only a glass of milk or juice)?
+   1. every day
+   2. 6 days a week
+   3. 5 days a week
+   4. 4 days a week
+   5. 3 days a week
+   6. 2 days a week
+   7. 1 day/week
+   8. ikke every week
+   99. not answered
+
+E030_2     How often do you have lunch - a proper meal in the middle of the day?
+  1. every day
+  2. 6 days a week
+  3. 5 days a week
+  4. 4 days a week
+  5. 3 days a week
+  6. 2 days a week
+  7. 1 day a week
+  8. not every week
+  99. not answered
+
+E030_3     How often do you have dinner - a proper meal in the evening?
+  1. every day
+  2. 6 days a week
+  3. 5 days a week
+  4. 4 days a week
+  5. 3 days a week
+  6. 2 days a week
+  7. 1 day a week
+  8. not every week
+  99. not answered
+
+
+
+                                                                                     17
+E031       How often do you have a snack? (fruit, biscuit, sandwich, etc.)
+  1. 5 times a day or more than
+  2. 4 times a day
+  3. 3 times a day
+  4. 2 times a day
+  5. once a day
+  6. not every day
+  99. not answered
+
+E032_1     How often do you eat fruit?
+  1. several times a day
+  2. once a day
+  3. 5-6 days a week
+  4. 2-4 days a week
+  5. once a week
+  6. less than once a week
+  7. never/nearly never
+  99. not answered
+
+E032_2      How often do you have ice cream, candy or chocolate?
+  8. several times a day
+  9. once a day
+  10. 5-6 days a week
+  11. 2-4 days a week
+  12. once a week
+  13. less than once a week
+  14. never/nearly never
+  99. not answered
+
+E032_3      How often do you eat cake or pastry?
+  15. several times a day
+  16. once a day
+  17. 5-6 days a week
+  18. 2-4 days a week
+  19. once a week
+  20. less than once a week
+  21. never/nearly never
+  99. not answered
+
+E032_4      How often do you eat chips? (french fries, salt sticks, popcorn)
+  22. several times a day
+  23. once a day
+  24. 5-6 days a week
+  25. 2-4 days a week
+  26. once a week
+  27. less than once a week
+  28. never/nearly never
+  99. not answered
+
+
+                                                                               18
+E032_5      How often do you eat fast food? (fx pizza, burgers, hotdogs or French fries)
+  29. several times a day
+  30. once a day
+  31. 5-6 days a week
+  32. 2-4 days a week
+  33. once a week
+  34. less than once a week
+  35. never/nearly never
+  99. not answered
+
+E032_6      How often do you drink milk?
+  36. several times a day
+  37. once a day
+  38. 5-6 days a week
+  39. 2-4 days a week
+  40. once a week
+  41. less than once a week
+  42. never/nearly never
+  99. not answered
+
+
+E032_7      How often do you drink light soda? (fx Cola Light, Cola Zero, Pepsi Max)
+  43. several times a day
+  44. once a day
+  45. 5-6 days a week
+  46. 2-4 days a week
+  47. once a week
+  48. less than once a week
+  49. never/nearly never
+  99. not answered
+
+E032_8     How often do you drink sugar sweetened soda? (fx Coca Cola, Pepsi, Sprite mv)
+  1. several times a day
+  2. once a day
+  3. 5-6 days a week
+  4. 2-4 days a week
+  5. once a week
+  6. less than once a week
+  7. never/nearly never
+  99. not answered
+
+Now to some questions about how you feel about food and eating.
+I det sidste yearss tid:
+(E033_1:Question may be skipped without answering)
+E033_1     How often have you felt fat?
+  1. every day
+  2. often
+
+
+                                                                                           19
+   3. sometimes
+   4. rarely
+   5. never
+   99. not answered
+
+(E033_2:Question may be skipped without answering)
+E033_2     How often har you felt that you wanted to be thinner?
+  1. every day
+  2. often
+  3. sometimes
+  4. rarely
+  5. never
+  99. not answered
+(E033_3:Question may be skipped without answering)
+E033_3     How often have you been worrying about having too much fat on your body?
+  1. every day
+  2. often
+  3. sometimes
+  4. rarely
+  5. never
+  99. not answered
+
+(E033_4:Question may be skipped without answering)
+E033_4     How often have you thought about wanting toned or defined muscles?
+  1. every day
+  2. often
+  3. sometimes
+  4. rarely
+  5. never
+  99. not answered
+
+E034        During the past year did you go on a diet to lose weight or keep from gaining
+            weight?
+   1. never
+   2. a couple of times
+   3. several times
+   4. often
+   5. I am always on a diet
+   99. not answered
+
+E035       During the past year did you exercise to lose weight or keep from gaining weight?
+  1. never (less than once a month)
+  2. 1-3 times per month
+  3. 1-4 times per week
+  4. 5 times or more per week
+  99. not answered
+(E036_1:Question may be skipped without answering)
+
+
+
+                                                                                               20
+E036_1      During the past year did you make yourself throw up to lose weight or keep from
+gaining weight?
+
+   1. 2 times or more per week
+   2. once a week
+   3. 1-3 times per month
+   4. never
+   99. not answered
+(E036_2:Question may be skipped without answering)
+E036_2      During the past year did you take laxatives to lose weight or to keep from gaining
+weight?
+   1. 2 times or more than per week
+   2. once a week
+   3. 1-3 times per month
+   4. never
+   99. not answered
+
+(E036_3:Question may be skipped without answering)
+E036_3      During the past year did you fast (not eat anything for at least one day or longer) to
+lose weight or to keep from gaining weight?
+   1. 2 times or more per week
+   2. once a week
+   3. 1-3 times per month
+   4. never
+   99. not answered
+
+Binge eating: Sometimes people will eat an amount of food that most people, like their friends,
+would consider to be very large, in a short amount of time.
+
+
+E037       During the past year how often did you go on an eating binge?
+  1. never (less than once a month) -> E039
+  2. 1-3 times per month
+  3. once a week
+  4. more than once a week
+  99. not answered
+
+(E038_1:Question may be skipped without answering)
+E038_1      When you were on a binge, did you feel like you couldn't stop eating even if you
+            wanted to stop?
+Dependent on E037
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(E038_2: Question may be skipped without answering)
+
+
+
+
+                                                                                                  21
+E038_2      When you were on a binge, did you eat until your stomach hurt or you felt sick to
+            your stomach?
+Dependent on E037
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(E038_3:Question may be skipped without answering)
+E038_3      When you were on a binge, did you feel really bad about yourself or feel guilty after
+            eating a lot of food?
+Dependent on E037
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+We would like to know if you have soft drinks every week. At each question you should decide if
+you want to give your answer in number of cans, number of ½ litre bottles or number of glasses.
+E039        Do you drink sugar sweetened soda every week?
+   1. yes
+   2. no -> E041
+   99. not answered
+
+E040        How much soda sugar sweetened do you drink per week? Decide how you want to
+            answer. I would like to answer in numbers of
+Dependent on E039
+   1. cans -> E040A
+   2. bottles (½ liters) -> E040B
+   3. glasses -> E040C
+   99. not answered
+   100. not applicable
+
+Dependent on E039 E040
+E040A       How many cans of sugar sweetened soda do you drink per week?
+1-21 cans, not answered=99, not applicable=100
+
+Dependent on E039 E040
+E040B        How many ½ liters bottles of sugar sweetened soda do you drink per week?
+1-21 bottles (½ liters), not answered=99, not applicable=100
+
+Dependent on E039 E040
+E040C       How many glasses of sugar sweetened soda do you drink per week?
+1-21 glas, not answered=99, not applicable=100
+
+E041      Do you drink light soda, i.e. soda without sugar every week?
+  1. yes
+  2. no -> E043
+
+
+                                                                                                22
+   99. not answered
+
+E042        How much light soda do you drink per week? Decide how you want to answer. I
+            would like to answer in numbers of:
+Dependent on E041
+   1. cans -> E042A
+   2. bottles (½ liters) -> E042B
+   3. glasses -> E042C
+   99. not answered
+   100. not applicable
+
+Dependent on E041 E042
+E042A       How many cans light soda do you drink per week?
+1-21 cans, not answered=99, not applicable=100
+
+Dependent on E041 E042
+E042B        How many ½ liters bottles light soda do you drink per week?
+1-21 bottles (½ liters), not answered=99, not applicable=100
+
+Dependent on E041 E042
+E042C       How many glasses light soda do you drink per week?
+1-21 glas, not answered=99, not applicable=100
+
+(E043:Question may be skipped without answering)
+E043       Do you drink chocolate milk, milkshake, yogurt drink etc. every week?
+  1. yes
+  2. no -> E045
+  99. not answered
+
+E044        How much chocolate milk, milkshake, yogurt drink, etc. do you drink in a week?
+            Decide how you want to answer. I would like to answer in numbers of:
+Dependent on E043
+   1. cans -> E044A
+   2. bottles (½ liters) -> E044B
+   3. glasses -> E044C
+   99. not answered
+   100. not applicable
+
+Dependent on E043 E044
+E044A       How many cans chocolate milk etc. do you drink in a week?
+1-21 cans, not answered=99, not applicable=100
+
+Dependent on E043 E044
+E044B        How many ½ liters bottles chocolate milk etc. do you drink in a week?
+1-21 bottles (½ liters), not answered=99, not applicable=100
+
+Dependent on E043 E044
+E044C     How many glasses of chocolate milk etc. do you drink in a week?
+
+
+                                                                                             23
+1-21 glasses, not answered=99, not applicable=100
+
+E045       Do you drink lemonade every week?
+  1. yes
+  2. no -> E047
+  99. not answered
+
+E046        How much lemonade do you drink per week? Decide how you want to answer. I
+            would like to answer in numbers of:
+Dependent on E045
+   1. cans -> E046A
+   2. bottles (½ liters) -> E046B
+   3. glasses -> E046C
+   99. not answered
+   100. not applicable
+
+Dependent on E045 E046
+E046A       How many cans of lemonade do you drink per week?
+1-21 cans, not answered=99, not applicable=100
+
+Dependent on E045 E046
+E046B        How many ½ liters bottles lemonade do you drink per week?
+1-21 bottles (½ liters), not answered=99, not applicable=100
+
+Dependent on E045 E046
+E046C       How many glasses lemonade do you drink per week?
+1-21 glasses, not answered=99, not applicable=100
+
+
+E047       Do you drink fruit juice every week?
+  1. yes
+  2. no -> E049
+  99. not answered
+
+E048        How much fruit juice do you drink per week? Decide how you want to answer. I
+            would like to answer in numbers of:
+Dependent on E047
+   1. cans -> E048A
+   2. bottles (½ liters) -> E048B
+   3. glasses -> E048C
+   99. not answered
+   100. not applicable
+
+Dependent on E047 E048
+E048A       How many cans of fruit juice do you drink per week?
+1-21 cans, not answered=99, not applicable=100
+
+Dependent on E047 E048
+
+
+                                                                                           24
+E048B        How many ½ liters bottles of fruit juice do you drink per week?
+1-21 bottles (½ liters), not answered=99, not applicable=100
+
+Dependent on E047 E048
+E048C       How many glasses of fruit juice do you drink per week?
+1-21 glasses, not answered=99, not applicable=100
+
+
+
+Physical activity/inactivity
+The next questions are about how much you move around and about the time you spend on
+sedentary activities.
+We know that summer and winter activities may be different, so please just tell us about your
+activities right now.
+E049          How much of your leisure time do you spend in front of the computer? Count all the
+              time you sit in front of a computer. (Weekday computer).
+    1. no time or less than ½ hour
+    2. ½ -1 hour
+    3. 1-2 hours
+    4. 2-3 hours
+    5. 3-4 hours
+    6. 4-5 hours
+    7. more than 5 hours
+    99. not answered
+
+E050        How much of your leisure time do you spend in front of the computer? Count all the
+            time you sit in front of a computer. (Weekend computer).
+   1. no time or less than ½ hour
+   2. ½ -1 hour
+   3. 1-2 hours
+   4. 2-3 hours
+   5. 3-4 hours
+   6. 4-5 hours
+   7. 5-6 hours
+   8. 6-7 hours
+   9. 7-8 hours
+   10. more than 8 hours
+   99. not answered
+
+E051        How much of your leisure time do you spend playing computer games? (Both on a
+            computer or on a Playstation, Xbox, PSP, Nintendo, Wii). (Weekday gaming)
+   1. no time or less than ½ hour
+   2. ½ -1 hour
+   3. 1-2 hours
+   4. 2-3 hours
+   5. 3-4 hours
+   6. 4-5 hours
+   7. more than 5 hours
+
+
+                                                                                              25
+  99. not answered
+
+E052       How much of your leisure time do you spend playing computer games? (Both on a
+           computer or on a Playstation, Xbox, PSP, Nintendo, Wii). (Weekend gaming)
+  1. no time or less than ½ hour
+  2. ½ -1 hour
+  3. 1-2 hours
+  4. 2-3 hours
+  5. 3-4 hours
+  6. 4-5 hours
+  7. 5-6 hours
+  8. 6-7 hours
+  9. 7-8 hours
+  10. more than 8 hours
+  99. not answered
+
+E053       How much of your leisure time do you spend watching tv? (include DVD/video or
+           watching films on your computer). (Weekdays TV/DVD/Video)
+  1. no time or less than ½ hour
+  2. ½ -1 hour
+  3. 1-2 hours
+  4. 2-3 hours
+  5. 3-4 hours
+  6. 4-5 hours
+  7. more than 5 hours
+  99. not answered
+
+E054       How much of your leisure time do you spend watching tv? (include DVD/video or
+           watching films on your computer). (Weekend TV/DVD/Video)
+  1. no time or less than ½ hour
+  2. ½ -1 hour
+  3. 1-2 hours
+  4. 2-3 hours
+  5. 3-4 hours
+  6. 4-5 hours
+  7. 5-6 hours
+  8. 6-7 hours
+  9. 7-8 hours
+  10. more than 8 hours
+  99. not answered
+
+E055       How much of your leisure time do you spend reading, playing boardgames,
+           drawing, resting, etc.? (including homework). (Weekdays read, play, rest)
+  1. no time or less than ½ hour
+  2. ½ -1 hour
+  3. 1-2 hours
+  4. 2-3 hours
+  5. 3-4 hours
+
+
+                                                                                           26
+   6. 4-5 hours
+   7. more than 5 hours
+   99. not answered
+
+E056        How much of your leisure time do you spend reading, playing boardgames,
+            drawing, resting, etc.? (including homework). (Weekend read, play, rest)
+   1. no time or less than ½ hour
+   2. ½ -1 hour
+   3. 1-2 hours
+   4. 2-3 hours
+   5. 3-4 hours
+   6. 4-5 hours
+   7. 5-6 hours
+   8. 6-7 hours
+   9. 7-8 hours
+   10. more than 8 hours
+   99. not answered
+
+E057       How many sports lessons per week (lessons of 45 minutes) does your school
+           timetable include?
+   1. none
+   2. 1 sports lesson
+   3. 2 sports lessons
+   4. 3 sports lessons
+   5. 4 sports lessons
+   6. more than 4 sports lessons
+   99. not answered
+
+E058       Do you get out of breath or break sweat during the sports lessons?
+  1. yes, very much
+  2. yes, a little
+  3. no, not really
+  99. not answered
+
+E059         How do you usually use your body during the breaks? Think about the last month
+             when choosing your answer.
+   1. I am very active: I run around or play ball most of the time.
+   2. I am pretty active: I run around and play ball some of the time.
+   3. I walk around during most breaks.
+   4. I sit and talk, read or play games during most breaks.
+   99. not answered
+
+E060       How do you usually use your body during your leisure time? Think about the last
+           month when choosing your answer.
+   1. I am very active: I do sports, I run around or play ball most of the time.
+   2. I am pretty active: I run around a lot, I do sports or play wildly most of the time.
+   3. I am a little active: I play with my friends and walk around most of the time.
+
+
+
+                                                                                              27
+   4. I am not active: I sit and talk, watch TV or read, play games or computer games most of
+      my leisure time.
+   99. not answered
+
+E061       Do you do sports in your leisure time?
+  1. yes
+  2. no -> E063
+  99. not answered
+(E062:Question may be skipped without answering)
+E062_1-12 What kind of sports do you do? Tick all the activities you participate in.
+Dependent on E061
+E062_1      soccer -> E062_1A
+E062_2      handball -> E062_2A
+E062_3      basketball -> E062_3A
+E062_4      volleyball -> E062_4A
+E062_5      badminton -> E062_5A
+E062_6      tennis -> E062_6A
+E062_7      gymnastics -> E062_7A
+E062_8      dancing -> E062_8A
+E062_9      svimming -> E062_9A
+E062_10 martial arts -> E062_10A
+E062_11 horseback riding -> E062_11A
+E062_12 other -> E062_12A
+1=yes, not answered=99, not applicable=100
+
+Dependent on E061 E062_1
+E062_1A How many times per week do you play soccer?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_2
+E062_2A How many times per week do you play handball?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_3
+E062_3A How many times per week do you play basketball?
+
+
+
+                                                                                            28
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_4
+E062_4A How many times per week do you play volleyball?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_5
+E062_5A How many times per week do you play badmiton?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_6
+E062_6A How many times per week do you play tennis?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_7
+E062_7A How many times per week do you do gymnastics?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+
+
+                                                          29
+Dependent on E061 E062_8
+E062_8A How many times per week do you spend on dancing?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_9
+E062_9A How many times per week do you swim?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_10
+E062_10A How many times per week do you do martial arts?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+
+Dependent on E061 E062_11
+E062_11A How many times per week do you spend on horseback-riding?
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+   99. not answered
+   100. not applicable
+(E062_12A:Question may be skipped without answering)
+Dependent on E061 E062_12
+E062_12A How many times per week do you spend on other activities? -> E062_12B
+   1. once
+   2. 2 times
+   3. 3 times
+   4. 4 times
+   5. 5 or more times
+
+
+
+                                                                                 30
+   99. not answered
+
+(E062_12B:Question may be skipped without answering)
+Dependent on E061 E062_12 E062_12A
+E062_12B Which activity is that? Please write it here.
+99=not answered, 100=not applicable
+
+E063       How do you usually get to school?
+  1. by car
+  2. by bus or train
+  3. on my bike
+  4. walking
+  99. not answered
+
+E064       How long does it usually take you to get to school?
+  1. less than 5 minutes
+  2. 5-10 minutes
+  3. 11-15 minutes
+  4. 16-20 minutes
+  5. 21-30 minutes
+  6. more than half an hour
+  99. not answered
+
+E065       How do you usually get back from school?
+  1. by car
+  2. by bus or train
+  3. on my bike
+  4. walking
+  99. not answered
+
+E066       How long does it usually take you to get back from school?
+  1. less than 5 minutes
+  2. 5-10 minutes
+  3. 11-15 minutes
+  4. 16-20 minutes
+  5. 21-30 minutes
+  6. more than half an hour
+  99. not answered
+
+
+
+Traffic behaviour
+E067       How often do you fasten the seat belt when you ride a car?
+  1. always
+  2. almost always
+  3. sometimes
+  4. rarely
+  5. never
+
+
+                                                                        31
+   99. not answered
+
+E068       How often do you use a helmet when you ride a bike?
+  1. always
+  2. sometimes
+  3. rarely
+  4. never
+  99. not answered
+
+E069       How often do you cross at a red light on you bike?
+  1. always
+  2. almost always
+  3. sometimes
+  4. rarely
+  5. never
+  99. not answered
+
+E070       How often do you ride your bike in the dark without flashlights?
+  1. always
+  2. almost always
+  3. sometimes
+  4. rarely
+  5. never
+  99. not answered
+
+
+
+Smoking and alcohol
+Have you ever tried smoking or drinking alcohol?
+E071       Have you ever smoked an entire cigarette?
+  1. yes
+  2. no -> E074
+  99. not answered
+
+E072        How old were you the first time you smoked an entire cigarette? Choose age or
+            "can't remember".
+Dependent on E071
+   1. 7 years old or younger
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. 14 years old
+   9. can't remember
+   99. not answered
+   100. not applicable
+
+
+                                                                                            32
+E073        How often do you smoke?
+Dependent on E071
+   1. every day
+   2. not every day, but at least once a week
+   3. not every week
+   4. do not smoke
+   99. not answered
+   100. not applicable
+
+E074        Have you ever smoked a waterpipe?
+   1. yes
+   2. no -> E076
+   3. don't know what a waterpipe is -> E076
+   99. not answered
+A waterpipe is a big pipe originally from India or the Middel East. You use it for smoking
+waterpipe tobacco.
+The smoke passes through a water container and through a pipe into your mouth. Smoking a
+waterpipe will damage your health.
+
+E075        How often do you smoke a waterpipe?
+Dependent on E074
+   1. I smoke a waterpipe every day
+   2. I smoke a waterpipe at least once a week
+   3. I have smoked a waterpipe several times
+   4. I have tried it once
+   99. not answered
+   100. not applicable
+
+E076        Have you ever smoked hash or pot?
+  1. yes
+  2. no -> E078
+  3. don't know what hash or pot is -> E078
+  99. not answered
+Hash or pot is a drug obtained from the cannabis plant. It can be smoked or eaten in cakes or
+sweets. Hash or pot will damage your health and is illegal.
+
+E077        How often have you smoked hash or pot?
+Dependent on E076
+   1. I smoke hash or pot every day
+   2. I smoke hash or pot at least once a week
+   3. I have smoked hash or pot several times
+   4. I have tried hash or pot once
+   99. not answered
+   100. not applicable
+
+E078        Have you ever had more than one alcopop, one beer, a glass of wine or a glass of
+            spirits?
+
+
+                                                                                                33
+   1. yes
+   2. no -> E081
+   99. not answered
+
+E079        How old were your when you first had more than one alcopop, one beer, a glass of
+            wine or a glass of spirits? Choose your age or "can't remember".
+Dependent on E078
+   1. 7 years old or younger
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. 14 years old
+   9. can't remember
+   99. not answered
+   100. not applicable
+
+E080        How often do you drink more than one alcopop, one beer, a glass of wine or a glass
+            of spirits?
+Dependent on E078
+   1. more than once a month
+   2. approx. once a month
+   3. not every week
+   4. not every month
+   5. I have only tried it once
+   99. not answered
+   100. not applicable
+
+E081        Have you ever had so much alcohol that you could feel an effect? (like your head
+            was spinning, you didn't feel comfortable, or you were less shy?)
+   1. yes
+   2. no -> E083
+   99. not answered
+
+E082        How old were you the first time you had an amount of alcohol that made you feel an
+            effect? Choose your age or "can't remember".
+Dependent on E081
+   1. 7 years old or younger
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. 14 years old
+   9. can't remember
+
+
+                                                                                               34
+   99. not answered
+   100. not applicable
+
+
+
+Your health
+The next questions are about your health and about how often you are ill or suffer from pain.
+E083        How would you rate your own health?
+   1. Excellent
+   2. Good
+   3. Not so good
+   4. Poor
+   99. not answered
+
+E084       How would you rate your physical condition?
+  1. Excellent
+  2. Good
+  3. Not so good
+  4. Poor
+  5. Very poor
+  99. not answered
+
+E085_1      Look back over the latest 6 months. How often have you had a headache?
+  1. nearly every day
+  2. more than once a week
+  3. nearly every week
+  4. more than once a month
+  5. nearly every month
+  6. rarely or never
+  99. not answered
+
+E085_2     Look back over the latest 6 months. How often have you had a stomach-ache?
+  1. nearly every day
+  2. more than once a week
+  3. nearly every week
+  4. more than once a month
+  5. nearly every month
+  6. rarely or never
+  99. not answered
+
+E085_3     Look back over the latest 6 months. How often har you been upset?
+  1. nearly every day
+  2. more than once a week
+  3. nearly every week
+  4. more than once a month
+  5. nearly every month
+  6. rarely or never
+  99. not answered
+
+
+                                                                                                35
+E085_4      Look back over the latest 6 months. How often har you felt irritable or had a bad
+termper?
+   1. nearly every day
+   2. more than once a week
+   3. nearly every week
+   4. more than once a month
+   5. nearly every month
+   6. rarely or never
+   99. not answered
+
+E085_5     Look back over the latest 6 months. How often har you felt nervous?
+  1. nearly every day
+  2. more than once a week
+  3. nearly every week
+  4. more than once a month
+  5. nearly every month
+  6. rarely or never
+  99. not answered
+
+E085_6      Look back over the latest 6 months. How often har you had difficulties falling
+asleep?
+   1. nearly every day
+   2. more than once a week
+   3. nearly every week
+   4. more than once a month
+   5. nearly every month
+   6. rarely or never
+   99. not answered
+
+E085_7     Look back over the latest 6 months. How often have you felt dizzy?
+  1. nearly every day
+  2. more than once a week
+  3. nearly every week
+  4. more than once a month
+  5. nearly every month
+  6. rarely or never
+  99. not answered
+
+E085_8      Look back over the latest 6 months. How often har you been constipated (hard
+stools)?
+   1. nearly every day
+   2. more than once a week
+   3. nearly every week
+   4. more than once a month
+   5. nearly every month
+   6. rarely or never
+   99. not answered
+
+
+                                                                                                36
+E085_9      Look back over the last 6 months. How often have you experienced ringing or
+            roaring in you ears?
+   1. nearly every day
+   2. more than once a week
+   3. nearly every week
+   4. more than once a month
+   5. nearly every month
+   6. rarely or never
+   99. not answered
+
+E086_1      Does something in your head make you do things, doing or counting or checking
+            something over and over, even if you know you don't have to?
+   1. often
+   2. sometimes
+   3. no
+   99. not answered
+
+E086_2     Are you concerned about always having clean hands?
+  1. often
+  2. sometimes
+  3. no
+  99. not answered
+
+E086_3      Do you feel you have to do something over and over again a certain number of
+            times before things are exactly as you want them to be?
+   1. sometimes
+   2. no
+   99. not answered
+
+E086_4      Do you sometimes find it hard to finish schoolwork because you feel you need to go
+            over them again and again?
+   1. often
+   2. sometimes
+   3. no
+   99. not answered
+
+E086_5     Do you get upset, if things don't turn out exactly the way you think they should?
+  1. often
+  2. sometimes
+  3. no
+  99. not answered
+
+When answering the next two questions, please consider the above questions - especially the
+questions were you chose "sometimes" or "often" as your answer.
+E087        Does having to do these things interfere with your daily life?
+   1. often
+   2. sometimes
+
+
+                                                                                               37
+   3. no
+   99. not answered
+
+E088       Do you do something to make this stop?
+  1. often
+  2. sometimes
+  3. no
+  99. not answered
+
+
+
+Musculoskeletal system
+The next questions are about pain in your neck and back.
+E089        Have you suffered from neck pain?
+   1. yes, often
+   2. yes, from time to time
+   3. yes, once or twice
+   4. never -> E090
+   99. not answered
+(E089A:Question may be skipped without answering)
+Dependent on E089
+E089A       How much did it hurt at its worst? 1 is "not at all" and 6 is "really very much".
+1-6, not answered=99, not applicable=100
+
+E090       Have you suffered from middle back pain?
+  1. yes, often
+  2. yes, from time to time
+  3. yes, once or twice
+  4. never -> E091
+  99. not answered
+(E090A:Question may be skipped without answering)
+Dependent on E090
+E090A       How much did it hurt at its worst? 1 is "not at all" and 6 is "really very much".
+1-6, not answered=99, not applicable=100
+
+E091       Have you suffered from low back pain?
+  1. yes, often
+  2. yes, from time to time
+  3. yes, once or twice
+  4. never -> E092
+  99. not answered
+
+(E091A:Question may be skipped without answering)
+Dependent on E091
+E091A       How much did it hurt at its worst? 1 is "not at all" and 6 is "really very much".
+1-6, not answered=99, not applicable=100
+
+
+
+                                                                                                38
+E092       Have you stayed home from school because of neck or back pain?
+  1. yes, often
+  2. yes, from time to time
+  3. yes, once or twice
+  4. never
+  99. not answered
+
+E093       Has neck or back pain stopped you from doing sports?
+  1. yes, often
+  2. yes, from time to time
+  3. yes, once or twice
+  4. never
+  99. not answered
+
+E094       Have you seen a doctor, a kiropraktor or fysioterapeut for your neck or back pain?
+  1. yes, often
+  2. yes, from time to time
+  3. yes, once or twice
+  4. never
+  99. not answered
+
+Some children suffer from growing pains so we would like to ask some questions about this.
+E095         Do you know what growing pains are?
+   1. yes
+   2. no
+   99. not answered
+Growing pains are when you feel pain - often in your legs, arms or body - and mostly in the
+evenings or at night. During some periods you can have this pain for several hours per week,
+but usually children outgrow it when they are about 12 years old.
+Many children suffer from growing pains, but we no very little about what causes them.
+
+E096       Have you ever had growing pains?
+  1. yes
+  2. no -> E098
+  99. not answered
+(E097_1-5:Question may be skipped without answering)
+E097_1-5 Where did you feel the growing pains?
+Dependent on E096
+E097_1       in my legs
+E097_2       in my back
+E097_3       in my arms
+E097_4       in my ribbs
+E097_5       elsewhere
+1=svar i kategori, not answered=99, not applicable=100
+
+Dependent on E096 E097_1-5
+E097A     How much did it hurt at its worst? 1 is "not at all" and 6 is "really very much".
+
+
+
+                                                                                               39
+1-6, not answered=99, not applicable=100
+
+
+
+Dental health
+Now to a number of questions about your teeth.
+E098       How often do you brush your teeth?
+  1. more than twice a day
+  2. twice a day
+  3. once a day
+  4. every week, but not every day -> E100
+  5. less than once a week -> E100
+  6. never -> E100
+  99. not answered
+
+E099        How often do you forget to brush your teeth in the evening?
+Dependent on E098
+   1. nearly every evening
+   2. several times a week
+   3. once a week
+   4. less than once a week
+   5. never or nearly never
+   99. not answered
+   100. not applicable
+
+E100       Do you floss or use dental sticks?
+  1. more than twice a day
+  2. twice a day
+  3. once a day
+  4. every week, but not every day -> E100
+  5. less than once a week -> E100
+  6. never -> E100
+  99. not answered
+
+E101       Have you ever worn braces?
+  1. yes
+  2. no -> E103
+  99. not answered
+
+E102        What was the reason for your braces?
+Dependent on E101
+   1. reversed bite
+   2. projected upper teeth
+   3. krydsbid (cross bite)
+   4. saksbid (open bite)
+   5. skæve teeth (asymmetry)
+   6. other
+   7. don't know
+
+
+                                                                          40
+   99. not answered
+   100. not applicable
+
+
+
+Strenghts and Difficulties
+The next questions are about your strenghts and difficulties.
+Please think about the last 6 months when you anser these questions.
+(E103_1:Question may be skipped without answering)
+E103_1     I try to be nice to other people. I care about their feelings.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+(E103_2:Question may be skipped without answering)
+E103_2     I am restless, I cannot stay still for long.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_3:Question may be skipped without answering)
+E103_3     I get a lot of headaches, stomach-aches or sickness.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_4:Question may be skipped without answering)
+E103_4     I usually share with others (food, games, pens etc.)
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_5:Question may be skipped without answering)
+E103_5     I get very angry and often lose my temper.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_6:Question may be skipped without answering)
+E103_6     I am usually on my own. I generally play alone or keep to myself.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+
+                                                                               41
+(E103_7:Question may be skipped without answering)
+E103_7     I usually do as I am told.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_8:Question may be skipped without answering)
+E103_8     I worry a lot.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_9:Question may be skipped without answering)
+E103_9     I am helpful if someone is hurt, upset or feeling ill.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_10:Question may be skipped without answering)
+E103_10 I am constantly fidgeting or squirming.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_11:Question may be skipped without answering)
+E103_11 I have one good friend or more.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+(E103_12:Question may be skipped without answering)
+E103_12 I fight a lot. I can make other people do what I want.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_13:Question may be skipped without answering)
+E103_13 I am often unhappy, down-hearted or tearful.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+
+                                                                    42
+(E103_14:Question may be skipped without answering)
+E103_14 Other people my age generally like me.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_15:Question may be skipped without answering)
+E103_15 I am easily distracted, I find it difficult to concentrate.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_16:Question may be skipped without answering)
+E103_16 I am nervous in new situations. I easily lose confidence.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_17:Question may be skipped without answering)
+E103_17 I am kind to younger children.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_18:Question may be skipped without answering)
+E103_18 I am often accused of lying or cheating.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_19:Question may be skipped without answering)
+E103_19 Other children or young people pick on me or bully me.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_20:Question may be skipped without answering)
+E103_20 I often volunteer to help others (parents, teachers, children).
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+
+                                                                          43
+(E103_21:Question may be skipped without answering)
+E103_21 I think before I do things.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_22:Question may be skipped without answering)
+E103_22 I take things that are not mine from home, school or elsewhere.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_23:Question may be skipped without answering)
+E103_23 I get on better with adults than with people my own age.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_24:Question may be skipped without answering)
+E103_24 I have many fears, I am easily scared.
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+
+(E103_25:Question may be skipped without answering)
+E103_25 I finish the work I'm doing. My attention is good
+  1. not true
+  2. somewhat true
+  3. certainly true
+  99. not answered
+(E103A:Question may be skipped without answering)
+E103A        Please note any other comments or concerns here
+
+E104        Overall, do you think that you have difficulties in one or more of the following areas:
+            emotions, concentration, behaviour or being able to get on with other people?
+   1. no -> E109
+   2. Yes, minor difficulties
+   3. Yes, definite difficulties
+   4. Yes, severe difficulties
+   99. not answered
+
+E105       How long have these difficulties been present?
+Dependent on 104
+   1. Less than 1 month
+
+
+                                                                                                 44
+   2. 1-5 months
+   3. 6-12 months
+   4. Over a year
+   99. not answered
+   100. not applicable
+
+E106        Do the difficulties upset or distress you?
+Dependent on 104
+   1. Not at all
+   2. Only a little
+   3. Quite a lot
+   4. A great deal
+   99. not answered
+   100. not applicable
+
+E107_1      Do the difficulties interfere with your everyday life in the following areas? Home life:
+Dependent on 104
+   5. Not at all
+   6. Only a little
+   7. Quite a lot
+   8. A great deal
+   99. not answered
+   100. not applicable
+
+E107_2      Do the difficulties interfere with your everyday friendships?
+Dependent on 104
+   1. Not at all
+   2. Only a little
+   3. Quite a lot
+   4. A great deal
+   99. not answered
+   100. not applicable
+
+E107_3      Do the difficulties interfere with your everyday classroom learning?
+Dependent on 104
+   1. Not at all
+   2. Only a little
+   3. Quite a lot
+   4. A great deal
+   99. not answered
+   100. not applicable
+
+E107_4     Do the difficulties interfere with your everyday leisure activities?
+Dependent on 104
+   1. Not at all
+   2. Only a little
+   3. Quite a lot
+   4. A great deal
+
+
+                                                                                                  45
+   99. not answered
+   100. not applicable
+
+E108        Do the difficulties make it harder for those around you (family, friends, teachers,
+            etc.)?
+Dependent on 104
+   1. Not at all
+   2. Only a little
+   3. Quite a lot
+   4. A great deal
+   99. not answered
+   100. not applicable
+
+
+
+Music
+E109       Do you ever listen to music from an mp3 player or iPod etc. with in ear speakers?
+  1. yes
+  2. no -> E112
+  99. not answered
+
+E110        How often do you listen to music with in ear speakers?
+Dependent on 109
+   1. several times every day
+   2. once a day
+   3. nearly every day (5-6 days per week)
+   4. a couple of times per week (2-4 days) per week
+   5. once per week
+   6. less than once a week
+   7. very rarely
+   8. never
+   99. not answered
+   100. not applicable
+
+E111        How loud is the music when you have the loudspeakers in your ears?
+Dependent on 109
+   1. I have difficulties hearing other loud sounds (like the phone) or when others are trying to
+      get in contact by talking loudly to me.
+   2. I can hear lound sounds, but not that people talk to me
+   3. I have no problems hearing things around me or when people talk to me.
+   99. not answered
+   100. not applicable
+
+
+
+Mental Health
+The next questions are about your moods.
+(E112:Question may be skipped without answering)
+
+
+
+                                                                                                  46
+E112         During the last 4 weeks have there been times when you have been very sad,
+             miserable, unhappy or tearful?
+   1. yes
+   2. no -> E114
+   99. not answered
+(E113_1:Question may be skipped without answering)
+E113_1      During the last 4 weeks has there been a period when you have been really
+            miserable nearly every day?
+Dependent on E112
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(E113_2:Question may be skipped without answering)
+E113_2      During the time when you have been miserable, have you been really miserable for
+            most of the day? (dvs. most hours, where you felt miserable)
+Dependent on E112
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(E114:Question may be skipped without answering)
+E114         During the last 4 weeks have there been times when you have lost interest in
+             everything, or nearly everything, that you normally enjoy doing?
+   1. yes
+   2. no -> E116
+   99. not answered
+
+(E115_1:Question may be skipped without answering)
+E115_1      During the last 4 weeks has there been a period when this lack of interest has been
+            present nearly every day?
+Dependent on E114
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(E115_2:Question may be skipped without answering)
+E115_2      During these days when you have lost interest in things, have you been like this for
+            most of each day?
+Dependent on E114
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+
+
+                                                                                              47
+(E116_1:Question may be skipped without answering)
+E116_1       During the last 4 weeks have you thought about deliberately harming or hurting
+             yourself?
+   1. yes
+   2. no
+   99. not answered
+
+(E116_2:Question may be skipped without answering)
+E116_2     During the last 4 weeks have you tried to harm or hurt yourself?
+  1. yes
+  2. no
+  99. not answered
+
+(E116_3:Question may be skipped without answering)
+E116_3     Have you ever tried to harm or hurt yourself?
+  1. yes
+  2. no
+  99. not answered
+
+Now to some questions about experiences that are a little unusual. Some people have this kind
+of experiences.
+(E117_1:Question may be skipped without answering)
+E117_1      Some people believe that other people can read their thoughts. Have other people
+            ever read your thoughts?
+   1. yes, definitely
+   2. yes, maybe
+   3. no
+   99. not answered
+
+(E117_2:Question may be skipped without answering)
+E117_2      Have you been sent messages through the television or the radio, just for you
+            alone?
+   1. yes, definitely
+   2. yes, maybe
+   3. no
+   99. not answered
+
+(E117_3:Question may be skipped without answering)
+E117_3     Have you ever thought you were being followed or spied on?
+  1. yes, definitely
+  2. yes, maybe
+  3. no
+  99. not answered
+
+(E117_4:Question may be skipped without answering)
+E117_4     Have you ever heard voices or sounds that other people couldn't hear?
+  1. yes, definitely
+  2. yes, maybe
+  3. no
+
+
+                                                                                              48
+   99. not answered
+
+(E117_5:Question may be skipped without answering)
+E117_5     Have you ever felt that you were under the control of some special power?
+  1. yes, definitely
+  2. yes, maybe
+  3. no
+  99. not answered
+
+(E117_6:Question may be skipped without answering)
+E117_6     Have you ever seen things that other people could not see?
+  1. yes, definitely
+  2. yes, maybe
+  3. no
+  99. not answered
+
+(E117_7:Question may be skipped without answering)
+E117_7     Have you ever felt that you have special powers?
+  1. yes, definitely
+  2. yes, maybe
+  3. no
+  99. not answered
+
+
+
+Medicine use
+Now to some questions about your use of medicine
+E118_1     Within the last month have you been taking pills/medicine for headache?
+  1. yes, more than end 3 times
+  2. yes, 2-3 times
+  3. yes, once
+  4. no
+  99. not answered
+
+E118_2     Within the last month have you been taking pills/medicine for stomach ache?
+  5. yes, more than end 3 times
+  6. yes, 2-3 times
+  7. yes, once
+  8. no
+  99. not answered
+
+E118_3     Within the last month have you been taking pills/medicine for sleeping problems?
+  1. yes, more than end 3 times
+  2. yes, 2-3 times
+  3. yes, once
+  4. no
+  99. not answered
+
+E118_4       Within the last month have you been taking pills/medicin for nervousness?
+
+
+                                                                                              49
+   1. yes, more than end 3 times
+   2. yes, 2-3 times
+   3. yes, once
+   4. no
+   99. not answered
+
+
+Sex
+(This question was added on the 6th April 2011 and is thus present in version 2 of the
+questionnaire only, hence many observations will be"not answered")
+
+Some boys and girls would rather be of the opposite sex.
+E119        How true is this for you: I would rather be of the opposite sex.
+Dependent on E_VERSION
+   1. not at all true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+
+
+Mobile phones
+The next queststions are about how much you use a mobile phone - even if it is not your own.
+
+E120         How often - during a normal month - do you talk (not text messages, games, etc.)
+             on a mobile phone?
+   1. five times a day or more
+   2. 3-4 times a day
+   3. 1-2 times a day
+   4. 3-6 times per week
+   5. 1-2 times per week
+   6. 2-3 times per month
+   7. less than once per month
+   8. never -> E122
+   99. not answered
+
+E121        When talking on a mobile phone how long does your conversation typically last?
+Dependent on 120
+   1. less than 1 minute
+   2. 1-4 minutes
+   3. 5-9 minutes
+   4. 10-14 minutes
+   5. more than 15 minutes
+   99. not answered
+   100. not applicable
+
+E122       When you talk on a mobile phone how do you most often hold the phone?
+  1. I hold it to my ear
+
+
+                                                                                               50
+   2. I use a headset or the phone loudspeaker
+   3. I use Bluetooth
+   99. not answered
+
+E123_1-5     Which activities do you use a mobile phone for? Choose at least 3 activities.(Rank
+             your activities by clicking the box next to the activity. 1= your favorite activity, 2 the
+             function you use second most, etc.
+E123_1       playing games 1-5, not answered=99
+E123_2       listen to music 1-5, not answered=99
+E123_3       speaking 1-5, not answered=99
+E123_4       texting 1-5, not answered=99
+E123_5       other 1-5, not answered=99-> E123_5A
+
+NB: Due to the structure of the questionnaire the child must answer E123_1-5 even though
+he/she may have chosen 'never' in E120.
+
+Dependent on E123_5
+E123_5A other, not answered=99
+
+(E124:Question may be skipped without answering)
+E124       Where do you usually keep your mobile during the night?
+  1. under the pillow or somewhere else in the bed
+  2. next to the bed - within my reach
+  3. someway else - further away
+  99. not answered
+
+
+
+Body and looks
+We would now like to ask you some questions about your body and your looks.
+The following questions depend on the respondent's sex and there will thus be many missing
+E125_1      Which picture looks the most like you look (girls)?
+Dependent on E_SEX
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   99. not answered
+   100. not applicable
+
+E125_2    Which picture shows the way you want to look (girls)?
+Dependent on E_SEX
+   1. 1
+   2. 2
+   3. 3
+
+
+                                                                                                      51
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   99. not answered
+   100. not applicable
+
+E126_1      Which picture looks the most like you look? (boys)?
+Dependent on E_SEX
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   99. not answered
+   100. not applicable
+
+E126_2      Which picture shows the way you want to look (boys)?
+Dependent on E_SEX
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   99. not answered
+   100. not applicable
+
+E127       Which description fits you natural hair best?
+  1. many tiny curls
+  2. many large curls
+  3. somewhat curly
+  4. some waves
+  5. straight
+  99. not answered
+
+E128         Does your hairline form a V-shape in the centre of your forhead? Look at the picture
+of the boy holding a mobile phone.
+    1. yes
+    2. no
+    99. not answered
+
+E129        Do you have a cleft chin? It is a dimple or a fissure in the middle of your chin- look
+            at the man in the picture.
+   1. yes
+
+
+                                                                                                 52
+   2. no
+   99. not answered
+
+E130       Do you have dimples? Look at the girl in the picture.
+  1. yes, on both sides
+  2. yes, on one side
+  3. no
+  99. not answered
+
+E131       Look at your ears - are your earlobes unattached or attached?
+  1. unattached
+  2. attached
+  99. not answered
+
+E132        Which finger is longer- your ring finger or your index finger?
+  1. ring finger
+  2. index finger
+  3. they are the same
+  99. not answered
+
+E133        Which toe is longer - your big toe or the second toe? Look at the picture. In the
+            picture the 2nd toe is longer than the big toe.
+   1. the big toe
+   2. the second toe
+   3. they are the same
+   99. not answered
+
+E134       Are you righthanded or lefthanded?
+  1. righthanded
+  2. lefthanded
+  3. I use both hands equally
+  99. not answered
+
+E135        Which foot do you use when kicking a ball?
+  1. right foot
+  2. left foot
+  3. I use both feet equally
+  99. not answered
+
+Your body changes as it goes from a child's body to an adult body. The age at which the
+changes take place varies from one person to another. The next questions are about some of
+the changes that may take place in your body right now.
+
+E136       Have you started growing armpit hair?
+  1. yes
+  2. no
+  99. not answered
+
+
+
+                                                                                                53
+E137       Has your skin started to change, I getting more pimples than when I was younger?
+  1. yes
+  2. no
+  99. not answered
+
+If E_SEX=2 the following text appears: The below drawings show stages of hte way the breast
+and genitals develop. Some girls will through each of the 5 stages shown and and some girls
+may skip some stages.
+E138_1       Tick the picture that you think best matches the development of your breasts.
+Dependent on E_SEX
+    1. 1
+    2. 2
+    3. 3
+    4. 4
+    5. 5
+    99. not answered
+    100. not applicable
+
+E138_2      Which picture matches best the growt of hair on your genitals? (Think about how
+            your hair grows when you do not shave or in other ways remove hair - girls)
+Dependent on E_SEX
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   99. not answered
+
+E139        Have you had your first period? (monthly bleeding)
+Dependent on E_SEX
+   1. yes
+   2. no -> E144
+   99. not answered
+   100. not applicable
+
+E140        How old were you when you had your first period?
+Dependent on E_SEX E139
+   1. 6
+   2. 7
+   3. 8
+   4. 9
+   5. 10
+   6. 11
+   7. 12
+   8. 13
+   9. 14
+   10. 15
+   99. not answered
+
+
+                                                                                              54
+   100. not applicable
+
+If E_SEX=1 the following text appears: The pictures below show different stages of the
+maturation of a boy's genitals. In some boys this maturation starts quite early and in other boys
+it starts in their late teens.
+E141_1         Which picture matches best the growt of hair on your genitals? (Think about how
+               your hair grows when you do not shave or in other ways remove hair - boys)
+Dependent on E_SEX
+     1. 1
+     2. 2
+     3. 3
+     4. 4
+     5. 5
+     99. not answered
+
+E141_2      Which picture matches the development of your genitals best?
+Dependent on E_SEX
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   99. not answered
+   100. not applicable
+
+E142         Has your voice started to break?
+Dependent on E_SEX
+   1. yes, sometimes it is deeper
+   2. yes, my voice has changed completely and is deeper
+   3. no, it has not changed
+   4. don't know
+   99. not answered
+   100. not applicable
+
+E143        Have you ever experienced ejaculation?
+Dependent on E_SEX
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+E144         Now clasp your hands together. Which thumb is on top - the right hand thumb or
+the left hand thumb?
+   1. right hand thumb
+   2. left hand thumb
+   3. they take turns equally
+   99. not answered
+
+
+
+                                                                                                55
+E145        Cross your arms across the chest. Which arm is on top - the right or the left?
+  1. right arm
+  2. left arm
+  3. they take turns equally
+  99. not answered
+
+E146       Can you roll your tounge into a tube like the girl in the picture ?
+  1. yes
+  2. no
+  99. not answered
+
+E147       Do you have small, fine hairs on the middle joint of your fingers?
+  1. yes
+  2. no
+  99. not answered
+
+Now you are nearly done, we just have some final questions.
+E148_1     Did you fill in this questionnaire all by yourself?
+  1. yes, I got no help
+  2. yes, but I asked for help
+  3. no, my father or mother sat beside me
+  99. not answered
+
+E148_2     Have you listened to the questions read aloud through headphones?
+  1. yes, for all questions
+  2. yes, for some questions
+  3. no, not at all
+  99. not answered
+
+Thank you very much, [childfirstname] - we are really happy you wanted to help us!
+
+
+Additional (hidden) question concerning the DNBC puberty follow-up
+E149         will be invited to the Puberty follow-up
+  1. yes
+  2. no
+  99. not answered
+
+
+
+
+                                                                                             56
+

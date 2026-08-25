@@ -1,0 +1,3442 @@
+Code book for 1st interview (12th gestation week)
+
+Revised of:
+Anne Marie Nybo Andersen, professor
+Pernille Stemann Larsen, post-doc
+Line Stenmann Kantsø, student assistant
+
+Section of Epidemiology, Institute of Public Health, University of Copenhagen
+
+Date of revision: 27.08.2018
+
+Documentation and guidance
+All variables start with an A and contain three chiffers (e.g. A000). The answer categories are listed
+starting with 1.
+
+In most questions, the "undefined" variable has been given code 9, and the "irrelevant" variables
+has been given the code 10. 11 code for "irrelevant in this version, as the question was not asked".
+However, in questions with 10 or more answer categories these variables have been given code
+99, 100 and 101. In continuing variables, which can include the value 99, the codes 999 and 1000
+are used. In date variables code 99999999 and 100000000 are used.
+
+If AINTROB = 2 or 3, the values for irrelevant are given in all the following questions.
+
+If a question is dependent on a previous answer a note is written in Concolas (e.g. A001,
+Dependent on A000) above the question. Likewise it is specified which question the respondent
+jumps to if the following questions depend on the answer of the question concerned (e.g. → A002).
+
+Variable names ending with a letter (e.g. A002A) is a sub question of the previous question where
+it does not make sense to assign the question a new name.
+ Master list with gestation weeks:
+ Axxx     In which week of gestation did you ..........?
+
+ Masterliste gestation weeks
+ Axxx_1 week 1                        0. no 1. yes
+ Axxx_2 week 2                        0. no 1. yes
+ Axxx_3 week 3                        0. no 1. yes
+ Axxx_4 week 4                        0. no 1. yes
+ Axxx_5 week 5                        0. no 1. yes
+ Axxx_6 week 6                        0. no 1. yes
+ Axxx_7 week 7                        0. no 1. yes
+ Axxx_8 week 8                        0. no 1. yes
+ Axxx_9 week 9                        0. no 1. yes
+ Axxx_10 week 10                      0. no 1. yes
+ Axxx_11 week 11                      0. no 1. yes
+ Axxx_12 week 12                      0. no 1. yes
+ Axxx_13 week 13                      0. no 1. yes
+ Axxx_14 week 14                      0. no 1. yes
+ Axxx_15 week 15                      0. no 1. yes
+ Axxx_16 week 16                      0. no 1. yes
+ Axxx_17 week 17                      0. no 1. yes
+ Axxx_18 week 18                      0. no 1. yes
+ Axxx_19 week 19                      0. no 1. yes
+ Axxx_20 week 20                      0. no 1. yes
+ Axxx_21 week 21                      0. no 1. yes
+ Axxx_22 week 22                      0. no 1. yes
+ Axxx_23 week 23                      0. no 1. yes
+ Axxx_24 week 24                      0. no 1. yes
+ Axxx_25 week 25                      0. no 1. yes
+ Axxx_26 week 26                      0. no 1. yes
+ Axxx_27 week 27                      0. no 1. yes
+ Axxx_28 week 28                      0. no 1. yes
+ Axxx_29 week 29                      0. no 1. yes
+ Axxx_30 week 30                      0. no 1. yes
+ Axxx_31 week 31                      0. no 1. yes
+ Axxx_32 week 32                      0. no 1. yes
+ Axxx_33 week 33                      0. no 1. yes
+ Axxx_34 week 34                      0. no 1. yes
+ Axxx_35 week 35                      0. no 1. yes
+ Axxx_36 week 36                      0. no 1. yes
+ Axxx_37 week 37                      0. no 1. yes
+ Axxx_38 week 38                      0. no 1. yes
+ Axxx_39 do not know                  0. no 1. yes
+ Axxx_40 do not want to answer        0. no 1. yes
+
+
+The master list above is used in questions referring to time (see example underneath):
+AINTROA:    Interviewer ID
+
+AINTDATO: Date of interview
+
+AVERSION: Sep97
+          Dec97
+          May98
+          Aug98
+
+GRAVNR:     Woman's pregnancy ID in Better Health for Mother and Child
+
+LOBNR:      Serial number (woman's ID number in Better Health for Mother and Child)
+
+LOBGRAV: Identification number of the pregnancy
+INTRODUCTION
+
+Hello, my name is
+Could I please speak to                                        ?
+
+Hello my name is                                , I am calling from the investigation "Better
+Health for Mother and Child"
+
+Thank you for agreeing to participate in this investigation. Would it be convenient for you
+to be interviewed now?
+                                 If NO, please agree on another time for the interview
+
+
+AINTROB
+First of all, are you still pregnant?    1. Yes
+                                         2. No →AIKKEGRA
+                                         3. Do not want to answer → end
+
+Well, fine.
+I would like to begin by giving you a brief information about this interview.
+It will last approximately 10 to 15 minutes.
+Participation is voluntary.
+I have professional secrecy and your answers will not be disclosed to outside people.
+It is important that your answers be as brief and precise as possible.
+AIKKEGRA Why are you no longer pregnant?
+                      1. Did you have an induced abortion?
+                                Please excuse me for having troubled you. I shall see to it
+                                that you are not contacted anymore by this investigation.
+                                Goodbye.
+
+                          2. Mola, mola hydatidosa, "cancer in embryo"
+                                   This investigation is not suitable for you. Please excuse
+                                   me for having troubled you. I shall see to it that you are
+                                   not contacted anymore by this investigation. Goodbye.
+
+                          3. Induced abortion due to fatal disease → AIKKEGR4
+                          4. Spontaneous abortion → AIKKEGR4
+                          5. Pregnancy ectopic → AIKKEGR4
+                          6. Other, description... → AIKKEGR4
+                          7. Do not want to answer → AIKKEGR4
+
+AIKKEGR2 Other, text
+
+AIKKEGR4 Still, I would like to ask you if you would participate in an interview, in spite of what
+          has happened. Your answers will only be used for scientific purposes about why
+          pregnancies do not always go as planned and this knowledge can be of benefit to
+          others.
+          What will happen then is that an interviewer that is aware of the fact that you are no
+          longer pregnant will call you up in the nearest future. Would you be interested in that?
+                           1. yes
+                                    Fine , we will call you within the next month. Sorry that I
+                                   have disturbed you now.
+
+                          2. do not know
+                                   Well, then I will send you a letter explaining the purpose
+                                   of this investigation. Then you can decide. If you do not
+                                   want to participate, please indicate so by putting a cross
+                                   on the letter. Goodbye.
+
+                          3. no
+                                  Then please apologise for the inconvenience. I shall see to it
+                                  that you will not be contacted again by the investigation "Better
+                                  Health for Mother and Child".
+                                  Goodbye.
+
+             Please fill in a green form!
+Let us get started with the questions:
+
+We will begin with your previous experience in connection with pregnancies and births:
+
+A001        Have you been pregnant before?
+                        1. yes
+                        2. no → A008
+                        3. do not know → A008
+                        4. do not want to answer →A008
+                        9. undefined
+                        10. irrelevant
+
+A002       How many times have you been pregnant before?
+Dependent on: A001
+                      1. _____times → A002A
+                      2. do not know
+                      3. do not want to answer
+                      9. undefined
+                      10. Irrelevant
+
+
+A002A      Total number of pregnancies
+Dependent on: A002
+
+A003       Have you given birth before?
+Dependent on: A001
+                       1. yes
+                       2. no →A005
+                       3. do not know → A005
+                       4. do not want to answer → A005
+                       9. undefined
+                       10. irrelevant
+
+A004      How many times did you give birth before
+Dependent on: A001 A002 A004
+                     1.          times → 0400A; →A008, if A002 =A004
+                     2. do not know
+                     3. do not want to answer
+                     9. undefined
+                     10.irrelevant
+
+
+A004A      Total number previous births
+Dependent on: A004
+
+A005       Did you ever have any spontaneous abortions?
+Dependent on: A001 A002 A004
+                        1. yes → A005A
+                        2. no → A007
+                        3. do not know → A007
+                        4. do not want to answer →A007
+                        5. undefined
+                        6. irrelevant
+
+A005A       Total number previous abortions
+Dependent on: A005
+
+A006_1-10 In which gestation week did you have the abortion (.g. for the 1st time)?
+Dependent on: A001 A002 A004 A005
+                       1. 5-12. week (=1-3 months)
+                       2. 13.-16. week
+                       3. 17.- 32. week
+                       4. after 32. week
+                       5. do not know
+                       6. do not want to answer
+                       9. undefined
+                       10. irrelevant
+
+A007       Did you ever have a pregnancy outside uterus?
+Dependent on: A001 A002 A004
+                        1. yes → A007A
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. undefined
+                        10. irrelevant
+
+A007A      Number of previous pregnancies outside uterus
+Dependent on: A007
+
+A008       Did you use oral contraceptive pills during the last four months prior to this
+pregnancy?
+                        1. yes
+                        2. no →A011
+                        3. do not know → A011
+                        4. do not want to answer → A011
+                        9. undefined
+                        10. irrelevant
+
+A009       Was it the mini pill or the regular pill?
+Dependent on: A008
+                        A009_1. regular contraceptive pills
+                        A009_2. mini pills →A011
+                        A009_3. do not know →A011
+                        A009_4. do not want to answer →A011
+
+A010       In which month of the year did you stop taking contraceptive pills?
+Dependent on: A008 A009
+                       1. 1 (January)
+                       2. 2 (February)
+                       3. 3 (March)
+                       4. 4 (April)
+                       5. 5 (May)
+                       6. 6 (June)
+                       7. 7 (July)
+                       8. 8 (August)
+                       9. 9 (September)
+                       10. 10 (October)
+                       11. 11 (November)
+                       12. 12 (December)
+                       13. do not know
+                          14. do not want to answer
+                          99. undefined
+                          100.irrelevant
+
+
+A011        How old were you when you had your first menstrual period?
+            (If you do not remember the age, please just state if it was early, late or neither early
+            nor late)
+                          1. age → A011A
+                          2. 3rd grade
+                          3. 4th grade
+                          4. 5th grade
+                          5. 6th grade
+                          6. 7th grade
+                          7. 8th grade
+                          8. 9th grade
+                          9. 10th grade
+                          10. early
+                          11. late
+                          12. neither early nor late
+                          13. do not know
+                          14. do not want to answer
+                          99. undefined
+                          100.irrelevant
+
+A011A      Age, first menstrual period
+Dependent on: A011
+
+A012        Are your periods regular, i.e. can you predict, within a week, when you will have your
+            next period.
+                         1. yes
+                         2. no → A016
+                         3. do not know → A016
+                         4. do not want to answer →A016
+                         9. undefined
+                         10. irrelevant
+
+
+A013        How many days pass from 1st day in one period to 1st day in the next period?
+Dependent on: A012
+                          1.      days → A013A
+                          2. do not know
+                          3. do not want to answer
+                          9. undefined
+                          10. irrelevant
+
+A013A      Number of days
+Dependent on: A013
+
+A014       Try to remember the last period before this pregnancy, did it come at the expected
+           time?
+Dependent on: A012
+                       1. yes
+                       2. no
+                       3. do not know
+                          4. do not want to answer
+                          9. undefined
+                          10. irrelevant
+
+ A015       Was it of the usual strength and duration?
+ Dependent on: A012
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not want to answer
+                          9. undefined
+                          10. irrelevant
+
+
+
+
+The next questions deal with the beginning of the present pregnancy
+
+ A016        What is the expected date of birth?
+                          1. Date → A016A
+                          2. do not know → A017
+                          3. do not want to answer → A017
+                          9. undefined
+                          10. irrelevant
+
+
+
+ A016A     Date (day month year, undefined = 99999999 and irrelevant = 100000000)
+ Dependent on: A016
+
+ A016X       string variable: 40-(rund ned ((A016A-interviewdato)/7))
+
+ A016B       So, according to my calculations, today, you are in the xx week of gestation.
+             (This does not include the jun97-version)
+                          1. woman agrees
+                          2. woman does not agree →A016C:believes herself that she is in week
+                          3. do not know
+                          4. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+                          11. Not asked
+
+
+ A016C     Gestation week due to the woman (undefined = 99, irrelevant = 100, not in this version = 101)
+           (not a part of the jun97-version)
+ Dependent on: A01B
+
+ A017        Where do you plan to give birth?
+                        1. do not know
+                        2. do not want to answer
+                        3. at home
+                        4. other →A017A
+                        5. Esbjerg
+                        6. Farsø
+                        7. Fredericia
+                        8. Frederiksberg
+                        9. Frederikshavn
+                        10. Fåborg
+                        11. Gentofte
+                        12. Glostrup
+                        13. Grenå
+                        14. Grindsted
+                        15. Haderslev
+                        16. Helsingør
+                        17. Herlev
+                        18. Herning
+                        19. Hillerød
+                        20. Hjørring
+                        21. Hobro
+                        22. Holstebro
+                        23. Horsens
+                        24. Hvidovre
+                        25. Kalundborg
+                        26. Kolding
+                        27. Køge
+                        28. Lemvig
+                        29. Læsø
+                        30. Nyborg
+                        31. Nykøbing F
+                        32. Næstved
+                        33. Odder
+                        34. Odense
+                        35. Randers
+                        36. Rigshospitalet
+                        37. Ringkøbing
+                        38. Ringsted
+                        39. Roskilde
+                        40. Rønne
+                        41. Samsø
+                        42. Silkebord
+                        43. Skejby
+                        44. Skive
+                        45. Slagelse
+                        46. Svendborg
+                        47. Sønderborg
+                        48. Tarm
+                        49. Thisted
+                        50. Tønder
+                        51. Vejle
+                        52. Viborg
+                        53. Ærø
+                        54. Ålborg
+                        55. Århus
+                        99. Undefined
+                        100 irrelevant.
+
+
+A017A      Other text
+Dependent on: A017
+A018        Is this pregnancy planned, partly planned or not planned at all?
+                         1. planned →A019
+                         2. partly planned →A019
+                         3. not planned → A020
+                         4. do not know
+                         5. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A019       For how long did you try to get pregnant before you succeeded?
+Dependent on: A018
+
+                          1. did not try to get pregnant → A020
+                          2. got pregnant immediately→A029
+                          3. 1-2 months → A029
+                          4. 3-5 months →A029
+                          5. 6-12 months → A024
+                          6. For more than 12 months → A024
+                          7. Do not know → A024
+                          8. Do not want to answer → A024
+                          9. Undefined
+                          10 Irrelevant
+
+ CAVE: Please note that inI version sep97 and og dec 97 the jumps from a019 are not consistent.
+See data!
+
+A020       Did you get pregnant in spite of using contraceptives?
+Dependent on: A019
+                        1. yes
+                        2. no →A029
+                        3. do not know → A029
+                        4. do not want to answer →A029
+                        9. Undefined
+                        10.Irrelevant
+
+A021       What kind of contraceptives?
+Dependent on: A019 A020
+                        A021_1 condom → A029
+                        A021_2 diaphragm →A029
+                        A021_3 IUD → A022
+                        A021_4 Contraceptive pills, regular →A023
+                        A021_5 contraceptive pills, mini → A023
+                        A021_6 contraceptive foam,suppository, cream →A029
+                        A021_7 "safe periods" →A029
+                        A021_8 other →A029
+                        A021_9 do not know →A029
+                        A021_10. do not want to answer →A029
+
+A021A       other, text
+Dependent on: A021
+
+A022       Do you still have your IUD? →A029
+Dependent on: A019 A020 A021
+                          1. yes,
+                          2. no, it was removed in week → A022A
+                          3. no, went by itself
+                          4. do not know
+                          5. do not want to answer
+                          9. Undefined
+                          10.Irrelevant
+
+A022A      week when IUD was removed (undefined = 99, irrelevant = 100)
+Dependent on: A022
+
+A023       How far into pregnancy did you stop taking contraceptive pills, mini or regular?
+Dependent on: A019 A020 A021 A022
+                         1.      Weeks → A023A
+                         2. do not know → A029
+                         3. do not want to answer → A029
+                         9. Undefined
+                         10. Irrelevant
+
+A023A       Gestation week for stop of contraceptive pills →A029
+(Undefined = 99, Irrelevant = 100)
+Dependent on: A023
+
+A024       Did you get any infertility treatment prior to this pregnancy?
+Dependent on: A019 A020 A021 A022 A023
+                        1. yes
+                        2. no →A029
+                        3. do not know →A029
+                        4. do not want to answer →A029
+                        9. Undefined
+                        10.Irrelevant
+
+A025      How long time did it take to become pregnant after the start of infertility treatment?
+Dependent on: A019 A020 A021 A022 A023 A024
+                      1.       Months →A025A
+                      2.       Years → A025B
+                      3. do not know
+                      4. do not want to answer
+                      9. Undefined
+                      10. Irrelevant
+
+A025A      number of months → A026 (undefined = 99, irrelevant =100)
+Dependent on: A025
+
+A025B     number of years (undefined =99, irrelevant = 100)
+Dependent on: A025
+
+A026      Prior to this pregnancy, what kind of infertility treatment did you get?
+Dependent on: A019 A020 A021 A022 A023 A024
+
+                          A026_1. mikro insemination →A028
+                                   (sperm in egg, test tube method)
+                          A026_2. test tube method →A028
+                          A026_3. insemination →A027
+                          A026_4. operation →A029
+                          A026_5. HSG, rinsing of fallopian tubes →A029
+                          A026_6. hormonal treatment →A029
+                         A026_7. Other → A026A
+                         A026_8. do not know →A029
+                         A026_9. do not want to answer →A029
+
+A026A      other treatment, text
+Dependent on: A026
+
+A027      Was it donor sperm or sperm from your partner? Or you prefer not to respond?
+Dependent on: A019 A020 A021 A022 A023 A024 A026
+                      1. donor sperm
+                      2. partner's sperm
+                      3. do not know
+                      4. do not want to answer
+                      9. Undefined
+                      10. Irrelevant
+
+A028       Was it your own eggs or donor eggs? Or you prefer to not answer this question?
+Dependent on: A019 A020 A021 A022 A023 A024 A026
+                        1. donor egg
+                        2. own egg
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A029        How far into the pregnancy did you discover that you were pregnant?
+                          1.     Weeks → A029A
+                          2. do not know
+                          3. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+A029A      number of weeks (undefined =99, irrelevant =100)
+Dependent on: A029
+
+A030        Have you had any vaginal bleeding during pregnancy?
+                        1. yes
+                        2. no →A034
+                        3. do not know →A034
+                        4. do not want to answer →A034
+                        9. Undefined
+                        10. Irrelevant
+
+A031       In which gestation week(s) did you bleed from vagina?
+Dependent on: A030
+                        A031_1-A031_40 (please, see master list)
+
+A032       For how many days in total did you bleed from vagina?
+Dependent on: A030
+                      1.    Days → A032A
+                      2. 1 day
+                      3. 2-4 days
+                      4. 5-7 days
+                          5. for more than one week
+                          6. do not know
+                          7. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+A032A      number of days
+Dependent on: A032
+
+A033       How much did you bleed when the bleeding was at its maximum? Was it a spot
+           bleeding or more than that?
+Dependent on: A030
+                        1. spots
+                        2. more than sports
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A034         Did you suffer from vaginal infections during the pregnancy?
+                          1. yes
+                          2. no →A038
+                          3. do not know →A038
+                          4. do not want to answer →A038
+                          9. Undefined
+                          10. Irrelevant
+
+A035         Did you get any treatment against vaginal infections?
+                          1. yes
+                          2. no →A037
+                          3. do not know → A037
+                          4. do not want to answer →A037
+                          9. Undefined
+                          10. Irrelevant
+
+A036       What kind of treatment?
+Dependent on: A034 A035 A036_3 was asked the first time in the nov98-version
+                        A036_1 suppository
+                        A036_2 medicine
+                        A036_3 cream
+                        A036_4 yoghurt
+                        A036_5 other → A036A
+                        A036_6 do not know
+                        A036_7 do not want to answer
+
+A036 A     text, other kind of treatment against fungal infection in vagina
+Dependent on: A036
+
+A037       In which week of gestation did you have the disease?
+Dependent on: A034
+                       A037_1-A037_40 (see master list)
+
+A038         What is your weight?
+                          1.    Kilos → A038A
+                          2. do not know
+                          3. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+A038A       total kilos
+Dependent on: A038
+
+A039        What was your weight before the pregnancy?
+                       1.     Kilos → A039A
+                       2. do not know
+                       3. do not want to answer
+                       9. Undefined
+                       10. Irrelevant
+
+A039A      total kilos before pregnancy.
+Dependent on: A039
+
+A040        How tall are you?
+                          1. Cm → A040A
+                          2. do not know
+                          3. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+
+A040A      total height cm
+Dependent on: A040
+
+A041        Do you worry about the coming birth? You can answer: not at all, a little or very
+            much.
+                        1. not at all
+                        2. a little
+                        3. very much
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A042        Do you worry about your unborn child's health? You can answer: not at all, a little or
+            very much.
+                        1. not at all
+                        2. a little
+                        3. veru much
+                        4. do not know
+                        5. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+Now for a series of questions about your health in general
+
+A043        How would you characterize your health in general? Is it very good, average or not so
+            good?
+                       1. very good
+                       2. average
+                       3. not so good
+                       4. do not know
+                       5. do not want to answer
+                       9. Undefined
+                         10. Irrelevant
+
+A044        Did you ever have hypertension?
+                         1. yes
+                         2. yes, only in connection with pregnancy →A047
+                         3. no →A048
+                         4. do not know →A048
+                         5. do not want to answer →A048
+                         9. Undefined
+                         10. Irrelevant
+
+A045       Did you ever get medicine against too hypertension?
+Dependent on: A044
+                        1. yes
+                        2. no →A047
+                        3. do not know→A047
+                        4. do not want to answer →A047
+                        9. Undefined
+                        10. Irrelevant
+
+A046       Do you still get medicine against hypertension?
+Dependent on: A044 A045
+                         1. yes
+                         2. no
+                         3. do not know
+                         4. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A047       Do you still suffer from too high blood pressure?
+Dependent on: A044
+                         1. yes
+                         2. no
+                         3. do not know
+                         4. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A048        Have you ever had any metabolic disorders?
+                        1. yes
+                        2. no →A052
+                        3. do not know →A052
+                        4. do not want to answer →A052
+                        9. Undefined
+                        10. Irrelevant
+
+A049       Was the metabolic disorder diagnosed by a doctor?
+Dependent on: A048
+                      1. yes
+                      2. no →A052
+                      3. do not know →A052
+                      4. do not want to answer →A052
+                      9. Undefined
+                      10. Irrelevant
+
+A050       What metabolic disease did you have?
+Dependent on: A048 A049
+                         A050_1 thepeotoxicose
+                         A050_2 Basedow, Grave's disease
+                         A050_3 toxic adenoma
+                         A050_4 reduced metabolic disorder
+                         A050_5 Hashimoto struma
+                         A050_6 iatrogen (after medical treatment e.g. strumectomi or 131I)
+                         A050_7 other → A050A
+                         A050_8 do not know →A052
+                         A050_9 do not want to answer →A052
+
+A050A      text, other metabolic disorder
+Dependent on: A050
+
+A051 1-7   Do you still suffer from (answer in A050)?
+Dependent on: A048 A049 A050
+                         1. yes
+                         2. no
+                         3. do not know
+                         4. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A052        Did you ever have asthma?
+                         1. yes
+                         2. no →A055
+                         3. do not know →A055
+                         4. do not want to answer →A055
+                         9. Undefined
+                         10. Irrelevant
+
+A053       Was the asthma diagnosed by a doctor?
+Dependent on: A052
+                       1. yes
+                       2. no →A055
+                       3. do not know →A055
+                       4. do not want to answer → A055
+                       9. Undefined
+                       10. Irrelevant
+
+A054       Do you still suffer from asthma?
+Dependent on: A052 A053
+                         1. yes
+                         2. no
+                         3. do not know
+                         4. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A055        Ever suffered from allergies?
+                         1. yes
+                         2. no →A060
+                         3. do not know→A060
+                          4. do not want to answer →A060
+                          9. Undefined
+                          10. Irrelevant
+
+A056       Was the allergy diagnosed by a doctor?
+Dependent on: A055
+                        1. yes
+                        2. no →A060
+                        3. do not know →A060
+                        4. do not want to answer →A060
+                        9. Undefined
+                        10. Irrelevant
+
+A057       How does the allergy manifest itself?
+Dependent on: A055 A056
+                       A057_1 hay fever
+                       A057_2 nettle fever
+                       A057_3 running nose
+                       A057_4 rash, eczema (skin manifestation)
+                       A057_5 diarrhoea, pain in stomach (gastrointestinal symptoms)
+                       A057_6 breathing trouble
+                       A057_7 other → A057A
+                       A057_8 do not know
+                       A057_9 do not want to answer
+
+A057A       text, other
+Dependent on: A057
+
+A058       What was you allergic to?
+Dependent on: A055 A056
+                      A058_1 animals' hair
+                      A058_2 pollen
+                      A058_3 house dust (mites)
+                      A058_4 food
+                      A058_5 medicine (e.g. penicillin)
+                      A058_6 additives (colour, preservatives)
+                      A058_7 other → A058A
+                      A058_8 do not know
+                      A058_9 do not want to answer
+
+A058A      other allergenes, text
+Dependent on: A058
+
+A059       Have you had any inconveniences from the allergy during pregnancy?
+Dependent on: A055 A056
+                       1. yes
+                       2. no
+                       3. do not know
+                       4. do not want to answer
+                       9. Undefined
+                       10. Irrelevant
+
+A060        Did the child's father ever have asthma?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A061        Did the child's father ever have any allergy?
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+A062        Have you ever had any skin disease?
+                        1. yes
+                        2. no →A066
+                         3. do not know → A066
+                         4. do not want to answer →A066
+                         9. Undefined
+                         10. Irrelevant
+
+A063       Was the skin disease diagnosed by a doctor?
+Dependent on: A062
+                       1. yes
+                       2. no →A066
+                       3. do not know →A066
+                       4. do not want to answer → A066
+                       9. Undefined
+                       10. Irrelevant
+
+A064      What kind of skin disease?
+Dependent on: A062 A063
+                       A064_1 returning abscesses, Rosen, inflammations
+                       A064_2 infant eczema, prurigo besnier
+                       A064_3 contact eczema
+                       A064_4 psoriasis
+                       A064_5 acne
+                       A064_6 skin cancer, melanoma
+                       A064_7 other → A064A
+                       A064_8 do not know
+                       A064_9 do not want to answer
+
+A064A      other skin disease, text
+Dependent on: A064
+
+A065       Did you suffer any inconvenience from your skin disease during pregnancy?
+Dependent on: A062 A063
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A066        Did you ever have any disease in muscles or joints?
+                         1. yes
+                         2. no →A070
+                         3. do not know →A070
+                         4. do not want to answer →A070
+                         9. Undefined
+                         10. Irrelevant
+
+A067       Was the muscle/joint disease diagnosed by a doctor?
+Dependent on: A066
+                      1. yes
+                      2. no
+                      3. do not know
+                      4. do not want to answer
+                      9. Undefined
+                      10. Irrelevant
+
+A068       What kind of muscle/joint disease?
+Dependent on: A066
+                        A068_1 "bad back"
+                        A068_2 slipped disc
+                        A068_3 rheumatisme in joints
+                        A068_4 fibromyalgai
+                        A068_5 arthrosis
+                        A068_6 neck pains
+                        A068_7 symptoms in arms and legs
+                        A068_8 pelvic pain
+                        A068_9 other → A068A
+                        A068_10 do not know
+                        A068_11 do not want to answer
+
+A068A      other muscle/joint disease, text
+Dependent on: A068
+
+A069        (only jun97, sep97 and dec97-versions)
+            There is asked to the disease(s) chosen in A068
+
+           Have you had any inconvenience from the disease during pregnancy?
+Dependent on: A066 A068
+                       1. Yes
+                       2. No
+                       3. Do not know
+                       4. Do not want to answer
+                       9. Undefined
+                       10.Irrelevant
+                       11.Not asked
+
+A069 1-9    (only in may98 and nov98-versions)
+            There is asked for the specific disease chosen in A068
+           Have you had any inconvenience from (answer in i A068) during pregnancy?
+Dependent on: A066 A068
+                       1. yes
+                       2. no
+                       3. do not know
+                       4. do not want to answer
+                       9. Undefined
+                       10. Irrelevant
+                       11.Not asked
+
+A070        Have you ever had any disease in the urinary system?
+                        1. yes
+                          2. no → A074
+                          3. do not know →A074
+                          4. do not want to answer →A074
+                          9. Undefined
+                          10. Irrelevant
+
+A071       Was the disease in the urinary system diagnosed a doctor?
+Dependent on: A070
+                       1. yes
+                       2. no → A075
+                       3. do not know →A075
+                       4. do not want to answer →A075
+                       9. Undefined
+                       10. Irrelevant
+
+A072       What was the disease in the urinary system?
+Dependent on: A070 A071
+                       A072_1 nephritis
+                       A072_2 pyelitis
+                       A072_3 renalcalculus/stones
+                       A072_4 systitis
+                       A072_5 malformation of kidney or urinary tract
+                       A072_6 cancer
+                       A072_7 other →A072A
+                       A072_8 do not know
+                       A072_9 do not want to answer
+
+A072A       other, text
+Dependent on: A072
+
+A073        (only jun97, sep97 and dec97-versions)
+            There is asked generally to the disease(s) chosen in A072
+
+           Did you have the disease during pregnancy?
+Dependent on: A070 A071 A072
+
+                          1. Yes
+                          2. No
+                          3. Do not know
+                          4. Do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+                          11. Not asked
+
+A073 1-7    (only mah98 and nov98-versions)
+            There is asked for the specific disease chosen in A072
+
+           Did you have (answer in A072) during pregnancy?
+Dependent on: A070 A071 A072
+                       1. yes
+                       2. no
+                       3. do not know
+                       4. do not want to answer
+                       9. Undefined
+                       10.Irrelevant
+                       11. Not asked
+A074       Have you had cystitis more than 5 times in your life?
+Dependent on: A070 A071 A072
+                       1.    yes
+                       2.    no
+                       3.    do not know
+                       4.    do not want to answer
+                       9.    Undefined
+                       10. Irrelevant
+
+A075        Have you ever suffered any mental disorders or neurosis?
+                        1. yes
+                        2. no →A079
+                        3. do not know →A079
+                        4. do not want to answer →A079
+                        9. Undefined
+                        10. Irrelevant
+
+A076       Did you see a doctor or psychologist?
+Dependent on: A075
+                        1. yes
+                        2. no →A079
+                        3. do not know →A079
+                        4. do not want to answer →A079
+                        9. Undefined
+                        10.Irrelevant
+
+A077       What was the name of the disorder?
+Dependent on: A075 A076
+                       A077_1 related to spirits misuse
+                       A077_2 anxiety
+                       A077_3 depression
+                       A077_4 family trouble
+                       A077_5 birth depression
+                       A077_6 crisis due to death/embyo death
+                       A077_7 life crisis
+                       A077_8 bipolar disorder
+                       A077_9 neurosis
+                       A077_10 mental disorder in relation to childhood
+                       A077_11 psychosis (schizophrenia, delusions)
+                       A077_12 suicide attempt
+                       A077_13 eating disorder (anorexia, bulimia)
+                       A077_14 related to drug/medicine misuse
+                       A077_15 other → A077A
+                       A077_16 do not know
+                       A077_17 do not want to answer
+
+A077A       other, text
+Depending on: A077
+
+A078       Did you suffer from that disorder during pregnancy?
+Dependent on: A075 A076
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                         9. Undefined
+                         10. Irrelevant
+
+A079       Did you ever suffer form aneamia?
+                        1. yes
+                        2. no →A082
+                        3. do not know →A082
+                        4. do not want to answer →A082
+                        9. Undefined
+                        10. Irrelevant
+
+A080       Aneamia due to?
+Dependent on: A079 A080_4 was not asked in jun97
+                      A080_1 lack of iron
+                      A080_2 lack of B12/folic acid
+                      A080_3 hermorrage
+                      A080_4 pregnancy
+                      A080_5 other → A080A
+                      A080_6 do not know
+                      A080_7 do not want to answer
+
+A080A      other, text
+Dependent on: A080
+
+A081       Were you aeanemic during your pregnancy?
+Dependent on: A079
+                      1. yes
+                      2. no
+                      3. do not know
+                      4. do not want to answer
+                      9. Undefined
+                      10. Irrelevant
+
+A082       Have you ever had diseases in your reproductive system?
+                       1. yes
+                       2. no → A088
+                       3. do not know → A088
+                       4. do not want to answer →A088
+                       9. Undefined
+                       10. Irrelevant
+
+A083       Was the disease in your reproductive system diagnosed by a doctor?
+Dependent on: A082
+                         1. yes
+                         2. no →A088
+                         3. do not know →A088
+                         4. do not want to answer →A088
+                         9. Undefined
+                         10. Irrelevant
+
+A084       Please mention the abdominal disease(s)?
+Dependent on: A082 A083 A084_3 was not asked in jun97
+
+           A084_1         pain (no diagnosis) → A088
+           A084_2         inflammation → A088
+           A084_3         Clamydia → A088
+             A084_4        Endometriosis (uterus-musous membrane
+                           outside uterus) →A088
+             A084_5        Genetial prolapse → A088
+             A084_6        Menstrual disorder → A088
+             A084_7        Unspecified disease, ovary → A088
+             A084_8        Uterine tube cysts → A088
+             A084_9        Cancer, uterine tubes → A088
+             A084_10       Unspecified disease, uterus → A088
+             A084_11       muscle tumor/fibromes uterus→ A088
+             A084_12       malformation of uterus →A088
+             A084_13       Cell changes, collum of uterus → A088
+             A084_14       cancer collum of uterus → A088
+             A084_15       Other → A084A
+             A084_16       Do not know → A088
+             A084_17       Do not want to answer → A088
+
+A084A       Other, text
+Dependent on: A084
+
+A085        How was you treated?
+Dependent on: A082 A083 A084 A085_3 was only asked in nov98
+
+                          A085_1 no treatment →A087
+                          A085_2 cryo-treatment, frozen →A087
+                          A085_3 laser evaporation → A087
+                          A085_4 cryotherapy →A086
+                          A085_5 disappeared by itself →A088
+                          A085_6 other →A087
+                          A085_7 do not know →A087
+                          A085_8 do not want to answer →A087
+
+ A085A      other treatment, text
+ Dependent on: A085
+
+ Cave: I n version May98 only one answer.
+ A086         How many times have you had cryotherapy?
+ Dependent on: A082 A083 A084 A085
+                          1.      Times → A086A
+                          2. do not know
+                          3. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+ A086A      number of cryotherapies
+ Dependent on: A086
+
+ A087       Do you still have cell changes?
+ Dependent on: A082 A083 A084 A085
+                          1. yes
+                          2. no
+                          3. do not know
+                          4. do not want to answer
+                          9. Undefined
+                          10. Irrelevant
+
+ A088        Have you ever had any serious disease that we have still not talked about, for
+             instance, heart disease, epilepsy or diabetes?
+                         1. yes
+                         2. no →A090
+                         3. do not know →A090
+                         4. do not want to answer →A090
+                         9. Undefined
+                         10. Irrelevant
+
+A089       What other disease?
+Dependent on: A088
+                        1. name of disease → A089A
+                        2. do not know
+                        3. do not want to answer
+                        9. Undefined
+                        10.irrelevant
+
+A089A      name of other disease, text
+Dependent on: A089
+
+A090        Have you ever had a cold sore/herpes in lip?
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A091        Have you ever had cold sore/herpes in genitals?
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A092        Have you ever had veneral warts, also called condylomata?
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. Undefined
+                        10. Irrelevant
+
+A093        Have you received any vaccinations within the past two years?
+                        1. yes
+                        2. no → A097
+                        3. do not know →A097
+                        4. do not want to answer →A097
+                        9. Undefined
+                        10. Irrelevant
+
+A094       Vaccination against?
+Dependent on: A093
+                        A094_1. difteritis
+                        A094_2. mumps, parotitis
+                        A094_3. yellow fever
+                        A094_4. hepatitis A food
+                        A094_5. hepatitis B, blood
+                        A094_6. hepatitis, type unknown
+                        A094_7. HiB, hæmophilus B, sort of meningitis
+                        A094_8. influenza
+                        A094_9. encephalitis
+                        A094_10. wooping cough
+                        A094_11. colera
+                        A094_12. meningitis,
+                        A094_13. measles
+                        A094_14. measles, mumps, rubella (MMR)
+                        A094_15. polio, injection
+                        A094_16. polio, drops, sugar
+                        A094_17. phneumococcus
+                        A094_18. rubella
+                        A094_19. chicken pox
+                        A094_20. tetanus
+                        A094_21. thyphoid fever
+                        A094_22. gammaglobulinium, genral against infections
+                        A094_23. Other → A094A
+                        A094_24. do not know
+                        A094_25. do not want to answer
+
+A094A      Name of other vaccination, text
+Dependent on: A094
+
+A095       Was the vaccination due to a travel abroad?
+Dependent on: A093
+                       1. yes
+                       2. no →A096
+                       3. do not know →A096
+                       4. do not want to answer →A096
+                       9. Undefined
+                       10. Irrelevant
+
+A095A      Which continents did you visit?
+Dependent on: A093 A095
+                       A095A_1. Europe
+                       A095A_2. North America/ Middle America
+                       A095A_3. South America
+                       A095A_4. Africa
+                       A095A_5. Asia
+                       A095A_6. Australia/Oceania
+                       A095A_7. do not know
+                       A095A_8. do not want to answer
+
+A095B       Which European countries did you visit?
+Dependent on: A093 A095 A095A
+                     A095B_1 Albania
+                     A095B_2 Andorra
+                     A095B_3 Belgium
+                     A095B_4 Bosnia
+                     A095B_5 Bulgaria
+                     A095B_6 England
+                     A095B_7 Estland
+                     A095B_8 Finland
+                     A095B_9 France
+                     A095B_10 Greece
+                     A095B_11 Greenland
+                          A095B_12 the Netherlands
+                          A095B_13 Belarus
+                          A095B_14 Ireland
+                          A095B_15 Island
+                          A095B_16 Italy
+                          A095B_17 Jugoslavia
+                          A095B_18 Croatia
+                          A095B_19 Latvia
+                          A095B_20 Lichtenstein
+                          A095B_21 Lithuania
+                          A095B_22 Luxembourg
+                          A095B_23 Malta
+                          A095B_24 Moldavia
+                          A095B_25 Monaco
+                          A095B_26 Northern Ireland
+                          A095B_27 Norway
+                          A095B_28 Poland
+                          A095B_29 Portugal
+                          A095B_30 Rumania
+                          A095B_31 San Marino
+                          A095B_32 Switzerland
+                          A095B_33 Serbia
+                          A095B_34 Scotland
+                          A095B_35 Slovakia
+                          A095B_26 Spain
+                          A095B_37 Sweden
+                          A095B_38 Czech Republic
+                          A095B_39 Turkey
+                          A095B_40 Germany
+                          A095B_41 Ukraine
+                          A095B_42 Hungary
+                          A095B_43 the Vatican
+                          A095B_44 Wales
+                          A095B_45 Austria
+                          A095B_46 Other → A095BA
+                          A095B_47 Do not know
+                          A095B_48 Do not want to
+                          answer
+
+
+095BA       Other, text
+Dependent on: A095B
+
+ A095C       Which countries did you visit in North and Middle America?
+ Dependent on: A093 095 A095A
+                      A095C_1 Antigua og Barbudo
+                      A095C_2 Barbados
+                      A095C_3 Bahamas
+                      A095C_4 Belize
+                      A095C_5 Bermuda
+                      A095C_6 Canada
+                      A095C_7 Cayman Islands
+                      A095C_8 Costa Rica
+                      A095C_9 Cuba
+                      A095C_10 Curacao
+                          A095C_11 Domican Republic
+                          A095C_12 El Salvador
+                          A095C_13 Grenada
+                          A095C_14 Greenland
+                          A095C_15 Guadelope
+                          A095C_16 Guatamala
+                          A095C_17 Haiti
+                          A095C_18 Hawai
+                          A095C_19 Honduras
+                          A095C_20 Jamaica
+                          A095C_21 Martinique
+                          A095C_22 Mexico
+                          A095C_23 Nicaragua
+                          A095C_24 Panama
+                          A095C_25 Puerto Rico
+                          A095C_26 Saint Kitts and Nevis
+                          A095C_27 Saint Lucia
+                          A095C_28 Saint Piere et Miquebu
+                          A095C_29 St. Vincent/Grenadinerne
+                          A095C_30 Trinedad and Tabago
+                          A095C_31 Turlos og Caicos Islands
+                          A095C_32 USA
+                          A095C_33 West India
+                          A095C_34 Other → A095CA
+                          A095C_35 Do not know
+                          A095C_36 Do not want to answer
+
+
+A095CA      Other, text
+Dependent on: A095C
+A095D      Which countries in South America did you visit?
+Dependent on: A093 A095 A095A
+                     A095D_1 Argentina
+                     A095D_2 Bolivia
+                     A095D_3 Brasil
+                     A095D_4 Chile
+                     A095D_5 Colombia
+                     A095D_6 Ecuador
+                     A095D_7 the Falklands
+                     A095D_8 French Gyana
+                     A095D_9 Gyana
+                     A095D_10 Paraguay
+                     A095D_11 Peru
+                     A095D_12 Surinam
+                     A095D_13 Uruguay
+                     A095D_14 Venezuela
+                     A095D_15 Other → A095DA
+                     A095D_16 Do not know
+                     A095D_17 Do not want to answer
+
+A095DA     other, text
+Dependent on: A095D
+
+A095E      Which countries in Africa did you visit?
+Dependent on: A093 A095 A095A
+                       A095E_1 the Azores
+                       A095E_2 Algeria
+                       A095E_3 Angola
+                       A095E_4 Ascension
+                       A095E_5 Benin
+                       A095E_6 Botswana
+                       A095E_7 Burkina Faso
+                       A095E_8 Burundi
+                       A095E_9 Cameroun
+                       A095E_10 Centr.Afr.Rep.
+                       A095E_11 the Comoros
+                       A095E_12 Congo
+                       A095E_13 Djibouti
+                       A095E_14 Egypt
+                       A095E_15 the Ivory Coast
+                       A095E_16 Etiopia
+                       A095E_17 Gabon
+                       A095E_18 Gambia
+                       A095E_19 Ghana
+                       A095E_20 Guinea
+                       A095E_21 Guinea-Bissau
+                       A095E_22 the Canary Islands
+                       A095E_23 Cap Verde
+                         A095E_24 Kenya
+                         A095E_25 Lesotho
+                         A095E_26 Liberia
+                         A095E_27 Libyen
+                         A095E_28 Madagaskar
+                         A095E_29 Madeira
+                         A095E_30 Malawi
+                         A095E_31 Mali
+                         A095E_32 Maroc
+                         A095E_33 Mauritania
+                         A095E_34 Mauritius
+                         A095E_35 Mayotte
+                         A095E_36 Mosambique
+                         A095E_37 Namibia
+                         A095E_38 Niger
+                         A095E_39 Nigeria
+                         A095E_40 Reunion
+                         A095E_41 Rwanda
+                         A095E_42 Saint Helena
+                         A095E_43 Sao Tome/Principe
+                         A095E_44 Senegal
+                         A095E_45 the Seychelles
+                         A095E_46 Sierra Leone
+                         A095E_47 Somalia
+                         A095E_48 Sudan
+                         A095E_49 Swaziland
+                         A095E_50 South African Republic
+                         A095E_51 Tanzania
+                         A095E_52 Tchad
+                         A095E_53 Togo
+                         A095E_54 Tunesien
+                         A095E_55 Uganda
+                         A095E_56 West-Sahara
+                         A095E_57 Zaire
+                         A095E_58 Zambia
+                         A095E_59 Zimbabwe
+                         A095E_60 Equatorial Guinea
+                         A095E_61 Upper Volta
+                         A095E_62 Other → A095EA
+                         A095E_63 Do not know
+                         A095E_64 Do not want to answer
+
+A095EA     other, text
+Dependent on:A095EA
+
+A095F       Which Asian countries did you visit?
+Dependent on: A093 A095 A095A
+                     A095F_1 Afghanistan
+                     A095F_2 United Arab Emirats
+                     A095F_3 Armenia
+                     A095F_4 Aserbajdsjan
+                     A095F_5 Bahrain
+                     A095F_6 Bangladesh
+                     A095F_7 Bhutan
+                     A095F_8 Brunei
+                     A095F_9 Burma
+                     A095F_10 Cypres
+                         A095F_11 the Philippines
+                         A095F_12 Georgia
+                         A095F_13 Hong Kong
+                         A095F_14 India
+                         A095F_15 Indonesia
+                         A095F_16 Iraq
+                         A095F_17 Iran
+                         A095F_18 Israel
+                         A095F_19 Japan
+                         A095F_20 Jordan
+                         A095F_21 Kampuchea
+                         A095F_22 Kasakhstan
+                         A095F_23 Kina
+                         A095F_24 Kirgistan
+                         A095F_25 Kuwait
+                         A095F_26 Laos
+                         A095F_27 Libanon
+                         A095F_28 Macao
+                         A095F_29 Malaysia
+                         A095F_30 the Maldive Islands
+                         A095F_31 Mongolia
+                         A095F_32 Nepal
+                         A095F_33 North Korea
+                         A095F_34 Oman
+                         A095F_35 Pakistan
+                         A095F_36 Qatar
+                         A095F_37 Russia
+                         A095F_38 Saudi Arabia
+                         A095F_39 Singapore
+                         A095F_40 Sri Lanka
+                         A095F_41 Syria
+                         A095F_42 Tadsjikistan
+                         A095F_43 Taiwan
+                         A095F_44 Thailand
+                         A095F_45 Tibet
+                         A095F_46 Turkmenistan
+                         A095F_47 Turky
+                         A095F_48 Usbekistan
+                         A095F_49 Vietnam
+                         A095F_50 Yemen
+                         A095F_51 Other → A095FA
+                         A095F_52 Do not know
+                         A095F_53 Do not want to answer
+
+
+A095FA     other, text
+Dependent on:A095EA
+ A095G        Which countries in Australia/Oceania?
+ Dependent on: A093 A095 A095A
+                      A095G_1 Australia
+                      A095G_2 Fiji
+                      A095G_3 French Polynesia
+                      A095G_4 Guam
+                      A095G_5 Kiribati
+                      A095G_6 Nauru
+                      A095G_7 New Zealand
+                      A095G_8 Northern Marianna Island
+                      A095G_9 New Caledonia
+                      A095G_10 New Guinea
+                      A095G_11 Marshall Islands
+                      A095G_12 Micronesia
+                      A095G_13 Palau
+                      A095G_14 Pacific Islands
+                      A095G_15 Pitcairn
+                      A095G_16 the Solomons
+                      A095G_17 Samoa Islands
+                      A095G_18 Tonga
+                      A095G_19 Tuvalu
+                      A095G_20 Vanuta
+                      A095G_21 Other → A095GA
+                      A095G_22 Do not know
+                      A095G_23 Do not want to answer
+
+
+A095GA      Other, text
+Dependent on: A095G
+
+
+
+A096 1-23     When did you receive the vaccination against (answer in A094)?
+Dependent on: A093 A094
+                      1.     /   (month / year) → A096A, A096B
+                      2. do not know
+                      3. do not want to answer
+                      9. Undefined
+                      10. Irrelevant
+
+ A096A 1-23                  months 1-12, undefined=99, irrelevant =100 (1-23
+ refers to different vaccines)
+ Dependent on: A096 1-23
+
+  A096B 1-23                year 1996-2000, undefined=9999, irrelevant
+ =10000 (1-23 refers to different vaccines)
+ Dependent on: A096 1-23
+
+ A097         Within the last two years, have you taken any medicine to prevent malaria?
+                            1. yes
+                            2. no →A100
+                            3. do not know →A100
+                            4. do not want to answer →A100
+                            9. Undefined
+                            10. Irrelevant
+A098       What was the name of the malaria medicine?
+Dependent on: A097
+                       A095G_1 Fansidar
+                       A095G_2 Klorokinphosphat
+                       A095G_3 Lariam
+                       A095G_4 Malarex
+                       A095G_5 Paludrine
+                       A095G_6 Other → A098A
+                       A095G_7 do not know
+                       A095G_8 do not want to answer
+
+A098A other malaria medicine, text
+Dependent on: A098
+
+A099 1-6   When did you take (answer in A098)?
+Dependent on: A097 A098
+                       1. Months → A099A-A099D
+                       2. do not know
+                       3. do not want to answer
+                       9. Undefined
+                       10. Irrelevant
+
+A099A 1-6            start months 1-12
+Dependent on: A099 1-6
+
+A099B1-6             start year 1994-2003
+Dependent on: A099 1-6
+
+A099C 1-6            end month 1-12
+Dependent on: A099 1-6
+A099D 1-6            end year 1994-2003
+Dependent on: A099 1-6
+
+A100        Have you had any episode of fever during your pregnancy?
+                        1. yes
+                        2. no →A106
+                        3. do not know →A106
+                        4. do not want to answer→A106
+                        9. Undefined
+                        10. Irrelevant
+
+A101       How many times did you have episodes of fever during the pregnancy?
+Dependent on: A100
+                      1.     Times → A101A
+                      2. do not know →A105
+                      3. do not want to answer →A105
+                      9. Undefined
+                      10 Irrelevant
+
+A101A      Number of fever episodes (undefined =99, irrelevant = 100)
+Dependent on: A101
+
+A102 1-10 What week of gestation were you in when you had the 1st, 2nd, ect, episode of
+fever?
+Dependent on: A100 A101
+                         1.     Week → A102A
+                         2. do not know
+                         3. do not want to answer
+                         9. Undefined
+                         10 Irrelevant
+
+A102A 1-10 Gestation week with fever (1-38), undefined=99, irrelevant =100
+Dependent on: A102 1-10
+
+A103 1-10 For how many days did you have fever?
+Dependent on: A100 A101
+                     1.          Days → A103A
+                     2. do not know
+                     3. do not want to answer
+                     9. Undefined
+                     10 Irrelevant
+
+A103A.1-10 Number of days with fever
+Dependent on: A103 1-10
+
+A104 1-10 The highest temperature during fever?
+Dependent on: A100 A101
+                       1.       , oC → A104A
+                       2. did not take my temperature
+                       3. do not remember
+                       4. do not want to answer
+                       9. Undefined
+                       10 Irrelevant
+
+
+A104A.1-10 Temperature xx,x (30,5 - 45,5)
+Dependent on: A104 1-10
+
+A105 1-10   What other symptoms did you have with the fever?
+            For instance, did you have a headache, stomach pain or pain in muscles or joints?.
+            (label A1050101-A1051001, where A105xx01 refers to the number of fever episode
+            and A10501xx indicates the chosen category. Variabel 0=no og 1=yes))
+
+                         A1050101-A1051001 bladder
+                         A1050102-A1051002 abcesses
+                         A1050103-A1051003 diarrhoea
+                         A1050104-A1051004 cold
+                         A1050105-A1051005 cough
+                         A1050106-A1051006 headache
+                         A1050107-A1051007 pain in joints
+                         A1050108-A1051008 pain in muscles
+                         A1050109-A1051009 pain in stomach
+                         A1050110-A1051010 pain behind the eyes
+                         A1050111-A1051011 sore through
+                         A1050112-A1051012 vomits
+                         A1050113-A1051013 tiredness
+                         A1050114-A1051014 rash
+                         A1050115-A1051015 urinary tract symptoms
+                         A1050116-A1051016 pain in ears
+                         A1050117-A1051017 other → A105A
+                         A1050118-A1051018 none
+                         A1050119-A1051019 do not know
+                         A1050120-A1051020 do not want to answer
+
+A105A 1-10 Other symptoms, text
+Dependent on: A105 1-10
+
+A106        Did you have diarrhoea during pregnancy, at least 3 evacuations in 24 hours?
+                        1. yes
+                        2. no →A110
+                        3. do not know →A110
+                        4. do not want to answer →A110
+                        9. undefined
+                        10. irrelevant
+
+A107       How many times did you have diarrhoea during pregnancy?
+Dependent on: A106
+                      1.         times → A107A
+                      2. do not know →A110
+                      3. do not want to answer → A110
+                      9. undefined
+                      10. irrelevant
+
+A107A      Number of episodes with diarrhoea during pregnancy
+Dependent on: A107
+
+A108 1-10 In which gestation week(s) did you have diarrhoea for the 1st, 2nd, etc. time?
+Dependent on: A106 A107
+
+                         1.          week → A108A
+                         1. do not know
+                         2. do not want to answer
+                         9. undefined
+                         10. irrelevant
+
+A108A 1-10 Week
+Dependent on: A108 1-10
+
+A109 1-10 How many days did your diarrhoea last?
+Dependent on: A106 A107
+
+                         1.         days → A109A
+                         2. do not know
+                         3. do not want to answer
+                         9. undefined
+                         10. irrelevant
+
+A109A 1-10 Number of days with diarrhoea in 1st, 2nd, 3rd, etc... episode
+Dependent on: A109 1-10
+A110 1-3   Did you have other diseases during pregnancy?
+The question was only asked in the dec97, jun97 and sep97 versions
+                       1. yes
+                       2. no →A113
+                       3. do not know →A113
+                       4. do not want to answer →A113
+                       9. undefined
+                       10. irrelevant
+
+A111 1-3   What diseases did you have?
+Dependent on: A110 1-3
+                       1. diseases → A111A 1-3
+                       2. do not know
+                       3. do not want to answer
+                       9. undefined
+                       10 irrelevant
+
+A111A 1-3 name of diseases, text
+Dependent on: A111 1-3
+
+A112 1-3   Was the disease diagnosed by a doctor?
+Dependent on: A110 1-3
+
+                         1. yes
+                         2. no
+                         3. do not know
+                         4. do not want to answer
+                         9. undefined
+                         10. irrelevant
+
+Now follows a series of questions about your consumption of medicine during the
+pregnancy
+
+In the consent statement you stated that you......
+ 1.         ......did not take any medicine
+ 2.         ......took (get it from the database)
+
+A113 This question number does not exist.
+
+A114.1-10   Did you take any other medicine while pregnant?
+                         1. yes →A115
+                         2. no →A117
+                         3. do not know →A117
+                         4. do not want to answer →A117
+                         9. undefined
+                         10 irrelevant
+
+A115.1-10 What was the name of the medicine?
+Dependent on: A114 1-10
+
+                         1. name of medicine → A115A
+                         2. do not know
+                         3. do not want to answer
+                         9. undefined
+                         10 irrelevant
+A115A.1-10 name of medicine, text
+Dependent on: A115 1-10.
+
+A116. 1-10 In which weeks of gestation did you take the medicine?
+Dependent on: A114.1-10 A115.1-10
+            (A116xxyy, where xx refers to the x'th medicine in 115 and yy refers to the gestation
+           week when the medicine was taken. Variable 0=no and 1=yes)
+
+                          A1160101-A1160138
+                          A1160201-A1160238
+                          A1160301-A1160338
+                          A1160401-A1160438
+                          A1160501-A1160538
+                          A1160601-A1160638
+                          A1160701-A1160738
+                          A1160801-A1160838
+                          A1160901-A1160938
+                          A1161001-A1161038
+                          A116xx39 do not know
+                          A116xx40 do not want to answer
+
+A117.1-10    Did you take any kinds of vitamins, dietary supplements, fish oils, or herbal medicine
+             while pregnant?
+                          1. yes
+                          2. no →A120
+                          3. do not know →A120
+                          4. do not want to answer →A120
+                          9. undefined
+                          10. irrelevant
+
+A118. 1-10 What was the name of the dietary supplement or herbal medicine
+Dependent on: A117.1-10
+                        1. ABCDE Multi Vitamin
+                        2. ABCDE+Mineral
+                        3. ABCDE+Selen+Chrom
+                        4. Apovit Multivitamin mineral
+                        5. Baby-me-now
+                        6. Bio Vinci
+                        7. Bio Vinci m.jern
+                        8. Bio Vinci m. jern u. betacaroten
+                        9. Bio Vinci u. betacaroten
+                        10. Bioforce
+                        11. Duroferon
+                        12. Ferroduretter
+                        13. Folinsyre
+                        14. Folsyre
+                        15. Gerimax
+                        16. Gerivital
+                        17. Gravitamin
+                        18. Hemo-Jern
+                        19. Krauterblut
+                        20. Livol ABCDE Vitaminer
+                        21. Livol Multi
+                        22. Longo Vital
+                         23. Matas Vitamin
+                         24. Matas Vitamin-mineral super
+                         25. Multi-tabs
+                         26. Multi-Vitamin
+                         27. Omnimin
+                         28. Pregna-Care
+                         29. Stærk B
+                         30. Stærk C
+                         31. Vimax ABCD
+                         32. Vimax super
+                         33. Vitamax
+                         34. Vitaminpille
+                         35. other
+                         36. do not know
+                         37. do not want to answer
+
+A118A.1-10 Other vitamin, etc., text
+Dependent on: A118
+           In the versions before August 1998 these may also be included in the list
+
+A119.1-10 In which gestation week(s) did you take the medicine?
+Dependent on: A114.1-10 A117.1-10 118.1-10
+           (A119xxyy, where xx refers to the x'th time the woman answered yes to A117, and
+           not the vitamin number in A118. Variabel 0=no; 1=yes)
+
+                         A1190101-A1190138
+                         A1190201-A1190238
+                         A1190301-A1190338
+                         A1190401-A1190438
+                         A1190501-A1190538
+                         A1190601-A1190638
+                         A1190701-A1190738
+                         A1190801-A1190838
+                         A1190901-A1190938
+                         A1191001-A1191038
+                         A119xx39 do not know
+                         A119xx40 do not want to answer
+
+NOW FOR SOME QUESTIONS ABOUT LIFESTYLE HABITS. FIRST ABOUT DIET.
+
+A120        How often do you have fish as a hot meal?
+                        1.          times a week → A120A
+                        2.          times a month → A120B
+                        3. less than once a month
+                        4. never
+                        5. do not know
+                        6. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+
+A120A      number of times/week
+Dependent on: A120
+
+A120B      number of times/month
+Dependent on: A120
+A121        How often do you have a fish sandwich?
+                        1.          times/week → A121A
+                        2.          times/month → A122A
+                        3. less than once per month
+                        4. never
+                        5. do not know
+                        6. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+A121A      number of times/week
+Dependent on: A121
+
+A121B      number of times/month
+Dependent on: A121
+
+
+A122        How often do you have fish in pasta salads or green salads?
+                        1.          times/week → A122A
+                        2.          times/month → A122B
+                        3. Less than once a month
+                        4. never
+                        5. do not know
+                        6. do not want to answer
+                        9. Undefined
+                        10 Irrelevant
+
+A122A      number of times/week
+Dependent on: A122
+
+A122B      number of times/month
+Dependent on: A122
+
+
+A123        Have you ever had periods in your life when you vomited often after a meal, when
+            you suffered from the eating disorder called bulimia?
+                         1. yes
+                         2. no →A125
+                         3. do not know →A125
+                         4. do not want to answer →A125
+                         9. undefined
+                         10. irrelevant
+
+
+A124       Have you had such a period at any time during the past 6 months?
+Dependent on: A123
+                      1. yes
+                      2. no
+                      3. do not know
+                      4. do not want to answer
+                      9. undefined
+                      10. irrelevant
+
+
+A125        Have there ever been periods in your life when you ate so little that you became
+            underweight, when you suffered from the eating disorder called anorexia?
+                          1. yes
+                          2. no →A127
+                          3. do not know →A127
+                          4. do not want to answer →A127
+                          9. undefined
+                          10. irrelevant
+
+A126       How old were you when it started?
+Dependent on: A126
+                       1.     years old
+                       2. do not know
+                       3. do not want to answer
+                       9. undefined
+                       10. irrelevant
+
+
+A126A      age in years at start of anorexia (irrelevant = 100)
+Dependent on: A126
+
+AND NOW, QUESTIONS ABOUT SMOKING
+
+A127         Did you smoke during pregnancy - please also think back to the very beginning of
+             the pregnancy?
+                         1. yes
+                         2. no →A133
+                         3. do not know →A133
+                         4. do not want to answer →A133
+                         9. undefined
+                         10. irrelevant
+
+A128       Do you smoke now?
+Dependent on: A127
+                      1. yes, every day
+                      2. yes, less than every day
+                      3. no →A130
+                      4. do not know →A130
+                      5. do not want to answer →A130
+                      9. undefined
+                      10. irrelevant
+
+A129       Did you have periods during your pregnancy where you did not smoke (for at least
+           one week)?
+Dependent on: A127 A128
+                       1. yes
+                       2. no →A131
+                       3. do not know →A131
+                       4. do not want to answer →A131
+                       9. undefined
+                       10. irrelevant
+
+A130       In which weeks of gestation did you not smoke?
+Dependent on: A127 A128 A129
+
+                          A130_1-A130_40 (see master list)
+
+A131       Which is your most preferred tobacco brand?
+Dependent on: A127 A128
+                              1. Cecil Rød, Tar 10 mg, Nicotine 0,9 mg Cabon monoxide 9 mg
+                              2. Cecil grøn,Tar 10 mg, Nicotine 0,8 mg Cabon monoxide 7 mg
+                              3. Kings hvid Tar 10 mg, Nicotine 0,7 mg Cabon monoxide 7 mg,
+                              4. Kings gul, Tar 10 mg, Nicotine 0,9 mg Cabon monoxide 10 mg
+                              5. Look grøn, Tar 10 mg, Nicotine 0,9 mg Cabon monoxide 10 mg
+                              6. Look light, Tar 8 mg, Nicotine 0,7 mg Cabon monoxide 8 mg,
+                              7. Look rød Tar 10 mg, Nicotine 0,9 mg Cabon monoxide 10 mg,
+                              8. Look Ultra Light Tar 6 mg, Nicotine 0,6 mg Cabon monoxide 6 mg,
+                              9. Lucky strike, Tar 12 mg, Nicotine 0,9 mg
+                              10. Prince Light, Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 8 mg
+                              11. Prince Light 100 Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 7 mg,
+                              12. Prince Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg,
+                              13. Prince 100, Tar 10 mg, Nicotine 0,9 mg Carbon monoxide 10 mg
+                              14. Prince grøn,Tar 8 mg, Nicotine 0,7 mg Carbon monoxide 8 mg,
+                              15. Prince ultralight, Tar 6 mg, Nicotine 0,5 mg Carbon monoxide 7 mg
+                              16. Queens, Tar 10 mg, Nicotine 0,7 mg Carbon monoxide 7 mg
+                              17. Rocky Mountain, Tar 10 mg, Nicotine 0,8 mg Carbon monoxide 10 mg
+                              18. Rulletobak
+                              19. Savoy, Tar 5 mg, Nicotine 0,5 mg Carbon monoxide 6 mg
+                              20. Savoy Light Tar 3mg, Nicotine 0,3 mg Carbon monoxide 6 mg
+                              21. Savoy Ultra Light Tar 1 mg, Nicotine 0,1 mg Carbon monoxide 2 mg
+                              22. Other → A131A
+                              23. do not know
+                              24. do not want to answer
+
+Source: Nicotine, Tar og Carbon monoxide House of Price' home page. For Lucky Strike magasin M!' home page, test
+
+A131A      other name of brand, text
+Dependent on: A131
+
+A132       How much did you smoke on average?
+Dependent on: A127 A128
+
+                              A132_1. cigarettes/week
+                              A132_2. cigarettes/day
+                              A132_3. pipes/day
+                              A132_4. cheroots/day
+                              A132_5. cigars/day
+                              A132_6. do not know
+                              A132_7. do not want to answer
+
+A132A_1       number of cigarettes/week (1-99)
+Dependent on: A132
+
+A132A_2       number of cigarettes/day (1-99)
+Dependent on: A132
+
+A132A_3       number of pipes/day (1-99)
+Dependent on: A132
+
+A132A_4       number of cheroots/day (1-99)
+Dependent on: A132
+
+A132A_5       number of cigars/day (1-99)
+Dependent on: A132
+A133            Did you use nicotine gum, patches or inhalator while pregnant?
+                        1. yes
+                        2. no →A136
+                        3. do not know →A136
+                        4. do not want to answer →A136
+                        9. Undefined
+                        10 Irrelevant
+
+A134          What methods did you use while pregnant?
+Dependent on: A133
+
+                        A134_1. nicotine patches
+                        A134_2. nicotine gum
+                        A134_3. nicotine inhalator
+                        A143_4. do not know
+                        A135_5. do not want to answer
+
+A135.1-3      In which gestation weeks did you use (answer in 134)?
+Dependent on: A133 A134
+
+                Label format A135xxyy, where xx refers to x'te time answer in 134 og yy
+                refers to the gestation week when the method was applied. Variabel 0=no;
+                1=yes.
+
+                        A1350101-A1350138
+                        A1350201-A1350238
+                        A1350301-A1350338
+                        A135xx39 do not know
+                        A135xx40 do not want to answer
+And now for different kinds of beverage
+A136       How many cups of coffee do you drink per day?
+                                        1 mug = 2 cups, 1 pot = 8 cups = 1l.
+
+                        1.          cups → A136A
+                        2. < 1 a day →A137
+                        3. never → A137
+                        4. do not know →A137
+                        5. do not want to answer → A137
+                        9. undefined
+                        10 Irrelevant
+
+A136A      number of cups of coffee/day
+Dependent on: A136
+
+A137        How many cups of tea do you drink per day?
+                                         1 mug = 2 cups, 1 pot = 8 cups = 1l.
+                        1.          cups → A137A
+                        2. < 1 cup/day →A138
+                        3. never → A138
+                        4. do not know → A138
+                        5. do not want to answer → A138
+                        9. undefined
+                        10 Irrelevant
+
+
+A137A       number of cups of tea/day
+ Dependent on: A137
+
+A138        How many normal beers do you drink per week?
+                               1 light beer = ½ normal, 1 strong beer = 2 normal beers
+                           1.          Beers → A138A
+                           2. < 1 beer/week → A139
+                           3. never →A139
+                           4. do not know →A139
+                           5. do not want to answer → A139
+                           9. undefined
+                           10 Irrelevant
+
+ A138A      Number of beers per week during pregnancy
+ Dependent on: A138
+
+A139         How many normal beers did you drink per week before you got pregnant?
+                                 1 light beer = ½ normal, 1 strong beer = 2 normal beers
+                        1.           beers → A139A
+                        2. < 1 beer/week → A140
+                        3. never → A140
+                        4. do not know →A140
+                        5. do not want to answer → A140
+                        9. undefined
+                        10 Irrelevant
+
+ A139A      Number of beers/week before pregnancy
+ Dependent on: A139
+
+ A140         How many glasses of wine do you drink per week now?
+                         1.         glasses of wine → A140A
+                           2. < 1 glass of wine /week → A141
+                           3. never → A141
+                           4. do not know → A141
+                           5. do not want to answer → A141
+                           9. undefined
+                           10 Irrelevant
+
+ A140A      Number of glasses of wine/week during pregnancy
+ Dependent on: A139
+
+ A141         How many glasses of wine did you drink per week before you got pregnant?
+                           1. glasses of wine → A141A
+                           2. < 1 glass/week → A142
+                           3. never → A142
+                           4. do not know → A142
+                           5. do not want to answer → A142
+                           9. undefined
+                           10 Irrelevant
+
+ A141A      Number of glasses of wine/week before pregnancy
+ Dependent on: A139
+
+ If "never' in A140 and A141 please skip A142
+ A142           What type of wine do you drink the most, red wine or white wine?
+ Dependent on: A140 A141
+                         1. red wine
+                         2. white wine
+                         3. 50-50
+                         4. do not know
+                         5. do not want to answer
+                         9. undefined
+                         10. irrelevant
+
+A143        How many glasses of spirits do you drink per week?
+                       1.          glasses of spirits → A143A
+                         2. < 1 per week → A144
+                         3. Never → A144
+                         4. do not know → A144
+                         5. do not want to answer → A144
+
+A143A      number of glasses of spirits/week now
+Dependent on: A143
+
+A144        How many glasses of spirits did you drink per week before you got pregnant?
+                       1.          glasses of spirits → A144A
+                         2. < 1 per week
+                         3. never
+                         4. do not know
+                         5. do not want to answer
+
+A144A      Number of glasses of spirits/week before
+Dependent on: A140 A141
+
+A145        If you think about the entire period of pregnancy - also the very beginning - how
+            many times did you then have 5 drinks or more in one night/event?
+                          1. no times →A147
+                          2.         times → A145A
+                          3. do not know →A147
+                          4. do not want to answer →A147
+                          9. Undefined
+                          10 irrelevant
+
+A145A      Number of times
+Dependent on: A145
+
+A146.1-30 What week(s) of gestation 1st, 2nd, 3rd etc. time?
+Dependent on: A145
+                     A1460101-A1460138
+                     A1460201-A1460238
+                     .
+                     .
+                     .
+                     A1463001-A1463038
+                     A146xx39 do not know
+                     A146xx40 do not want to answer
+
+A147        How much cola do you drink per week?
+                         1. never have coca cola
+                         2. less than 1 litre per week
+                         3. one litre or more per week
+                         4. do not know
+                         5. do not want to answer
+                         9. undefined
+                         10 irrelevant
+
+
+Now comes a number of questions about some aspects of your everyday life
+
+A148        Do you get any kind of excersise during pregnancy?
+                        1. yes
+                        2. no →A152
+                        3. do not know →A152
+                        4. do not want to answer →A152
+                        9. undefined
+                        10 irrelevant
+
+A149       What kind of exercise?
+Dependent on: A148
+                        A149_1 special gymnastics/aerobics for pregnant women
+                        A149_2 aerobics/gymnastics
+                        A149_3 dancing
+                        A149_4 cycling
+                        A149_5 fast walk
+                        A149_6 jogging, orienteering
+                        A149_7 ball games
+                        A149_8 swimming
+                        A149_9 fitness, health centres
+                        A149_10 badminton
+                        A149_11 tennis
+                        A149_12 horse back riding
+                        A149_13 other → A149A
+                        A149_14 do not know
+                        A149_15 do not want to answer
+
+A149A      other kinds of exercise, text
+Dependent on: A149
+
+A150.1-13 How many times a week do you (answer in A149)?
+Dependent on: A148 A149
+                      1.    times → A150A
+                      2. do not know
+                      3. do not want to answer
+                      9. undefined
+                      10 irrelevant
+
+A150A.1-13 number of times/week
+Dependent on: A150.1-13
+
+A151.1-13   How many minutes at a time do (answer in 149)?
+                      1.    Minutes → A151A
+                      2. do not know
+                         3. do not want to answer
+                         9. undefined
+                         10 irrelevant
+A151A.1-13 total minutes at a time
+Dependent on: A151.1-13
+
+A152        On average, how many hours per day do you watch televison or videos?
+                        1. have no television set
+                        2. less than 1 hours
+                        3. 1 hour
+                        4. 1½hour
+                        5. 2 hours
+                        6. 2½ hours
+                        7. 3 hours
+                        8. 3½ hours
+                        9. 4 hours
+                        10. 4½ hours
+                        11. 5 hours or more
+                        12. do not know
+                        13. do not want to answer
+                        99. undefined
+                        100 irrelevant
+
+A153        How often are you in contact with family members, by telephone or in person?
+                        1. every day
+                        2. several times/week
+                        3. weekly
+                        4. 1 to 3 times/month
+                        5. more seldom
+                        6. never
+                        7. do not know
+                        8. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+A154        Do you have anyone besides your partner that you can talk personal matters with?
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+A155        Do you have anyone besides your partner that can help with practical matters, if
+            needed?
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+A156        Do you have anyone besides your partner that can help you out financially if needed?
+                        1. yes
+                         2. no
+                         3. do not know
+                         4. do not want to answer
+                         9. undefined
+                         10 irrelevant
+
+The following questions concern your educational background and your work situation
+
+A157        Are you attending school or vocational training?
+                         1. yes
+                         2. no →A159
+                         3. do not know →A159
+                         4. do not want to answer →A159
+                         9. undefined
+                         10 irrelevant
+
+A158       What education are you attending?
+Dependent on: A157
+                       1. basic school , to 9th grade
+                       2. HTX (higher techical exam) or HHX (higher commercial exam)
+                       3. high school
+                       4. semi-skilled worker training
+                       5. basic commercial vocational training
+                       6. professional training
+                       7. other vocational training
+                       8. short further education, less than 3 years
+                       9. medium further education, more than 3-4 years
+                       10.long further higher education more than 4 years
+                       11.other education → A158A
+                       12.do not know
+                       13.do not want to answer
+                       99. Undefined
+                       100. irrelevant
+
+A158A      other education, text
+Dependent on: A158
+
+A159        What is your present employment situation? Do you have a job?
+                         1. yes, one job
+                         2. yes, two jobs
+                         3. yes, more than two jobs
+                         4. no →A161
+                         5. do not know →A161
+                         6. do not want to answer →A161
+                         9. undefined
+                         10 irrelevant
+
+A160       Do you go to work now?
+Dependent on: A159
+                        1. yes →A163
+                        2. no, on sick leave →A162
+                        3. no, on absense leave due to the nature of the work →A162
+                        4. no, maternity leave →A162
+                            5. no, edcation leave →A162
+                            6. no,other →A160A
+                            7. do not know→A162
+                            8. do not want to answer →A162
+                            9. undefined
+                            10 irrelevant
+
+ A160A        other, text
+ Dependent on: A160
+
+ A161       How are you being supported financially at the moment?
+ Dependent on: A159 A160
+                        1. leave, maternity or education
+                        2. unemployment benefits
+                        3. rehabilitation
+                        4. social benefits
+                        5. pension
+                        6. supported by spouse or family
+                        7. study grant
+                        8. sickness benefit
+                        9. other kinds of support
+                        10. do not know
+                        11. do not want to answer
+                        99. Undefined
+                        100. Irrelevant
+
+
+ A162       How long has it been since your last employment?
+ Dependent on: A159 A160
+                        1. never been employed → A183
+                        2. less than a month →A163
+                        3. 1-3 months →A163
+                        4. 4-6 months →A166
+                        5. 7-12 months →A166
+                        6. 13-24 months →A166
+                        7. 2-5 years → A166
+                        8. more than 5 years → A166
+                        9. do not know
+                        10. do not want to answer
+                        99. Undefined
+                        100. Irrelevant
+
+If two or more jobs in 159: Please repeat the questions 163-167A and the marking picture 1 to describe all
+jobs.
+
+ A163.1-2   What is the exact title of your job no. xx?
+ Dependent on: A159 A160 A162
+                         1. Chemist's assistant
+                         2. Bank clerk
+                         3. Book keeper
+                         4. Printer
+                         5. Bus driver
+                         6. Shop assistant
+                         7. Shop manager
+                       8. Child-minder
+                       9. Buisness manager
+                       10. EDP assistant
+                       11. Occupational therapist
+                       12. Specialist teacher
+                       13. Teacher common school
+                       14. Hairdresser
+                       15. Physiotherapist
+                       16. Gardener's asssistant
+                       17. Upper secondary school teacher
+                       18. Domestic help
+                       19. Dental nurse
+                       20. Clerk
+                       21. Office head
+                       22. Office worker
+                       23. Kitchen assistant
+                       24. Laboratory technician
+                       25. Warehouse worker
+                       26. Skilled farm worker
+                       27. Doctor
+                       28. Painter
+                       29. Care assistant
+                       30. Post office employee
+                       31. Postman
+                       32. Educationalist
+                       33. Educationalist assistant
+                       34. Dry cleaner
+                       35. Accountant
+                       36. Sales assistant
+                       37. Secretary
+                       38. Waitress
+                       39. Butcher
+                       40. Slaughterhouse worker
+                       41. Social worker
+                       42. Auxiliary nurse
+                       43. Nurse
+                       44. Taxi driver                       In the versions from
+                       45. other: job code: → A163A/A163AX   jun97, sep97 and dec97,
+                       46. do not know                       only 3 answer
+                       47. do not want to answer             categories were used
+                       99. Undefined                         (45-47)
+                       100. Irrelevant
+                       101. Not asked
+
+
+A163A.1-2  (only the versions from may98 and nov98)
+           type 4-figured job code
+Dependent on: A163
+
+A163AX.1-2 (only the versions from jun97, sep97 and dec97)
+           Job description (text)
+Dependent on: A163
+A164.1-2   What kind of institution or business do you work for in your job no. xx?
+Dependent on: A159, A160 A162
+                          1. Chemist, perfumery, druggist
+                          2. Auto repair
+                          3. Data processing company
+                          4. Retail trade (-5 & 6)
+                          5. Retail trade (clothes and shoes)
+                          6. Retail trade (furniture)
+                          7. Lower secondary school
+                          8. Defence, police and justice
+                          9. Freight
+                          10. Administration (tax)
+                          11. Freight, ports (NOT TRANSPORTATION)
+                          12. Upper secondary school, vocational training
+                          13. Trade cars and motorbikes
+                          14. Hospitals
+                          15. Hotels
+                          16. Railway and coaches
+                          17. Air freight
+                          18. Doctors, dentists, veterinary
+                          19. Public administration, counties and state
+                          20. Financial institutions
+                          21. Mail services
+                          22. Mortage credit institutions
+                          23. Shipping and freight companies
+                          24. Shipping, passenger
+                          25. Advertising and PR and marketing
+                          26. Cleaning companies
+                          27. Restaurants
+                          28. Accountancy and book keeping
+                          29. Counsulting engineers,architects, etc
+                          30. Gas stations
+                          31. Sociale institutions, kids and youth
+                          32. Sociale institutions, adults
+                          33. Specialized shops, food
+                          34. Supermarkets, etc
+                          35. Taxi and tourist haulage contractors
+                          36. Tele communication
+                          37. Department stores
+                          38. Institutions for higher education
+                          39. Institutions for adult education and training.
+                          40. other, text → A164A
+                          41. do not know                        In the versions from jun97,
+                          42. do not want to answer              sep97 and dec97, only 3 answer
+                          99. Undefined                          categories were used (40-42)
+                          100. Irrelevant
+                          101. Not asked
+
+A164A.1-2 text (other trade)
+Dependent on: A164
+
+A165.1-2      How many hours per week do you work as a (answer in 163) →AM000
+Dependent on: A159 A162 A163
+                     1. answer exists → A165A
+                          2. do not know
+                          3. do not want to answer
+                          9. undefined
+                          10 Irrelevant
+
+A165A.1-2 Total hours per week
+Dependent on: A165
+
+A166.1-2    What is the exact title of your job no. xx?
+Dependent on: A159 A160 A162
+                       1. Chemist's assistant
+                       2. Bank clerk
+                       3. Book keeper
+                       4. Printer
+                       5. Bus driver
+                       6. Shop assistant
+                       7. Shop manager
+                       8. Child-minder
+                       9. Buisness manager
+                       10. EDP assistant
+                       11. Occupational therapist
+                       12. Specialist teacher
+                       13. Teacher common school
+                       14. Hairdresser
+                       15. Physiotherapist
+                       16. Gardener's assistant
+                       17. Upper secondary school teacher
+                       18. Domestic help
+                       19. Dental nurse
+                       20. Clerk
+                       21. Office head
+                       22. Office worker
+                       23. Kitchen assistant
+                       24. Laboratory technician
+                       25. Warehouse worker
+                       26. Skilled farm worker
+                       27. Doctor
+                       28. Painter
+                       29. Care assistant
+                       30. Post office employee
+                       31. Postman
+                       32. Educationalist
+                       33. Educationalist assistant
+                       34. Dry cleaner
+                       35. Accountant
+                       36. Sales assistant
+                       37. Secretary
+                       38. Waitress
+                       39. Butcher
+                       40. Slaughterhouse worker
+                       41. Social worker
+                       42. Auxiliary nurse
+                       43. Nurse
+                       44. Taxi driver
+                            45. other: job code: → A166A/A166AX           In the versions from
+                            46. do not know                               jun97, sep97 and dec97,
+                            47. do not want to answer                     only 3 answer categories
+                            99. undefined                                 were used (45-47)
+                            100 irrelevant
+                            101 not asked
+
+A166A.1-2  (only in the may98 and nov98 versions)
+           type 4-figured job code
+Dependent on: A166
+
+A166AX.1-2 (only in the versions from jun97, sep97 and dec97)
+            Job description (text)
+Dependent on: A166
+
+A167.1-2   What kind of institution or business do you work for in your job no. xx?
+Dependent on: All from 159 to 166
+                            1. Chemist, perfumery,
+                                 druggist
+                            2. Auto repair
+                            3. Data processing company
+                            4. Retail trade (-5 & 6)
+                            5. Retail trade (clothes and
+                                 shoes)
+                            6. Retail trade (furniture)
+                            7. Lower secondary school
+                            8. Defence, police and justice
+                            9. Freight
+                            10. Administration (tax)
+                            11. Freight, ports (NOT
+                                 TRANSPORTATION)
+                            12. Upper secondary school,
+                                 vocational training
+                            13. Trade cars and motorbikes
+                            14. Hospitals
+                            15. Hotels
+                            16. Railway and coaches
+                            17. Air freight
+                            18. Doctors, dentists,
+                                 veterinary
+                            19. Public administration,
+                                 counties and state
+                            20. Financial institutions
+                            21. Mail services
+                            22. Mortage credit institution
+                            23. Shipping and freight
+                                 companies
+                            24. Shipping, passenger
+                            25. Advertising and PR and
+                                 marketing
+                            26. Cleaning companies
+                            27. Restaurants
+                            28. Accountancy and book
+                                 keeping
+                                  29. Counsulting
+                                      engineers,architects, etc
+                                  30. Gas stations
+                                  31. Sociale institutions, kids
+                                      and youth
+                                  32. Sociale institutions, adults
+                                  33. Specialized shops, food
+                                  34. Supermarkets, etc
+                                  35. Taxi and tourist haulage
+                                      contractors
+                                  36. Tele communication
+                                  37. Department stores
+                                  38. Institutions for higher
+                                      education
+                                  39. Institutions for adult
+                                      education and training.        In the versions from
+                                  40. other, text → A167A            jun97, sep97 and dec97,
+                                  41. do not know                    only 3 answer categories
+                                  42. do not want to answer          were used (40-42)
+                                  99. undefined
+                                  100 irrelevant
+                                  101 Not asked
+
+A167A.1-2    text (other trade)
+Dependent on: A167
+
+
+AM000      During pregnancy or three months before the woman has worked with:
+Dependent on: A159 A160 A162 A163 A166
+                       AM000_1 painting - special question
+                       AM000_2 chemical dry cleaning - special question
+                       AM000_3 gardening, fruit farming, forest nursery - special question.
+                       AM000_4 farming - special question
+                       AM000_5 animals, slaughtering (not farming) - special question
+                       AM000_6 in a hospital - special question
+                       AM000_7 as a laboratory technician - special question
+                       AM000_8 child care institution / child-minder - special question
+                       AM000_9 graphic industry - special question
+                       AM000_10 none of the above
+                       AM000_11 do not know
+                       AM000_12 do not want to answer
+
+Code book for sepical questions is separate!
+
+After special questions, if any, go to question A183
+
+A168       In your job, do you sit, stand or walk most of the time, or can you change as you like?
+Dependent on: All from A159 to A167
+                         1. primarily standing
+                         2. primarily walking
+                         3. primarily standing and walking
+                         4. primarily sitting
+                         5. I can change as I wish
+                          6. Other → A168A
+                          7. do not know
+                          8. do not want to answer
+                          9. undefined
+                          10 irrelevant
+
+A168A       other, text
+Dependent on: A168
+
+A169       What are your normal working hours, day, evening or night, or do you have shifting
+           working hours?
+Dependent on: All from A159 to A168
+                       1. day → A171
+                       2. evening →A171
+                       3. night
+                       4. shifting, not night →A171
+                       5. shifting, incl. night
+                       6. do not know →A171
+                       7. do not want to answer →A171
+                       9. undefined
+                       10 Irrelevant
+
+A170       How often do you work at night?
+Dependent on: All from A159 to A169
+                       1. less than once per month
+                       2. times per month → A170A
+                       3. do not know
+                       4. do not want to answer
+                       9. Undefined
+                       10 Irrelevant
+
+A170A      number of times with night work per month
+Dependent on: A170
+
+Now follows a series of questions about stress in relation to your job. The answers can be:
+often, from time to time, seldom.
+
+A171       Do you find your job interesting and stimulating?
+Dependent on: All from A159 to A170
+                        1. often
+                        2. from time to time
+                        3. seldomly
+                        4. do not know
+                        5. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+A172       Do you feel overworked in your job?
+Dependent on: All from A159 to A171
+                        1. often
+                        2. from time to time
+                        3. seldomly
+                        4. do not know
+                        5. do not want to answer
+                         9. undefined
+                         10 Irrelevant
+
+A173       Do you have any influence on your working conditions?
+Dependent on: All from A159 to A172
+                       1. often
+                       2. from time to time
+                       3. seldomly
+                       4. do not know
+                       5. do not want to answer
+                       9. undefined
+                       10 irrelevant
+
+A174       Do you get any help from colleagues when you have troubles in the work?
+Dependent on: All from A159 to A173
+                       1. often
+                       2. from time to time
+                       3. seldomly
+                       4. do not know
+                       5. do not want to answer
+                       9. undefined
+                       10 irrelevant
+
+A175       Is your job physically demanding?
+Dependent on: All from A159 to A174
+                         1. often
+                         2. from time to time
+                         3. seldomly
+                         4. do not know
+                         5. do not want to answer
+                         9. undefined
+                         10 Irrelevant
+
+A176       Is your job psychologically demanding
+Dependent on: All from A159 to A175
+                         1. often
+                         2. from time to time
+                         3. seldomly
+                         4. do not know
+                         5. do not want to answer
+                         9. undefined
+                         10 irrelevant
+
+A177       Do you work with a computer screen?
+Dependent on: All from A159 to A176
+                       1. yes
+                       2. no →A179
+                       3. do not know →A179
+                       4. do not want to answer →A179
+                       9. undefined
+                       10 irrelevant
+
+A178       How many hours per week do you work with a computer screen?
+Dependent on: All from A159 to A177
+                          1. Timer → A178A
+                          2. do not know
+                          3. do not want to answer
+                          9. undefined
+                          10 irrelevant
+
+A178A      total hours screen work/week
+Dependent on: A178
+
+A179       In your job, do you daily lift more than 20 kilos at a time?
+Dependent on: All from A159 to A178
+                         1. yes
+                         2. no →A181
+                         3. do not know →A181
+                         4. do not want to answer →A181
+                         9. undefined
+                         10 irrelevant
+
+A180       How many times a day do you lift more than 20 kilos?
+Dependent on: All from A159 to A179
+
+                          1. less than once a day
+                          2. times a day → A180A
+                          3. do not know
+                          4. do not want to answer
+                          9. undefined
+                          10 irrelevant
+
+A180A      number of times with lift over 20 kilos/day
+Dependent on: A180
+
+A181       Do you have daily lifts of between 11 and 20 kilos?
+Dependent on: All from A159 to A180
+
+                          1. yes
+                          2. no →A183
+                          3. do not know →A183
+                          4. do not want to answer →A183
+                          9. undefined
+                          10 irrelevant
+
+A182       How many times a day do you lift between 11 and 20 kilos?
+Dependent on: All from A159 to A181
+
+                          1. less than once a day
+                          2. times a day → A182A
+                          3. do not know
+                          4. do not want to answer
+                          9. undefined
+                          10 irrelevant
+
+A182A      number lifts 11-20 kilos/day
+Dependent on: A182
+A183        Do you have daily lifts of more than 20 kilos in your spare time?
+                        1. yes
+                        2. no
+                        3. do not know
+                        4. do not want to answer
+                        9. undefined
+                        10 irrelevant
+
+And now for something completely different
+
+A184        Do you have a spouse or partner?
+                        1. yes
+                        2. no →A197
+                        3. do not know →A197
+                        4. do not want to answer →A197
+                        9. undefined
+                        10 irrelevant
+
+Now for some questions about your spouse or partner
+
+A185       How is his present work situation.? Does he have a job?
+Dependent on: A184
+                        1. yes
+                        2. no → A187
+                        3. do not know→A187
+                        4. do not want to answer →A187
+                        9. undefined
+                        10 irrelevant
+
+A186       Does he attend his job at the moment?
+Dependent on: A184 185
+
+                          1. yes →A189
+                          2. no, absent due to illness →A188
+                          3. no, leave to take care of child →A188
+                          4. no, education leave →A188
+                          5. no, other →A186A
+                          6. do not know→A188
+                          7. do not want to answer →A188
+                          9. undefined
+                          10 irrelevant
+
+A186A       other, text
+Dependent on: A186
+
+A187       How is he supported at the moment?
+Dependent on: A184 A185 A186
+                       1. unemployment benefit
+                       2. rehabilitation
+                       3. social benefit
+                       4. pension
+                       5. supported by wife
+                       6. grants, eduaction or job training
+                       7. leave education or child caring
+                       8. sick benefit
+                       9. do not know
+                       10. do not want to answer
+                       99. undefined
+                       100irrelevant
+
+A188       When was his last employment?
+Dependent on: A184
+                      1. has never been employed →A195
+                      2. less than 1 month ago →A192
+                      3. 1-3 months ago →A192
+                      4. 4-6 months ago →A192
+                      5. 7-12 months ago →A192
+                      6. 13-24 months ago →A192
+                      7. 2-5 years ago →A192
+                      8. more than 5 years ago →A192
+                      9. do not know →A192
+                      10. do not want to answer →A192
+                      99. undefined
+                      100irrelevant
+
+A189       What was his exact job title?
+Dependent on: A184 A188
+                       1. Auto mechanic
+                       2. Baker
+                       3. Bank clerk
+                       4. Bookkeeper
+                       5. Bus driver
+                       6. Shop assistant
+                       7. Shop manager
+                       8. Contruction engineer
+                       9. Business manager
+                       10. EDP assistant
+                       11. Electrician
+                       12. Vocational training teacher
+                       13. Lower secondary school teacher
+                       14. Upper secondary school teacher
+                       15. Farmer
+                       16. Reporter
+                       17. Locksmith
+                       18. Cook
+                       19. Enlisted private
+                       20. Office assistant
+                       21. Office head
+                       22. Office clerk
+                       23. Laboratory technician
+                       24. Warehouse worker
+                       25. Farmer's assistant
+                       26. Truck driver
+                       27. Doctor
+                       28. Painter
+                       29. Mechanic
+                       30. Mechanical engineer
+                       31. Bricklayer
+                       32. Policeman
+                       33. Post office worker
+                          34.   Postman
+                          35.   Educationalist
+                          36.   Educationalist's assistant
+                          37.   Shipper
+                          38. Representative
+                          39. Accountant
+                          40. Sales assistant
+                          41. Butcher
+                          42. Slaughter house worker
+                          43. Smith
+                          44. Social worker
+                          45. Taxi driver
+                          46. Fork lift driver
+                          47. Carpenter                                 In the versions from jun97,
+                          48. other job code → A189A/A189AX             sep97 and dec97 only 3
+                          49. do not know                               answer categories were
+                          50. do not want to answer                     used (48-50)
+                          99. undefined
+                          100. irrelevant
+                          101. not asked
+
+A189A       (only in the versions from may98 and nov98)
+            other 4 -figured job code
+Dependent on: A189
+
+A189AX      (only in the versions from jun97, sep97 and dec97)
+            Job descriptions (text)
+Dependent on: A189
+
+
+A190.1-2   What kind of institution or business dose he work for in his job no. xx?
+Dependent on: A184 A188
+                            1. Chemist, perfumery,
+                                 druggist
+                            2. Auto repair
+                            3. Data processing company
+                            4. Retail trade (-5 & 6)
+                            5. Retail trade (clothes and
+                                 shoes)
+                            6. Retail trade (furniture)
+                            7. Lower secondary school
+                            8. Defence, police and justice
+                            9. Freight
+                            10. Administration (tax)
+                            11. Freight, ports (NOT
+                                 TRANSPORTATION)
+                            12. Upper secondary school,
+                                 vocational training
+                            13. Trade cars and motorbikes
+                            14. Hospitals
+                            15. Hotels
+                            16. Railway and coaches
+                            17. Air freight
+                            18. Doctors, dentists,
+                                 veterinary
+                            19. Public administration,
+                                 counties and state
+                            20. Financial institutions
+                            21. Mail services
+                            22. Mortage credit institutions
+                            23. Shipping and freight
+                                companies
+                            24. Shipping, passenger
+                            25. Advertising and PR and
+                                marketing
+                            26. Cleaning companies
+                            27. Restaurants
+                            28. Accountancy and book
+                                keeping
+                            29. Counsulting
+                                engineers,architects, etc
+                            30. Gas stations
+                            31. Sociale institutions, kids
+                                and youth
+                            32. Sociale institutions, adults
+                            33. Specialized shops, food
+                            34. Supermarkets, etc
+                            35. Taxi and tourist haulage
+                                contractors
+                            36. Tele communication
+                            37. Department stores
+                            38. Institutions for higher
+                                education
+                            39. Institutions for adult
+                                education and training.
+                            40. Other, text → A190A            In the versions from
+                            41. Do not know                    jun97, sep97 and
+                            42. Do not want to answer          dec97 only 3 answer
+                            99. Undefined                      categories were used
+                            100. Irrelevant                    (40-42)
+                            101. Not asked
+
+A190A      text (other trade)
+Dependent on: A190
+
+A191        This question number does not exist!
+
+A192       What was his exact job title?
+Dependent on: A184 A188 A190
+                       1. Auto mechanic
+                       2. Baker
+                       3. Bank clerk
+                       4. Bookkeeper
+                       5. Bus driver
+                       6. Shop assistant
+                       7. Shop manager
+                       8. Contruction engineer
+                       9. Business manager
+                       10. EDP assistant
+                       11. Electrician
+                       12. Vocational training teacher
+                       13. Lower secondary school teacher
+                       14. Upper secondary school teacher
+                       15. Farmer
+                       16. Reporter
+                          17. Locksmith
+                          18. Cook
+                          19. Enlisted private
+                          20. Office assistant
+                          21. Office head
+                          22. Office clerk
+                          23. Laboratory technician
+                          24. Warehouse worker
+                          25. Farmer's assistant
+                          26. Truck driver
+                          27. Doctor
+                          28. Painter
+                          29. Mechanic
+                          30. Mechanical engineer
+                          31. Bricklayer
+                          32. Policeman
+                          33. Post office worker
+                          34. Postman
+                          35. Educationalist
+                          36. Educationalist's assistant
+                          37. Shipper
+                          38. Representative
+                          39. Accountant
+                          40. Sales assistant
+                          41. Butcher
+                          42. Slaughter house worker
+                          43. Smith
+                          44. Social worker
+                          45. Taxi driver
+                          46. Fork lift driver
+                          47. Carpenter
+                          48. other job code → A192A/A192AX              In the versions from
+                          49. do not know                                jun97, sep97 and dec97
+                          50. do not want to answer                      only 3 answer categories
+                          99. undefined                                  were used (48-50)
+                          100. irrelevant
+                          101. not asked
+
+A192A       (only in the versions from may98 and nov98)
+            other 4 -figured job code
+Dependent on: A192
+
+A192AX      (only in the versions from jun97, sep97 and dec97)
+            Job description (text)
+Dependent on: A192
+
+
+A193.1-2   What kind of institution or business did he work for in his job no. xx?
+Dependent on: A184 A188 A190
+                            1. Chemist, perfumery,
+                                 druggist
+                            2. Auto repair
+                            3. Data processing company
+                            4. Retail trade (-5 & 6)
+                            5. Retail trade (clothes and
+                                 shoes)
+                            6. Retail trade (furniture)
+                                 7. Lower secondary school
+                                 8. Defence, police and justice
+                                 9. Freight
+                                 10. Administration (tax)
+                                 11. Freight, ports (NOT
+                                     TRANSPORTATION)
+                                 12. Upper secondary school,
+                                     vocational training
+                                 13. Trade cars and motorbikes
+                                 14. Hospitals
+                                 15. Hotels
+                                 16. Railway and coaches
+                                 17. Air freight
+                                 18. Doctors, dentists,
+                                     veterinary
+                                 19. Public administration,
+                                     counties and state
+                                 20. Financial institutions
+                                 21. Mail services
+                                 22. Mortage credit institutions
+                                 23. Shipping and freight
+                                     companies
+                                 24. Shipping, passenger
+                                 25. Advertising and PR and
+                                     marketing
+                                 26. Cleaning companies
+                                 27. Restaurants
+                                 28. Accountancy and book
+                                     keeping
+                                 29. Counsulting
+                                     engineers,architects, etc
+                                 30. Gas stations
+                                 31. Sociale institutions, kids
+                                     and youth
+                                 32. Sociale institutions, adults
+                                 33. Specialized shops, food
+                                 34. Supermarkets, etc
+                                 35. Taxi and tourist haulage
+                                     contractors
+                                 36. Tele communication
+                                 37. Department stores
+                                 38. Institutions for higher
+                                     education
+                                 39. Institutions for adult
+                                     education and training.
+                                 40. Other, text → A193A            In the versions from
+                                 41. Do not know                    jun97, sep97 and
+                                 42. Do not want to answer          dec97 only 3 answer
+                                 99. Undefined                      categories were used
+                                 100. Irrelevant                    (40-42)
+                                 101. Not asked
+
+
+A193A.1-2   text (other trade)
+
+Dependent on: A193
+A194         This question number does not exist!
+
+A195       Does your spouse or partner smoke?
+Dependent on: A184
+                       1. yes, every day
+                       2. yes, less than ever day
+                       3. no
+                       4. do not know
+                       5. do not want to answer
+                       9. undefined
+                       10 irrelevant
+
+A196       How tall is your spouse or partner?
+Dependent on: A184
+                         1.    cm → A196A
+                         2. less than 160 cm
+                         3. 160-169 cm
+                         4. 170-179 cm
+                         5. 180-189 cm
+                         6. 190 cm and more
+                         7. do not know
+                         8. do not want to answer
+                         9. undefined
+                         10 irrelevant
+
+A196A        Height cm
+Dependent on: A196
+
+Finally, some questions about your housing
+
+A197         How many adults live in your household?
+                       1.            Adults → A197A
+                       2. do not know
+                       3. do not want to answer
+                       9. undefined
+                       10 irrelevant
+
+A197A      Number of adults
+Dependent on: A197
+
+A198         How many children live in your household?
+                        1. no children →A201
+                        2.           children → A198A
+                        3. do not know →A201
+                        4. do not want to answer →A201
+                        9. Undefined
+                        10 Irrelevant
+
+A198A      Number of children in household
+Dependent on: A198
+
+A199.1-30. Sex of child no1, no 2, no....?
+Dependent on: A198 A198A
+                          1. boy
+                          2. girl
+                          3. do not know
+                          4. do not want to answer
+                          9. undefined
+                          10 irrelevant
+
+A199A.1-30 How old is child no1, no 2, no....?
+Dependent on: A198 A198A
+                        1.     years old → A199B
+                        2. do not know
+                        3. do not want to answer
+                        9. Undefined
+                        10 Irrelevant
+
+A199B.1-30 age kid no...: years old
+Dependent on: A199A
+
+A200.1-30 Day care of children under the age of 12.
+Dependent on: A198 A98A A199B
+
+            (A200xxyy, where xx refers to x answer in 198 (under the age of 12) and yy
+            refers to the answer category in A200. Variabel 0=no; 1=yes)
+
+                          A2000101-A2003001 day care
+                          A2000102-A2003002 day nursery
+                          A2000103-A2003003 kindergarden
+                          A2000104-A2003004 institutions kids from 0-6
+                          A2000105-A2003005 school/youth club
+                          A2000106-A2003006 at home
+                          A2000107-A2003007 other → A200A
+                          A2000108-A2003008 do not know
+                          A2000109-A2003009 do not want to answer
+
+A200A.1-30 Other, txt
+Dependent on: A200A
+
+A201        Do you live in a farm with farm animals?
+                          1. yes
+                          2. no →A203
+                          3. do not know →A203
+                          4. do not want to answer →A203
+                          9. undefined
+                          10 irrelevant
+
+A202       What animals?
+Dependent on: A201
+                      A202_1 horse
+                      A202_2 cow
+                      A202_3 pig
+                      A202_4 poultry
+                      A202_5 deer
+                      A202_6 sheep
+                      A202_7 other → A202A
+                      A202_8 do not know
+                      A202_9 do not want to answer
+
+A202A.      Other, text
+Dependent on: A202
+
+A203        Do you have any pets?
+                         A203_1 fish
+                         A203_2 bird
+                         A203_3 pig
+                         A203_4 hamster
+                         A203_5 dog
+                         A203_6 rabbit
+                         A203_7 cat
+                         A203_8 reptiles
+                         A203_9 guinea pig
+                         A203_10 mouse
+                         A203_11 turtle
+                         A203_12 other
+                         A203_13 no
+                         A203_14 do not know
+                         A203_15 do not want to answer
+
+A203A      Other pet, text
+Dependent on: A203
+
+A204        Housing status ? Do you live for rent, in a co-operative or do you own your house?
+                         1. for rent
+                         2. co-opeartive
+                         3. owner
+                         4. living with parents
+                         5. homeless (for isntance, live temporaily with at freinds')
+                         6. do not know
+                         7. do not want to answer
+                         9. undefined
+                         10 irrelevant
+
+A205        How many square meters is you house?
+                       1.    m2 → A205A
+                       2. do not know
+                       3. do not want to answer
+                       9. undefined
+                       10 irrelevant
+
+A205A       Total m2
+Dependent on: A205A
+
+A206        How many rooms are there in your house? Do not count kitchen, bath and toilet.
+                       1. Rooms → A206A
+                       2. do not know
+                       3. do not want to answer
+                       9. Undefined
+                       10 Irrelevant
+
+A206A      number of room is house
+Dependent on: A206A
+
+Well, thank you very much.
+The interview is completed.
+In a couple of months you will receive a questionnaire about diet. Participation is of course
+voluntary. The next telephone interview will be around your 30th week of gestation.
+
+Goodbye for now, and thank you very much for your help.
+A207          Special matters in relation to the woman and the pregnancy
+
+To be filled in by the interviewer after the interview.:
+
+A208          How was the contact between you and the pregnant woman?
+                          1. very good
+                          2. good
+                          3. fair
+                          4. bad
+
+How do you feel about the answers to "sensitive questions"? Are they trustworthy?
+
+A209_1        smoking                 1.yes    2.no        3.doubtful
+A209_2        spirits                 1.yes    2.no        3.doubtful
+A209_3        weight                  1.yes    2.no        3.doubtful
+
+              Other important information if you feel they may influence the quality of the answers:
+
+A210          Other important information if you feel they may influence the quality of the answers:
+

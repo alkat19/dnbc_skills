@@ -1,0 +1,3618 @@
+Codebook for the 11 year follow-up (adult singleton + twin A)
+Prepared by
+Filippa Nyboe Norsker, student assistant
+Pernille Stemann Larsen, PhD-student
+Tanja Majbrit Knudsen, research assistant
+Anne Marie Nybo Andersen, professor
+
+Section of Social Medicine, Department of Public Health, University of Copenhagen¨
+
+Date: 23rd of September 2014, revised 2nd July 2018
+
+Documentation and guidance
+The code book contains section headlines and contains the supplementary or explanatory
+text from the questionnaire. The supplementary/explanatory text is written in italics.
+
+With the exception of the Key Variables all variables start with an F. The variable ID
+contains three chiffers (ex. F000). The answer categories are listed starting with 1.
+
+The "Not answered" variable (missing) has been given code 99. The electronic
+questionnaire is constructed so it shouldn't be possible to skip a question. That means, if
+respondents miss a question they will be asked to answer it before they are able to move
+on to the following questions. However, you will find some exceptions that are marked in
+the codebook with oblique purple font above each question. Here it will be possible to skip
+a page even though some of the questions remain unanswered. Missing will also occur if
+the respondent has started but not completed the questionnaire within the 3 month
+deadline.
+
+The "Not applicable" variable has been give the code 100 and occurs if the question is
+dependent on an answer given in a previous question.
+If a question is dependent on a previous answer a note is written in Consolas (e.g. F005,
+depending on F004) above the question. Correspondingly it is specified which question
+the respondent jumps to if the following questions depend on the answer of the question
+concerned (e.g. ->F006)
+
+Variable names ending with a letter (F001A) is a sub question of the previous question
+where it does not make sense to assign the question a new name In some cases a
+question ending with a capital letter will contain a text answer (e.g. F0054_7A) or a
+number (e.g. F196_A).
+
+Some variables are marked with underscore to show that they belong together or are part
+of a scale (e.g. F003_1-F003_5)
+
+
+
+
+                                                                                            0
+Table of contents
+Key variables ...................................................................................................................................................... 2
+Background information.................................................................................................................................... 2
+Diet, organic food and vitamins ........................................................................................................................ 3
+Sun and sunscreen............................................................................................................................................. 5
+Immunization..................................................................................................................................................... 6
+Phones and wireless networks at home.......................................................................................................... 10
+In the swimming pool ...................................................................................................................................... 11
+Living situation and indoor climate ................................................................................................................. 15
+Handicaps, illness and infections..................................................................................................................... 24
+Infections - how often and for how long at a time? ....................................................................................... 29
+Problems with breathing/ asthma................................................................................................................... 34
+Blocked/running nose and itchy/watery eyes ................................................................................................. 39
+Rash ................................................................................................................................................................. 44
+Diabetes, coeliac disease and medicine .......................................................................................................... 46
+Painkillers......................................................................................................................................................... 47
+Sight ................................................................................................................................................................. 47
+Hearing ............................................................................................................................................................ 49
+Speech impairment ......................................................................................................................................... 49
+Tooth brushing ................................................................................................................................................ 50
+Vitamin pills ..................................................................................................................................................... 50
+Enuresis ........................................................................................................................................................... 51
+Circumcision .................................................................................................................................................... 52
+Strengths and difficulties ................................................................................................................................. 53
+Tics ................................................................................................................................................................... 58
+Gender identity................................................................................................................................................ 59
+Height and weight, skin and hair ..................................................................................................................... 59
+Illness in the closest family .............................................................................................................................. 62
+The biological fathers height and weight ........................................................................................................ 63
+Questions for the biological mother ............................................................................................................... 64
+
+
+
+
+                                                                                                                                                                         1
+Key variables
+LBGRAVFF
+Identification number for the child
+
+LBGRAV
+Identification number for the mother
+
+F_BESVAR
+Indicator for a complete response
+   1. complete response
+   2. incomplete response
+
+F_TYPE
+Indicator of the questionnaire being for singletons+twin A of for twin B
+   A. Singletons or twin A
+   B. Twin B
+
+F_INVITDATE
+Date when the child was invited to the 11-year follow-up
+
+F_QDATE
+Date when the questionnaire was completed
+
+F_VERSION
+Indicator for which version of the questionnaire the adult have completed. There are to
+versions and the 6 of April 2011 one more question was added (E119)
+
+   3. version 1
+   4. version 2
+
+F_SEX
+  1. boy
+  2. girl
+
+Background information
+Dear [Fnavn],
+Thanks, for participating in DNBCs 11-year follow-up. You should know that you by
+participating are contributing to research that in the future will affect other people's health.
+This questionnaire is mostly about [childs name] but also a bit about [childs name]'s
+biological parents.
+You may find it difficult to answer some of the questions so it correlates with you r exact
+situation. We know this can be frustrating but please try to find an answer as close as
+possible.
+
+F001        Are you [childs name] biological mother?
+   1. yes -> F002
+   2. no
+   99. not answered
+
+
+                                                                                                   2
+Depending on F001
+F001A       the questionnaire is filled out by [childs name's]
+   1. biological father ->F002
+   2. father (not biological/ stepfather) ->F002
+   3. mother (not biological/ step mother) ->F002
+   4. grandparent ->F002
+   5. other -> F001B
+   99. not answered
+   100. not applicable
+
+(Can be skipped without answering)
+Depending on F001 F001A
+F001B      other _______
+Not answered=99, irrelevant=100
+
+F002        Do you live with [childs name]?
+   1. yes, all the time
+   2. yes, some of the time (agreement about shared time)
+   3. no
+   99. not answered
+
+Diet, organic food and vitamins
+How often has [childs name] eaten the following foods during the past month?
+
+F003_1      Meat/ meat cold cuts for lunch?
+   1. 6-7 per week
+   2. 4-5 times per week
+   3. 2-3 times per week
+   4. Once a week
+   5. 2-3 times per month
+   6. 1 time or less per month
+   7. never
+   99. not answered
+
+F003_2      Meat for supper?
+   1. 6-7 times per week
+   2. 4-5 times per week
+   3. 2-3 times per week
+   4. Once a week
+   5. 2-3 times per month
+   6. 1 times or less per month
+   7. never
+  99. not answered
+
+F003_3      Fish/fish cold cuts for lunch?
+   1. 6-7 times per week
+   2. 4-5 times per week
+
+
+                                                                               3
+   3. 2-3 times per week
+   4. Once a week
+   5. 2-3 times per month
+   6. 1 time or less per month
+   7. never
+   99. not answered
+
+F003_4      Fish for supper?
+   1. 6-7 times per week
+   2. 4-5 times per week
+   3. 2-3 times per week
+   4. Once a week
+   5. 2-3 times per month
+   6. 1 time or less per month
+   7. never
+  99. not answered
+
+F003_5      Vegetables (raw, baked, boiled, fried, in casseroles)?
+   1. 6-7 times per week
+   2. 4-5 times per week
+   3. 2-3 times per week
+   4. Once a week
+   5. 2-3 times per month
+   6. 1 time or less per month
+   7. never
+  99. not answered
+
+F004        Do you buy organic foods?
+   1. yes, almost always
+   2. yes, sometimes
+   3. no -> F006
+   99. missing
+
+( Can be skipped without answering)
+F005      Which of the following foods do you typically buy organic?
+Depending on F004
+F005_1    milk
+F005_2    other dairy products
+F005_3    eggs
+F005_4    meat
+F005_5    fruit
+F005_6    vegetables
+F005_7    juice
+F005_8    flour
+F005_9    pasta
+F005_10 rice
+F005_11 oatmeal, muesli etc.
+F005_12 bread
+
+
+                                                                       4
+F005_13 candy, ice cream and the like
+F005_14 vine and beer
+F005_15 lemonade
+F005_16 Soda
+1=yes, not answered=99, irrelevant=100
+
+Sun and sunscreen
+F006       For how many weeks during the past 12 month has [child name] been
+           exposed to strong sun when travelling south?
+   1. 0
+   2. 1
+   3. 2
+   4. 3
+   5. 4
+   6. 5
+   7. 6
+   8. 7
+   9. 8
+   10. 9
+   11. 10 or more
+   99. not answered
+
+F007        Does [child name] make sure to always use sunscreen?
+   1. yes, extremely
+   2. yes, a little
+   3. no
+   99. not answered
+
+F008        During the summer, how much time does [child name] typically spend in the sun
+during a school day?
+   1. Less than 30 min.
+   2. more than 30 min., less than 1 hour
+   3. more than 1 hour, less than 2 hours
+   4. more than 2 hours, less than 3 hours
+   5. 3 hours or more
+   99. not answered
+
+F009        During the summer, how much time does [child name] typically spend in the sun on a
+day off?
+   1. Less than 30 min.
+   2. more than 30 min., less than 1 hour
+   3. more than 1 hours, less than 2 hours
+   4. more than 2 hours, less than 3 hours
+   5. 3 hours or more
+   99. not answered
+
+F010        Does it sometimes happen that [child name] gets sunburned?
+   1. yes, often
+
+
+                                                                                      5
+   2. yes, sometime
+   3. rarely
+   4. never
+   99. not answered
+
+Immunization
+F011        Since [child name] was 7 years old, has [he/she] received any vaccines?
+   1. yes
+   2. no -> F013
+   99. not answered
+
+F012        Which vaccines? Tick off all appropriate vaccines.
+Depending on F011
+F012_1      HPV (cervical cancer/human papilloma virus) ->F012_1A
+F012_2      contagious hepatitis, hepatitis A - Havrix -> F012_2A
+F012_3      contagious hepatitis, hepatitis A - Gammaglobin -> F012_3A
+F012_4      contagious hepatitis, hepatitis B - Engerix -> F012_4A
+F012_5      contagious hepatitis, hepatitis A+ B - Twinrix -> F012_5A
+F012_6      meningitis -> F012_6A
+F012_7      yellow fever -> F012_7A
+F012_8      cholera -> F012_8A
+F012_9      BCG/ calmette /tuberculosis -> F012_9A
+F012_10 typhoid fever -> F012_10A
+F012_11 rabies -> F012_11A
+F012_12 tetanus -> F012_12A
+F012_13 MFR (measles/mumps/rubella) -> F012_13A
+F012_14 other vaccine -> F012_14A
+1=yes, not answered=99, irrelevant=100
+
+Depending on F011 F012_1
+F012_1A How old was [child name]?
+   1. 7 years
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. Don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_2
+F012_2A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+
+
+                                                                                      6
+  5. 11 years old
+  6. 12 years old
+  7. 13 years old
+  8. don't remember
+  99. not answered
+  100. not applicable
+
+Depending on F011 F012_3
+F012_3A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_4
+F012_4A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_5
+F012_5A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_6
+F012_6A How old was [child name]?
+
+
+                                    7
+  1. 7 years old
+  2. 8 years old
+  3. 9 years old
+  4. 10 years old
+  5. 11 years old
+  6. 12 years old
+  7. 13 years old
+  8. don't remember
+  99. not answered
+  100. not applicable
+
+Depending on F011 F012_7
+F012_7A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_8
+F012_8A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_9
+F012_9A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+
+
+                                    8
+  100. not applicable
+
+Depending on F011 F012_10
+F012_10A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_11
+F012_11A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_12
+F012_12A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_13
+F012_13A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+
+
+                                     9
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+Depending on F011 F012_14
+F012_14A How old was [child name]?
+   1. 7 years old
+   2. 8 years old
+   3. 9 years old
+   4. 10 years old
+   5. 11 years old
+   6. 12 years old
+   7. 13 years old
+   8. don't remember
+   99. not answered
+   100. not applicable
+
+
+
+Phones and wireless networks at home
+F013         How many active cell phones do you have in your home?
+   1. 0 -> F015
+   2. 1
+   3. 2
+   4. 3
+   5. 4
+   6. 5
+   7. 6
+   8. 7
+   9. 8
+   10. 9
+   11. 10 or more
+   99. not answered
+
+(Can be skipped without being answered)
+F014        Does your [son/daughter] talk on a cell phone? (not including messages, games and
+the like)
+Depending on F013
+   1. yes, but less than 1 hour per week
+   2. yes, more than 1 hour per week
+   3. no, never
+   99. not answered
+   100. not applicable
+
+F015      Do you have (a) landline phone(s) at home?
+   1. yes
+
+
+                                                                                     10
+   2. no
+   99. not answered
+
+F016        Do you have (a) cordless landline phone(s) at home?
+   1. yes
+   2. no
+   99. not answered
+
+F017        Do you have wireless internet at home?
+   1. yes
+   2. no
+   99. not answered
+
+F018        Does your [son/daughter] use the cordless phone for more than 1 hour every day?
+Depending on F016
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+
+In the swimming pool
+
+F019 Did [child name] attend baby swimming?
+   1. yes
+   2. no -> F021
+   99. not answered
+
+F019A For how many months in total did [child name] attend baby swimming
+(approximately)?
+Depending on F019
+1-36 months, not answered=99, irrelevant=100
+
+F020 How much time did [child name] typically spend in the pool (Not including time spent
+on changing clothes, sauna etc.)
+Depending on F019
+   1. Less than 15 min
+   2. 15-30 min
+   3. 31-60 min
+   4. More than 1 hour
+   99. not answered
+   100. not applicable
+
+F021 Has [child name] attended swimming class at another time?
+   1. yes
+   2. no -> F023
+   3. 99. not answered
+
+
+                                                                                       11
+F022 How old was [child name] when [child name] attended swimming class? Tick of more than
+one if appropriate.
+Depending on F021
+F022_1      4 years-> F022_1A
+F022_2      5 years-> F022_2A
+F022_3      6 years-> F022_3A
+F022_4      7 years-> F022_4A
+F022_5      8 years-> F022_5A
+F022_6      9 years-> F022_6A
+F022_7      10 years-> F022_7A
+F022_8      11 year-> F022_8A
+F022_9      12 years-> F022_9A
+1=yes, not answered=99, irrelevant=100
+
+Depending on F021 F022_1
+F022_1A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_2
+F022_2A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_3
+F022_3A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+
+
+
+                                                                                   12
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_4
+F022_4A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_5
+F022_5A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_6
+F022_6A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_7
+F022_7A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+
+                                                            13
+Depending on F021 F022_8
+F022_8A How often did [child name] attend swimming class?
+   1. More times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+Depending on F021 F022_9
+F022_9A How often did [child name] attend swimming class?
+   1. 4 or more times per week
+   2. 3 times per week
+   3. 2 times per week
+   4. 1 time per week
+   5. Not every week
+   99. not answered
+   100. not applicable
+
+F023 How often was [child name] in a swimming pool (not including swimming classes) when
+[child name] was:
+F023_1       4-6 years
+    1. More than once a week
+    2. Once a week
+    3. Approximately every second week
+    4. Approximately once a month
+    5. Approximately every second month
+    6. Rarely or never
+    99. not answered
+
+F023_2      7-9 years
+   1. More than once a week
+   2. Once a week
+   3. Approximately every second week
+   4. Approximately once a month
+   5. Approximately every second month
+   6. Rarely or never
+   99. not answered
+
+F023_3     10-12 years
+
+
+                                                                                   14
+   1. More than once a week
+   2. Once a week
+   3. Approximately every second week
+   4. Approximately once a month
+   5. Approximately every second month
+   6. Rarely or never
+   99. not answered
+
+
+
+Living situation and indoor climate
+(The respondent will only receive the questions F2024-F038 and F044-F045 if they stated
+that they live together with the child (F002) )
+
+F024 How many individuals live in your home in total?
+Depending on F002
+F024_1      Number of adults
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   8. 8
+   9. 9
+   10. 10 or more
+   99. not answered
+   100. not applicable
+
+Depending on F002
+F024_2      Number of children
+   1. 1
+   2. 2
+   3. 3
+   4. 4
+   5. 5
+   6. 6
+   7. 7
+   8. 8
+   9. 9
+   10. 10 or more
+
+
+
+                                                                                      15
+  99. not answered
+  100. not applicable
+
+
+F025 How old was [child name] when you moved to your current home?
+Depending on F002
+   1. 0
+   2. 1
+   3. 2
+   4. 3
+   5. 4
+   6. 5
+   7. 6
+   8. 7
+   9. 8
+   10. 9
+   11. 10
+   12. 11
+   13. 12
+   14. 13
+   99. not answered
+   100. not applicable
+
+F026 Do you rent your home, live in a cooperative or own your home?
+Depending on F002
+   1. Rent
+   2. Cooperative
+   3. Own
+   4. Living with parents
+   5. Without housing (e.g. temporarily staying with friends)
+   99. not answered
+   100. not applicable
+
+
+F027 What type of housing do you live in?
+Depending on F002
+   1. Apartment (in block of flats)
+   2. Flat (in house with 2-3 units)
+   3. Terraced house/semi-detached hours -> F030
+   4. Detached house -> F030
+   5. Farm/ farmhouse -> F029
+   6. Room
+
+
+
+                                                                      16
+   7. Other
+   99. not answered
+   100. not applicable
+
+F028 What floor do you live on?
+Depending on F002 F027
+   1. basement
+   2. ground floor
+   3. mezzanine (intermediate floor)
+   4. 1. floor
+   5. 2. floor
+   6. 3. floor
+   7. 4. floor
+   8. 5. floor or higher
+   99. not answered
+   100. not applicable
+
+F029 Are there livestock (horses, pigs, cows, sheep etc.) on your farm?
+Depending on F002 F027
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F030 How many square meters (m2) is your living space?
+Depending on F002
+   1. under 50 m2
+   2. 50-69 m2
+   3. 70-89 m2
+   4. 90-109 m2
+   5. 110-139 m2
+   6. 140-179 m2
+   7. 180 m2-
+   99. not answered
+   100. not applicable
+
+F031 When was the building raised?
+Depending on F002
+   1. before 1940
+   2. 1941-1960
+   3. 1961-1970
+   4. 1971-1976
+
+
+                                                                          17
+   5. 1977-1983
+   6. 1984-1993
+   7. 1994-2000
+   8. after 2000
+   9. don't know
+   99. not answered
+   100. not applicable
+
+F032 How many rooms - living rooms and bedrooms- does your home have?
+Depending on F002
+   1. 2
+   2. 3
+   3. 4
+   4. 5
+   5. 6
+   6. 7
+   7. 8
+   8. 9
+   9. 10 or more
+   99. not answered
+   100. not applicable
+
+F033        What type of stove does your home have?
+Depending on F002
+   1. Electronic plates (possibly induction) and oven
+   2. Burner and gas oven
+   3. Burner and electric oven
+   4. Other
+   99. not answered
+   100. not applicable
+
+F034        Is there an exhaust hood in the kitchen?
+Depending on F002
+   1. yes
+   2. no -> F036
+   99. not answered
+   100. not applicable
+
+F035       Do you use the exhaust hood when you cook?
+Depending on F002 F034
+   1. Yes, always
+   2. Yes, often
+
+
+                                                                        18
+   3. Yes, rarely
+   4. Never
+   99. not answered
+   100. not applicable
+
+F036        Do you have a wood-burning stove or fireplace?
+Depending on F002
+   1. yes
+   2. no -> F038
+   99. not answered
+   100. not applicable
+
+F037        How often do you use the wood-burning stove or fireplace during the winter
+season?
+Depending on F002 F036
+   1. More than once daily
+   2. Daily
+   3. 5-6 times weekly
+   4. 3-4 times weekly
+   5. 1-2 times weekly
+   6. Less than one time a week
+   7. Never or extremely rarely
+   99. not answered
+  100. not applicable
+
+(Kan springes over uden at besvare)
+F038_1      How often do you light candles in your home during summer?
+Depending on F002
+   1. Every day
+   2. 5-6 times weekly
+   3. 3-4 times weekly
+   4. 1-2 times weekly
+   5. Less than one time a week
+   6. Never or extremely rarely
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F038_2      How often do you light candles in your home during winter?
+Depending on F002
+   1. Every day
+   2. 5-6 times weekly
+
+
+                                                                                         19
+   3. 3-4 times weekly
+   4. 1-2 times weekly
+   5. Less than once a week
+   6. Never or extremely rarely
+   99. not answered
+   100. not applicable
+
+F039        Do smokers live in your home?
+   1. yes
+   2. no -> F041
+  99. not answered
+
+F040         Where in the home do people smoke?
+Depending on F039
+   1. All or almost all rooms
+   2. living room
+   3. mostly in rooms where the [child name] is not staying
+   4. at an extractor fan or an open window
+   5. outdoors
+   99. not answered
+  100. not applicable
+
+F041        On what floor is [child name]'s bedroom located?
+   1. basement
+   2. ground level
+   3. 1. floor or higher
+   99. not answered
+
+F042        Have you noted condensation or moisture on the windows in [child name]s
+            bedroom?
+   4. yes, on more than the lowest 5 cm of the window
+   5. yes, on less than the lowest 5 cm of the window
+   6. no
+   7. don't know
+   8. 99. not answered
+
+F043        In the winter - is [child name]s bedroom significantly colder than the rest of the
+            home?
+   1. yes
+   2. no
+   99. not answered
+
+
+
+                                                                                            20
+F044        Do you keep pets indoors in your home?
+Depending on F002
+   1. yes
+   2. no -> F046
+  99. not answered
+  100. not applicable
+
+F045_1-6 Which pets do you keep indoors? (you can tick off more than one animal)
+Depending on F002 F044
+F045_1      cat
+F045_2      dog
+F045_3      rodent (rabbit, hamster etc.)
+F045_4      bird
+F045_5      aquarium fish
+F046_6      other pets
+1=yes, not answered=99, irrelevant=100
+
+
+(Can be skipped without being answered)
+F046        Have you at any time had a flood or other types of water damage in your
+            home?
+   1. yes
+   2. no -> F049
+   99. not answered
+
+(Can be skipped without being answered)
+F047_1-6 In what room/ part of the house?
+Depending on F046
+F047_1      the child's bedroom
+F047_2      living room(s)
+F047_3      kitchen
+F047_4      bathroom
+F047_5      basement
+F047_6      other rooms
+1=yes, not answered=99, irrelevant=100
+
+F048        How many times has your home been affected by water damage?
+Depending on F046 F047_1
+F048_1      the child's bedroom
+   1. one time
+   2. multiple times
+   99. not answered
+
+
+
+                                                                                      21
+  100. not applicable
+
+Depending on F046 F047_2
+F048_2      Living room(s)
+   1. one time
+   2. multiple times
+   99. not answered
+  100. not applicable
+
+Depending on F046 F047_3
+F048_3      Kitchen
+   1. one time
+   2. multiple times
+   99. not answered
+  100. not applicable
+
+Depending on F046 F047_4
+F048_4      Bathroom
+   1. one time
+   2. multiple times
+   99. not answered
+  100. not applicable
+
+Depending on F046 F047_5
+F048_5      Basement
+   1. one time
+   2. multiple times
+   99. not answered
+  100. not applicable
+
+Depending on F046 F047_6
+F048_6      Other rooms
+   1. one time
+   2. multiple times
+   99. not answered
+  100. not applicable
+
+F049        Have you noticed visible signs of moisture or mold in parts of your home?
+   1. yes
+   2. no ->F052
+   99. not answered
+
+
+
+                                                                                        22
+F050_1-6 In what rooms have you noticed moisture/ mold?
+Depending on F049
+F050_1      child's bedroom -> F051_1A-E
+F050_2      kitchen -> F051_2A-E
+F050_3      living room -> F051_3A-E
+F050_4      bathroom -> F054_1A-E
+F050_5      basement -> F055_1A-E
+F050_6      other rooms -> F056_1A-E
+1=yes, not answered=99, irrelevant=100
+
+F051        What type of moisture or mold did you notice in the places concerned?
+Depending on F049 F050_1
+Child's bedroom
+F051_1A visible moisture
+F051_1B visible mold
+F051_1C loose/ discolored coating
+F051_1D moldy smell
+F051_1E      other
+1=yes, not answered=99, irrelevant=100
+
+Depending on F049 F050_2
+Kitchen
+F051_2A visible moisture
+F051_2B visible mold
+F051_2C loose/ discolored coating
+F051_2D moldy smell
+F051_2E other
+1=yes, not answered=99, irrelevant=100
+
+Depending on F049 F050_3
+Living room
+F051_3A visible moisture
+F051_3B visible mold
+F051_3C loose/ discolored coating
+F051_3D moldy smell
+F051_3E other
+1=yes, not answered=99, irrelevant=100
+
+Depending on F049 F050_4
+Bathroom
+F051_4A visible moisture
+F051_4B visible mold
+
+
+                                                                                    23
+F051_4C loose/ discolored coating
+F051_4D moldy smell
+F051_4E other
+1=yes, not answered=99, irrelevant=100
+
+Depending on F049 F050_5
+Basement
+F051_5A visible moisture
+F051_5B visible mold
+F051_5C loose/ discolored coating
+F051_5D moldy smell
+F051_5E other
+1=yes, not answered=99, irrelevant=100
+
+Depending on F049 F050_6
+Other rooms
+F051_6A visible moisture
+F051_6B visible mold
+F051_6C loose/ discolored coating
+F051_6D moldy smell
+F051_6E other
+1=yes, not answered=99, irrelevant=100
+
+
+Handicaps, illness and infections
+(Question F052 is added April 6, 2011 and therefor it only occurs in version2)
+(Can be skipped without being answered)
+F052        Has your child ever had an outbreak of the illness psoriasis?
+   1. yes
+   2. no
+   99. not answered
+
+F053        Does [child name] have any severe disabilities or handicap?
+   1. yes
+   2. no -> F055
+   99. not answered
+
+F054_1-7 Which of the following disabilities/ handicap does [child name] have?
+Depending on F053
+F054_1    serious speech impairment
+F054_2    deafness/ severe impaired hearing
+F054_3    blindness/ severe impaired vision
+F054_4    Intellectual disability (e.g. mongolism or as a result of encephalitis)
+
+                                                                                    24
+F054_5      Cerebral palsy (cerebral parese)
+F054_6      other motor disability
+F054_7      other -> F054_7A
+1=yes, not answered=99, irrelevant=100
+
+
+(Can be skipped without being answered)
+Depending on F053 F054_7
+F054_7A _____other disability / handicap
+
+
+F055        Has [child name] ever had any of the following childhood diseases?
+F055_1      whooping cough
+   1. yes
+   2. no -> F055_2
+   99. not answered
+
+Depending on F055_1
+F055_1A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. Don't know
+   99. not answered
+   100. not applicable
+
+F055_2      rubella
+   1. yes
+   2. no -> F055_3
+   99. not answered
+
+Depending on F055_2
+
+
+                                                                                 25
+F055_2A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. Don't know
+   99. not answered
+   100. not applicable
+
+F055_3      mumps
+   1. yes
+   2. no -> F055_4
+   99. not answered
+
+Depending on F055_3
+F055_3A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. don't know
+   99. not answered
+
+
+                         26
+   100. not applicable
+
+F055_4      chickenpox
+   1. yes
+   2. no -> F055_5
+   99. not answered
+
+Depending on F055_4
+F055_4A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. don't know
+   99. not answered
+   100. not applicable
+
+
+F055_5      measles
+   1. yes
+   2. no -> F055_6
+   99. not answered
+
+Depending on F055_5
+F055_5A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+
+
+                         27
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. don't know
+   99. not answered
+   100. not applicable
+
+F055_6      three-day-fever
+   1. yes
+   2. no -> F055_7
+   99. not answered
+
+Depending on F055_6
+F055_6A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. don't know
+   99. not answered
+   100. not applicable
+
+
+F055_7      fifth disease (parvovirus B19)
+   1. yes
+   2. no -> F055_7
+   99. not answered
+
+
+
+
+                                             28
+Depending on F055_7
+F055_7A
+   1. 0 years
+   2. 1 year
+   3. 2 years
+   4. 3 years
+   5. 4 years
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   15. don't know
+   99. not answered
+   100. not applicable
+
+
+
+Infections - how often and for how long at a time?
+
+F056        In the past year - has [child name] had a cold?
+   1. yes
+   2. no -> F059
+   99. not answered
+
+F057        How often did the cold last more than 3 consecutive days?
+Depending on F056
+   1. never ->F059
+   2. 1-2 times
+   3. 3-4 times
+   4. 5-6 times
+   5. more than 6 times
+   6. it has almost been a chronic condition
+   99. not answered
+   100. not applicable
+
+F058        In the past year, for how many days has [child name] been using a nasal
+            spray?
+
+
+
+                                                                                      29
+Depending on F056 F057
+   1. never
+   2. 1-7 days
+   3. 8-14 days
+   4. 15-30 days
+   5. over 30 days
+   99. not answered
+  100. not applicable
+
+F059        In the past year - has [child name] had influenza?
+   1. yes
+   2. no -> F061
+   99. not answered
+
+F060        How often did the influenza last more than 3 consecutive days?
+Depending on F059
+   1. never
+   2. 1-2 times
+   3. 3-4 times
+   4. 5-6 times
+   5. more than 6 times
+   99. not answered
+   100. not applicable
+
+F061        In the past year - has [child name] had pneumonia?
+   1. yes
+   2. no -> F066
+   99. not answered
+
+F062        How often did the pneumonia last more than 3 consecutive days?
+Depending on F061
+   1. 1 time
+   2. 2 times -> F064
+   3. 3 times -> F064
+   4. 4 times -> F064
+   5. 5 times -> F064
+   6. 6 times -> F064
+   7. More than 6 times -> F064
+   99. not answered
+   100. not applicable
+
+F063        Was the pneumonia diagnosed by a doctor?
+
+
+
+                                                                             30
+Depending on F062
+   1. yes ->F065
+   2. no -> F065
+   99. not answered
+   100. not applicable
+
+F064        In how many cases was the pneumonia diagnosed by a doctor?
+Depending on F061 F062
+   1. 1-2 times
+   2. 3-4 times
+   3. 5-6 times
+   4. More than 6 times
+   99. not answered
+   100. not applicable
+
+F065        Did [child name] at any point receive treatment for pneumonia?
+Depending on F061
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F066        In the past year - has [child name] had tonsillitis?
+   1. yes
+   2. no ->F068
+   99. not answered
+
+F067        How often did the tonsillitis last more than 3 consecutive days?
+Depending on F066
+   1. never
+   2. 1-2 times
+   3. 3-4 times
+   4. 5-6 times
+   5. more than 6 times
+   99. not answered
+   100. not applicable
+
+F068        In the past year - has [child name] had conjunctivitis?
+   1. yes
+   2. no -> F070
+   99. not answered
+
+
+
+
+                                                                               31
+F069        How often did the conjunctivitis last more than 3 consecutive days?
+Depending on F068
+   1. 1-2 times
+   2. 3-4 times
+   3. 5-6 times
+   4. more than 6 times
+   5. it has almost been a chronic condition
+   99. not answered
+   100. not applicable
+
+F070        In the past year - has [child name] had herpes simplex?
+   1. yes
+   2. no -> F072
+   99. not answered
+
+F071        How often did the herpes simplex last more than 3 consecutive days?
+Depending on F070
+   1. 1-2 times
+   2. 3-4 times
+   3. 5-6 times
+   4. more than 6 times
+   5. it has almost been a chronic condition
+   99. not answered
+   100. not applicable
+
+F072        In the past year - has [child name] had diarrhea?
+   1. yes
+   2. no -> F074
+   99. not answered
+
+F073        How often did the diarrhea last more than 3 consecutive days?
+Depending on F072
+   1. 1-2 times
+   2. 3-4 times
+   3. 5-6 times
+   4. more than 6 times
+   5. it has almost been a chronic condition
+   99. not answered
+   100. not applicable
+
+F074        Has [child name] ever had urinary tract infection?
+   1. yes, 1-3 times
+
+
+
+                                                                                  32
+   2. yes, more than 3 times
+   3. no
+   99. not answered
+
+F075        Has [child name] ever had Otitis media?
+   1. yes, 1-3 times
+   2. yes, more than 3 times
+   3. no -> F077
+   99. not answered
+
+F076 Has [child name] ever had drainage [dræn] in the ear(s)? Engelsk navn for denne
+type operation?
+Depending on F075
+   1. yes, 1 time
+   2. yes, 2 times
+   3. yes, 3 or more times
+   4. no
+   99. not answered
+   100. not applicable
+
+F077        Has [child name] ever had a concussion?
+   1. yes, 1 time
+   2. yes, 2 or more times
+   3. no
+   99. not answered
+
+F078        Has [child name] ever broken an arm, leg, fingers or other?
+   1. yes, 1 time
+   2. yes, 2 or more times
+   3. no -> F080
+   99. not answered
+
+F079-1-11 What parts of the body have been broken?
+Depending on F078
+E079_1    finger
+E079_2    hand/ wrists
+E079_3    arm
+E079_4    foot/ ankle
+E079_5    leg
+E079_6    collarbone
+E079_7    ribs
+E079_8    pelvis
+
+
+                                                                                       33
+E079_9      back/neck
+E079_10 skull fracture
+E079_11 other
+1=yes, not answered=99, irrelevant=100
+
+
+Problems with breathing/ asthma
+F080        Has [child name] ever had wheezing or whistling breathing?
+   1. yes
+   2. no -> F085
+   99. not answered
+
+F081         Has [child name] ever had wheezing or whistling breathing during the past
+year?
+Depending on F080
+   1. yes
+   2. no -> F085
+   99. not answered
+   100.irrelevant
+
+F082        How many periods of wheezing has [child name]s had during the past year?
+Depending on F080 and F081
+   1. never
+   2. 1 to 3 periods
+   3. 4 to 12 periods
+   4. 13 or more periods
+   99. not answered
+   100. not applicable
+
+
+F083        How often (on average) has [child name]'s sleep been disturbed due to
+            wheezing in the past year?
+Depending on F080 and F081
+   1. never
+   2. less than1 night/week
+   3. 1 or more nights/week
+   99. not answered
+   100. not applicable
+
+F084      In the past year, has wheezing been severe enough to limit [child name]
+          speech to only one or two words between breaths?
+Depending on F080 and F081
+   1. yes
+
+
+
+                                                                                         34
+   2. no
+   99. not answered
+   100. not applicable
+
+F085        Has [child name] ever had asthma?
+
+   1. yes
+   2. no ->F089
+   99. not answered
+
+F086         How old was [child name] when [child name] had [his/hers] first asthma
+attack?
+Depending on F085
+    1. 0 years
+    2. 1 year
+    3. 2 years
+    4. 3 years
+    5. 4 years
+    6. 5 years
+    7. 6 years
+    8. 7 years
+    9. 8 years
+    10. 9 years
+    11. 10 years
+    12. 11 years
+    13. 12 years
+    14. 13 years
+    99. not answered
+    100. not applicable
+
+F087        Has [child name] had an asthma attack in the past year?
+Depending on F085
+   1. yes -> F089
+   2. no
+   99. not answered
+   100. not applicable
+
+F088        How old was [child name] when [child name] had his/ her latest asthma
+attack?
+Depending on F085 F087
+    1. 0 years
+    2. 1 year
+    3. 2 years
+    4. 3 years
+    5. 4 years
+
+
+                                                                                      35
+   6. 5 years
+   7. 6 years
+   8. 7 years
+   9. 8 years
+   10. 9 years
+   11. 10 years
+   12. 11 years
+   13. 12 years
+   14. 13 years
+   99. not answered
+   100. not applicable
+
+F089        Has [child name]s breathing sounded wheezy during or after exercise in the
+            past year?
+   1. yes
+   2. no
+   99. not answered
+
+F090        Has [child name] had a dry cough at night, apart from a cough associated with
+            a cold or a chest infection, in the past year?
+   1. yes
+   2. no
+   99. not answered
+
+F091        Has [child name] been given medicine for [his/hers] wheezy breathing or
+asthma (e.g. inhalators, spray or pills) in the past year?
+Depending on F080 F085
+   1. yes
+   2. no ->F097
+   99. not answered
+   100. not applicable
+
+F092_1-4 What type of medicine has [child name] received?
+Depending on F080 F085 F091
+F092_1      inhalations medicine -> F093
+F092_2      tablets -> F094
+F092_3      injections -> F095
+F092_4      nature medicine -> F096
+1=yes, not answered=99, irrelevant=100
+
+F093_1-37 Inhalations medicine. You can mark the products your child has been given on
+the list one or more times
+Depending on F080 F085 F091 F092_1
+F093_1        airomir -> F093_1A
+F093_2        aerobec -> F093_2A
+F093_3        asmanex, twisthaler -> F093_3A
+F093_4        atrovent -> F093_4A
+
+
+                                                                                         36
+F093_5      beclomet easyhaler -> F093_5A
+F093_6      berodual -> F093_6A
+F093_7      bricany -> F093_7A
+F093_8      budesonid -> F093_8A
+F093_9      buvento easyhaler -> F093_9A
+F093_10 combivent -> F093_10A
+F093_11 delnil -> F093_11A
+F093_12 dracanyl turbohaler -> F093_12A
+F093_13 duovent -> F093_13A
+F093_14 flixotide -> F093_14A
+F093_15 foradil -> F093_15A
+F093_16 formo easyhaler -> F093_16A
+F093_17 giana easyhaler -> F093_17A
+F093_18 ipramol Steri-Neb -> F093_18A
+F093_19 ipratopiumbromid -> F093_19A
+F093_20 lomudal -> F093_20A
+F093_21 miflonide -> F093_21A
+F093_22 oxis turbohaler -> F093_22A
+F093_23 pilmicort turbohaler -> F093_23A
+F093_24 rilast forte turbohaler -> F093_24A
+F093_25 salamol -> F093_25A
+F093_26 salbutamol -> F093_26A
+F093_27 salbuvent -> F093_27A
+F093_28 seretide -> F093_28A
+F093_29 serevent -> F093_29A
+F093_30 sinestic -> F093_30A
+F093_31 spiriva -> F093_31A
+F093_32 spirocort turbohaler -> F093_32A
+F093_33 symbicort turbohaler -> F093_33A
+F093_34 terbasmin turbohaler -> F093_34A
+F093_35 tilade -> F093_35A
+F093_36 ventoline -> F093_36A
+F093_37 don't remember the name -> F093_37A
+1=yes, not answered=99, irrelevant=100
+
+
+F093_1A-F093_37A         How often has [child name] received these products?
+Depending on F080 F085 F091 F092_1 F093_1-F093_37
+   1. I connection to physical activity
+   2. Per need
+   3. regularly (every day in a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+For each product it is possible to specify how often and in which context the product was
+given to the child.
+
+F094_1-11               Tablets. You can mark the products your child has been given on
+                        the list one or more times
+
+
+                                                                                            37
+Depending on F080 F085 F091 F092_2
+F094_1      bambec -> F094_1A
+F094_2      hydrocortison -> F094_2A
+F094_3      nuelin retard -> F094_3A
+F094_4      medrol -> F094_4A
+F094_5      oxeol -> F094_5A
+F094_6      prednison -> F094_6A
+F094_7      singulair -> F094_7A
+F094_8      theo-dur -> F094_8A
+F094_9      unixan -> F094_9A
+F094_10 volmax -> F094_10A
+F094_11 don't remember the name -> F094_11A
+1=yes, not answered=99, irrelevant=100
+
+
+F094_1A-11A              How often has [child names] received these preparations?
+
+Depending on F080 F085 F091 F092_2 F094_1-F094_11
+   1. In connection to physical activity
+   2. Per need
+   3. regularly (every day i a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+For each product it is possible to specify how often and in which context the product was
+given to the child.
+
+F095_1-4                 Injections. You can mark the products your child has been given
+                         on the list one or more times
+Depending on F080 F085 F091 F092_3
+F095_1      solu-cortef -> F095_1A
+F095_2      solu-medrol -> F095_2A
+F095_3      teofylamin -> F095_3A
+F095_4      don't remember the name
+1=yes, not answered=99, irrelevant=100
+
+F095_1A- F095_4A        How often has [child names] received these products?
+Depending on F080 F085 F091 F092_3 F095_1-F095_4
+   1. In connection to physical activity
+   2. Per need
+   3. regularly (every day in a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+
+At each preparation, it is possible to specify how often and in which context the
+preparation was given to the child.
+
+F096        Herbal medicine. You can mark the products your child has been given on the
+            list one or more times
+
+
+                                                                                            38
+Depending on F080 F085 F091 F092_4
+   1. Yes, but I don't know the name
+   2. yes, name of preparation -> F096A
+   3. no
+   99. not answered
+  100. not applicable
+
+(Can be skipped without being answered)
+Depending on F080 F085 F091 F092_4 F096
+F096A     _____ other
+
+F097       Has [child name] a peakflow-meter at home?
+Depending on F085
+     1. yes
+     2. no
+     99. not answered
+     100. not applicable
+
+
+F098        How many of [child name]s full siblings (biological) have ever had asthma?
+Depending on F085
+   1. has no full siblings
+   2. 0 with asthma
+   3. 1 with asthma
+   4. 2 with asthma
+   5. 3 with asthma
+   6. 4 with asthma
+   7. 5 or more with asthma
+   99. not answered
+   100. not applicable
+
+
+
+Blocked/running nose and itchy/watery eyes
+F099        Has [child name] ever suffered from sneezing/ running or blocked nose, even
+            though [child name] did not have a cold or an influenza?
+   1. yes
+   2. no -> F104
+   99. not answered
+
+
+F100       In the past year has [child name] ever suffered from sneezing/ running or
+           blocked nose, even though [child name] did not have a cold or an influenza?
+Depending on F099
+   1. yes
+   2. no -> F104
+
+
+
+                                                                                         39
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F101_1-12 In which of the last 12 months had [child name] experienced such "nose
+            problems"?
+Depending on F099 F100
+F101_1      January
+F101_2      February
+F101_3      March
+F101_4      April
+F101_5      May
+F101_6      June
+F101_7      July
+F101_8      August
+F101_9      September
+F101_10 October
+F101_11 November
+F101_12 December
+1=yes, not answered=99, irrelevant=100
+
+
+F102          How much does these "nose problems" affect [child names] daily tasks?
+Depending on F099 F100
+   1. not at all
+   2. a little
+   3. some
+   4. very
+   99. not answered
+   100. not applicable
+
+
+F103        Has [child name] at the same time as such "nose problems" suffered from
+            itchy/ watery eyes in the past year?
+Depending on F099 F100
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+
+F104        Has a doctor at any time said, that [child name] has hay fever?
+   1. yes
+   2. no
+   99. not answered
+
+
+
+
+                                                                                      40
+F105        Has [child name] ever been vaccinated to prevent or treat a "nose problem" or
+            hay fever?
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F106        Has [child name] received any medicine against hay fever or running/blocked
+            nose, when [child name] did not have a cold or influenza in the past year?
+   1. yes
+   2. no -> F112
+   99. not answered
+
+(Can be skipped without being answered)
+F107_1-4 What type of medicine has [child name] received?
+Depending on F106
+F107_1      nasal spray -> F108
+F107_2      eye drops -> F109
+F107_3      tablets -> F110
+F107_4      nature medicine -> F111
+1=yes, not answered=99, irrelevant=100
+
+
+F108_1-14 Nasal spray
+Depending on F106 107_1
+F108_1      allergodil -> F108_1A
+F108_2      avamys -> F108_2A
+F108_3      econase -> F108_3A
+F108_4      flixonase -> F108_4A
+F108_5      fluticasonpropionat -> F108_5A
+F108_6      livostin -> F108_6A
+F108_7      lomudal -> F108_7A
+F108_8      nasacort -> F108_8A
+F108_9      nasomet -> F108_9A
+F108_10 nasonex -> F108_10A
+F108_11 rhinocort -> F108_11A
+F108_12 rhinosol -> F108_12A
+F108_13 zymelin -> F108_13A
+F108_14 don't remember the name -> F108_14A
+1=yes, not answered=99, irrelevant=100
+
+
+(Can be skipped without being answered)
+F108_1A-14A             How often has [child names] received these products?
+Depending on F106 107_1 F108_1-14
+   1. In connection to physical activity
+   2. Per need
+
+
+                                                                                       41
+   3. regularly (every day in a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+
+At each preparation, it is possible to specify how often and in which context the
+preparation was given to the child.
+
+
+F109_1-13 Eye drops
+Depending on F106 F107_2
+F109_1      allergodil -> F109_1A
+F109_2      alomide -> F109_2A
+F109_3      ansal -> F109_3A
+F109_4      antistina-privin -> F109_4A
+F109_5      emadine -> F109_5A
+F109_6      lecrolyn -> F109_6A
+F109_7      livostin -> F109_7A
+F109_8      lomuda -> F109_8A
+F109_9      opatanol -> F109_9A
+F109_10 tilavist -> F109_10A
+F109_11 visine/visiclear -> F109_11A
+F109_12 zaditen -> F109_12A
+F109_13 don't remember navnet -> F109_13A
+1=yes, not answered=99, irrelevant=100
+
+(Can be skipped without being answered)
+F109_1A-13A             How often has [child names] received these products?
+Depending on F106 F107_2 F109_1-13
+   1. In connection to physical activity
+   2. Per need
+   3. regularly (every day in a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+
+At each preparation, it is possible to specify how often and in which context the
+preparation was given to the child.
+
+F110_1-26 Tablets
+Depending on F106 F107_3
+F110_1    aerius -> F110_1A
+F110_2    alnok -> F110_2A
+F110_3    benaday -> F110_3A
+F110_4    benadryl -> F110_4A
+F110_5    cetirizin -> F110_5A
+F110_6    clarinase -> F110_6A
+F110_7    clarityn -> F110_7A
+
+
+
+                                                                                    42
+F110_8      duact -> F110_8A
+F110_9      durfin -> F110_9A
+F110_10 kestine -> F110_10A
+F110_11 loratadin -> F110_11A
+F110_12 marzine -> F110_12A
+F110_13 mepyramin -> F110_13A
+F110_14 mildin -> F110_14A
+F110_15 nefoxef -> F110_15A
+F110_16 phenergan -> F110_16A
+F110_17 polaramin -> F110_17A
+F110_18 postafen -> F110_18A
+F110_19 prometazin -> F110_19A
+F110_20 sepan -> F110_20A
+F110_21 tavegyl -> F110_21A
+F110_22 telfast -> F110_22A
+F110_23 vialerg -> F110_23A
+F110_24 xyzal -> F110_24A
+F110_25 zyrtec -> F110_25A
+F110_26 don't remember navnet -> F110_26A
+1=yes, not answered=99, irrelevant=100
+
+
+(Can be skipped without being answered)
+F110_1A-26A             How often has [child names] received these products?
+Depending on F106 F107_3 F110_1-26
+   1. In connection to physical activity
+   2. Per need
+   3. regularly (every day in a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+
+
+At each preparation, it is possible to specify how often and in which context the
+preparation was given to the child.
+
+
+F111        Nature medicine
+Depending on F106 F107_4
+   1. yes, but I don't know the name
+   2. yes, name of preparation -> F111A
+   3. no
+   99. not answered
+   100. not applicable
+
+
+
+
+                                                                                    43
+(Can be skipped without being answered)
+Depending on F106 F107_4 F111
+F111A     _______name of product
+
+
+Rash
+
+F112        Has [child name] ever had an itchy rash, which came and went in a period of
+            least 6 months?
+   1. yes
+   2. no -> F120
+   99. not answered
+
+F113        Has [child name] had this itchy rash during the last 12 months?
+Depending on F112
+   1. yes
+   2. no -> F120
+   99. not answered
+   100. not relevant
+
+F114        Has [child name] got any treatment against an itchy rash in the past year?
+Depending on F113
+   1. yes
+   2. no -> F120
+   99. not answered
+  100. not relevant
+
+F115_1-29 What medicine has [child name] received? Choose one or more preparations
+          which your child has received one or more times (Cream - ointment - foam -
+          shampoo)
+Depending on F113 F114
+F115_1    benovat -> F115_1A
+F115_2    bettamousse -> F115_2A
+F115_3    brentacort -> F115_3A
+F115_4    celestonvalerat -> F115_4A
+F115_5    clobex -> F115_5A
+F115_6    clotrason -> F115_6A
+F115_7    cutivat -> F115_7A
+F115_8    dermovat -> F115_8A
+F115_9    diproderm -> F115_9A
+F115_10 diprolen -> F115_10A
+F115_11 diprosalic -> F115_11A
+F115_12 elidel -> F115_12A
+F115_13 elocom -> F115_13A
+F115_14 elocon -> F115_14A
+
+
+                                                                                          44
+F115_15 emovat -> F115_15A
+F115_16 fucicort -> F115_16A
+F115_17 fucidin- hydrocorticon -> F115_17A
+F115_18 hydrocorticon -> F115_18A
+F115_19 ibaril -> F115_19A
+F115_20 inotyol -> F115_20A
+F115_21 kenaland -> F115_21A
+F115_22 locoid -> F115_22A
+F115_23 locoidol -> F115_23A
+F115_24 metosyn -> F115_24A
+F115_25 mildison lipid -> F115_25A
+F115_26 previsone -> F115_26A
+F115_27 protopic -> F115_27A
+F115_28 synalar -> F115_28A
+F115_29 don't remember navnet -> F115_29A
+1=yes, not answered=99, irrelevant=100
+
+(Can be skipped without being answered)
+F115_1A-29A             How often has [child names] received these products?
+Depending on F113 F114 F115_1-29
+   1. In connection to physical activity
+   2. Per need
+   3. regularly (every day in a period of maximum 2 months)
+   99. not answered
+   100. not applicable
+
+At each preparation, it is possible to specify how often and in which context the
+preparation was given to the child.
+
+F116        Nature medicine
+Depending on F113 F114
+   1. yes, but I don't know the name
+   2. yes, name of products -> F116A
+   3. no
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+Depending on F113 F114 F116
+F116A     _______name of products
+
+F117         Has the itchy rash ever affected one or more of these areas:
+The folds of the elbows, behind the knees, in front of the ankles, under the buttocks, or
+around the neck, ears or eyes?
+Depending on F113
+   1. yes
+
+
+
+                                                                                            45
+   2. no
+   99. not answered
+   100. not relevant
+
+F118        Has the rash cleared completely at any time during the last 12 months?
+Depending on F113
+   1. yes
+   2. no
+   99. not answered
+   100. not relevant
+
+F119        How often in the past 12 months (in average) has [child name] been kept
+            awake at night by this itchy rash?
+Depending on F113
+   1. never
+   2. less than 1 night per week
+   3. 1 or more nights per week
+   99. not answered
+   100. not relevant
+
+F120        Has [child name] ever had eczema?
+   1. yes
+   2. no
+   99. not answered
+
+
+
+Diabetes, coeliac disease and medicine
+
+F121        Does [child name] suffer from diabetes?
+   1. yes
+   2. no -> F123
+   99. not answered
+
+
+F122        What type of diabetes?
+Depending on F121
+   1. Type 1 diabetes
+   2. Type 2 diabetes
+   99. not answered
+   100. not applicable
+
+
+F123        Has [child name] gluten intolerance (coeliac disease)?
+
+
+                                                                                      46
+   1. yes
+   2. no
+   99. not answered
+(Can be skipped without being answered)
+F124_1-5   Has [child name] for a period of more than 1 month been on one of the
+           following medications?
+F124_1     Ritalin
+F124_2     Anti-depressant (SSRI)
+F124_3     Soothing/sleep medicine
+F124_4     Medicine for migraine, preventive
+F124_5     Medicine for migraine, when having an attack
+1=yes, 2= no, not answered=99
+
+
+
+Painkillers
+(Can be skipped without being answered)
+F125        When or if [child name] is in pain, will [he/she] receive over-the-counter
+            painkillers?
+   1. yes
+   2. no -> F127
+   99. not answered
+
+
+(Can be skipped without being answered)
+F126_1-4 Which? You can tick off more than one.
+Depending on F125
+F126_1      Panodil, pamol or pinex (paracetamol)
+F126_2      kodimagnyl, treo or aspirin (acetylsalicylic acid)
+F126_3      Ipren, ibuprofen, brufen or ibumetin (ibuprofen)
+F126_4      other
+1=yes, not answered=99, irrelevant=100
+
+
+
+Sight
+F127        Does [child name] suffer from impaired vision?
+   1. yes
+   2. maybe/it is suspected -> F134
+   3. no -> F134
+   99. not answered
+
+
+F128         On which eye/eyes is/are [child name]'s vision impaired?
+Depending on F127
+   1. left eye
+
+
+                                                                                         47
+   2. right eye
+   3. both eyes
+   99. not answered
+   100. not applicable
+
+
+F129        Do you know the reason for [child name] vision being impaired?
+Depending on F127
+   1. yes
+   2. no ->F131
+   99. not answered
+   100.     irrelevant
+
+(Can be skipped without being answered)
+F130_1-7 What is the reason that [child name]'s vision being impaired?
+Depending on F127 F129
+F130_1      an early birth (ROP)
+F130_2      birth injury (lack of oxygen, cerebral hemorrhage)
+F130_3      strabismus
+F130_4      congenital cataracts
+F130_5      nearsighted
+F130_6      farsighted
+F130_7      other -> F130_7A
+1=yes, not answered=99, irrelevant=100
+
+(Can be skipped without being answered)
+F130_7A     ________other
+
+F131         Does [child name] use glasses?
+Depending on F127
+   1. yes -> F133
+   2. no
+   99. not answered
+   100.irrelevant
+
+F132        Does [child name] use contact lenses?
+Depending on F127 F131
+   1. yes
+   2. no -> F134 (unless yes in131)
+   99. not answered
+   100.     irrelevant
+
+F133        Is [child name]'s vision normal, when [child name] is wearing glasses/contact
+lenses?
+Depending on F127 F131 F132
+   1. yes
+   2. no
+   99. not answered
+
+
+                                                                                        48
+   100. not applicable
+
+
+
+Hearing
+F134        Does [child name] suffer from impaired hearing?
+   1. yes
+   2. maybe/it is suspected -> F137
+   3. no -> F137
+   99. not answered
+
+F135        On which ear(s) is [child names] hearing impaired?
+Depending on F134
+   1. left ear
+   2. right ear
+   3. both ears
+   99. not answered
+   100. not applicable
+
+F136        Has [child name] been treated for hearing impairment?
+Depending on F134
+   1. yes, with hearing aid
+   2. yes, with other treatment -> F136A
+   3. no
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F136A       _______ What treatment?
+
+
+
+
+Speech impairment
+
+F137 Is there ever someone who thought that [child name] had a speech impairment?
+   1. yes
+   2. no -> F140
+   99. not answered
+
+F138        Has [child name] ever undergone speech therapy or the like?
+Depending on F137
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F139        Is there still an awareness of [child name] speech impairments?
+
+
+                                                                                    49
+Depending on F137
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+
+
+
+Tooth brushing
+
+F140        How often do you remind your child to brush his/her teeth?
+   1. Every day
+   2. weekly
+   3. sometimes
+   4. rarely
+   5. never
+   99. not answered
+
+(Can be skipped without being answered)
+F141        How often does [child name] actually brush her/his teeth?
+   1. more than two times daily
+   2. two times a day
+   3. one time a day
+   4. every week, but not every day
+   5. less than once a week
+   6. never
+   99. not answered
+
+F142        How often do you verify [child name]s tooth brushing?
+   1. Every day
+   2. weekly
+   3. sometimes
+   4. rarely
+   5. never
+   99. not answered
+
+
+
+Vitamin pills
+
+F143        Has [child name] been taking vitamin pills/supplements during the past years?
+   1. Always or almost always
+   2. Only in the winter
+   3. Once in a while
+   4. no, not at all/very rarely -> F145
+   99. not answered
+
+
+
+                                                                                       50
+F144_1-6    What type of vitamin pills/supplements has [child name] received? (You are
+            welcome to tick off more than one)
+Depending on F143
+F144_1      multivitamin pills
+F144_2      calcium supplements
+F144_3      D-vitamin supplements
+F144_4      C-vitamin supplements
+F144_5      fish oil/cod liver oil
+F144_6      other -> F144_6A
+1=yes, not answered=99, irrelevant=100
+
+(Can be skipped without being answered)
+F144_6A     _______ other
+
+
+
+Enuresis
+
+F145        Does it sometimes happen that [child name] pees his/her pants?
+   1. yes
+   2. no -> F147
+   99. not answered
+
+F146        About how often? (does he/she pee his/her pants)
+Depending on F145
+   1. less than once a month
+   2. less than once a week
+   3. about once a week
+   4. 2-5 times a week
+   5. every day
+   99. not answered
+   100. not applicable
+
+F147        Does it sometimes happen that [child name] has stools (more than skid
+            marks) in his/her pants?
+   1. yes
+   2. no -> F149
+   99. not answered
+
+F148        About how often? (defecation in pants)
+Depending on F147
+   1. less than once a month
+   2. less than once a week
+   3. about once a week
+   4. 2-5 times a week
+   5. Every day
+   99. not answered
+   100. not applicable
+
+
+                                                                                         51
+F149        Does it sometimes happen that [child name] wets his/her bed?
+   1. yes
+   2. no -> F151
+   99. not answered
+
+F150        About how often? (wets his/ her bed)
+Depending on F149
+   1. less than once a month
+   2. less than once a week
+   3. about once a week
+   4. 2-5 times a week
+   5. Every day
+   99. not answered
+   100. not applicable
+
+F151        Does it sometimes happen that [child name] has defecation in bed?
+   1. yes
+   2. no -> F153
+   99. not answered
+
+F152        About how often? (defecation in bed)
+Depending on F151
+   1. less than once a month
+   2. les than once a week
+   3. about once a week
+   4. 2-5 times a week
+   5. every day
+   99. not answered
+   100. not applicable
+
+
+Circumcision
+(In version1 that is before April 6 2011 both girls and boys received question F153, while only boys
+received the questions in version 2 that is after April 6 2011)
+F153        Is [child name] circumcised?
+   1. yes
+   2. no -> F156
+   99. not answered
+
+(Question F154 F155 is added April 6 2011 and only occur in version 2)
+ (Can be skipped without being answered)
+Depending on F153
+F154      How old was [child name] when he/she was circumcised?
+_________ years.
+
+0= don't know, 99= not answered, 100= irrelevant
+
+
+
+                                                                                                  52
+(Can be skipped without being answered)
+Depending on F153
+F155        Why was [child name] circumcised? You are welcome to tick off more than
+one.
+   1. Because of phimosis
+   2. because of inflammation under the foreskin
+   3. because of urinary tract infection
+   4. because boys/ men in our family normally get circumcised (tradition/religion)
+   5. another reason
+   99. not answered
+   100. not applicable
+
+
+
+Strengths and difficulties
+ In the following we ask you to answer some questions describing [child name]'s
+ strengths and difficulties.
+
+ We ask you to consider whether the descriptions of [child name] not true, somewhat
+ true or are certainly true. It will be a great help for us if you answer all the questions
+ even though you are in doubt or do not think the descriptions make any sense in
+ relation to [child name]'s age. We will ask you to answer based on [child name]'s
+ behavior in the past 6 months
+
+
+
+
+F156_1      Is considerate of other people's feelings
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_2      Is restless, overactive, cannot stay still for long
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_3      Often complains of headaches, stomach-aches or sickness
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+
+
+
+                                                                                              53
+F156_4      Shares readily with other children (treats, toys, pencils, etc.)
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_5      Often has temper tantrums or hot tempers
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_6      Rather solitary, tends to play alone
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_7      Generally obedient, usually does what adults request
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_8      Many worries, often seems worried
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_9      Helpful if anyone is hurt, upset or feeling ill
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_10 Constantly fidgeting of squirming
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_11 Has at least one good friend
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+
+
+                                                                               54
+F156_12 Often fights with other children or bullies them
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_13 Is often unhappy, down hearted or tearful
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_14 Generally liked by other children
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_15 Easily distracted, concentration wanders
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_16 Nervous or clingy in new situations, easily loses confidence
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_17 Kind to younger children
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_18 Often lies or cheats
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_19 Picked on or bullied by other children
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+
+
+                                                                       55
+F156_20 Often volunteers to help others (parents, teachers, other children)
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_21 Thinks things out before acting
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_22 Steals from home, in day care centers, schools or elsewhere
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_23 Gets on better with adults than with other children
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_24 Many fears, is easily scared
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+F156_25 Sees tasks through to the end, good attention span
+   1. not true
+   2. somewhat true
+   3. certainly true
+   99. not answered
+
+(Can be skipped without being answered)
+F156A       note any worries or remarks here:
+            _________________________________________
+
+
+
+
+                                                                              56
+F157        Overall, do you think that [child name] has difficulties on one or more of the
+            following areas: emotions, concentration, behavior or being able to get on with
+            other people?
+   1. no -> F162
+   2. yes, minor difficulties
+   3. yes, obvious difficulties
+   4. yes, serious difficulties
+   99. not answered
+
+F158        How long have these difficulties been present?
+Depending on F157
+   1. less than a month
+   2. 1-5 months
+   3. 6-12 months
+   4. more than one year
+   99. not answered
+   100. not relevant
+
+F159        Do the difficulties upset or distress your child?
+Depending on F157
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+F160_1      Do these difficulties interfere with your child's everyday life at home?
+Depending on F157
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+F160_2      Do these difficulties interfere with your child's everyday - friendships?
+Depending on F157
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+F160_3      Do these difficulties interfere with your child's everyday life - classroom
+            learning?
+
+
+                                                                                          57
+Depending on F157
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+F160_4      Do these difficulties interfere with your child's everyday life - leisure time?
+Depending on F157
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+F161        Do these difficulties put a burden on you or the family as a whole?
+Depending on F157
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+
+  Strengths and difficulties can be expressed in very different ways in school
+  and at home.
+
+  We would therefore like to contact as many of the children's teachers as
+  possible in this 11-year follow-up, so the teachers can answer the same
+  questions regarding the child's strengths and difficulties as you have just
+  answered.
+
+  We hope as many parents in the DNBC as possible will allow us to contact
+  their children's teachers.
+
+F162        May we contact your child's teacher?
+   1. yes, you may contact my child's teacher
+   2. no, I do not want you to contact my child's teacher
+   99. not answered
+
+
+Tics
+F163 Has [child name] in the past 12 months had any type of movement, twitch or habit
+     that [child name] did not seem to be able to control, for example excessive blinking
+     with the eyes, grimaces, nose wrinkling or head rolls?
+
+
+                                                                                              58
+   1. yes
+   2. no
+   99. not answered
+
+F164 Has [child name] in the past 12 months had any words or sounds that [child name]
+      did not seem to be able to control, for example excessive snuffling, coughing or
+      clearing of his/her throat?
+   1. yes
+   2. no -> F166 (if no is also answered in F163)
+   99. not answered
+
+F165        Has [child name]s tics been a burden for you or he family as a whole?
+Depending on F163 and F164
+   1. not at all
+   2. only a bit
+   3. pretty much
+   4. very much
+   99. not answered
+   100. not relevant
+
+
+
+Gender identity
+
+(Question F166_1-2 is added April 6 2011 and therefore only occurs in version 2)
+F166_1-2 Below you will find two statements on gender identity among children and
+adolescents. We ask you to consider how well the statements fits [child name] now or
+during the past 6 months.
+
+F166_1      [Child name] behaves like the opposite sex
+   1. not accurate
+   2. partly accurate
+   3. very accurate
+   99. not answered
+
+F166_2      [Child name] wishes to be the opposite sex
+   1. not accurate
+   2. partly accurate
+   3. very accurate
+   99. not answered
+
+
+
+
+Height and weight, skin and hair
+
+F167        How tall is [child name]? Please state the height in complete cm, f. ex. 158
+[child name] is _________ cm tall.
+
+
+                                                                                           59
+0= don't know, 99= not answered
+
+F168        When has [child name] been measured?
+   1. today
+   2. within the past month
+   3. within the past 6 months
+   4. more than 6 months ago
+   5. has not been measured
+   99. not answered
+
+F169        How much does [child name] weigh? Please state the weight in complete kg.
+ex: 55
+[child name] weighs _________ kg.
+
+0= don't know, 99= not answered
+
+F170        When has [child name] been weighed?
+   1. today
+   2. within the past month
+   3. within the past 6 months
+   4. more than 6 months ago
+   5. has not been weighed
+   99. not answered
+
+
+F171        What is [child name]s waistline? Please state the waistline in complete cm,
+f.ex. 52
+
+[child name] measures_________ cm.
+
+0= don't know, 99= not answered
+
+F172        When has [child name] got her waistline measured?
+   1. today
+   2. within the past month
+   3. within the past 6 months
+   4. more than 6 months ago
+   5. has not been measured
+   99. not answered
+
+
+F173        What is [child name]'s natural hair color?
+   1. Red or reddish
+   2. Light blond
+   3. dark blond
+   4. brown
+   5. black
+   6. other
+   99. not answered
+
+
+                                                                                          60
+F174         What is [child name]'s eye color?
+   1. Blue or grey
+   2. green
+   3. light brown or hazel
+   4. dark brown
+   5. other
+   99. not answered
+
+F175         What shoe size does [child name] use?
+   1. 32 or smaller
+   2. 33
+   3. 34
+   4. 35
+   5. 36
+   6. 37
+   7. 38
+   8. 39
+   9. 40
+   10. 41
+   11. 42
+   12. 43
+   13. 44
+   14. 45
+   15. 46
+   16. 47 or bigger
+   99. not answered
+
+F176 How does [child name]'s skin react if [child name] has spent a long time in the sun?
+   1. The skin is very sensitive and burns with blisters, pain and peeling skin.
+   2. The skin is very sensitive and often burns with blisters, pain and peeling skin.
+   3. The skin reacts with redness followed by a tan
+   4. the skin tans with no other reaction
+   99. not answered
+
+(Can be skipped without being answered)
+F177_1      How many freckles does [child name] have in the face?
+   1. No freckles
+   2. Few freckles
+   3. some freckles, possible more in the summer
+   4. a lot of freckles the entire year
+   99. not answered
+
+(Can be skipped without being answered)
+F177_2     How many freckles does [child name] have on the arms?
+   1. No freckles
+   2. Few freckles
+   3. some freckles, possible more in the summer
+
+
+                                                                                       61
+   4. a lot of freckles the entire year
+   99. not answered
+
+
+
+Illness in the closest family
+
+F178_1-10 Has anyone in [child name]'s close (biological) family ever had following
+           illnesses? (Father)
+F178_1     Type 1 diabetes
+F178_2     Type 2 diabetes
+F178_3     Heart attack
+F178_4     Stroke
+F178_5     High blood pressure
+F178_6     Asthma
+F178_7     Allergy
+F178_8     Migraine
+F178_9     Depression
+F178_10 Schizophrenia
+1=yes, 2=no, 3= don't know, 99=missing
+
+
+F179_1-10 Has anyone in [child name]'s close (biological) family ever had following
+           illnesses? (maternal grandmother)
+F179_1     Type 1 diabetes
+F179_2     Type 2 diabetes
+F179_3     Heart attack
+F179_4     Stroke
+F179_5     High blood pressure
+F179_6     Asthma
+F179_7     Allergy
+F179_8     Migraine
+F179_9     Depression
+F179_10 Schizophrenia
+1=yes, 2=no, 3= don't know, 99=missing
+
+
+F180_1-10 Has anyone in [child name]'s close (biological) family ever had following
+          illnesses? (maternal grandmother)
+F180_1    Type 1 diabetes
+F180_2    Type 2 diabetes
+F180_3    Heart attack
+F180_4    Stroke
+F180_5    High blood pressure
+F180_6    Asthma
+F180_7    Allergy
+F180_8    Migraine
+F180_9    Depression
+
+
+                                                                                      62
+F180_10 Schizophrenia
+1=yes, 2=no, 3= don't know, 99=missing
+
+
+F181_1-10 Has anyone in [child name]'s close (biological) family ever had following
+           illnesses? (paternal grandmother)
+F181_1     Type 1 diabetes
+F181_2     Type 2 diabetes
+F181_3     Heart attack
+F181_4     Stroke
+F181_5     High blood pressure
+F181_6     Asthma
+F181_7     Allergy
+F181_8     Migraine
+F181_9     Depression
+F181_10 Schizophrenia
+1=yes, 2=no, 3= don't know, 99=missing
+
+F182_1-10 Has anyone in [child name]'s close (biological) family ever had following
+           illnesses? (paternal grandfather)
+F182_1     Type 1 diabetes
+F182_2     Type 2 diabetes
+F182_3     Heart attack
+F182_4     Stroke
+F182_5     High blood pressure
+F182_6     Asthma
+F182_7     Allergy
+F182_8     Migraine
+F182_9     Depression
+F182_10 Schizophrenia
+1=yes, 2=nej, 3= don't know, 99=missing
+
+
+
+The biological fathers height and weight
+(Only the biological father and mother has received questions F183-F188)
+
+F183       How tall is [child name]'s biological father?
+Depending on F001 F001A
+Er __________cm tall.
+0=don't know, 99= not answered, 100= irrelevant
+'
+
+F184        When was he measured?
+Depending on F001 F001A
+   1. Today
+   2. in the past month
+   3. in the past 6 month
+
+
+                                                                                      63
+   4. more than 6 months ago
+   5. has not been measured
+   99. not answered
+   100. not applicable
+
+
+F185       What is the weight of the biological father?
+Depending on F001 F001A
+__________kg.
+0=don't know, 99= not answered, 100= irrelevant
+'
+
+F186        When was he weighed?
+Depending on F001 F001A
+   1. Today
+   2. in the past month
+   3. in the past 6 month
+   4. more than 6 months ago
+   5. has not been weighed
+   99. not answered
+   100. not applicable
+
+
+F187       What is the biological father's waistline?
+Depending on F001 F001A
+He measures __________centimeter.
+0=don't know, 99= not answered, 100=irrelevant
+'
+
+F188        When was the waistline measured?
+Depending on F001 F001A
+   1. Today
+   2. in the past month
+   3. in the past 6 month
+   4. more than 6 months ago
+   5. has not been measured
+   99. not answered
+   100. not applicable
+
+
+
+Questions for the biological mother
+(Only the biological mother has received question F189-F226)
+
+F189      How tall are you?
+Depending on F001
+Am __________cm tall.
+
+
+
+                                                               64
+0=don't know, 99= not answered, 100=irrelevant
+
+
+F190        When were you measured?
+Depending on F001
+   1. Today
+   2. in the past month
+   3. in the past 6 month
+   4. more than 6 months ago
+   5. has not been measured
+   99. not answered
+   100. not applicable
+
+
+F191       What is your weight?
+Depending on F001
+__________kg.
+0=don't know, 99= not answered, 100=irrelevant
+
+
+F192        When were you weighed?
+Depending on F001
+   1. Today
+   2. in the past month
+   3. in the past 6 month
+   4. more than 6 months ago
+   5. has not been weighed
+   99. not answered
+   100. not applicable
+
+F193       What is your waistline?
+Depending on F001
+I measure __________centimeter.
+0=don't know, 99= not answered, 100=irrelevant
+
+
+F194        What was the waistline measured?
+Depending on F001
+   1. Today
+   2. in the past month
+   3. in the past 6 month
+   4. more than 6 months ago
+   5. has not been measured
+   99. not answered
+   100. not applicable
+
+F195       Are you pregnant so that your waistline measurement is affected?
+
+
+                                                                              65
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+
+F196        Is your weight lower than usual as a result of a recent weight loss?
+Depending on F001
+   1. yes ->F196_A-B
+   2. no ->F197
+   99. not answered
+   100. not applicable
+
+Depending on F001 F196
+F196_A     What did you weigh before the weight loss?
+__________kg.
+0=don't know, 99= not answered, 100=irrelevant
+
+Depending on F001 F196
+F196_B      What do you believe is the cause of the weight loss?
+   1. predominantly diet changes
+   2. predominantly changes in exercise habits
+   3. other changes in life style
+   4. illness
+   5. treatment of illness
+   99. not answered
+   100. not applicable
+
+F197         What is your eye color?
+Depending on F001
+   1. blue or grey
+   2. green
+   3. light brown or hazel
+   4. dark brown
+   5. other
+   99. not answered
+   100. not applicable
+
+F198       What size shoe do you use?
+Depending on F001
+   1. 35 or smaller
+   2. 36
+   3. 37
+   4. 38
+   5. 39
+   6. 40
+   7. 41
+
+
+                                                                                   66
+   8. 42
+   9. 43
+   10. 44 or bigger
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F199        What is your blood type?
+Depending on F001
+   1. A Rhesus positive
+   2. 0 Rhesus positive
+   3. B Rhesus positive
+   4. AB Rhesus positive
+   5. A Rhesus negative
+   6. 0 Rhesus negative
+   7. B Rhesus negative
+   8. AB Rhesus negative
+   9. Don't know
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F200_1-2 How many freckles do you have?
+Depending on F001
+F200_1      In the face?
+   1. No freckles
+   2. Few freckles
+   3. some freckles, possible more in the summer
+   4. a lot of freckles the entire year
+   99. not answered
+   100. not applicable
+
+Depending on F001
+F200_2      on the arms?
+   1. No freckles
+   2. Few freckles
+   3. some freckles, possible more in the summer
+   4. a lot of freckles the entire year
+   99. not answered
+   100. not applicable
+
+
+F201        How does your skin react when you have been in the sun for a longer period
+            of time?
+Depending on F001
+   1. The skin is very sensitive and gets sun burned with blisters, pain and peeling skin.
+   2. The skin is very sensitive and sometimes it gets sunburned with blisters, pain and
+      peeling skin.
+
+
+                                                                                             67
+   3. The skin reacts with redness followed by browning
+   4. the skin gets brown without other reaction
+   99. not answered
+   100. not applicable
+
+
+F202_1-19 Have you ever been diagnosed with any of the following disorders by a
+           doctor?
+Depending on F001
+F202_1     Type 1 diabetes->F203_1-F205_1 (if yes)
+F202_2     Type 2 diabetes->F203_2-F205_2 (if yes)
+F202_3     Blood clot in your leg ->F203_3-F205_3 (if yes)
+F202_4     Blood clot elsewhere ->F203_4-F205_4 (if yes)
+F202_5     High blood pressure->F203_5-F205_5 (if yes)
+F202_6     High cholesterol->F203_6-F205_6 (if yes)
+F202_7     Asthma->F203_7-F205_7 (if yes)
+F202_8     Hay fever->F203_8-F205_8 (if yes)
+F202_9     Atopic eczema ->F203_9-F205_9 (if yes)
+F202_10 Food allergy->F203_10-F205_10 (if yes)
+F202_11 other allergy->F203_11-F205_11 (if yes)
+F202_12 Osteoarthritis ->F203_12-F205_12 (if yes)
+F202_13 Rheumatoid arthritis ->F203_13-F205_13 (if yes)
+F202_14 Fibromyalgia->F203_14-F205_14 (if yes)
+F202_15 Epilepsy->F203_15-F205_15 (if yes)
+F202_16 Depression->F203_16-F205_16 (if yes)
+F202_17 Schizophrenia->F203_17-F205_17 (if yes)
+F202_18 Other mental disorder->F203_18-F205_18 (if yes)
+F202_19 Prolapsed disc or other back problems ->F203_19-F205_19 (if yes)
+1=yes, 2=no, 3= don't know, 99=missing, 100= irrelevant
+
+F203_1-19 What year did the disorder first appear (approximately)? Insert year f. ex. 2004
+Depending on F001 F202_1-19
+F203_1    Type 1 diabetes
+F203_2    Type 2 diabetes
+F203_3    Blood clot in your leg
+F203_4    Blood clot elsewhere
+F203_5    High blood pressure
+F203_6    High cholesterol
+F203_7    Asthma
+F203_8    Hay fever
+F203_9    Atopic eczema
+F203_10 Food allergy
+F203_11 Other allergy
+F203_12 Osteoarthritis
+F203_13 Rheumatoid arthritis
+F203_14 Fibromyalgia
+F203_15 Epilepsy
+F203_16 Depression
+
+
+                                                                                       68
+F203_17 Schizophrenia
+F203_18 other mental disorder
+F203_19 Prolapsed disc or other back problems
+0=don't know, 99=missing, 100= irrelevant
+
+F204_1-19 Have you received medical treatment for the mentioned condition during the
+           past year?
+Depending on F001 F202_1-19
+F204_1     Type 1 diabetes
+F204_2     Type 2 diabetes
+F204_3     Blood clot in your leg
+F204_4     Blood clot elsewhere
+F204_5     High blood pressure
+F204_6     High cholesterol
+F204_7     Asthma
+F204_8     Hay fever
+F204_9     Atopic eczema
+F204_10 Food allergy
+F204_11 Other allergy
+F204_12 Osteoarthritis
+F204_13 Rheumatoid arthritis
+F204_14 Fibromyalgia
+F204_15 Epilepsy
+F204_16 Depression
+F204_17 Schizophrenia
+F204_18 Other mental disorder
+F204_19 Prolapsed disc or other back disorders
+1=yes, 2=no, 3= don't know, 99=missing, 100= irrelevant
+
+F205_1-19 Have you received medical treatment for the mentioned condition at an earlier
+          stage?
+Depending on F001 F202_1-19
+F205_1    Type 1 diabetes
+F205_2    Type 2 diabetes
+F205_3    Blood clot in your leg
+F205_4    Blood clot elsewhere
+F205_5    High blood pressure
+F205_6    High cholesterol
+F205_7    Asthma
+F205_8    Hay fever
+F205_9    Atopic eczema
+F205_10 Food allergy
+F205_11 Other allergy
+F205_12 Osteoarthritis
+F205_13 Rheumatoid arthritis
+F205_14 Fibromyalgia
+F205_15 Epilepsy
+F205_16 Depression
+
+
+                                                                                       69
+F205_17 Schizophrenia
+F205_18 Other mental disorder
+F205_19 Prolapsed disc or other back problems
+1=yes, 2=no, 3= don't know, 99=missing, 100= irrelevant
+
+(Can be skipped without being answered)
+F206        Have you ever had migraines?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F207        Have you ever had a severe headache accompanied by nausea?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F208        Have you ever had visual disturbances of 5-60 minutes duration followed by
+            headache?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F209        Have you ever had a severe headache accompanied by a sensitivity to sound
+            and light?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+(Can be skipped without being answered)
+F210        Do you smoke?
+Depending on F001
+   1. yes, daily ->F210_A-C
+   2. yes, sometimes->F211
+   3. no, but I have previously smoked->F211
+   4. no, I have never smoked->F213
+   99. not answered
+   100. not applicable
+
+
+
+                                                                                         70
+Depending on F001 F210
+F210_A     How many cigarettes do you smoke daily on average?
+_______________insert number of cigarettes, f. ex. 15
+99=missing, 100= irrelevant
+
+Depending on F001 F210
+
+F210_B     How old were you when you started to smoke on a daily basis?
+_______________insert age, f. ex. 16
+99=missing, 100= irrelevant
+
+Depending on F001 F210
+
+F210_C     For how many years have you smoked every day?
+_______________insert number, f. ex. 25
+99=missing, 100= irrelevant
+
+(Can be skipped without being answered)
+F211        Have you previously smoked on a daily basis?
+Depending on F001 F210
+   1. yes ->F211_A-B
+   2. no->F213
+   99. not answered
+   100. not applicable
+
+Depending on F001 F210 F211
+F211_A     How old were you, when you started to smoke on a daily basis?
+_______________insert age, f. ex. 23
+99=missing, 100= irrelevant
+
+Depending on F001 F210 F211
+F211_B     When did you stop smoking on a daily basis?
+_______________insert year, f. ex. 2003
+99=missing, 100= irrelevant
+
+(Can be skipped without being answered)
+F212       What would be your best average measure for your daily tobacco use in the
+           years where you were a regular smoker (exclusive of your pregnancy and
+           breastfeeding periods)?
+Depending on F001 F210 F211
+_______________insert number of cigarettes, f. ex. 15
+99=missing, 100= irrelevant
+
+
+F213         What is your hair colour?
+Depending on F001
+   1. red or reddish
+   2. light blond
+
+
+                                                                                       71
+   3. dark blond
+   4. brown
+   5. black
+   6. other
+   99. not answered
+   100. not applicable
+
+
+F214          What description of your hairs natural form suits you best?
+Depending on F001
+   1. many small curls
+   2. many big curls
+   3. a little curly
+   4. a little wavy
+   5. completely smooth
+   99. not answered
+   100. not applicable
+
+
+F215        Does your hairline form a V-shape in the centre of your forehead?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F216        Do you have a cleft chin?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F217        Look at your ears - are your earlobes unattached or attached?
+Depending on F001
+   1. unattached
+   2. attached
+   99. not answered
+   100. not applicable
+
+F218        Do you have dimples?
+Depending on F001
+   1. yes, on both sides
+   2. yes, on one side
+   3. no
+   99. not answered
+   100. not applicable
+
+
+
+                                                                                72
+F219         What finger is longest - your ring finger or your index finger?
+Depending on F001
+   1. ring finger
+   2. index finger
+   3. they are equally long
+   99. not answered
+   100. not applicable
+
+
+F220        What toe is the longest - your big toe or the one beside it?
+Depending on F001
+   1. big toe
+   2. the second toe
+   3. they are equally long
+   99. not answered
+   100. not applicable
+
+F221        Are you right handed or left handed?
+Depending on F001
+   1. right handed
+   2. left handed
+   3. use both hands almost equally
+   99. not answered
+   100. not applicable
+
+F222         Which foot do you use to kick a ball?
+Depending on F001
+   1. right foot
+   2. left foot
+   3. use both feet almost equally
+   99. not answered
+   100. not applicable
+
+F223        Now clasp your hands. Which thumbs is on top - the right hand one or the
+            one on the left hand?
+Depending on F001
+   1. right hand thumb
+   2. left hand thumb
+   3. they take turns equally
+   99. not answered
+   100. not applicable
+
+F224        Try to cross your arms. Which arm is on top - the left or the right arm?
+Depending on F001
+   1. right arm
+   2. lefte arm
+   3. they take turns equally
+   99. not answered
+
+
+                                                                                       73
+   100. not applicable
+
+F225        Can you roll your tongue into a tube, like the girl on the picture?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F226        Do you have small fine hairs on the middle joint of your fingers?
+Depending on F001
+   1. yes
+   2. no
+   99. not answered
+   100. not applicable
+
+F227        If you have any comments or extensive information, you are welcome to note
+            it here:
+
+______________________
+99=missing
+
+
+
+
+                                                                                     74
+
