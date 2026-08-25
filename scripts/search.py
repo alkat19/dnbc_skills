@@ -499,6 +499,16 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,5vw,54px);lin
   text-transform:uppercase;color:var(--muted);display:block;margin-top:7px}
 .tally .flagged b{color:var(--flag)}
 section{margin-top:52px}
+details.wave{margin-top:52px}
+summary.wavehead{cursor:pointer;list-style:none;-webkit-user-select:none;user-select:none}
+summary.wavehead::-webkit-details-marker{display:none}
+summary.wavehead::before{content:"";flex:none;align-self:center;width:8px;height:8px;
+  margin-right:13px;position:relative;top:-2px;border-right:2px solid var(--ink);
+  border-bottom:2px solid var(--ink);transform:rotate(-45deg);transition:transform .18s ease}
+details.wave[open] > summary.wavehead::before{transform:rotate(45deg);top:-4px}
+summary.wavehead h2{margin-right:auto}
+summary.wavehead:hover h2{opacity:.6}
+@media print{details.wave > .tablewrap{display:block!important}}
 .wavehead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
   padding-bottom:11px;border-bottom:2px solid var(--ink)}
 .wavehead h2{font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:-.01em;margin:0}
@@ -637,13 +647,17 @@ def emit_html(scored, gates, query, subtitle, lang, out_path):
         recs = by_wave[wave]
         label, _, detail = wave.partition(" (")
         depths = chain_depth(recs)
-        body.append('<section><div class="wavehead"><h2>%s</h2><em>%s</em></div>'
+        meta = "%d variable%s" % (len(recs), "" if len(recs) == 1 else "s")
+        if detail.rstrip(")"):
+            meta += " &middot; " + esc(detail.rstrip(")"))
+        body.append('<details class="wave"><summary class="wavehead">'
+                    '<h2>%s</h2><em>%s</em></summary>'
                     '<div class="tablewrap"><table>'
                     '<colgroup><col style="width:206px"><col>'
                     '<col style="width:118px"><col style="width:330px"></colgroup>'
                     '<thead><tr><th>Variable</th><th>Question</th><th>Type</th>'
                     '<th>Answer coding</th></tr></thead><tbody>'
-                    % (esc(label), esc(detail.rstrip(")"))))
+                    % (esc(label), meta))
         for r in recs:
             pairs, missing, warn = _levels(r)
             levels_n = len(pairs) or (1 if r["labels"] else 0)
@@ -680,7 +694,7 @@ def emit_html(scored, gates, query, subtitle, lang, out_path):
         body.append("</tbody></table></div>")
         if "7-year" in wave and any(GENDERED.search(r["desc"]) for r in recs):
             body.append('<p class="wavenote">%s</p>' % esc(GENDERED_NOTE))
-        body.append("</section>")
+        body.append("</details>")
 
     rows_only = [r for _, r in scored]
     tabs, panes = [], []
@@ -896,7 +910,8 @@ def main():
     ap.add_argument("--names", action="store_true", help="compact one line per hit (no labels)")
     ap.add_argument("--section", action="store_true",
                     help="also match a variable's section banner (broader, noisier)")
-    ap.add_argument("--top", type=int, default=80, help="max hits to print (0 = all)")
+    ap.add_argument("--top", type=int, default=0,
+                    help="max hits to print (0 = all, the default)")
     ap.add_argument("--full-labels", action="store_true",
                     help="print every answer option verbatim instead of trimming the missing-value tail")
     ap.add_argument("--context", default="", help="print codebook text around this variable code")

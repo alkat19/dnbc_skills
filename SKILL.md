@@ -91,7 +91,9 @@ python3 scripts/search.py --list-topics
 - `--wave` restricts to wave slugs. `--var REGEX` matches the variable code only
   (`--var "^E_"` for key variables, `--var "^A031_5$"` to identify one column).
 - `--names` is one compact line per hit — good for a first scan.
-- `--top N` caps output (default 80, ranked best-first; `--top 0` for everything).
+- `--top N` caps output (ranked best-first). **The default is 0 — everything.** Pass a
+  limit only when the user explicitly asks for a short list; never trim a search they
+  intend to use for variable selection.
 - `--html PATH` writes a polished, light-theme HTML report of the matches (see
   **Offer the HTML report**).
 - `--recode [r|stata|sas]` emits paste-ready recode code (R/dplyr by default). Ask which
