@@ -238,16 +238,6 @@ dictionary from the published PDFs.
 
 ## Data source
 
-## About the mark
-
-The hex records the cohort it searches. Each band is one questionnaire wave, laid down from
-the centre outward in the order they were collected, and a band's width is that wave's share
-of the 7,989 variables — Interview 2 is broad because it holds 2,365 of them, the 7-year
-follow-up is a seam because it holds 285. The red core is the prenatal record; where red
-gives way to ink is birth, the one event that changes what a question can be about.
-
-Regenerate it with `python3 design/make_hex.py`.
-
 ## Data source
 
 The questionnaire codebooks are published by the Danish National Birth Cohort at
