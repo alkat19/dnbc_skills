@@ -93,18 +93,29 @@ def build():
 
     cx, cy = w / 2.0, h / 2.0
     R = h / 2.0 - 9 * SS
-    d.polygon(hexpath(cx, cy, R), fill=PAPER)
+    BW = 44 * SS                       # perpendicular border thickness
+    R_in = R - BW / math.cos(math.radians(30))
+    d.polygon(hexpath(cx, cy, R), fill=INK)
+    d.polygon(hexpath(cx, cy, R_in), fill=PAPER)
 
     # --- the codebook: a field of small marks -----------------------------
-    R_field = R - 58 * SS
+    R_field = R_in - 26 * SS
     s = 0.0715 * R
     r_small = s * 0.235
 
-    lx, ly = cx, cy - 0.055 * R          # lens centre, on the axis
-    lr = 0.335 * R                       # lens radius
-    plate_top = cy + 0.545 * R
+    lr = 0.320 * R                       # lens radius
+    plate_top = cy + 0.450 * R
 
     pts = lattice(cx, cy, R_field, s)
+
+    # Seat the lens on a lattice point that already lies on the axis, so the found
+    # mark sits exactly at the centre of the glass and the enlarged pattern stays
+    # mirror-symmetric. Snapping the lens to the marks, rather than the reverse,
+    # keeps the field a single uninterrupted lattice.
+    lx = cx
+    axis = [q for q in pts if abs(q[0] - cx) < 1e-6]
+    best = min(axis, key=lambda q: abs(q[1] - (cy - 0.075 * R)))
+    ly = best[1]
     for (x, y) in pts:
         if y > plate_top:
             continue                     # nameplate keeps its own ground
@@ -112,7 +123,7 @@ def build():
 
     # --- the handle, on the axis ------------------------------------------
     hw_ = 0.050 * R
-    d.rounded_rectangle([cx - hw_, ly + lr - 0.02 * R, cx + hw_, ly + lr + 0.275 * R],
+    d.rounded_rectangle([cx - hw_, ly + lr - 0.02 * R, cx + hw_, ly + lr + 0.240 * R],
                         radius=hw_, fill=INK)
 
     # --- the glass ---------------------------------------------------------
@@ -122,7 +133,6 @@ def build():
 
     # the same lattice, enlarged about the lens centre
     inner = lr / MAG + s
-    best = min(pts, key=lambda p: (p[0] - lx) ** 2 + (p[1] - ly) ** 2)
     for (x, y) in pts:
         if abs(x - lx) > inner or abs(y - ly) > inner:
             continue
@@ -140,12 +150,17 @@ def build():
     d.ellipse([lx - lr, ly - lr, lx + lr, ly + lr], outline=INK, width=rim)
 
     # --- nameplate ---------------------------------------------------------
-    f = ImageFont.truetype(os.path.join(FONTS, "GeistMono-Bold.ttf"), int(97 * SS))
+    y_text = cy + 0.625 * R
+    avail = 2 * half_width(y_text - cy, R_in) * 0.78
+    size, track = int(100 * SS), 5.0 * SS
+    while size > 20:
+        f = ImageFont.truetype(os.path.join(FONTS, "GeistMono-Bold.ttf"), size)
+        wmark = sum(d.textlength(c, font=f) for c in "lookdnbc") + track * 7
+        if wmark <= avail:
+            break
+        size -= 2 * SS
     asc, _ = f.getmetrics()
-    letterspaced(d, "lookdnbc", f, cx, cy + 0.735 * R - asc * 0.78, 5.0 * SS, INK)
-
-    d.line(hexpath(cx, cy, R) + [hexpath(cx, cy, R)[0]], fill=INK,
-           width=int(9 * SS), joint="curve")
+    letterspaced(d, "lookdnbc", f, cx, y_text - asc * 0.78, track, INK)
 
     out = img.resize((W, H), Image.LANCZOS)
     p = os.path.join(HERE, os.environ.get("HEXOUT", "lookdnbc-hex.png"))
