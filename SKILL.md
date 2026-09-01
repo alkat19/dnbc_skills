@@ -246,9 +246,9 @@ line rather than implying it doesn't exist.
 ## Maintenance
 
 The dictionary is prebuilt and committed: there is nothing to install and nothing to
-rebuild at query time. The extractor, the regression suite, and the eval harness live
-are maintained separately and are not distributed with the skill. If a row looks
-wrong, report it as an issue — do not try to regenerate the dictionary from here.
+rebuild at query time. The extractor, the regression suite, and the eval harness are
+maintained separately and are not distributed with the skill. If a row looks wrong,
+report it as an issue — do not try to regenerate the dictionary from here.
 
 ## Raw grep fallback
 
